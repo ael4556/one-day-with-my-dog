@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/navbar/navbar";
+import "./App.css";
+import coverImage_1 from "./Images/cover.jpg";
+import coverImage_2 from "./Images/cover2.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div
+        className=" h-screen bg-local  bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${coverImage_1})` }}
+      ></div>
+
+      <div className="h-screen bg-cover bg-center flex items-center justify-center">
+        <h1 className="text-4xl text-white">สวัสดี, Tailwind CSS!</h1>
+      </div>
+      <Navbar />
     </div>
   );
 }
