@@ -1,7 +1,9 @@
 import Navbar from "./components/navbar/navbar";
 import "./App.css";
 import coverImage_1 from "./Images/cover.jpg";
-import coverImage_2 from "./Images/cover2.jpg";
+import coverImage_2 from "./Images/cover-2.png";
+
+import door_A1 from "./Images/door-animation-1.png";
 
 function App() {
   return (
@@ -9,11 +11,31 @@ function App() {
       <div
         className=" h-screen bg-local  bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${coverImage_1})` }}
-      ></div>
-
-      <div className="h-screen bg-cover bg-center flex items-center justify-center">
-        <h1 className="text-4xl text-white">สวัสดี, Tailwind CSS!</h1>
+      >
+        <div className="h-screen bg-cover bg-center flex items-center justify-center">
+          <h1 className="text-4xl text-white">สวัสดี, Tailwind CSS!</h1>
+        </div>
       </div>
+      <div
+        className=" h-screen bg-local bg-center"
+        style={{ backgroundImage: `url(${coverImage_2})` }}
+      >
+        <div className="flex items-center justify-between w-3/4 pt-72">
+          <div>
+            <img
+              className=" w-3/4 object-cover object-center"
+              src={door_A1}
+              alt="nature image"
+            />
+          </div>
+          <div className="basis-1/4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
+          </div>
+        </div>
+      </div>
+
       <Navbar />
     </div>
   );
