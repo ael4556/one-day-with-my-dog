@@ -35,25 +35,42 @@ function App() {
           </div>
         </div>
       </div>
-    
-    
-    <div className="">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <p class="title">FLIP CARD</p>
-            <p>Hover Me</p>
+
+      <div className="flex gap-8 ">
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p class="title">XXX</p>
+                <p>Hover Me</p>
+              </div>
+              <div class="flip-card-back">
+                <img
+                  className=" rounded-2xl"
+                  src={test_card}
+                  alt="nature image"
+                />
+              </div>
+            </div>
           </div>
-            <div class="flip-card-back">
-              <img className=" rounded-2xl"
-              src={test_card}
-              alt="nature image"
+        </div>
+        <div>
+          <div className="group relative">
+            <img
+              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3pia3RncmVrc3Q3d3FzOWVhbTBodWJneHVkbTc4d2RnbnUzMXo3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0MYFDlOLFIDX0hPi/giphy.gif"
+              alt="Dog poop"
+              className="w-full h-auto"
+            />
+            <div className="group-hover:block absolute top-0 ease-out duration-300 transition-all opacity-0 group-hover:opacity-100">
+              <img
+                src="https://media1.tenor.com/m/ocWsw7ohJsUAAAAC/extasyxx-big-hug.gif"
+                alt="How to pick up"
+                className="w-full h-auto mb-4"
               />
             </div>
+          </div>
         </div>
       </div>
-    </div>
-      
 
       <Navbar />
     </div>
