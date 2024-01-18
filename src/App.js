@@ -2,8 +2,8 @@ import Navbar from "./components/navbar/navbar";
 import "./App.css";
 import coverImage_1 from "./Images/cover.jpg";
 import coverImage_2 from "./Images/cover-2.png";
-
 import door_A1 from "./Images/door-animation-1.png";
+import test_card from "./Images/test-card.jpg";
 
 function App() {
   return (
@@ -35,6 +35,25 @@ function App() {
           </div>
         </div>
       </div>
+    
+    
+    <div className="">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">FLIP CARD</p>
+            <p>Hover Me</p>
+          </div>
+            <div class="flip-card-back">
+              <img className=" rounded-2xl"
+              src={test_card}
+              alt="nature image"
+              />
+            </div>
+        </div>
+      </div>
+    </div>
+      
 
       <Navbar />
     </div>
