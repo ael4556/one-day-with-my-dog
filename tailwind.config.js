@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Prompt", "sans-serif"],
+        sans: ["IBM Plex Sans Thai Looped", "sans-serif"],
       },
     },
   },
