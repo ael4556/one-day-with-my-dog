@@ -22,11 +22,13 @@ function App() {
   const cloundRightRef = useRef();
   const cloundLeftBottomRef = useRef();
   const textRef = useRef();
+  const text2Ref = useRef();
   //Animation
   useEffect(() => {
     //get Ref
 
     const text = textRef.current;
+    const text2 = text2Ref.current;
 
     const el = sunRef.current;
     const cloundLeft = cloundLeftTopRef.current;
@@ -41,6 +43,18 @@ function App() {
         duration: 3,
         scrollTrigger: {
           trigger: text,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text2,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 3,
+        scrollTrigger: {
+          trigger: text2,
         },
       }
     );
@@ -183,6 +197,7 @@ function App() {
               paddingTop: "80vh",
             }}
             className="flex flex-col justify-center text-3xl"
+            ref={text2Ref}
           >
             <p>
               เช้าวันหยุดอันสดใสได้เริ่มต้นขึ้นด้วยการทักทายจากมีตังค์เจ้าตูบแสนน่ารัก
