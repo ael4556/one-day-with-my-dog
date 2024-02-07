@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c1b1f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_6" data-name="Layer 6">
+    <rect class="cls-1" x="29" y="1.5" width="10" height="7" rx="3.5" ry="3.5" transform="translate(39 -29) rotate(90)"/>
+    <rect class="cls-1" x="48.5" y="9.5" width="10" height="7" rx="3.5" ry="3.5" transform="translate(101.47 -14.01) rotate(136.96)"/>
+    <rect class="cls-1" x="9.5" y="9.5" width="10" height="7" rx="3.5" ry="3.5" transform="translate(12.78 -6.4) rotate(43.04)"/>
+    <rect class="cls-1" y="30.5" width="10" height="7" rx="3.5" ry="3.5"/>
+    <rect class="cls-1" x="58" y="30.5" width="10" height="7" rx="3.5" ry="3.5"/>
+    <path class="cls-1" d="M51,34c0-9.39-7.61-17-17-17s-17,7.61-17,17c0,5.65,2.76,10.63,7,13.73v10.76c0,3.6,2.92,6.51,6.51,6.51h6.97c3.6,0,6.51-2.92,6.51-6.51v-10.76c4.24-3.09,7-8.08,7-13.73ZM37,51v4.71c0,1.26-.61,2.29-1.35,2.29h-3.29c-.75,0-1.35-1.02-1.35-2.29v-4.71h6ZM34,44c-5.52,0-10-4.48-10-10s4.48-10,10-10,10,4.48,10,10-4.48,10-10,10Z"/>
+  </g>
+</svg>
