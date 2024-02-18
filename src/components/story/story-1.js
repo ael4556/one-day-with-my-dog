@@ -41,7 +41,7 @@ function Story1() {
   }, []);
 
   return (
-    <div className="flex flex-col pt-[30vh] xl:pt-[50vh] 2xl:pt-[120vh]">
+    <div>
       <div className="bg-center">
         <div className="flex flex-row justify-around">
           <img src={door_a1} alt="Door_A1" className=" w-1/5" />

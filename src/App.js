@@ -4,7 +4,13 @@ import "./App.css";
 import cover from "./Images/cover.jpg";
 
 import Logo from "./components/logo/logo";
+import ClockTop from "./components/clock";
+import Chat from "./components/chat";
+
 import Story1 from "./components/story/story-1";
+import Story2 from "./components/story/story-2";
+import Story3 from "./components/story/story-3";
+import Story4 from "./components/story/story-4";
 
 function App() {
   return (
@@ -21,7 +27,27 @@ function App() {
         }}
       >
         <Logo />
-        <Story1 />
+        <div className="flex flex-col pt-[30vh] xl:pt-[50vh] 2xl:pt-[120vh]">
+          <Story1 />
+        </div>
+        <div>
+          <ClockTop time="7.00" />
+        </div>
+        <div className=" flex justify-center">
+          <Story2 />
+        </div>
+        <div className="flex flex-col pt-40 justify-center justify-items-center">
+          <Story3 />
+        </div>
+        <div className="flex justify-center pt-12">
+          <Chat
+            text="“ไง~ มีตังค์ เมื่อคืนขอโทษน๊าา เหนื่อยไปหน่อย”"
+            showIcon={false}
+          />
+        </div>
+        <div className="flex flex-col">
+          <Story4 />
+        </div>
       </div>
     </div>
   );
