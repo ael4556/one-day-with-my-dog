@@ -41,10 +41,10 @@ function Chat({ text = "ไม่มีข้อความ", isMe = true, show
 
     gsap.fromTo(
       messages_animation,
-      { opacity: 0},
+      { opacity: 0, yPercent: +10 },
       {
         opacity: 1,
-        yPercent: -10,
+        yPercent: 0,
         duration: 0.3,
         delay: 0.3,
         scrollTrigger: {
@@ -55,7 +55,17 @@ function Chat({ text = "ไม่มีข้อความ", isMe = true, show
   }, []);
 
   return (
-    <div className={`flex ${isMe ? "justify-end" : "justify-start"}`}>
+    <div className={`flex gap-10 ${isMe ? "justify-end" : "justify-start"}`}>
+      {!isMe && showIcon && (
+        <div>
+          <img
+            ref={icons}
+            src={icon_face}
+            alt="Current User Icon"
+            className=" w-32 h-32 border-8 border-gray-300 bg-gray-200 p-3 rounded-full"
+          />
+        </div>
+      )}
       <div
         ref={messages}
         className="text-5xl bg-gray-200  rounded-full p-8 shadow-lg  border-8 border-gray-300"
@@ -63,7 +73,7 @@ function Chat({ text = "ไม่มีข้อความ", isMe = true, show
         {text}
       </div>
       {isMe && showIcon && (
-        <div className="ml-10">
+        <div>
           <img
             ref={icons}
             src={icon_face}

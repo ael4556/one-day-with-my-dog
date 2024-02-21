@@ -22,6 +22,7 @@ function Story4() {
       <div className="flex pt-40 justify-center">
         <Chat
           text="“มีตังค์ อึอึ๊ เร็ว เดี๋ยววันนี้ เรามีอะไรต้องทำเยอะนะ”"
+          isMe={false}
           showIcon={true}
         />
       </div>
