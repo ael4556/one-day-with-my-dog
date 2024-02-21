@@ -1,3 +1,5 @@
+import icon_face from "../Images/SVG/icon-time.svg";
+
 function ClockTop({ time = "0.00" }) {
   return (
     <div className="flex justify-end">

@@ -20,7 +20,7 @@ function Chat({ text = "ไม่มีข้อความ", isMe = true, show
       { scale: 0 },
       {
         scale: 1.25,
-        duration: 0.5,
+        duration: 0.2,
         scrollTrigger: {
           trigger: icons_animation,
         },
@@ -31,8 +31,8 @@ function Chat({ text = "ไม่มีข้อความ", isMe = true, show
       { scale: 1.25 },
       {
         scale: 1,
-        duration: 0.5,
-        delay: 0.5,
+        duration: 0.2,
+        delay: 0.2,
         scrollTrigger: {
           trigger: icons_animation,
         },
@@ -41,10 +41,10 @@ function Chat({ text = "ไม่มีข้อความ", isMe = true, show
 
     gsap.fromTo(
       messages_animation,
-      { scale: 0 },
+      { scale: 0.9},
       {
         scale: 1,
-        duration: 0.5,
+        duration: 0.2,
         delay: 0.3,
         scrollTrigger: {
           trigger: messages_animation,
