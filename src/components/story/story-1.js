@@ -53,10 +53,10 @@ function Story1() {
             <p className="text-3xl pt-12">
               กับร่างกายที่อ่อนแรงกลับบ้านมา ด้วยใจที่ห่อเหี่ยว
             </p>
-            <p className="text-3xl">
+            <p className="text-3xl pt-3">
               จากการโหมงานหนัก เปิดประตูเข้าห้องนอนที่มืดสนิท
             </p>
-            <p className="text-3xl">แล้วตรงดิ่งไปที่เตียง</p>
+            <p className="text-3xl pt-3">แล้วตรงดิ่งไปที่เตียง</p>
           </div>
         </div>
       </div>
@@ -72,10 +72,10 @@ function Story1() {
           <p className="text-3xl pt-32">
             หลังจากนั้นคุณก็ฟุบลงบนที่นอนแล้วหลับไป
           </p>
-          <p className="text-3xl">
+          <p className="text-3xl pt-3">
             โดยไม่ได้สังเกตุว่ามีสายตาคู่หนึ่งจ้องมองอยู่
           </p>
-          <p className="text-3xl">เพราะในวันนี้คุณได้หมดแรงกับงานที่ทำแล้ว</p>
+          <p className="text-3xl pt-3">เพราะในวันนี้คุณได้หมดแรงกับงานที่ทำแล้ว</p>
         </div>
       </div>
     </div>
