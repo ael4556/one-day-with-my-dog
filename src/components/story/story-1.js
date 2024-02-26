@@ -44,7 +44,7 @@ function Story1() {
     <div>
       <div className="bg-center">
         <div className="flex flex-row justify-around">
-          <img src={door_a1} alt="Door_A1" className=" w-1/5" />
+          <img src={door_a1} alt="Door_A1" className=" w-1/4" />
           <div
             ref={textRef}
             className="flex flex-col justify-start text-white pt-56"
