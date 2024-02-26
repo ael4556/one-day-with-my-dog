@@ -4,7 +4,7 @@ import logo from "../../Images/logo.png"
 const Logo = () => {
   return (
     <div className="h-screen flex items-center justify-center">
-      <img src={logo} alt="Logo" className=" w-2/4 py-28" />
+      <img src={logo} alt="Logo" className=" w-3/4 pt-28" />
     </div>
   );
 };
