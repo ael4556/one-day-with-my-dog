@@ -11,6 +11,7 @@ import Story1 from "./components/story/story-1";
 import Story2 from "./components/story/story-2";
 import Story3 from "./components/story/story-3";
 import Story4 from "./components/story/story-4";
+import Story5 from "./components/story/story-5";
 
 function App() {
   return (
@@ -48,6 +49,9 @@ function App() {
         </div>
         <div className="flex flex-col">
           <Story4 />
+        </div>
+        <div className="flex flex-col">
+          <Story5 />
         </div>
       </div>
     </div>

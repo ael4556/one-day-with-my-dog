@@ -18,24 +18,24 @@ function Story1() {
       { opacity: 0 },
       {
         opacity: 1,
-        duration: 2,
-        delay: 1,
+        duration: 1,
+        delay: 0.75,
         scrollTrigger: {
           trigger: text,
         },
       }
     );
-    
+
   }, []);
 
   return (
     <div>
       <div className="bg-center">
         <div className="flex flex-row justify-around">
-          <img src={door_a1} alt="Door_A1" className=" w-1/4" />
+          <img src={door_a1} alt="Door_A1" className=" w-1/4 h-1/4" />
           <div
             ref={textRef}
-            className="flex flex-col justify-start text-white pt-56"
+            className="flex flex-col justify-start text-white pt-56 "
           >
             <h1 className="text-5xl">คุณที่แสนเหนื่อยล้า...</h1>
             <p className="text-3xl pt-12">
