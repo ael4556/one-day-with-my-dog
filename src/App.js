@@ -14,6 +14,7 @@ import Story4 from "./components/story/story-4";
 
 function App() {
   return (
+    <>
     <div className="font-sans">
       <Navbar />
       {/* Start Web contents*/}
@@ -50,6 +51,7 @@ function App() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

@@ -1,3 +1,14 @@
+
+body {
+  
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/*body::-webkit-scrollbar {
+  display: none;
+
+}*/
+
 .flip-card {
     background-color: transparent;
     width: 190px;

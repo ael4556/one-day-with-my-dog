@@ -9,35 +9,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Story1() {
   const textRef = useRef();
-  const text2Ref = useRef();
 
   useEffect(() => {
     const text = textRef.current;
-    const text2 = text2Ref.current;
 
     gsap.fromTo(
       text,
       { opacity: 0 },
       {
         opacity: 1,
-        duration: 3,
+        duration: 2,
+        delay: 1,
         scrollTrigger: {
           trigger: text,
         },
       }
     );
-
-    gsap.fromTo(
-      text2,
-      { opacity: 0 },
-      {
-        opacity: 1,
-        duration: 3,
-        scrollTrigger: {
-          trigger: text2,
-        },
-      }
-    );
+    
   }, []);
 
   return (
