@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import soundURL from "../../Sounds/ambient-1.mp3";
-import SoundOn from "../../Images/SVG/music-on.svg";
-import SoundOff from "../../Images/SVG/music-of.svg";
+import SoundOn from "../../Images/SVG/music-on.png";
+import SoundOff from "../../Images/SVG/music-of.png";
 
 const MusicButton = () => {
   const [play, setPlay] = useState(true);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BurgerIcon from "../../Images/SVG/menu-burger.svg";
+import BurgerIcon from "../../Images/SVG/menu-burger.png";
 import MusicButton from "./music-button";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +31,7 @@ const Navbar = () => {
             <ul className="text-xl font-mono ">
               <li>
                 <button
-                  className=" hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-green-700 duration-300 rounded-full py-2 px-6"
+                  className=" hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
                   onClick={() => scrollAction("Content0")}
                 >
                   Story 1
@@ -39,7 +39,7 @@ const Navbar = () => {
               </li>
               <li>
                 <button
-                  className=" hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-green-700 duration-300 rounded-full py-2 px-6"
+                  className=" hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
                   onClick={() => scrollAction("Content")}
                 >
                   Story 2
@@ -47,7 +47,7 @@ const Navbar = () => {
               </li>
               <li>
                 <button
-                  className=" hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-green-700 duration-300 rounded-full py-2 px-6"
+                  className=" hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
                   onClick={() => scrollAction("Content")}
                 >
                   Story 3
