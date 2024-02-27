@@ -35,6 +35,7 @@ function Story2() {
         duration: 3,
         scrollTrigger: {
           trigger: text,
+          toggleActions : 'restart'
         },
       }
     );
@@ -47,6 +48,7 @@ function Story2() {
         duration: 3,
         scrollTrigger: {
           trigger: text2,
+          toggleActions : 'restart'
         },
       }
     );
@@ -59,6 +61,7 @@ function Story2() {
         duration: 1,
         scrollTrigger: {
           trigger: sun,
+          toggleActions : 'restart'
         },
       }
     );
@@ -68,6 +71,7 @@ function Story2() {
       duration: 2,
       scrollTrigger: {
         trigger: cloundLeft,
+        toggleActions : 'restart none none'
       },
     });
 
@@ -76,6 +80,7 @@ function Story2() {
       duration: 2,
       scrollTrigger: {
         trigger: cloundRight,
+        toggleActions : 'restart none none'
       },
     });
 
@@ -84,6 +89,7 @@ function Story2() {
       duration: 2,
       scrollTrigger: {
         trigger: cloundLeftBottom,
+        toggleActions : 'restart none none'
       },
     });
   }, []);

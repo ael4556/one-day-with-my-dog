@@ -22,13 +22,14 @@ function Story5() {
 
     gsap.fromTo(
       text_story5_1,
-      { opacity: 0 },
+      { scale: 0 },
       {
-        opacity: 1,
-        duration: 1,
-        delay: 0.75,
+        scale: 1,
+        duration: 0.2,
+        delay: 0.5,
         scrollTrigger: {
           trigger: text_story5_1,
+          toggleActions : 'restart'
         },
       }
     );
@@ -50,14 +51,16 @@ function Story5() {
         <img className=" w-full" src={table_Dog} alt="table_Dog" />
       </div>
       <div ref={text_story5_1Ref} className=" flex flex-col pt-56">
-        <p className="text-5xl flex justify-center">เรามาเลือกอาหารมื้อพิเศษ</p>
+        <p className="text-5xl flex justify-center">
+          เรามาเลือกอาหารมื้อพิเศษ
+        </p>
         <p className="text-5xl font-bold flex justify-center pt-10">
           ที่เหมาะกับมีตังค์เถอะ
         </p>
       </div>
-      <div className="flex justify-center text-[#d65e35] text-6xl pt-56  font-semibold">
+      <p className="flex justify-center text-[#d65e35] text-6xl pt-56  font-semibold">
         เลือกอาหารที่เหมาะสม
-      </div>
+      </p>
       <div
         className="flex justify-around pt-40 flex-row gap-4"
         style={{

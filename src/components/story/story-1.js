@@ -22,6 +22,7 @@ function Story1() {
         delay: 0.75,
         scrollTrigger: {
           trigger: text,
+          toggleActions : 'restart'
         },
       }
     );

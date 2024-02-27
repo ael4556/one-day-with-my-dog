@@ -28,6 +28,7 @@ function Chat({
         duration: 0.3,
         scrollTrigger: {
           trigger: icons_animation,
+          toggleActions : 'restart'
         },
       }
     );
@@ -40,6 +41,7 @@ function Chat({
         delay: 0.2,
         scrollTrigger: {
           trigger: icons_animation,
+          toggleActions : 'restart'
         },
       }
     );
@@ -54,6 +56,7 @@ function Chat({
         delay: 0.3,
         scrollTrigger: {
           trigger: messages_animation,
+          toggleActions : 'restart'
         },
       }
     );
