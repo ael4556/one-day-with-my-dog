@@ -16,9 +16,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Story5() {
   const text_story5_1Ref = useRef();
+  const text_story5_2Ref = useRef();
+  const text_story5_3Ref = useRef();
 
   useEffect(() => {
     const text_story5_1 = text_story5_1Ref.current;
+    const text_story5_2 = text_story5_2Ref.current;
+    const text_story5_3 = text_story5_3Ref.current;
 
     gsap.fromTo(
       text_story5_1,
@@ -33,6 +37,35 @@ function Story5() {
         },
       }
     );
+
+    gsap.fromTo(
+      text_story5_2,
+      { scale: 0 },
+      {
+        scale: 1,
+        duration: 0.2,
+        delay: 0.75,
+        scrollTrigger: {
+          trigger: text_story5_2,
+          toggleActions : 'restart'
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_story5_3,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 0.5,
+        delay: 0.5,
+        scrollTrigger: {
+          trigger: text_story5_3,
+          toggleActions : 'restart'
+        },
+      }
+    );
+
   }, []);
 
   return (
@@ -58,7 +91,7 @@ function Story5() {
           ที่เหมาะกับมีตังค์เถอะ
         </p>
       </div>
-      <p className="flex justify-center text-[#d65e35] text-6xl pt-56  font-semibold">
+      <p ref={text_story5_1Ref} className="flex justify-center text-[#d65e35] text-6xl pt-56  font-semibold">
         เลือกอาหารที่เหมาะสม
       </p>
       <div
@@ -94,7 +127,7 @@ function Story5() {
       <div className="pt-12 gap-4 grid ml-12 grid-cols-3">
         <img className=" w-4/6" src={microwave} alt="table_Dog" />
         <img className=" w-4/6" src={bowl} alt="table_Dog" />
-        <div className="flex justify-end max-w-xl pt-24">
+        <div ref={text_story5_3Ref} className="flex justify-end max-w-xl pt-24">
           <p className="text-4xl flex justify-center">
             หลังจากนั้นคุณก็เดินไปหยิบข้าวกล่อง ในตู้เย็นพร้อมเทใส่จาน
             เอาเข้าเวฟแล้วเอามานั่งกินข้างเจ้ามีตังค์
