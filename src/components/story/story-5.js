@@ -91,7 +91,7 @@ function Story5() {
           ที่เหมาะกับมีตังค์เถอะ
         </p>
       </div>
-      <p ref={text_story5_1Ref} className="flex justify-center text-[#d65e35] text-6xl pt-56  font-semibold">
+      <p ref={text_story5_2Ref} className=" flex justify-center text-[#d65e35] text-7xl pt-56  font-semibold">
         เลือกอาหารที่เหมาะสม
       </p>
       <div

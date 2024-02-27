@@ -3,7 +3,8 @@ import { useEffect, useRef } from "react";
 import sleep_night from "../../Images/story_1/human-sleep.png";
 import door_a1 from "../../Images/door-animation-1.png";
 import text_png_story1 from "../../Images/SVG/text-stroke-1.png"
-import dog_look from "../../Images/story_1/dogs-look.png"
+import dog_look from "../../Images/story_1/dogs-look-test.png"
+
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -65,10 +66,10 @@ function Story1() {
 
     gsap.fromTo(
       doglook,
-      { opacity: 0 },
+      { opacity: 1 },
       {
         opacity: 1,
-        duration: 5,
+        duration: 1,
         delay: 1,
         scrollTrigger: {
           trigger: doglook,
@@ -110,7 +111,7 @@ function Story1() {
         />
         <img
           ref={doglookRef}
-          className=" w-[100%] absolute pt-[23.3%]"
+          className=" w-[30%] absolute pt-[27.65%] right-[5%]"
           src={dog_look}
           alt="text_png_story1"
         />
