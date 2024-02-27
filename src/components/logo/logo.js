@@ -1,6 +1,5 @@
-import logo_dog from "../../Images/logo-onday-with-mydog.png";
-import logo from "../../Images/logo.png"
-import doglogo from "../../Images/Dog_Homepage.png"
+import logo from "../../Images/logo/logo.png"
+import doglogo from "../../Images/logo/Dog_Homepage.png"
 
 const Logo = () => {
   return (
