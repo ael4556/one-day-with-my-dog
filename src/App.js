@@ -41,12 +41,6 @@ function App() {
         <div className="flex flex-col pt-40 justify-center justify-items-center">
           <Story3 />
         </div>
-        <div className="flex justify-center pt-12">
-          <Chat
-            text="“ไง~ มีตังค์ เมื่อคืนขอโทษน๊าา เหนื่อยไปหน่อย”"
-            showIcon={false}
-          />
-        </div>
         <div className="flex flex-col">
           <Story4 />
         </div>
