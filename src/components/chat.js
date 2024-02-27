@@ -7,7 +7,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-function Chat({ text = "ไม่มีข้อความ", isMe = true, showIcon = true }) {
+function Chat({
+  text = "ไม่มีข้อความ",
+  isMe = true,
+  showIcon = true,
+  isDog = false,
+}) {
   const messages = useRef();
   const icons = useRef();
 
@@ -60,7 +65,7 @@ function Chat({ text = "ไม่มีข้อความ", isMe = true, show
         <div>
           <img
             ref={icons}
-            src={icon_face}
+            src={isDog ? icon_dog : icon_face}
             alt="Current User Icon"
             className=" w-32 h-32 border-8 border-gray-300 bg-gray-200 p-3 rounded-full"
           />
@@ -76,7 +81,7 @@ function Chat({ text = "ไม่มีข้อความ", isMe = true, show
         <div>
           <img
             ref={icons}
-            src={icon_face}
+            src={isDog ? icon_dog : icon_face}
             alt="Current User Icon"
             className=" w-32 h-32 border-8 border-gray-300 bg-gray-200 p-3 rounded-full"
           />
