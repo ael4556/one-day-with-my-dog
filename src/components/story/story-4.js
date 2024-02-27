@@ -1,6 +1,6 @@
 import dog_down_stairs from "../../Images/Dog-down-stairs.jpg";
-import dog_poof_start from "../../Images/dog-poop.jpg";
-import dog_poof_finish from "../../Images/dog-poop-finish.jpg";
+import dog_poof_start from "../../Images/story_4/dog-poop.jpg";
+import dog_poof_finish from "../../Images/story_4/dog-poop-finish.jpg";
 import poof from "../../Images/poop.gif";
 import Chat from "../chat";
 
@@ -29,7 +29,7 @@ function Story4() {
       <div className="flex justify-around pt-64">
         <img className="w-2/5" src={dog_poof_start} alt="dog_poof2" />
         <img
-          className="w-[5%] absolute left-[13%] pt-[33%]"
+          className="w-[6%] absolute left-[13%] pt-[33%]"
           src={poof}
           alt="poof"
         />

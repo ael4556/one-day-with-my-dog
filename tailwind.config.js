@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         sans: ["IBM Plex Sans Thai Looped", "sans-serif"],
       },
+      /*fontFamily: {
+        mali: ["Mali", "regular"],
+      },*/
     },
   },
   plugins: [],

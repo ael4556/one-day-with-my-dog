@@ -88,25 +88,25 @@ function Story2() {
   return (
     <>
       <img
-        className="absolute  left-[20%]"
+        className="absolute  left-[20%] pt-10"
         ref={cloundLeftTopRef}
         src={cloundLeftTop}
         alt="sun_morning"
       />
       <img
-        className="absolute w-5/6"
+        className="absolute w-5/6 pt-10"
         ref={sunRef}
         src={sun}
         alt="sun_morning"
       />
       <img
-        className="absolute right-[20%]"
+        className="absolute right-[20%] pt-10"
         ref={cloundRightRef}
         src={cloundRight}
         alt="sun_morning"
       />
       <img
-        className="absolute left-[20%]"
+        className="absolute left-[20%] pt-10"
         ref={cloundLeftBottomRef}
         src={cloundLeftBottom}
         alt="sun_morning"

@@ -5,7 +5,7 @@ import Card from "../card";
 
 import cook_table from "../../Images/table.png";
 import dog_bowl from "../../Images/dog-bowl.png";
-import table_Dog from "../../Images/table-dog.jpg";
+import table_Dog from "../../Images/story_5/table-dog.jpg";
 import microwave from "../../Images/microwave.png";
 import bowl from "../../Images/human-bowl.png";
 

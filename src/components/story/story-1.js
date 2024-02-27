@@ -1,28 +1,79 @@
 import { useEffect, useRef } from "react";
 
-import sleep_night from "../../Images/sleep-whit-dog-night.jpg";
+import sleep_night from "../../Images/story_1/human-sleep.png";
 import door_a1 from "../../Images/door-animation-1.png";
+import text_png_story1 from "../../Images/SVG/text-stroke-1.png"
+import dog_look from "../../Images/story_1/dogs-look.png"
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story1() {
-  const textRef = useRef();
+  const text_story1_1Ref = useRef();
+  const text_story1_2Ref = useRef();
+  const door_1Ref = useRef();
+  const doglookRef = useRef();
 
   useEffect(() => {
-    const text = textRef.current;
+    const text_story1_1 = text_story1_1Ref.current;
+    const text_story1_2 = text_story1_2Ref.current;
+    const door_1 = door_1Ref.current;
+    const doglook = doglookRef.current;
 
     gsap.fromTo(
-      text,
+      text_story1_1,
       { opacity: 0 },
       {
         opacity: 1,
         duration: 1,
         delay: 0.75,
         scrollTrigger: {
-          trigger: text,
+          trigger: text_story1_1,
           toggleActions : 'restart'
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_story1_2,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        delay: 0.5,
+        scrollTrigger: {
+          trigger: text_story1_2,
+          toggleActions : 'restart'
+        },
+      }
+    );
+
+    gsap.fromTo(
+      door_1,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 0.5,
+        delay: 0.25,
+        scrollTrigger: {
+          trigger: door_1,
+          toggleActions : 'restart'
+        },
+      }
+    );
+
+    gsap.fromTo(
+      doglook,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 5,
+        delay: 1,
+        scrollTrigger: {
+          trigger: doglook,
+          toggleActions : 'restart',
+          
         },
       }
     );
@@ -33,9 +84,9 @@ function Story1() {
     <div>
       <div className="bg-center">
         <div className="flex flex-row justify-around">
-          <img src={door_a1} alt="Door_A1" className=" w-1/4 h-1/4" />
+          <img src={door_a1} alt="Door_A1" className=" w-[30%]" ref={door_1Ref}/>
           <div
-            ref={textRef}
+            ref={text_story1_1Ref}
             className="flex flex-col justify-start text-white pt-56 "
           >
             <h1 className="text-5xl">คุณที่แสนเหนื่อยล้า...</h1>
@@ -49,23 +100,20 @@ function Story1() {
           </div>
         </div>
       </div>
-      <div
-        className="w-full bg-center"
-        style={{
-          backgroundImage: `url(${sleep_night})`,
-          backgroundRepeat: "no-repeat",
-          height: "130vh",
-        }}
-      >
-        <div className="flex flex-col  text-black pt-56 pl-28 2xl:pl-64">
-          <p className="text-3xl pt-32">
-            หลังจากนั้นคุณก็ฟุบลงบนที่นอนแล้วหลับไป
-          </p>
-          <p className="text-3xl pt-3">
-            โดยไม่ได้สังเกตุว่ามีสายตาคู่หนึ่งจ้องมองอยู่
-          </p>
-          <p className="text-3xl pt-3">เพราะในวันนี้คุณได้หมดแรงกับงานที่ทำแล้ว</p>
-        </div>
+      <div className="flex pt-0">
+        <img className=" w-[100%]" src={sleep_night} alt="sleep_night" />
+        <img
+          ref={text_story1_2Ref}
+          className=" w-[45%] absolute pl-60 pt-60"
+          src={text_png_story1}
+          alt="text_png_story1"
+        />
+        <img
+          ref={doglookRef}
+          className=" w-[100%] absolute pt-[23.3%]"
+          src={dog_look}
+          alt="text_png_story1"
+        />
       </div>
     </div>
   );

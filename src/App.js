@@ -1,11 +1,12 @@
+import React, { useState, useEffect } from 'react';
+
 import Navbar from "./components/navbar/navbar";
 import "./App.css";
 
-import cover from "./Images/cover.jpg";
+import cover from "./Images/logo/bg-cover.png";
 
 import Logo from "./components/logo/logo";
 import ClockTop from "./components/clock";
-import Chat from "./components/chat";
 
 import Story1 from "./components/story/story-1";
 import Story2 from "./components/story/story-2";
@@ -13,10 +14,44 @@ import Story3 from "./components/story/story-3";
 import Story4 from "./components/story/story-4";
 import Story5 from "./components/story/story-5";
 
-function App() {
+const App = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [backgroundOpacity, setBackgroundOpacity] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+
+      // กำหนดตำแหน่งที่คุณต้องการเปลี่ยนสี
+      const scrollThreshold = 2600;
+
+      if (position > scrollThreshold) {
+        document.body.style.backgroundColor = 'white'; // เปลี่ยนสีพื้นหลัง
+        setBackgroundOpacity(1); // เปลี่ยน opacity เป็น 1 เมื่อเลื่อนไปยังตำแหน่งที่กำหนด
+      } else {
+        document.body.style.backgroundColor = '#1B192D'; // คืนค่าสีพื้นหลังเป็นสีดีฟอลต์
+        setBackgroundOpacity(0); // เปลี่ยน opacity เป็น 0 เมื่อไม่ได้เลื่อนไปยังตำแหน่งที่กำหนด
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const style = {
+    transition: 'opacity 3s',
+    opacity: backgroundOpacity,
+    width: '100%',
+    height: '2000px',
+  };// useEffect จะทำงานเฉพาะครั้งแรกที่ component ถูก mount
+
   return (
     <>
-    <div className="font-sans">
+    <div className="font-sans" >
       <Navbar />
       {/* Start Web contents*/}
       <div
@@ -24,26 +59,32 @@ function App() {
         style={{
           backgroundImage: `url(${cover})`,
           backgroundRepeat: "no-repeat",
-          height: "800vh",
+          height: "100%",
           backgroundSize: "contain",
         }}
       >
         <Logo />
-        <div className="flex flex-col pt-[30vh] xl:pt-[50vh] 2xl:pt-[120vh]">
+
+        <div className="flex flex-col pt-[30vh] xl:pt-[50vh] 2xl:pt-[75vh]">
           <Story1 />
         </div>
+
         <div>
           <ClockTop time="7.00" />
         </div>
+
         <div className=" flex justify-center">
           <Story2 />
         </div>
+
         <div className="flex flex-col pt-40 justify-center justify-items-center">
           <Story3 />
         </div>
+
         <div className="flex flex-col">
           <Story4 />
         </div>
+        
         <div className="flex flex-col">
           <Story5 />
         </div>
@@ -51,6 +92,6 @@ function App() {
     </div>
     </>
   );
-}
+};
 
 export default App;

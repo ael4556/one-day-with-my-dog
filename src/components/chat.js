@@ -76,7 +76,7 @@ function Chat({
       )}
       <div
         ref={messages}
-        className="text-5xl bg-gray-200  rounded-full p-8 shadow-lg  border-8 border-gray-300"
+        className="text-4xl bg-gray-200  rounded-full p-8 shadow-lg  border-8 border-gray-300"
       >
         {text}
       </div>
