@@ -28,10 +28,14 @@ function Story1() {
       {
         opacity: 1,
         duration: 1,
-        delay: 0.75,
+        delay: 0,
         scrollTrigger: {
           trigger: text_story1_1,
-          toggleActions : 'restart'
+          scrub : true,
+          start : "top 300px",
+          end : "top 10px",
+
+          markers : true,
         },
       }
     );
@@ -42,10 +46,14 @@ function Story1() {
       {
         opacity: 1,
         duration: 1,
-        delay: 0.5,
+        delay: 0,
         scrollTrigger: {
           trigger: text_story1_2,
-          toggleActions : 'restart'
+          scrub : true,
+          start : "top 300px",
+          end : "top 10px",
+
+          markers : true,
         },
       }
     );
@@ -55,26 +63,33 @@ function Story1() {
       { opacity: 0 },
       {
         opacity: 1,
-        duration: 0.5,
-        delay: 0.25,
+        duration: 2,
+        delay: 0,
         scrollTrigger: {
           trigger: door_1,
-          toggleActions : 'restart'
+          scrub : true,
+          start : "top 600px",
+          end : "top 10px",
+          
+          /* markers : true, */
         },
       }
     );
 
     gsap.fromTo(
       doglook,
-      { opacity: 1 },
+      { opacity: 0 },
       {
         opacity: 1,
-        duration: 1,
+        duration: 4,
         delay: 1,
         scrollTrigger: {
           trigger: doglook,
-          toggleActions : 'restart',
           
+          start : "buttom 300px",
+          end : "top 10px",
+
+          markers : true,      
         },
       }
     );
