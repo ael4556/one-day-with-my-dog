@@ -7,8 +7,8 @@ import cook_table from "../../Images/story_5/table.jpg";
 import dog_bowl from "../../Images/story_5/dog-bowl.png";
 import frung_fring from "../../Images/story_5/frungfrimg.gif";
 import table_Dog from "../../Images/story_5/table-dog.jpg";
-import microwave from "../../Images/microwave.png";
-import bowl from "../../Images/human-bowl.png";
+import microwave from "../../Images/story_5/microwave.png";
+import bowl from "../../Images/story_5/human-bowl.png";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -23,6 +23,8 @@ function Story5() {
   const dogtableRef = useRef();
   const bowl_dogRef = useRef();
   const frung_fringRef = useRef();
+  const microRef = useRef();
+  const humanbowlRef = useRef();
 
   useEffect(() => {
     const text_story5_1 = text_story5_1Ref.current;
@@ -32,6 +34,8 @@ function Story5() {
     const dogtable = dogtableRef.current;
     const bowl_dog = bowl_dogRef.current;
     const frung_fring = frung_fringRef.current;
+    const micro = microRef.current;
+    const humanbowl = humanbowlRef.current;
 
     gsap.fromTo(
       text_story5_1,
@@ -155,6 +159,40 @@ function Story5() {
         },
       }
     );
+    
+    gsap.fromTo(
+      micro,
+      { scale: 0.5},
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: micro,
+          scrub : true,
+          start :"1 80%",
+          end : "1 30%",
+
+         /*markers: true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      humanbowl,
+      { scale: 0.5},
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: humanbowl,
+          scrub : true,
+          start :"1 70%",
+          end : "1 20%",
+
+         /*markers: true,*/
+        },
+      }
+    );
 
   }, []);
 
@@ -221,14 +259,14 @@ function Story5() {
       </div>
       <div className="p-12">
         <Chat
-          text="“ค่อย ๆ กินก็ได้มีตังค ์ไม่มีใครแย่งหรอก” "
+          text="“ค่อย ๆ กินก็ได้มีตังค์ ไม่มีใครแย่งหรอก” "
           isMe={false}
           showIcon={true}
         />
       </div>
-      <div className="pt-12 gap-4 grid ml-12 grid-cols-3">
-        <img className=" w-4/6" src={microwave} alt="table_Dog" />
-        <img className=" w-4/6" src={bowl} alt="table_Dog" />
+      <div className="pt-12 grid ml-40 mr-40 grid-cols-3">
+        <img className=" w-4/6" src={microwave} alt="table_Dog" ref={microRef} />
+        <img className=" w-4/6" src={bowl} alt="table_Dog" ref={humanbowlRef} />
         <div ref={text_story5_4Ref} className="flex justify-end max-w-xl pt-24">
           <p className="text-3xl flex justify-center leading-relaxed">
             หลังจากนั้นคุณก็เดินไปหยิบข้าวกล่อง ในตู้เย็นพร้อมเทใส่จาน

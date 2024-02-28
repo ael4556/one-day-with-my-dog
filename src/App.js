@@ -15,6 +15,8 @@ import Story4 from "./components/story/story-4";
 import Story5 from "./components/story/story-5";
 import Story6 from "./components/story/story-6";
 import Story7 from "./components/story/story-7";
+import Story8 from "./components/story/story-8";
+import Story9 from "./components/story/story-9";
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -90,6 +92,13 @@ const App = () => {
           <div>
             <Story7 />
           </div>
+          <div>
+            
+          </div>
+          <div>
+            
+          </div>
+            <Story9 />
         </div>
       </div>
     </>

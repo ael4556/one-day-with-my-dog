@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+
 import Sunset from "../sunset";
 import ClockTop from "../clock";
 import Title from "../title";
@@ -11,7 +13,55 @@ import tail_4 from "../../Images/story_7/tail-tells-4.png";
 import tail_5 from "../../Images/story_7/tail-tells-5.png";
 import tail_6 from "../../Images/story_7/tail-tells-6.png";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 function Story7() {
+  const text_story7_1Ref = useRef();
+  const text_story7_2Ref = useRef();
+  
+  useEffect(() => {
+    const text_story7_1 = text_story7_1Ref.current;
+    const text_story7_2 = text_story7_2Ref.current;
+
+    gsap.fromTo(
+      text_story7_1,
+      { opacity: 0, yPercent: +20 },
+      {
+        opacity: 1,
+        yPercent : 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: text_story7_1,
+          scrub : true,
+          start : "1px 80%",
+          end : "1px 50%",
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_story7_2,
+      { opacity: 0, yPercent: +20 },
+      {
+        opacity: 1,
+        yPercent : 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: text_story7_2,
+          scrub : true,
+          start : "60px 80%",
+          end : "60px 50%",
+          /*markers : true,*/
+        },
+      }
+    );
+
+
+  }, []);
+
   return (
     <>
       <div className="pt-40">
@@ -20,12 +70,12 @@ function Story7() {
         <div className="pt-[90vh] flex justify-around">
           <img className="w-[30%]" src={yawn_dog} alt="yawn_dog" />
           <div className="max-w-xl flex flex-col text-3xl">
-            <p className=" leading-relaxed">
+            <p className=" leading-relaxed" ref={text_story7_1Ref}>
               ผ่านไปหลายชั่วโมงเจ้ามีตังค์ก็ตื่นนอนพร้อมบิดขี้เกียจ
               ทั้งแอนหน้าแอนหลัง จากนั้นก็เดินมาหาพร้อม ทำตาปริบ ๆ
               กระดิกหางด้วยความดีใจเพราะตื่นมา แล้วเจอเจ้านาย
             </p>
-            <p className="pt-32 leading-relaxed">
+            <p className="pt-32 leading-relaxed" ref={text_story7_2Ref}>
               โดยคุณสามารถรับรู้ความรู้สึกต่าง ๆ ของเจ้ามีตังค์ได้จาก “หาง”
             </p>
           </div>
@@ -34,14 +84,6 @@ function Story7() {
           <Title title="หางบอกอารมณ์" />
         </div>
         <div className="flex justify-center">
-          <a
-            href="https://www.baanlaesuan.com/158679/pets/training/wag-tail"
-            target="_blank"
-            className="underline text-xl"
-          >
-            หางสุนัขบอกอารมณ์ เข้าใจได้ด้วยภาษากายและท่าทาง - บ้านและสวน Pets
-            (baanlaesuan.com)
-          </a>
         </div>
         <div className="grid grid-cols-3 pt-40 justify-items-center gap-8 gap-y-20">
           <img className="w-[50%]" src={tail_1} alt="tail_1" />
