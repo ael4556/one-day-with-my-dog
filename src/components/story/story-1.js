@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 import sleep_night from "../../Images/story_1/human-sleep.png";
-import door_a1 from "../../Images/door-animation-1.png";
+import door_a1 from "../../Images/story_1/door-animation-1.png";
 import text_png_story1 from "../../Images/SVG/text-stroke-1.png"
 import dog_look from "../../Images/story_1/dogs-look-test.png"
 
@@ -32,10 +32,10 @@ function Story1() {
         scrollTrigger: {
           trigger: text_story1_1,
           scrub : true,
-          start : "top 300px",
-          end : "top 10px",
+          start : "300px 70%",
+          end : "300px 30%",
 
-          markers : true,
+          /*markers : true,*/
         },
       }
     );
@@ -50,10 +50,10 @@ function Story1() {
         scrollTrigger: {
           trigger: text_story1_2,
           scrub : true,
-          start : "top 300px",
-          end : "top 10px",
+          start : "1px 40%",
+          end : "1px 10%" ,
 
-          markers : true,
+          /*markers : true,*/
         },
       }
     );
@@ -85,11 +85,11 @@ function Story1() {
         delay: 1,
         scrollTrigger: {
           trigger: doglook,
-          
-          start : "buttom 300px",
-          end : "top 10px",
+          scrub : true,
+          start : "700px 90%",
+          end : "700px 30%",
 
-          markers : true,      
+          /* markers : true, */    
         },
       }
     );
@@ -117,7 +117,7 @@ function Story1() {
         </div>
       </div>
       <div className="flex pt-0">
-        <img className=" w-[100%]" src={sleep_night} alt="sleep_night" />
+        <img className=" w-[100%] pt-10" src={sleep_night} alt="sleep_night" />
         <img
           ref={text_story1_2Ref}
           className=" w-[45%] absolute pl-60 pt-60"
@@ -126,7 +126,7 @@ function Story1() {
         />
         <img
           ref={doglookRef}
-          className=" w-[30%] absolute pt-[27.65%] right-[5%]"
+          className=" w-[30%] absolute pt-[29.7%] right-[5%]"
           src={dog_look}
           alt="text_png_story1"
         />

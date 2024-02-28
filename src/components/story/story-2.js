@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story2() {
+  
   const text_story2_1Ref = useRef();
 
   const sunRef = useRef();
@@ -30,12 +31,15 @@ function Story2() {
       { opacity: 0 },
       {
         opacity: 1,
-        duration: 0.5,
-        delay: 1.5,
+        duration: 2,
+        delay: 0,
         scrollTrigger: {
           trigger: text_story2_1,
-          toggleActions : 'restart',
-          start : "top bottom",
+          scrub : true,
+          start : "700px 90%",
+          end : "500px 50%",
+
+          /* markers : true, */    
         },
       }
     );

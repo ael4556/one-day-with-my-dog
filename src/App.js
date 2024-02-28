@@ -69,7 +69,7 @@ const App = () => {
           <div className="flex flex-col pt-[30vh] xl:pt-[50vh] 2xl:pt-[75vh]">
             <Story1 />
           </div>
-          <div>
+          <div className=" pt-40">
             <ClockTop time="7.00" />
           </div>
           <div className=" flex justify-center">
