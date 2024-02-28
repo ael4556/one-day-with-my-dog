@@ -19,10 +19,11 @@ function Story4() {
 
     gsap.fromTo(
       dogdown,
-      { yPercent: 0, xPercent : 0},
+      { yPercent: 0, xPercent : 0, scale : 0.9},
       {
         yPercent: +30,
         xPercent: -25,
+        scale : 1.1,
         duration: 3,
         delay: 0,
         scrollTrigger: {

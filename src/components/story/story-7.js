@@ -20,12 +20,12 @@ function Story7() {
         <div className="pt-[90vh] flex justify-around">
           <img className="w-[30%]" src={yawn_dog} alt="yawn_dog" />
           <div className="max-w-xl flex flex-col text-3xl">
-            <p>
+            <p className=" leading-relaxed">
               ผ่านไปหลายชั่วโมงเจ้ามีตังค์ก็ตื่นนอนพร้อมบิดขี้เกียจ
-              ทั้งแอนหน้าแอนหลัง จากนั้นมีตังค์ก็เดินมาหาพร้อม ทำตาปริบ ๆ
+              ทั้งแอนหน้าแอนหลัง จากนั้นก็เดินมาหาพร้อม ทำตาปริบ ๆ
               กระดิกหางด้วยความดีใจเพราะตื่นมา แล้วเจอเจ้านาย
             </p>
-            <p className="pt-32">
+            <p className="pt-32 leading-relaxed">
               โดยคุณสามารถรับรู้ความรู้สึกต่าง ๆ ของเจ้ามีตังค์ได้จาก “หาง”
             </p>
           </div>
