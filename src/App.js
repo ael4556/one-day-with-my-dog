@@ -92,13 +92,11 @@ const App = () => {
           <div>
             <Story7 />
           </div>
-          <div>
-            
+          <div className="pt-60">
+            <Story8 />
           </div>
-          <div>
-            
-          </div>
-            <Story9 />
+          <div></div>
+          <Story9 />
         </div>
       </div>
     </>

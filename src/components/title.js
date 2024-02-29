@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Title({ title = "หัวข้อ" }) {
   return (
-    <p className=" flex justify-center text-[#d65e35] text-7xl pt-56  font-semibold">
+    <p className=" font-mali flex justify-center text-[#d65e35] text-7xl pt-56  font-semibold">
       {title}
     </p>
   );

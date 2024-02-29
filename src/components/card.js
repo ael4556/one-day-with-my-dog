@@ -6,17 +6,24 @@ function Card({
   image = image_frame,
 }) {
   return (
-    <div className="flex flex-col max-w-sm rounded-2xl h-[60vh] shadow-lg bg-white">
-      <div className="flex justify-center pt-4">
-        <img class="w-5/6" src={image} alt={title} />
+    <>
+      <div className="flip-card perspective-1000">
+        <div className="flip-card-inner relative w-full h-full text-center transition-transform transform-style-preserve-3d">
+          <div className="flip-card-front w-full h-full absolute flex flex-col border rounded-lg shadow-2xl">
+            <div className="flex justify-center pt-4">
+              <img className="w-[80%]" src={image} alt="image" />
+            </div>
+            <p className="text-black text-3xl font-extrabold pt-2">{title}</p>
+            <p className="text-black text-2xl font-extralight pt-6">
+              {content}
+            </p>
+          </div>
+          <div className="flip-card-back  w-full h-full  absolute flex flex-col justify-center shadow-2xl border border-white rounded-lg transform rotate-y-180">
+            {/**ใส่หลังการ์ดตรงนี้ **/}
+          </div>
+        </div>
       </div>
-      <div className="flex justify-center pt-12">
-        <p className="text-4xl font-medium">{title}</p>
-      </div>
-      <div className="flex justify-center ml-12 mr-12 mt-8">
-        <p className="text-2xl ">{content}</p>
-      </div>
-    </div>
+    </>
   );
 }
 

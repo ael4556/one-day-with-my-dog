@@ -15,12 +15,13 @@ import tail_6 from "../../Images/story_7/tail-tells-6.png";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ImageFlip from "../imageflip";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story7() {
   const text_story7_1Ref = useRef();
   const text_story7_2Ref = useRef();
-  
+
   useEffect(() => {
     const text_story7_1 = text_story7_1Ref.current;
     const text_story7_2 = text_story7_2Ref.current;
@@ -30,13 +31,13 @@ function Story7() {
       { opacity: 0, yPercent: +20 },
       {
         opacity: 1,
-        yPercent : 0,
+        yPercent: 0,
         duration: 1,
         scrollTrigger: {
           trigger: text_story7_1,
-          scrub : true,
-          start : "1px 80%",
-          end : "1px 50%",
+          scrub: true,
+          start: "1px 80%",
+          end: "1px 50%",
           /*markers : true,*/
         },
       }
@@ -47,19 +48,17 @@ function Story7() {
       { opacity: 0, yPercent: +20 },
       {
         opacity: 1,
-        yPercent : 0,
+        yPercent: 0,
         duration: 1,
         scrollTrigger: {
           trigger: text_story7_2,
-          scrub : true,
-          start : "60px 80%",
-          end : "60px 50%",
+          scrub: true,
+          start: "60px 80%",
+          end: "60px 50%",
           /*markers : true,*/
         },
       }
     );
-
-
   }, []);
 
   return (
@@ -84,14 +83,22 @@ function Story7() {
           <Title title="หางบอกอารมณ์" />
         </div>
         <div className="flex justify-center">
+          <a
+            className=" underline pt-4 text-xl"
+            href="https://www.baanlaesuan.com/224684/pets/training/hand-signals"
+            target="_blank"
+          >
+            หางสุนัขบอกอารมณ์ เข้าใจได้ด้วยภาษากายและท่าทาง - บ้านและสวน Pets
+            (baanlaesuan.com)
+          </a>
         </div>
         <div className="grid grid-cols-3 pt-40 justify-items-center gap-8 gap-y-20">
-          <img className="w-[50%]" src={tail_1} alt="tail_1" />
-          <img className="w-[50%]" src={tail_2} alt="tail_2" />
-          <img className="w-[50%]" src={tail_3} alt="tail_3" />
-          <img className="w-[50%]" src={tail_4} alt="tail_4" />
-          <img className="w-[50%]" src={tail_5} alt="tail_5" />
-          <img className="w-[50%]" src={tail_6} alt="tail_6" />
+          <ImageFlip image_front={tail_1} />
+          <ImageFlip image_front={tail_2} />
+          <ImageFlip image_front={tail_3} />
+          <ImageFlip image_front={tail_4} />
+          <ImageFlip image_front={tail_5} />
+          <ImageFlip image_front={tail_6} />
         </div>
 
         <div className="flex pt-40 justify-end px-80">
