@@ -1,4 +1,4 @@
-import image_frame from "../Images/human-bowl.png";
+import image_frame from "../Images/story_7/motion.png" ;
 
 function ImageFlip({ image_front = image_frame, image_back = image_frame }) {
   return (

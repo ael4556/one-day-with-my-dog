@@ -28,16 +28,16 @@ function Story7() {
 
     gsap.fromTo(
       text_story7_1,
-      { opacity: 0, yPercent: +20 },
+      { opacity: 0, scale : 0.9 },
       {
         opacity: 1,
-        yPercent: 0,
+        scale : 1,
         duration: 1,
         scrollTrigger: {
           trigger: text_story7_1,
           scrub: true,
-          start: "1px 80%",
-          end: "1px 50%",
+          start: "1px 60%",
+          end: "1px 30%",
           /*markers : true,*/
         },
       }
@@ -45,16 +45,16 @@ function Story7() {
 
     gsap.fromTo(
       text_story7_2,
-      { opacity: 0, yPercent: +20 },
+      { opacity: 0, scale : 0.9 },
       {
         opacity: 1,
-        yPercent: 0,
+        scale : 1,
         duration: 1,
         scrollTrigger: {
           trigger: text_story7_2,
           scrub: true,
-          start: "60px 80%",
-          end: "60px 50%",
+          start: "1px 60%",
+          end: "1px 30%",
           /*markers : true,*/
         },
       }
@@ -74,7 +74,7 @@ function Story7() {
               ทั้งแอนหน้าแอนหลัง จากนั้นก็เดินมาหาพร้อม ทำตาปริบ ๆ
               กระดิกหางด้วยความดีใจเพราะตื่นมา แล้วเจอเจ้านาย
             </p>
-            <p className="pt-32 leading-relaxed" ref={text_story7_2Ref}>
+            <p className=" pt-20 leading-relaxed" ref={text_story7_2Ref}>
               โดยคุณสามารถรับรู้ความรู้สึกต่าง ๆ ของเจ้ามีตังค์ได้จาก “หาง”
             </p>
           </div>
@@ -82,17 +82,7 @@ function Story7() {
         <div className="flex flex-col justify-center">
           <Title title="หางบอกอารมณ์" />
         </div>
-        <div className="flex justify-center">
-          <a
-            className=" underline pt-4 text-xl"
-            href="https://www.baanlaesuan.com/224684/pets/training/hand-signals"
-            target="_blank"
-          >
-            หางสุนัขบอกอารมณ์ เข้าใจได้ด้วยภาษากายและท่าทาง - บ้านและสวน Pets
-            (baanlaesuan.com)
-          </a>
-        </div>
-        <div className="grid grid-cols-3 pt-40 justify-items-center gap-8 gap-y-20">
+        <div className="grid grid-cols-3 pt-20 justify-items-center gap-8 gap-y-20 px-32">
           <ImageFlip image_front={tail_1} />
           <ImageFlip image_front={tail_2} />
           <ImageFlip image_front={tail_3} />

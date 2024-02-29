@@ -24,9 +24,10 @@ function Story1() {
 
     gsap.fromTo(
       text_story1_1,
-      { opacity: 0 },
+      { opacity: 0, scale : 0.9},
       {
         opacity: 1,
+        scale : 1 ,
         duration: 1,
         delay: 0,
         scrollTrigger: {
@@ -42,9 +43,10 @@ function Story1() {
 
     gsap.fromTo(
       text_story1_2,
-      { opacity: 0 },
+      { opacity: 0, scale : 0.9 },
       {
         opacity: 1,
+        scale : 1,
         duration: 1,
         delay: 0,
         scrollTrigger: {
@@ -98,7 +100,13 @@ function Story1() {
 
   return (
     <div>
-      <div className="bg-center">
+      <div className="bg-center"
+      style={{
+        backgroundColor: "#1B192D",
+        backgroundRepeat: "no-repeat",
+        height: "90vh",
+        backgroundSize: "contain",
+      }}>
         <div className="flex flex-row justify-around">
           <img src={door_a1} alt="Door_A1" className=" w-[30%]" ref={door_1Ref}/>
           <div
@@ -116,11 +124,11 @@ function Story1() {
           </div>
         </div>
       </div>
-      <div className="flex pt-0">
+      <div className="flex">
         <img className=" w-[100%] pt-10" src={sleep_night} alt="sleep_night" />
         <img
           ref={text_story1_2Ref}
-          className=" w-[45%] absolute pl-60 pt-60"
+          className=" w-[35%] absolute pt-[10%] left-[10%]"
           src={text_png_story1}
           alt="text_png_story1"
         />

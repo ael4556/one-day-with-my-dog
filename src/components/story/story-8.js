@@ -16,11 +16,11 @@ function Story8() {
             </p>
           </div>
           <div className="flex justify-center">
-            <img className="w-5/6" src={snack} />
+            <img className=" pt-40 w-[40%]" src={snack} />
           </div>
         </div>
         <div className="flex justify-center">
-          <img className="w-[80%] h-[80%  ]" src={dog} />
+          <img className=" pt-20 w-[80%]  h-[100%]" src={dog} />
         </div>
       </div>
       <div className="flex justify-center">
@@ -35,11 +35,14 @@ function Story8() {
           10 สัญญานมือสำหรับฝึกสุนัข - บ้านและสวน Pets (baanlaesuan.com)
         </a>
       </div>
-      <div className="grid grid-cols-2 2xl:grid-col-4 justify-items-center gap-y-40 pt-40">
+      <div className="grid grid-cols-4 justify-items-center pt-20 px-32">
+
+        <CardFlip />        
+        <CardFlip />
+
         <CardFlip />
         <CardFlip />
-        <CardFlip />
-        <CardFlip />
+
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import image_frame from "../Images/story_8/command-cards-1.png";
 function CardFlip({ image_front = image_frame, image_back = image_frame }) {
   return (
     <div className="flex flex-col justify-center ">
-      <div className="group h-[560px] w-96 [perspective:1000px]">
+      <div className="group h-[448px] w-[308px] [perspective:1000px]">
         <div className=" relative h-full w-full transition-all duration-700 rounded-full shadow-xl [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className=" absolute inset-0">
             <img

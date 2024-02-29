@@ -28,9 +28,10 @@ function Story2() {
 
     gsap.fromTo(
       text_story2_1,
-      { opacity: 0 },
+      { opacity: 0, scale : 0.9},
       {
         opacity: 1,
+        scale : 1,
         duration: 2,
         delay: 0,
         scrollTrigger: {

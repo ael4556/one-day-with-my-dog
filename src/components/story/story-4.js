@@ -29,8 +29,8 @@ function Story4() {
         scrollTrigger: {
           trigger: dogdown,
           scrub : true,
-          start : "300px 30%",
-          end : "300px 0%",
+          start : "500px 70%",
+          end : "500px 10%",
 
           /*markers : true,*/
         },
@@ -67,7 +67,7 @@ function Story4() {
       <div className="flex justify-center pt-64 gap-10">
         <img className="w-2/5" src={dog_poof_start} alt="dog_poof2" />
         <img
-          className="w-[6%] absolute left-[13%] pt-[33%]"
+          className="w-[6%] absolute left-[16%] pt-[33%]"
           src={poof}
           alt="poof"
         />

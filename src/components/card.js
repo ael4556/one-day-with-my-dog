@@ -1,4 +1,4 @@
-import image_frame from "../Images/human-bowl.png";
+import image_frame from "../Images/story_5/dog-food-1.png";
 
 function Card({
   title = "หัวข้อ",

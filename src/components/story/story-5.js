@@ -9,6 +9,9 @@ import frung_fring from "../../Images/story_5/frungfrimg.gif";
 import table_Dog from "../../Images/story_5/table-dog.jpg";
 import microwave from "../../Images/story_5/microwave.png";
 import bowl from "../../Images/story_5/human-bowl.png";
+import dogfood_1 from "../../Images/story_5/dog-food-1.png";
+import dogfood_2 from "../../Images/story_5/dog-food-2.png";
+import dogfood_3 from "../../Images/story_5/dog-food-3.png";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -91,9 +94,10 @@ function Story5() {
 
     gsap.fromTo(
       text_story5_3,
-      { opacity: 0 },
+      { opacity: 0 , scale : 0.9 },
       {
         opacity: 1,
+        scale : 1,
         duration: 0.5,
         delay: 0.5,
         scrollTrigger: {
@@ -144,16 +148,16 @@ function Story5() {
 
     gsap.fromTo(
       text_story5_4,
-      { opacity: 0 },
+      { opacity: 0, scale : 0.9},
       {
         opacity: 1,
+        scale : 1,
         duration: 0.5,
-        delay: 0.5,
         scrollTrigger: {
           trigger: text_story5_4,
           scrub : true,
-          start :"1 70%",
-          end : "1 40%",
+          start :"1 60%",
+          end : "1 30%",
           
           /*markers: true,*/
         },
@@ -224,28 +228,41 @@ function Story5() {
           ที่เหมาะกับมีตังค์เถอะ
         </p>
       </div>
-      <p ref={text_story5_2Ref} className=" flex justify-center text-[#d65e35] text-7xl pt-80  font-semibold">
+      <p ref={text_story5_2Ref} className=" flex justify-center text-[#d65e35] text-7xl pt-80 font-semibold">
         เลือกอาหารที่เหมาะสม
       </p>
+      <div>
       <div
-        className="pt-40 justify-center"
-        style={{
+        className="pt-0 justify-center [perspective:1000px]"
+        /*style={{
           backgroundImage: `url(${cook_table})`,
           backgroundRepeat: "no-repeat",
           height: "140vh",
-        }}>
-          
-        <div className="pt-40 flex flex-row gap-[5%] justify-center">
-          <Card 
-          title="ประเภทที่ 1" 
-          content="นมวัวและผลิตภัณฑ์ จากนมวัว" />
-          <Card 
-          title="ประเภทที่ 2" 
-          content="อาหารเม็ดตามขนาด และ อายุของสุนัข" />
-          <Card
-            title="ประเภทที่ 3"
-            content="ผลไม้บางชนิด เช่น พลับ พีช พลัม พรุน เชอร์รี่"/>
+        }}*/>
+         
+        <div className=" absolute px-[22.5%]">
+        <div className="pt-56 flex flex-row gap-[5%] justify-center w-[100%] h-[100%]">
+            
+              <Card 
+                title="ประเภทที่ 1" 
+                content="นมวัวและผลิตภัณฑ์ จากนมวัว"
+                image={dogfood_1} />
+              <Card 
+                title="ประเภทที่ 2" 
+                content="อาหารเม็ดตามขนาด และ อายุของสุนัข"
+                image={dogfood_2} />
+              <Card
+                title="ประเภทที่ 3"
+                content="ผลไม้บางชนิด เช่น พลับ พีช พลัม พรุน เชอร์รี่"
+                image={dogfood_3}/>
+            
         </div>
+        
+        </div>
+        <img className="w-full"
+         src={cook_table}
+         alt="cook_table"/> 
+      </div>
       </div>
       
       <div className="pt-12 ">

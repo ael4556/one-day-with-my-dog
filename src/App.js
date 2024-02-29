@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/navbar/navbar";
 import "./App.css";
 
-import cover from "./Images/logo/bg-cover.png";
+import cover from "./Images/logo/bg-cover-copy.png";
 
 import Logo from "./components/logo/logo";
 import ClockTop from "./components/clock";
@@ -19,7 +19,7 @@ import Story8 from "./components/story/story-8";
 import Story9 from "./components/story/story-9";
 
 const App = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  /*const [scrollPosition, setScrollPosition] = useState(0);
   const [backgroundOpacity, setBackgroundOpacity] = useState(0);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const App = () => {
       setScrollPosition(position);
 
       // กำหนดตำแหน่งที่คุณต้องการเปลี่ยนสี
-      const scrollThreshold = 2600;
+      const scrollThreshold = 1900;
 
       if (position > scrollThreshold) {
         document.body.style.backgroundColor = "white"; // เปลี่ยนสีพื้นหลัง
@@ -44,14 +44,7 @@ const App = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
-  const style = {
-    transition: "opacity 3s",
-    opacity: backgroundOpacity,
-    width: "100%",
-    height: "2000px",
-  }; // useEffect จะทำงานเฉพาะครั้งแรกที่ component ถูก mount
+  }, []);*/
 
   return (
     <>
