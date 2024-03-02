@@ -53,7 +53,7 @@ function Story4() {
           ref={dogdownRef}
         />
 
-        <div className="absolute left-[7%] pt-[10%]">
+        <div className="absolute left-[10%] pt-[10%]">
           <Chat text="“ป่ะ ไปหน้าบ้านกัน”" showIcon={true} isMe={false}/>
         </div>
       </div>

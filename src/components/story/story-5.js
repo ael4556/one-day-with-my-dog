@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 import Chat from "../chat";
 import Card from "../card";
+import Title from "../title";
 
 import cook_table from "../../Images/story_5/table.jpg";
 import dog_bowl from "../../Images/story_5/dog-bowl.png";
@@ -202,14 +203,14 @@ function Story5() {
 
   return (
     <>
-      <div className="flex pt-40 justify-end px-80">
+      <div className="flex pt-40 justify-end pr-[10%]">
         <Chat
           text="“ไป มีตังค์กินข้าวกันหิวแล้วละสิ”"
           isMe={true}
           showIcon={true}
         />
       </div>
-      <div className="flex pt-40 justify-start px-80">
+      <div className="flex pt-40 justify-start pl-[10%]">
         <Chat text="“โฮ่ง !”" isMe={false} showIcon={true} isDog={true} />
       </div>
       <div className="pt-40 flex justify-center">
@@ -228,9 +229,9 @@ function Story5() {
           ที่เหมาะกับมีตังค์เถอะ
         </p>
       </div>
-      <p ref={text_story5_2Ref} className=" flex justify-center text-[#d65e35] text-7xl pt-80 font-semibold">
-        เลือกอาหารที่เหมาะสม
-      </p>
+        <div ref={text_story5_2Ref} className="flex flex-col justify-center">
+          <Title title="เลือกอาหารที่เหมาะสม" />
+        </div>
       <div>
       <div
         className="pt-0 justify-center [perspective:1000px]"
@@ -240,7 +241,7 @@ function Story5() {
           height: "140vh",
         }}*/>
          
-        <div className=" absolute px-[22.5%]">
+        <div className="left-[22.5%] right-[22.5%] absolute pt-6">
         <div className="pt-56 flex flex-row gap-[5%] justify-center w-[100%] h-[100%]">
             
               <Card 
@@ -257,11 +258,12 @@ function Story5() {
                 image={dogfood_3}/>
             
         </div>
-        
-        </div>
-        <img className="w-full"
+        </div >
+        <div className=" flex justify-center">
+        <img className="w-[80%]"
          src={cook_table}
          alt="cook_table"/> 
+         </div>
       </div>
       </div>
       
@@ -274,7 +276,7 @@ function Story5() {
           <img className=" w-2/5 absolute" src={frung_fring} alt="table_Dog" ref={frung_fringRef} />
         </div>
       </div>
-      <div className="p-12">
+      <div className="pl-[10%] pt-px">
         <Chat
           text="“ค่อย ๆ กินก็ได้มีตังค์ ไม่มีใครแย่งหรอก” "
           isMe={false}
@@ -291,14 +293,14 @@ function Story5() {
           </p>
         </div>
       </div>
-      <div className="flex pt-40 justify-end px-80">
+      <div className="flex pt-40 justify-end pr-[10%]">
         <Chat
           text="“ไป มีตังค์กินข้าวกันหิวแล้วละสิ”"
           isMe={true}
           showIcon={true}
         />
       </div>
-      <div className="flex pt-40 justify-start px-80">
+      <div className="flex pt-40 justify-start pl-[10%]">
         <Chat text="“โฮ่ง !”" isMe={false} showIcon={true} isDog={true} />
       </div>
     </>

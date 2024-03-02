@@ -134,7 +134,7 @@ function Story1() {
         />
         <img
           ref={doglookRef}
-          className=" w-[30%] absolute pt-[29.7%] right-[5%]"
+          className=" w-[30%] absolute pt-[29.6%] right-[5%]"
           src={dog_look}
           alt="text_png_story1"
         />

@@ -28,10 +28,11 @@ function Story9() {
 
         gsap.fromTo(
         text_story9_1,
-          { opacity: 0 },
+          { opacity: 0, scale: 0.9,},
           {
             opacity: 1,
             duration: 2,
+            scale : 1,
             scrollTrigger: {
               trigger: text_story9_1,
               scrub : true,
@@ -45,10 +46,11 @@ function Story9() {
 
         gsap.fromTo(
           text_stroke3,
-            { opacity: 0 },
+            { opacity: 0, scale: 0.9,},
             {
               opacity: 1,
               duration: 2,
+              scale: 1,
               scrollTrigger: {
                 trigger: text_stroke3,
                 scrub : true,
@@ -63,7 +65,7 @@ function Story9() {
       }, []);
     
       return (
-        <>
+        <div className="pt-[10%]">
             <div className=" flex flex-col justify-center px-[24.5%] pt-28 ">
                 <p className="text-3xl leading-loose text-center" ref={text_story9_1Ref}>
                 หลังจากนั้น คุณก็เดินออกไปที่สวนพร้อมเรียกมีตังค์ให้ออกมาพร้อมกัน
@@ -94,7 +96,7 @@ function Story9() {
                 />
             </div>
             
-        </>
+        </div>
       );
     }
 

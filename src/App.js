@@ -49,7 +49,7 @@ const App = () => {
   return (
     <>
       <div className="font-sans">
-        <Navbar />
+        
         {/* Start Web contents*/}
         <div
           className="h-full w-full flex flex-col"
@@ -88,8 +88,13 @@ const App = () => {
           <div className="pt-60">
             <Story8 />
           </div>
-          <div></div>
-          <Story9 />
+            <Story9 />
+            
+            
+            
+            
+            <Navbar />
+
         </div>
       </div>
     </>
