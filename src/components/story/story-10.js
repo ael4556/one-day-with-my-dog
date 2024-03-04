@@ -34,10 +34,11 @@ const DogShalala = () => {
 function Story10() {
   return (
     <div>
-      <div className="flex justify-end">
+      <div className="flex pt-[10%] justify-end pr-[10%]">
         <div className="flex">
           <Tips
-            text="อย่าลืมแปรงขนก่อนอาบน้ำทุกครั้ง จะช่วยขจัดสิ่งสกปรกขนที่หลุดร่วงและเซลล์ผิวหนังที่ตายแล้วออกไป"
+            text="อย่าลืมแปรงขนก่อนอาบน้ำทุกครั้ง จะช่วยขจัดสิ่งสกปรก"
+            text2="ขนที่หลุดร่วงและเซลล์ผิวหนังที่ตายแล้วออกไป"
             width={50}
           />
         </div>
@@ -92,10 +93,11 @@ function Story10() {
           “ ขน ต้อง แห้ง สนิท! ”
         </div>
       </div>
-      <div className="flex justify-around pt-40">
+      <div className="flex pt-[10%] justify-end pr-[10%]">
         <div className="pt-40 z-10">
           <Tips
-            text="ขนต้องแห้งสนิท เพราะอาจทำให้ เกิดโรคผิวหนังได้เนื่องจากสุนัขนั้น มีขนหลายชั้น"
+            text="ขนต้องแห้งสนิท เพราะอาจทำให้กิดโรคผิวหนังได้"
+            text2="เนื่องจากน้องสุนัขนั้น มีขนหลายอยู่ชั้น"
             width={50}
           />
         </div>

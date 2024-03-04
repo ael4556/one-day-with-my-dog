@@ -27,7 +27,7 @@ function Story6() {
           scrub: true,
           start: "0px 60%",
           end: "100px 30%",
-          markers : true,
+          /*markers : true,*/
         },
       }
     );

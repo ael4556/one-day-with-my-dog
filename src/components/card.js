@@ -27,14 +27,14 @@ function Card({
             <div className="flex rounded-2xl">
               <div className="flex-col">
                 <div className="flex justify-center">
-                  <img className="w-full object-cover shadow-xl" src={image} />
+                  <img className="w-full object-cover px-[10%] pt-[10%]" src={image} />
                 </div>
                 <div className="flex justify-center pt-4">
-                  <p className="text-black text-3xl font-extrabold pt-2">
+                  <p className="text-black text-3xl text-center font-extrabold pt-2">
                     {title}
                   </p>
                 </div>
-                <p className="text-black text-2xl font-extralight pt-6">
+                <p className="text-black text-2xl font-light pt-[6%] px-[10%]">
                   {content}
                 </p>
               </div>

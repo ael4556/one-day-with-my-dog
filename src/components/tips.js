@@ -7,7 +7,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-function Tips({ text = "ไม่มีข้อความ", width = 100 }) {
+function Tips({ 
+  text = "ไม่มีข้อความ",
+  text2 = "",
+  width = 100 }) {
   const messages = useRef();
   const icons = useRef();
 
@@ -64,7 +67,8 @@ function Tips({ text = "ไม่มีข้อความ", width = 100 }) {
           ref={messages}
           className={`text-4xl bg-[#FFF5DE] max-w-[${width}%]  rounded-full p-9 shadow-lg  border-8 border-[#FFC645] `}
         >
-          {text}
+          <div>{text}</div>
+          <div>{text2}</div>
         </div>
         <div>
           <img
