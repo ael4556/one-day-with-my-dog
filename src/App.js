@@ -17,6 +17,7 @@ import Story6 from "./components/story/story-6";
 import Story7 from "./components/story/story-7";
 import Story8 from "./components/story/story-8";
 import Story9 from "./components/story/story-9";
+import Story10 from "./components/story/story-10";
 
 const App = () => {
   /*const [scrollPosition, setScrollPosition] = useState(0);
@@ -49,7 +50,6 @@ const App = () => {
   return (
     <>
       <div className="font-sans">
-        
         {/* Start Web contents*/}
         <div
           className="h-full w-full flex flex-col"
@@ -88,13 +88,12 @@ const App = () => {
           <div className="pt-60">
             <Story8 />
           </div>
-            <Story9 />
-            
-            
-            
-            
-            <Navbar />
+          <Story9 />
+          <div>
+            <Story10 />
+          </div>
 
+          <Navbar />
         </div>
       </div>
     </>
