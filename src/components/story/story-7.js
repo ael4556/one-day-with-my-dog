@@ -22,6 +22,7 @@ function Story7() {
   const text_story7_1Ref = useRef();
   const text_story7_2Ref = useRef();
   const text_story7_3Ref = useRef();
+  const text_story7_4Ref = useRef();
   const Dog_yawnRef = useRef ();
   const Flip_1Ref = useRef ();
   const Flip_2Ref = useRef ();
@@ -34,6 +35,7 @@ function Story7() {
     const text_story7_1 = text_story7_1Ref.current;
     const text_story7_2 = text_story7_2Ref.current;
     const text_story7_3 = text_story7_3Ref.current;
+    const text_story7_4 = text_story7_4Ref.current;
     const Dog_yawn = Dog_yawnRef.current;
     const Flip_1 = Flip_1Ref.current;
     const Flip_2 = Flip_2Ref.current;
@@ -71,6 +73,23 @@ function Story7() {
           scrub: true,
           start: "1px 60%",
           end: "1px 30%",
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_story7_4,
+      { scale: 0 },
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: text_story7_4,
+          scrub : true,
+          start : "1px 80%",
+          end : "1px 50%",
+
           /*markers : true,*/
         },
       }
@@ -219,7 +238,7 @@ function Story7() {
 
   return (
     <>
-      <div className="pt-40">
+      <div className="pt-[30%]">
         <ClockTop time="13.30" />
         <Sunset />
         <div className="pt-[90vh] flex justify-around">
@@ -235,7 +254,7 @@ function Story7() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center" ref={text_story7_4Ref}>
           <Title title="หางบอกอารมณ์" />
         </div>
         <div className="grid grid-cols-3 pt-20 justify-items-center gap-8 gap-y-8 px-32">

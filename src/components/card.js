@@ -23,7 +23,7 @@ function Card({
          ${isFlipped ? "[transform:rotateY(180deg)]" : ""}
         `}
         >
-          <div className=" absolute inset-0 bg-white rounded-2xl">
+          <div className=" absolute inset-0 bg-white rounded-2xl shadow-xl">
             <div className="flex rounded-2xl">
               <div className="flex-col">
                 <div className="flex justify-center">
@@ -34,13 +34,13 @@ function Card({
                     {title}
                   </p>
                 </div>
-                <p className="text-black text-2xl font-light pt-[6%] px-[10%]">
+                <p className="text-black text-2xl font-normal pt-[6%] px-[10%]">
                   {content}
                 </p>
               </div>
             </div>
           </div>
-          <div className="rounded-2xl absolute inset-0 h-full w-full [transform:rotateY(180deg)] [backface-visibility:hidden] bg-emerald-50">
+          <div className="rounded-2xl absolute inset-0 h-full w-full [transform:rotateY(180deg)] [backface-visibility:hidden] bg-emerald-50 shadow-xl">
             {/** หลังการ์ด */}
           </div>
         </div>

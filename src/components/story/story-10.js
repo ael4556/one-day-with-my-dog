@@ -38,7 +38,7 @@ const DogShalala = () => {
         start : "1100px 100% ",
         end : "5000px -140%",
 
-        markers : true,
+        /*markers : true,*/
       },
     }
   );
@@ -57,7 +57,7 @@ const DogShalala = () => {
         start : "800px 100%",
         end : "4000px -120%",
 
-        markers : true,
+        /*markers : true,*/
       },
     }
   );
@@ -76,7 +76,7 @@ const DogShalala = () => {
         start : "800px 100% ",
         end : "4000px -120%",
 
-        markers : true,
+        /*markers : true,*/
       },
     }
   );
@@ -127,10 +127,10 @@ function Story10() {
           />
         </div>
       </div>
-      <div className="flex  justify-around pt-40">
+      <div className="grid grid-cols-2 pt-40 ">
         <div className="flex flex-col ">
           <div className="flex justify-center">
-            <img className="w-4/5" src={image_tube} alt="image_tube" />
+            <img className="w-[50%]" src={image_tube} alt="image_tube" />
           </div>
           <div className="flex justify-center text-3xl pt-12">
             <p>ใช้สายยางฉีดน้ำให้ทั่วตัว</p>
@@ -138,7 +138,7 @@ function Story10() {
         </div>
         <div className="flex flex-col">
           <div className="flex justify-center">
-            <img className="w-2/5" src={image_shampoo} alt="image_shampoo" />
+            <img className="w-[50%]" src={image_shampoo} alt="image_shampoo" />
           </div>
           <div className="flex justify-center text-3xl pt-12">
             <p>เอาแชมพูผสมน้ำนิดหน่อยถูให้ทั่วตัว</p>
@@ -150,10 +150,10 @@ function Story10() {
         <DogShalala />
       </div>
 
-      <div className="flex  justify-around pt-[230%]">
+      <div className="grid grid-cols-2 pt-[230%]">
         <div className="flex flex-col ">
           <div className="flex justify-center">
-            <img className="w-4/5" src={image_towels} alt="image_towels" />
+            <img className="w-[50%]" src={image_towels} alt="image_towels" />
           </div>
           <div className="flex justify-center text-3xl pt-12">
             <p>ใช้ผ้าขนหนูเช็ดขนที่เปียกให้พอหมาด</p>
@@ -161,7 +161,7 @@ function Story10() {
         </div>
         <div className="flex flex-col">
           <div className="flex justify-center">
-            <img className="w-2/5" src={image_dry} alt="image_dry" />
+            <img className="w-[50%]" src={image_dry} alt="image_dry" />
           </div>
           <div className="flex justify-center text-3xl pt-12">
             <p>ใช้ไดร์เป่าลมปกติ เป่าให้ขนแห้งสนิท</p>

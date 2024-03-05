@@ -11,9 +11,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Story6() {
   const dogsleepRef = useRef();
+  const VacuumRef = useRef ();
+  const SpongeRef = useRef ();
+  const MopRef = useRef ();
+  const livingRoomRef = useRef ();
 
   useEffect(() => {
     const dogsleep = dogsleepRef.current;
+    const Vacuum = VacuumRef.current;
+    const Sponge = SpongeRef.current;
+    const Mop = MopRef.current;
+    const livingRoom = livingRoomRef.current;
 
     gsap.fromTo(
       dogsleep,
@@ -32,6 +40,84 @@ function Story6() {
       }
     );
 
+    gsap.fromTo(
+      Vacuum,
+      { scale: 0.8, yPercent:-50, xPercent: 30},
+      {
+        scale: 1,
+        yPercent : 10,
+        xPercent : 0,
+        
+        scrollTrigger: {
+          trigger: Vacuum,
+          toggleActions : 'restart',
+          start : "300px 40%",
+          end : "0px 0%",
+          scrub : true,
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      Sponge,
+      { scale: 0.8, yPercent:-50, xPercent: 30},
+      {
+        scale: 1,
+        yPercent : 10,
+        xPercent : 0,
+        
+        scrollTrigger: {
+          trigger: Sponge,
+          toggleActions : 'restart',
+          start : "200px 40%",
+          end : "-100px 0%",
+          scrub : true,
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      Mop,
+      { scale: 0.8, yPercent:-50, xPercent: -30},
+      {
+        scale: 1,
+        yPercent : 10,
+        xPercent : 0,
+        
+        scrollTrigger: {
+          trigger: Mop,
+          toggleActions : 'restart',
+          start : "200px 40%",
+          end : "-100px 0%",
+          scrub : true,
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      livingRoom,
+      { yPercent: 0 },
+      {
+        yPercent : 20,
+        duration: 1,
+        scrollTrigger: {
+          trigger: livingRoom,
+          toggleActions : 'restart',
+          start : "1000px 80%",
+          end : "800px 0%",
+          scrub : true,
+
+          /*markers : true,*/
+        },
+      }
+    );
+
   }, []);
 
   return (
@@ -39,6 +125,7 @@ function Story6() {
       <div className="flex justify-center">
         <img
           className=" w-[100%] pt-[34vh]"
+          ref={livingRoomRef}
           src={living_room}
           alt="sleep_night"
         />
@@ -46,16 +133,19 @@ function Story6() {
         <div className="pt-[30%]">
           <img
             className="w-[30%] absolute left-[10%]"
+            ref={VacuumRef}
             src={vacuum}
             alt="dog_in_frame"
           />
           <img
             className="w-[15%] absolute left-[30%]"
+            ref={SpongeRef}
             src={sponge}
             alt="dog_in_frame"
           />
           <img
             className="w-[25%] absolute right-[10%]"
+            ref={MopRef}
             src={mop}
             alt="dog_in_frame"
           />
