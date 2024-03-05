@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import Tips from "../tips";
 
 import image_towels from "../../Images/story_10/towels.png";
@@ -10,22 +11,105 @@ import image_right_hand from "../../Images/story_10/hand-right.png";
 import image_dog_bath from "../../Images/story_10/dog-bath.png";
 import image_bubble from "../../Images/story_10/bubble.png";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const DogShalala = () => {
+  const dogRef = useRef();
+  const handleftRef = useRef();
+  const handRightRef = useRef();
+
+  useEffect(() => {
+  const dog = dogRef.current;
+  const handleft = handleftRef.current;
+  const handRight = handRightRef.current;
+
+  gsap.fromTo(
+    dog,
+    { yPercent: 0,},
+    {
+      yPercent: +315,
+      duration : 10,
+      
+      scrollTrigger: {
+        trigger: dog,
+        scrub : true,
+        start : "1100px 100% ",
+        end : "5000px -140%",
+
+        markers : true,
+      },
+    }
+  );
+
+  gsap.fromTo(
+    handleft,
+    { yPercent: 0, xPercent: 0,},
+    {
+      yPercent: +600,
+      xPercent :+50,
+      duration : 10,
+      
+      scrollTrigger: {
+        trigger: handleft,
+        scrub : true,
+        start : "800px 100%",
+        end : "4000px -120%",
+
+        markers : true,
+      },
+    }
+  );
+
+  gsap.fromTo(
+    handRight,
+    { yPercent: 0, xPercent: 0,},
+    {
+      yPercent: +600,
+      xPercent :-50,
+      duration : 10,
+      
+      scrollTrigger: {
+        trigger: handRight,
+        scrub : true,
+        start : "800px 100% ",
+        end : "4000px -120%",
+
+        markers : true,
+      },
+    }
+  );
+
+  }, []);
+
   return (
-    <div className="flex justify-center pt-40">
+    <div className="flex justify-center pt-[15%]">
       <div className="flex">
-        <div className="absolute left-[10%]">
-          <img className="w-4/5" src={image_left_hand} />
-        </div>
-        <div className="w-full">
-          <img src={image_dog_bath} />
-        </div>
-        <div className="w-full absolute">
+        <div className="w-[100%] absolute start-[10%] end-[10%] pt-[100%]">
           <img src={image_bubble} />
         </div>
-        <div className="absolute right-[0%]">
-          <img className="w-4/5" src={image_right_hand} />
+
+        <div className="w-[100%]" ref={dogRef}>
+          <img src={image_dog_bath} />
         </div>
+        
+        <div className=" pt-[20%]">
+        <div className="absolute start-[10%]" ref={handleftRef}>
+          <img className="w-[100%]" src={image_left_hand} />
+        </div>
+        <div className="absolute end-[9%]" ref={handRightRef}>
+          <img className="w-[100%]" src={image_right_hand} />
+        </div>
+        </div>
+
+        <div className="w-[100%] absolute start-[10%] end-[10%]">
+          <img src={image_bubble} />
+        </div>
+        <div className="w-[100%] absolute start-[10%] end-[10%] pt-[200%]">
+          <img src={image_bubble} />
+        </div>
+        
       </div>
     </div>
   );
@@ -66,7 +150,7 @@ function Story10() {
         <DogShalala />
       </div>
 
-      <div className="flex  justify-around pt-96">
+      <div className="flex  justify-around pt-[230%]">
         <div className="flex flex-col ">
           <div className="flex justify-center">
             <img className="w-4/5" src={image_towels} alt="image_towels" />
