@@ -42,17 +42,16 @@ function Story6() {
 
     gsap.fromTo(
       Vacuum,
-      { scale: 0.8, yPercent:-50, xPercent: 30},
+      { scale: 0.8, yPercent:0,},
       {
         scale: 1,
-        yPercent : 10,
-        xPercent : 0,
+        yPercent : 20,
         
         scrollTrigger: {
           trigger: Vacuum,
           toggleActions : 'restart',
-          start : "300px 40%",
-          end : "0px 0%",
+          start : "-400px 40%",
+          end : "100px 0%",
           scrub : true,
 
           /*markers : true,*/
@@ -62,18 +61,17 @@ function Story6() {
 
     gsap.fromTo(
       Sponge,
-      { scale: 0.8, yPercent:-50, xPercent: 30},
+      { scale: 0.5, yPercent:0,},
       {
         scale: 1,
-        yPercent : 10,
-        xPercent : 0,
-        
+        yPercent : 20,
         scrollTrigger: {
           trigger: Sponge,
           toggleActions : 'restart',
-          start : "200px 40%",
-          end : "-100px 0%",
+          start : "-400px 40%",
+          end : "100px 0%",
           scrub : true,
+          
 
           /*markers : true,*/
         },
@@ -82,20 +80,19 @@ function Story6() {
 
     gsap.fromTo(
       Mop,
-      { scale: 0.8, yPercent:-50, xPercent: -30},
+      { scale: 0.5, yPercent: 0,},
       {
         scale: 1,
-        yPercent : 10,
-        xPercent : 0,
-        
+        yPercent : 20,
         scrollTrigger: {
           trigger: Mop,
           toggleActions : 'restart',
-          start : "200px 40%",
-          end : "-100px 0%",
-          scrub : true,
+          start : "-400px 40%",
+          end : "100px 0%",
+          scrub : true ,
+          
 
-          /*markers : true,*/
+          markers : true,
         },
       }
     );
