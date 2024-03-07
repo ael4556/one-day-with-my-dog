@@ -92,7 +92,7 @@ function Story6() {
           scrub : true ,
           
 
-          markers : true,
+          /*markers : true,*/
         },
       }
     );
