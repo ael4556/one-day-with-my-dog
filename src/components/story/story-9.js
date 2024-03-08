@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import Chat from "../chat";
 
 import garden_dog from "../../Images/story_9/garden-dog.png";
 import ball from "../../Images/story_9/ball.png";
@@ -61,6 +62,24 @@ function Story9() {
               },
             }
           );
+
+          gsap.fromTo(
+            text_story9_2,
+              { opacity: 0, scale: 0.9,},
+              {
+                opacity: 1,
+                duration: 2,
+                scale : 1,
+                scrollTrigger: {
+                  trigger: text_story9_2,
+                  scrub : true,
+                  start : "0px 80%",
+                  end : "0px 40%",
+        
+                  /*markers : true,*/
+                },
+              }
+            );
     
       }, []);
     
@@ -94,8 +113,20 @@ function Story9() {
                 src={text_stroke_3}
                 alt={text_stroke_3}
                 />
+                
             </div>
-            
+            <div className="pl-[10%]">
+              <Chat 
+              text="“แดดเริ่มร้อนเเล้วนะ มานั่งพักก่อน”" 
+              isMe={false}
+              showIcon={true} />
+            </div>
+            <div className=" flex flex-col justify-center px-[20%] pt-32 ">
+              <p className="text-3xl leading-loose text-center" ref={text_story9_2Ref}>
+              หลังจากที่คุณให้มีตังค์นอนเล่นหน้าบ้าน เพื่อระหว่างนั้นก็เอาของต่าง ๆ มาเตรียมไว้ 
+              แชมพูอาบน้ำสุนัขเอย ผ้าเช็ดตัวเอย และต่อสายยาง พร้อมอาบน้ำให้เจ้าตัวแสบ !
+              </p>
+            </div>
         </div>
       );
     }
