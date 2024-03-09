@@ -21,7 +21,7 @@ useEffect(() => {
     {
       xPercent: 0,
       scale : 1,
-      duration: 0.5,
+      duration: 1,
       delay: 0,
       scrollTrigger: {
         trigger: typo,
@@ -40,7 +40,7 @@ useEffect(() => {
     {
       xPercent: 0,
       scale : 1,
-      duration: 0.5,
+      duration: 1,
       delay: 0,
       scrollTrigger: {
         trigger: dog,

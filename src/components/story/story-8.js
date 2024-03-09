@@ -6,6 +6,11 @@ import snack from "../../Images/story_8/snack.png";
 import CardFlip from "../cardflip";
 import Title from "../title";
 import Tips from "../tips";
+import cardfront_1 from "../../Images/story_8/command-cards-1.png";
+import cardfront_2 from "../../Images/story_8/command-cards-2.png";
+import cardfront_3 from "../../Images/story_8/command-cards-3.png";
+import cardfront_4 from "../../Images/story_8/command-cards-4.png";
+import cardback_1 from "../../Images/story_8/command-cards-1-back.png";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -226,12 +231,12 @@ function Story8() {
         <Title title="เลือกคำสั่งที่ต้องการฝึก" />
       </div>
       
-      <div className="grid grid-cols-4 justify-items-center pt-[10%] px-32">
+      <div className="grid grid-cols-4 justify-items-center pt-[7%] px-32">
 
-        <div ref={ card_scale1Ref}><CardFlip /></div>        
-        <div ref={ card_scale2Ref}><CardFlip /></div>
-        <div ref={ card_scale3Ref}><CardFlip /></div>
-        <div ref={ card_scale4Ref}><CardFlip /></div>
+        <div ref={ card_scale1Ref}><CardFlip image_front={cardfront_1} image_back={cardback_1}/></div>        
+        <div ref={ card_scale2Ref}><CardFlip image_front={cardfront_2} image_back={cardback_1}/></div>
+        <div ref={ card_scale3Ref}><CardFlip image_front={cardfront_3} image_back={cardback_1}/></div>
+        <div ref={ card_scale4Ref}><CardFlip image_front={cardfront_4} image_back={cardback_1}/></div>
 
       </div>
 

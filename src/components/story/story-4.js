@@ -67,7 +67,7 @@ function Story4() {
       <div className="flex justify-center pt-64 gap-10">
         <img className="w-2/5" src={dog_poof_start} alt="dog_poof2" />
         <img
-          className="w-[6%] absolute left-[16%] pt-[33%]"
+          className="w-[6%] absolute left-[16%] pt-[33%] "
           src={poof}
           alt="poof"
         />

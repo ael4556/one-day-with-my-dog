@@ -9,6 +9,7 @@ import image_dog_dry from "../../Images/story_10/dry-fur-dog.png";
 import image_left_hand from "../../Images/story_10/hand-left.png";
 import image_right_hand from "../../Images/story_10/hand-right.png";
 import image_dog_bath from "../../Images/story_10/dog-bath.png";
+import image_dog_bath_gif from "../../Images/story_10/dog-bath.gif";
 import image_bubble from "../../Images/story_10/bubble.gif";
 
 import gsap from "gsap";
@@ -17,11 +18,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const DogShalala = () => {
   const dogRef = useRef();
+  const dog2Ref = useRef();
   const handleftRef = useRef();
   const handRightRef = useRef();
-
+  
   useEffect(() => {
   const dog = dogRef.current;
+  const dog2 = dog2Ref.current;
   const handleft = handleftRef.current;
   const handRight = handRightRef.current;
 
@@ -34,6 +37,24 @@ const DogShalala = () => {
       
       scrollTrigger: {
         trigger: dog,
+        scrub : true,
+        start : "1100px 100% ",
+        end : "5000px -140%",
+
+        /*markers : true,*/
+      },
+    }
+  );
+
+  gsap.fromTo(
+    dog2,
+    { yPercent: 0,},
+    {
+      yPercent: +310,
+      duration : 10,
+      
+      scrollTrigger: {
+        trigger: dog2,
         scrub : true,
         start : "1100px 100% ",
         end : "5000px -140%",
@@ -81,10 +102,11 @@ const DogShalala = () => {
     }
   );
 
+
   }, []);
 
   return (
-    <div className="flex justify-center pt-[15%]">
+    <div className="flex justify-center pt-[10%]">
       <div className="flex">
         <div className="w-[100%] absolute start-[10%] end-[10%] pt-[100%] blur-sm opacity-95">
           <img src={image_bubble} />
@@ -92,6 +114,9 @@ const DogShalala = () => {
 
         <div className="w-[100%]" ref={dogRef}>
           <img src={image_dog_bath} />
+        </div>
+        <div className=" absolute w-[100%]" ref={dog2Ref}>
+          <img src={image_dog_bath_gif} />
         </div>
         
         <div className=" pt-[20%]">
@@ -116,6 +141,165 @@ const DogShalala = () => {
 };
 
 function Story10() {
+    const tubeRef = useRef();
+    const shampooRef = useRef();
+    const towelsRef = useRef();
+    const dryerRef = useRef();
+
+    const text_tubeRef = useRef();
+    const text_shampooRef = useRef();
+    const text_towelsRef = useRef();
+    const text_dryerRef = useRef();
+
+  useEffect(() => {
+    const tube = tubeRef.current;
+    const shampoo = shampooRef.current;
+    const towels = towelsRef.current;
+    const dryer = dryerRef.current;
+
+    const text_tube = text_tubeRef.current;
+    const text_shampoo = text_shampooRef.current;
+    const text_towels = text_towelsRef.current;
+    const text_dryer = text_dryerRef.current;
+
+    gsap.fromTo(
+      tube,
+      { scale: 0.5},
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: tube,
+          scrub : true,
+          start :"1 80%",
+          end : "1 30%",
+
+         /*markers: true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      shampoo,
+      { scale: 0.5},
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: shampoo,
+          scrub : true,
+          start :"1 80%",
+          end : "1 30%",
+
+         /*markers: true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      towels,
+      { scale: 0.5},
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: towels,
+          scrub : true,
+          start :"1 80%",
+          end : "1 30%",
+
+         /*markers: true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      dryer,
+      { scale: 0.5},
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: dryer,
+          scrub : true,
+          start :"1 80%",
+          end : "1 30%",
+
+         /*markers: true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_tube,
+      { opacity: 0, scale : 0.9 },
+      {
+        opacity: 1,
+        scale : 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: text_tube,
+          scrub: true,
+          start: "-150px 70%",
+          end: "-140px 40%",
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_shampoo,
+      { opacity: 0, scale : 0.9 },
+      {
+        opacity: 1,
+        scale : 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: text_shampoo,
+          scrub: true,
+          start: "-150px 70%",
+          end: "-140px 40%",
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_towels,
+      { opacity: 0, scale : 0.9 },
+      {
+        opacity: 1,
+        scale : 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: text_towels,
+          scrub: true,
+          start: "-150px 70%",
+          end: "-140px 40%",
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_dryer,
+      { opacity: 0, scale : 0.9 },
+      {
+        opacity: 1,
+        scale : 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: text_dryer,
+          scrub: true,
+          start: "-150px 70%",
+          end: "-140px 40%",
+          /*markers : true,*/
+        },
+      }
+    );
+
+  }, []);
+
   return (
     <div>
       <div className="flex pt-[10%] justify-end pr-[10%]">
@@ -128,42 +312,42 @@ function Story10() {
         </div>
       </div>
       <div className="grid grid-cols-2 pt-40 ">
-        <div className="flex flex-col ">
-          <div className="flex justify-center">
-            <img className="w-[50%]" src={image_tube} alt="image_tube" />
+        <div className="flex flex-col" >
+          <div className="flex justify-center" ref={tubeRef}>
+            <img className="w-[70%] pl-[30%]" src={image_tube} alt="image_tube" />
           </div>
-          <div className="flex justify-center text-3xl pt-12">
+          <div className="flex justify-center text-3xl pt-12 pl-[30%]" ref={text_tubeRef}>
             <p>ใช้สายยางฉีดน้ำให้ทั่วตัว</p>
           </div>
         </div>
         <div className="flex flex-col">
-          <div className="flex justify-center">
-            <img className="w-[50%]" src={image_shampoo} alt="image_shampoo" />
+          <div className="flex justify-center" ref={shampooRef}>
+            <img className="w-[70%] pr-[30%]" src={image_shampoo} alt="image_shampoo" />
           </div>
-          <div className="flex justify-center text-3xl pt-12">
+          <div className="flex justify-center text-3xl pt-12 pr-[30%]" ref={text_shampooRef}>
             <p>เอาแชมพูผสมน้ำนิดหน่อยถูให้ทั่วตัว</p>
           </div>
         </div>
       </div>
-
-      <div className="pt-40">
+      
+      <div className="">
         <DogShalala />
       </div>
 
-      <div className="grid grid-cols-2 pt-[230%]">
+      <div className="grid grid-cols-2 pt-[225%]">
         <div className="flex flex-col ">
-          <div className="flex justify-center">
-            <img className="w-[50%]" src={image_towels} alt="image_towels" />
+          <div className="flex justify-center" ref={towelsRef}>
+            <img className="w-[70%] pl-[30%]" src={image_towels} alt="image_towels" />
           </div>
-          <div className="flex justify-center text-3xl pt-12">
+          <div className="flex justify-center text-3xl pt-12 pl-[30%]" ref={text_towelsRef}>
             <p>ใช้ผ้าขนหนูเช็ดขนที่เปียกให้พอหมาด</p>
           </div>
         </div>
         <div className="flex flex-col">
-          <div className="flex justify-center">
-            <img className="w-[50%]" src={image_dry} alt="image_dry" />
+          <div className="flex justify-center" ref={dryerRef}>
+            <img className="w-[70%] pr-[30%]" src={image_dry} alt="image_dry" />
           </div>
-          <div className="flex justify-center text-3xl pt-12">
+          <div className="flex justify-center text-3xl pt-12 pr-[30%]" ref={text_dryerRef}>
             <p>ใช้ไดร์เป่าลมปกติ เป่าให้ขนแห้งสนิท</p>
           </div>
         </div>
@@ -185,7 +369,7 @@ function Story10() {
             width={50}
           />
         </div>
-        <div className="absolute left-0 z-0">
+        <div className="absolute left-[5%] z-0">
           <img src={image_dog_dry} alt="image_dog_dry" />
         </div>
       </div>

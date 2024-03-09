@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Story9() {
     const text_story9_1Ref = useRef();
     const text_story9_2Ref = useRef();
-    const gardendogRef = useRef();
+    
     const balldogRef = useRef();
     const frisbeedogRef = useRef();
     const text_stroke3Ref = useRef();
@@ -21,7 +21,7 @@ function Story9() {
     useEffect(() => {
     const text_story9_1 = text_story9_1Ref.current;
     const text_story9_2 = text_story9_2Ref.current;
-    const gardendog = gardendogRef.current;
+    
     const balldog = balldogRef.current;
     const frisbeedog = frisbeedogRef.current;
     const text_stroke3 = text_stroke3Ref.current;
@@ -92,29 +92,31 @@ function Story9() {
                 </p>
             </div>
             <div className=" flex justify-center pt-28">
-                <img
-                className=" w-[10%] absolute right-[35%]"
-                src={ball}
-                alt={ball}
-                />
-                <img
-                className=" w-[10%] absolute left-[35%] "
-                src={frisbee_dog}
-                alt={frisbee_dog}
-                />
                 <p className="text-3xl absolute right-[37%] pt-[13%]">ลูกบอล</p>
                 <p className="text-3xl absolute left-[37%] pt-[13%]">จานร่อน</p>
-                <img className=" pt-[15%]"
-                src={garden_dog}
-                alt={garden_dog}
-                />
+                
                 <img className="w-[32%] absolute pt-[29.7%] right-[10%]"
                 ref={text_stroke3Ref}
                 src={text_stroke_3}
                 alt={text_stroke_3}
                 />
+                <img
+                className=" w-[10%] absolute right-[35%] hover:scale-110 duration-300"
+                src={ball}
+                alt={ball}
+                />
+                <img
+                className=" w-[10%] absolute left-[35%] hover:scale-110 duration-300"
+                src={frisbee_dog}
+                alt={frisbee_dog}
+                />
                 
+                <img className=" pt-[15%]"
+                src={garden_dog}
+                alt={garden_dog}
+                />   
             </div>
+
             <div className="pl-[10%]">
               <Chat 
               text="“แดดเริ่มร้อนเเล้วนะ มานั่งพักก่อน”" 
