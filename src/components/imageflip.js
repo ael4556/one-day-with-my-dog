@@ -9,7 +9,7 @@ function ImageFlip({ image_front = image_frame, image_back = image_frame }) {
             <img className="h-80 w-80 object-cover" src={image_front}/>
           </div>
           <div className=" absolute inset-0 h-80 w-80 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-            <img className="h-80 w-80 object-cover" src={image_back} />
+            <img className="h-80 w-80 object-cover rounded-full" src={image_back} />
           </div>
         </div>
       </div>

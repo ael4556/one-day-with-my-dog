@@ -12,6 +12,7 @@ import tail_3 from "../../Images/story_7/tail-tells-3.png";
 import tail_4 from "../../Images/story_7/tail-tells-4.png";
 import tail_5 from "../../Images/story_7/tail-tells-5.png";
 import tail_6 from "../../Images/story_7/tail-tells-6.png";
+import Be_careful from "../../Images/story_7/Be-careful.gif";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -259,7 +260,7 @@ function Story7() {
         </div>
         <div className="grid grid-cols-3 pt-20 justify-items-center gap-8 gap-y-8 px-32">
           <div ref={Flip_1Ref}><ImageFlip image_front={tail_1} /></div>
-          <div ref={Flip_2Ref}><ImageFlip image_front={tail_2} /></div>
+          <div ref={Flip_2Ref}><ImageFlip image_front={tail_2} image_back={Be_careful}/></div>
           <div ref={Flip_3Ref}><ImageFlip image_front={tail_3} /></div>
           <div ref={Flip_4Ref}><ImageFlip image_front={tail_4} /></div>
           <div ref={Flip_5Ref}><ImageFlip image_front={tail_5} /></div>
