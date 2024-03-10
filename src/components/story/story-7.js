@@ -267,7 +267,7 @@ function Story7() {
         </div>
 
         <div className="flex pt-[25%] justify-end pr-[10%]">
-          <Chat text="“ตื่นแล้วหรอ มีตังค์ เล่นของเล่นกันไหม?”" isMe />
+          <Chat text="“ตื่นแล้วหรอ มีตังค์ เล่นของเล่นกันไหม?”" isMe={true} />
         </div>
         <div className="flex pt-40 justify-start pl-[10%]">
           <Chat text="โฮ่ง โฮ่ง !" isDog={true} isMe={false} />

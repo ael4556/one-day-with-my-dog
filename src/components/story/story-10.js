@@ -150,6 +150,7 @@ function Story10() {
     const text_shampooRef = useRef();
     const text_towelsRef = useRef();
     const text_dryerRef = useRef();
+    const text_story10_1Ref = useRef();
 
   useEffect(() => {
     const tube = tubeRef.current;
@@ -161,6 +162,7 @@ function Story10() {
     const text_shampoo = text_shampooRef.current;
     const text_towels = text_towelsRef.current;
     const text_dryer = text_dryerRef.current;
+    const text_story10_1 = text_story10_1Ref.current;
 
     gsap.fromTo(
       tube,
@@ -298,6 +300,25 @@ function Story10() {
       }
     );
 
+    gsap.fromTo(
+      text_story10_1,
+      { opacity: 0, scale : 0.9 },
+      {
+        opacity: 1,
+        scale : 1,
+        duration: 1,
+        delay: 0,
+        scrollTrigger: {
+          trigger: text_story10_1,
+          scrub : true,
+          start : "1px 80%",
+          end : "1px 50%" ,
+
+          /*markers : true,*/
+        },
+      }
+    );
+
   }, []);
 
   return (
@@ -333,31 +354,40 @@ function Story10() {
       <div className="">
         <DogShalala />
       </div>
-
-      <div className="grid grid-cols-2 pt-[225%]">
-        <div className="flex flex-col ">
-          <div className="flex justify-center" ref={towelsRef}>
-            <img className="w-[70%] pl-[30%]" src={image_towels} alt="image_towels" />
+      
+      <div className="pt-[190%]">
+            <div className="text-3xl pt-24 leading-relaxed pl-[60%] pr-[10%]">
+              <p ref={text_story10_1Ref}>
+              เสร็จแล้วก็ล้างด้วยน้ำเปล่าให้สะอาด 
+              เจ้ามีตังค์ก็รู้หน้าที่ของตัวเองด้วยการช่วยสะบัดขน
+              แต่น้ำดันกระเด็นโดนเราซะนี่
+              </p>
+            </div>
+          <div className="grid grid-cols-2 pt-[25%]">
+            <div className="flex flex-col ">
+              <div className="flex justify-center" ref={towelsRef}>
+                <img className="w-[70%] pl-[30%]" src={image_towels} alt="image_towels" />
+              </div>
+              <div className="flex justify-center text-3xl pt-12 pl-[30%]" ref={text_towelsRef}>
+                <p>ใช้ผ้าขนหนูเช็ดขนที่เปียกให้พอหมาด</p>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="flex justify-center" ref={dryerRef}>
+                <img className="w-[70%] pr-[30%]" src={image_dry} alt="image_dry" />
+              </div>
+              <div className="flex justify-center text-3xl pt-12 pr-[30%]" ref={text_dryerRef}>
+                <p>ใช้ไดร์เป่าลมปกติ เป่าให้ขนแห้งสนิท</p>
+              </div>
+            </div>
           </div>
-          <div className="flex justify-center text-3xl pt-12 pl-[30%]" ref={text_towelsRef}>
-            <p>ใช้ผ้าขนหนูเช็ดขนที่เปียกให้พอหมาด</p>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div className="flex justify-center" ref={dryerRef}>
-            <img className="w-[70%] pr-[30%]" src={image_dry} alt="image_dry" />
-          </div>
-          <div className="flex justify-center text-3xl pt-12 pr-[30%]" ref={text_dryerRef}>
-            <p>ใช้ไดร์เป่าลมปกติ เป่าให้ขนแห้งสนิท</p>
-          </div>
-        </div>
       </div>
 
       <div className="flex justify-center pt-40">
         <div className="flex text-3xl">หัวใจสำคัญของการเป่าขน คือ...</div>
       </div>
       <div className="flex justify-center pt-12">
-        <div className="flex text-8xl font-semibold text-[#D60000]">
+        <div className="flex text-7xl font-semibold font-mali text-[#D60000]">
           “ ขน ต้อง แห้ง สนิท! ”
         </div>
       </div>

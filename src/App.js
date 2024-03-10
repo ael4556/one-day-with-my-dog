@@ -18,6 +18,7 @@ import Story7 from "./components/story/story-7";
 import Story8 from "./components/story/story-8";
 import Story9 from "./components/story/story-9";
 import Story10 from "./components/story/story-10";
+import Story11 from "./components/story/story-11";
 
 const App = () => {
   /*const [scrollPosition, setScrollPosition] = useState(0);
@@ -91,6 +92,9 @@ const App = () => {
           <Story9 />
           <div>
             <Story10 />
+          </div>
+          <div className="pt-[30%]">
+            <Story11 />
           </div>
 
           <Navbar />
