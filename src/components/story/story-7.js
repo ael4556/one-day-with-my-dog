@@ -13,6 +13,11 @@ import tail_4 from "../../Images/story_7/tail-tells-4.png";
 import tail_5 from "../../Images/story_7/tail-tells-5.png";
 import tail_6 from "../../Images/story_7/tail-tells-6.png";
 import Be_careful from "../../Images/story_7/Be-careful.gif";
+import Sad from "../../Images/story_7/sad.gif";
+import Threatening from "../../Images/story_7/Threatening.gif";
+import Glad from "../../Images/story_7/glad.gif";
+import Want from "../../Images/story_7/wanttoplay.gif";
+import Scared from "../../Images/story_7/scared.gif";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -259,12 +264,12 @@ function Story7() {
           <Title title="หางบอกอารมณ์" />
         </div>
         <div className="grid grid-cols-3 pt-20 justify-items-center gap-8 gap-y-8 px-32">
-          <div ref={Flip_1Ref}><ImageFlip image_front={tail_1} /></div>
+          <div ref={Flip_1Ref}><ImageFlip image_front={tail_1} image_back={Want}/></div>
           <div ref={Flip_2Ref}><ImageFlip image_front={tail_2} image_back={Be_careful}/></div>
-          <div ref={Flip_3Ref}><ImageFlip image_front={tail_3} /></div>
-          <div ref={Flip_4Ref}><ImageFlip image_front={tail_4} /></div>
-          <div ref={Flip_5Ref}><ImageFlip image_front={tail_5} /></div>
-          <div ref={Flip_6Ref}><ImageFlip image_front={tail_6} /></div>
+          <div ref={Flip_3Ref}><ImageFlip image_front={tail_3} image_back={Sad}/></div>
+          <div ref={Flip_4Ref}><ImageFlip image_front={tail_4} image_back={Glad}/></div>
+          <div ref={Flip_5Ref}><ImageFlip image_front={tail_5} image_back={Scared}/></div>
+          <div ref={Flip_6Ref}><ImageFlip image_front={tail_6} image_back={Threatening}/></div>
         </div>
 
         <div className="flex pt-[25%] justify-end pr-[10%]">

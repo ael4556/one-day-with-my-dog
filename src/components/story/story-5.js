@@ -244,18 +244,24 @@ function Story5() {
         <div className="left-[22.5%] right-[22.5%] absolute pt-6">
         <div className="pt-56 flex flex-row gap-[5%] justify-center w-[100%] h-[100%]">
             
+            <div className="hover:scale-110 duration-200 cursor-pointer">
               <Card 
                 title="ประเภทที่ 1" 
                 content="นมวัวและผลิตภัณฑ์ จากนมวัว"
                 image={dogfood_1} />
+            </div>
+            <div className="hover:scale-110 duration-200 cursor-pointer">
               <Card 
                 title="ประเภทที่ 2" 
                 content="อาหารเม็ดตามขนาด และ อายุของสุนัข"
                 image={dogfood_2} />
+            </div>
+            <div className="hover:scale-110 duration-200 cursor-pointer">
               <Card
                 title="ประเภทที่ 3"
                 content="ผลไม้บางชนิด เช่น พลับ พีช พลัม พรุน เชอร์รี่"
                 image={dogfood_3}/>
+            </div>
             
         </div>
         </div >

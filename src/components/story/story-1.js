@@ -83,15 +83,13 @@ function Story1() {
       { opacity: 0 },
       {
         opacity: 1,
-        duration: 4,
-        delay: 1,
         scrollTrigger: {
           trigger: doglook,
           scrub : true,
-          start : "700px 90%",
-          end : "700px 30%",
+          start : "600px 50%",
+          end : "600px 0%",
 
-          /* markers : true, */    
+          /*markers : true,*/
         },
       }
     );
