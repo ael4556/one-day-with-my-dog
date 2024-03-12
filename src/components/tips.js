@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Tips({ 
   text = "ไม่มีข้อความ",
   text2 = "",
+  text3 = "",
   width = 100 }) {
   const messages = useRef();
   const icons = useRef();
@@ -65,10 +66,11 @@ function Tips({
       <div className="flex justify-end gap-4">
         <div
           ref={messages}
-          className={`text-4xl bg-[#FFF5DE] max-w-[${width}%]  rounded-full p-9 shadow-lg  border-8 border-[#FFC645] `}
+          className={`text-4xl leading-relaxed bg-[#FFF5DE] max-w-[${width}%] rounded-[70px] px-9 py-8 shadow-lg  border-8 border-[#FFC645] `}
         >
           <div>{text}</div>
           <div>{text2}</div>
+          <div>{text3}</div>
         </div>
         <div>
           <img

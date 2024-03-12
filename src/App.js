@@ -70,9 +70,12 @@ const App = () => {
           <div className="pt-[30%]">
             <Story11 />
           </div>
-          <div>
+          <div className=" pt-[10%]">
             <Story_12 />
           </div>
+          </div>
+          <Story9 />
+          <div>
 
           <Navbar />
         </div>

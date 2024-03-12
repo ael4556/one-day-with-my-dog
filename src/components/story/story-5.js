@@ -243,13 +243,13 @@ function Story5() {
         >
           <div className="left-[22.5%] right-[22.5%] absolute pt-6">
             <div className="pt-56 flex flex-row gap-[5%] justify-center w-[100%] h-[100%]">
-              <div className="hover:scale-110 duration-200 cursor-pointer">
+              <div className="hover:scale-105 duration-200 cursor-pointer">
                 <Card image={dogfood_1} image_back={dogfoodback_1} />
               </div>
-              <div className="hover:scale-110 duration-200 cursor-pointer">
+              <div className="hover:scale-105 duration-200 cursor-pointer">
                 <Card image={dogfood_2} image_back={dogfoodback_2} />
               </div>
-              <div className="hover:scale-110 duration-200 cursor-pointer">
+              <div className="hover:scale-105 duration-200 cursor-pointer">
                 <Card image={dogfood_3} image_back={dogfoodback_3} />
               </div>
             </div>
@@ -303,7 +303,7 @@ function Story5() {
       </div>
       <div className="flex pt-40 justify-end pr-[10%]">
         <Chat
-          text="“ไป มีตังค์กินข้าวกันหิวแล้วละสิ”"
+          text="“อิ่มแล้วก็นอนพักเถอะ ฉันขอไปทำงานบ้านแปปนึงนะ”"
           isMe={true}
           showIcon={true}
         />

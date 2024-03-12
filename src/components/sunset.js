@@ -44,7 +44,7 @@ function Sunset({ sunlight = sun }) {
     });
 
     gsap.to(cloundRight, {
-      x: 300,
+      x: 330,
       duration: 2,
       scrollTrigger: {
         trigger: cloundRight,

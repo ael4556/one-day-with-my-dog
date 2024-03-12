@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Chat({
   text = "ไม่มีข้อความ",
   text2 = "",
+  text3 = "",
   isMe = true,
   showIcon = true,
   isDog = false,
@@ -77,10 +78,11 @@ function Chat({
       )}
       <div
         ref={messages}
-        className="text-4xl bg-gray-200  rounded-full p-9 shadow-lg  border-8 border-gray-300"
+        className="text-4xl leading-tight bg-gray-200 rounded-[70px] px-9 py-8 shadow-lg  border-8 border-gray-300"
       >
         <div>{text}</div>
         <div>{text2}</div>
+        <div>{text3}</div>
       </div>
       {isMe && showIcon && (
         <div>

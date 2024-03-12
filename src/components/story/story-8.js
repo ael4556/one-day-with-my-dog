@@ -205,28 +205,33 @@ function Story8() {
  
   return (
     <div className="flex flex-col">
-      <div className="flex pl-[15%] pr-[15%]">
-        <div className="flex flex-col max-w-2xl">
-          <div className="text-3xl pt-24 leading-relaxed" ref={text_story8_1Ref}>
-            <p>
-              เวลาแบบนี้ควรฝึกเจ้าตูบน้อยซักหน่อย...
-              คุณเลยเดินไปหยิบขนมสุดโปรดของมัตังค์
-              และลงไปนั่งในระดับเดียวกับมีตังค์ เตรียมพร้อมที่จะออกคำสั่ง
-            </p>
-          </div>
-          <div className="flex justify-center ">
-            <img className=" pt-40 w-[40%]" src={snack} ref={snack_motionRef}/>
+      
+        
+        <div className=" grid grid-cols-2"> 
+        <div className=" flex flex-col">
+          <p className="text-3xl leading-relaxed pl-[20%] pr-[10%]">
+            เวลาแบบนี้ควรฝึกเจ้าตูบน้อยซักหน่อย...
+            คุณเลยเดินไปหยิบขนมสุดโปรดของมัตังค์
+            และลงไปนั่งในระดับเดียวกับมีตังค์ เตรียมพร้อมที่จะออกคำสั่ง
+          </p>
+        <div className="pl-[40%]">
+          <img className="w-[60%]" src={snack} />
+        </div>
+        </div>
+        
+        <div className=" flex flex-col">
+          <div className=" grid grid-cols-2">
+            <div className="" >
+              <img className="w-[80%]" src={snack_dog}/>
+            </div>
+            <div className="" >
+              <img className="w-[80%]" src={dog} />
+            </div>
           </div>
         </div>
 
-      </div>
-      <div className=" absolute pt-[8%] right-[25%]" ref={snack_dogRef}>
-          <img className="w-[80%]" src={snack_dog}/>
         </div>
-
-        <div className=" absolute right-[10%]" ref={dog_snackRef}>
-          <img className="w-[80%]" src={dog} />
-        </div>
+        
       <div className="flex justify-center" ref={text_story8_2Ref}>
         <Title title="เลือกคำสั่งที่ต้องการฝึก" />
       </div>

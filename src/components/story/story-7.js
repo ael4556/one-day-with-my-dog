@@ -5,6 +5,7 @@ import ClockTop from "../clock";
 import Title from "../title";
 import Chat from "../chat";
 
+import SunAfternoon from "../../Images/sun-afternoon.png";
 import yawn_dog from "../../Images/story_7/yawn-dog.png";
 import tail_1 from "../../Images/story_7/tail-tells-1.png";
 import tail_2 from "../../Images/story_7/tail-tells-2.png";
@@ -246,7 +247,7 @@ function Story7() {
     <>
       <div className="pt-[30%]">
         <ClockTop time="13.30" />
-        <Sunset />
+        <Sunset sunlight={SunAfternoon}/>
         <div className="pt-[90vh] flex justify-around">
           <img className="w-[40%]" src={yawn_dog} alt="yawn_dog" ref={Dog_yawnRef}/>
           <div className="max-w-xl flex flex-col text-3xl">

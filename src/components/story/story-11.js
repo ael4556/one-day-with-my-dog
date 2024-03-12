@@ -2,6 +2,7 @@ import Door from "../../Images/story_11/door.png";
 import Leash from "../../Images/story_11/leash.png";
 import Dogleash from "../../Images/story_11/leash-the-dog.png";
 import textD from "../../Images/story_11/text-leash-the-dog.png";
+import SunEvening from "../../Images/sun-evening.png" ;
 
 import Sunset from "../../components/sunset";
 import Chat from "../chat";
@@ -43,7 +44,7 @@ function Story11() {
   return (
     <div className=" flex flex-col justify-center">
       <ClockTop time="16.30" />
-      <Sunset/>
+      <Sunset sunlight={SunEvening}/>
         <div className=" pt-[35%]">
         <div className="flex pt-[25%] justify-start pl-[10%]">
             <Chat text="“ไปเดินเล่นกันมีตังค์”" isMe={false} />

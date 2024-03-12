@@ -5,7 +5,11 @@ import image_towels from "../../Images/story_10/towels.png";
 import image_dry from "../../Images/story_10/hair-dryer.png";
 import image_shampoo from "../../Images/story_10/dog-shampoo.png";
 import image_tube from "../../Images/story_10/tube.png";
+
 import image_dog_dry from "../../Images/story_10/dry-fur-dog.png";
+import image_sofa from "../../Images/story_10/bg-dry-fur-dog.png";
+import image_effect from "../../Images/story_10/effect-dogdry.gif";
+
 import image_left_hand from "../../Images/story_10/hand-left.png";
 import image_right_hand from "../../Images/story_10/hand-right.png";
 import image_dog_bath from "../../Images/story_10/dog-bath.png";
@@ -101,6 +105,7 @@ const DogShalala = () => {
       },
     }
   );
+  
 
 
   }, []);
@@ -145,24 +150,34 @@ function Story10() {
     const shampooRef = useRef();
     const towelsRef = useRef();
     const dryerRef = useRef();
+    const dog_dryRef = useRef();
+    const effectRef = useRef();
+    const sofaRef = useRef();
 
     const text_tubeRef = useRef();
     const text_shampooRef = useRef();
     const text_towelsRef = useRef();
     const text_dryerRef = useRef();
     const text_story10_1Ref = useRef();
+    const text_story10_2Ref = useRef();
+    const title_story10_1Ref = useRef();
 
   useEffect(() => {
     const tube = tubeRef.current;
     const shampoo = shampooRef.current;
     const towels = towelsRef.current;
     const dryer = dryerRef.current;
+    const dog_dry = dog_dryRef.current;
+    const effect = effectRef.current;
+    const sofa = sofaRef.current;
 
     const text_tube = text_tubeRef.current;
     const text_shampoo = text_shampooRef.current;
     const text_towels = text_towelsRef.current;
     const text_dryer = text_dryerRef.current;
     const text_story10_1 = text_story10_1Ref.current;
+    const text_story10_2 = text_story10_2Ref.current;
+    const title_story10_1 = title_story10_1Ref.current;
 
     gsap.fromTo(
       tube,
@@ -319,6 +334,94 @@ function Story10() {
       }
     );
 
+    gsap.fromTo(
+      text_story10_2,
+      { opacity: 0, scale : 0.9 },
+      {
+        opacity: 1,
+        scale : 1,
+        duration: 1,
+        delay: 0,
+        scrollTrigger: {
+          trigger: text_story10_2,
+          scrub : true,
+          start : "1px 80%",
+          end : "1px 50%" ,
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      title_story10_1,
+      { scale: 0 },
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: title_story10_1,
+          scrub : true,
+          start : "1px 80%",
+          end : "1px 50%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      dog_dry,
+      { scale: 0.1 },
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: dog_dry,
+          scrub : true,
+          start : "50px 100%",
+          end : "50px 60%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      effect,
+      { scale: 0 },
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: effect,
+          scrub : true,
+          start : "1px 80%",
+          end : "1px 50%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      sofa,
+      { scale: 0.5 },
+      {
+        scale: 1,
+        duration: 3,
+        scrollTrigger: {
+          trigger: sofa,
+          scrub : true,
+          start : "-200px 80%",
+          end : "-200px 20%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+
   }, []);
 
   return (
@@ -384,23 +487,30 @@ function Story10() {
       </div>
 
       <div className="flex justify-center pt-40">
-        <div className="flex text-3xl">หัวใจสำคัญของการเป่าขน คือ...</div>
+        <div className="flex text-3xl" ref={text_story10_2Ref}>หัวใจสำคัญของการเป่าขน คือ...</div>
       </div>
       <div className="flex justify-center pt-12">
-        <div className="flex text-7xl font-semibold font-mali text-[#D60000]">
+        <div className="flex text-7xl font-semibold font-mali text-[#D60000]" ref={title_story10_1Ref}>
           “ ขน ต้อง แห้ง สนิท! ”
         </div>
       </div>
       <div className="flex pt-[10%] justify-end pr-[10%]">
-        <div className="pt-40 z-10">
+        <div className="pt-40 z-50">
           <Tips
-            text="ขนต้องแห้งสนิท เพราะอาจทำให้กิดโรคผิวหนังได้"
-            text2="เนื่องจากน้องสุนัขนั้น มีขนหลายอยู่ชั้น"
+            text="ขนต้องแห้งสนิท เพราะอาจ"
+            text2="ทำให้กิดโรคผิวหนังได้เนื่องจาก"
+            text3="น้องสุนัขนั้น มีขนหลายอยู่ชั้น"
             width={50}
           />
         </div>
+        <div className="absolute left-[5%] z-20">
+          <img src={image_dog_dry} alt="image_dog_dry" ref={dog_dryRef}/>
+        </div>
         <div className="absolute left-[5%] z-0">
-          <img src={image_dog_dry} alt="image_dog_dry" />
+          <img src={image_sofa} alt="image_dog_dry" ref={sofaRef}/>
+        </div>
+        <div className="absolute left-[5%] z-10">
+          <img src={image_effect} alt="image_dog_dry" ref={effectRef}/>
         </div>
       </div>
     </div>
