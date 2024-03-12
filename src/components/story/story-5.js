@@ -10,9 +10,12 @@ import frung_fring from "../../Images/story_5/frungfrimg.gif";
 import table_Dog from "../../Images/story_5/table-dog.jpg";
 import microwave from "../../Images/story_5/microwave.png";
 import bowl from "../../Images/story_5/human-bowl.png";
-import dogfood_1 from "../../Images/story_5/dog-food-1.png";
-import dogfood_2 from "../../Images/story_5/dog-food-2.png";
-import dogfood_3 from "../../Images/story_5/dog-food-3.png";
+import dogfood_1 from "../../Images/story_5/food1.png";
+import dogfood_2 from "../../Images/story_5/food2.png";
+import dogfood_3 from "../../Images/story_5/food3.png";
+import dogfoodback_1 from "../../Images/story_5/infofood1.png";
+import dogfoodback_2 from "../../Images/story_5/info-food2.png";
+import dogfoodback_3 from "../../Images/story_5/info-food3.png";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -49,9 +52,9 @@ function Story5() {
         duration: 1,
         scrollTrigger: {
           trigger: text_story5_1,
-          scrub : true,
-          start : "1px 80%",
-          end : "1px 50%",
+          scrub: true,
+          start: "1px 80%",
+          end: "1px 50%",
 
           /*markers : true,*/
         },
@@ -66,9 +69,9 @@ function Story5() {
         duration: 1,
         scrollTrigger: {
           trigger: text_story5_2,
-          scrub : true,
-          start : "1px 80%",
-          end : "1px 50%",
+          scrub: true,
+          start: "1px 80%",
+          end: "1px 50%",
 
           /*markers : true,*/
         },
@@ -84,9 +87,9 @@ function Story5() {
         delay: 0.75,
         scrollTrigger: {
           trigger: dogtable,
-          scrub : true,
-          start : "1px 40%",
-          end : "1px 10%",
+          scrub: true,
+          start: "1px 40%",
+          end: "1px 10%",
 
           /*markers : true,*/
         },
@@ -95,17 +98,17 @@ function Story5() {
 
     gsap.fromTo(
       text_story5_3,
-      { opacity: 0 , scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 0.5,
         delay: 0.5,
         scrollTrigger: {
           trigger: text_story5_3,
-          scrub : true,
-          start :"1 70%",
-          end : "1 40%",
+          scrub: true,
+          start: "1 70%",
+          end: "1 40%",
 
           /*markers: true,*/
         },
@@ -120,9 +123,9 @@ function Story5() {
         duration: 1,
         scrollTrigger: {
           trigger: bowl_dog,
-          scrub : true,
-          start :"1 60%",
-          end : "1 20%",
+          scrub: true,
+          start: "1 60%",
+          end: "1 20%",
 
           /*markers: true,*/
         },
@@ -131,74 +134,73 @@ function Story5() {
 
     gsap.fromTo(
       frung_fring,
-      { scale: 0 ,opacity : 0 },
+      { scale: 0, opacity: 0 },
       {
         scale: 1,
-        opacity : 1,
+        opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: frung_fring,
-          scrub : true,
-          start :"1 80%",
-          end : "1 40%",
+          scrub: true,
+          start: "1 80%",
+          end: "1 40%",
 
-         /* markers: true,*/
+          /* markers: true,*/
         },
       }
     );
 
     gsap.fromTo(
       text_story5_4,
-      { opacity: 0, scale : 0.9},
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 0.5,
         scrollTrigger: {
           trigger: text_story5_4,
-          scrub : true,
-          start :"1 60%",
-          end : "1 30%",
-          
+          scrub: true,
+          start: "1 60%",
+          end: "1 30%",
+
           /*markers: true,*/
         },
       }
     );
-    
+
     gsap.fromTo(
       micro,
-      { scale: 0.5},
+      { scale: 0.5 },
       {
         scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: micro,
-          scrub : true,
-          start :"1 80%",
-          end : "1 30%",
+          scrub: true,
+          start: "1 80%",
+          end: "1 30%",
 
-         /*markers: true,*/
+          /*markers: true,*/
         },
       }
     );
 
     gsap.fromTo(
       humanbowl,
-      { scale: 0.5},
+      { scale: 0.5 },
       {
         scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: humanbowl,
-          scrub : true,
-          start :"1 70%",
-          end : "1 20%",
+          scrub: true,
+          start: "1 70%",
+          end: "1 20%",
 
-         /*markers: true,*/
+          /*markers: true,*/
         },
       }
     );
-
   }, []);
 
   return (
@@ -214,72 +216,67 @@ function Story5() {
         <Chat text="“โฮ่ง !”" isMe={false} showIcon={true} isDog={true} />
       </div>
       <div className="pt-40 flex justify-center">
-        <img 
-        className=" w-full " 
-        src={table_Dog} 
-        alt="table_Dog"
-        ref={dogtableRef}
+        <img
+          className=" w-full "
+          src={table_Dog}
+          alt="table_Dog"
+          ref={dogtableRef}
         />
       </div>
       <div ref={text_story5_1Ref} className=" flex flex-col pt-56">
-        <p className="text-5xl flex justify-center">
-          เรามาเลือกอาหารมื้อพิเศษ
-        </p>
+        <p className="text-5xl flex justify-center">เรามาเลือกอาหารมื้อพิเศษ</p>
         <p className="text-5xl font-bold flex justify-center pt-10">
           ที่เหมาะกับมีตังค์เถอะ
         </p>
       </div>
-        <div ref={text_story5_2Ref} className="flex flex-col justify-center">
-          <Title title="เลือกอาหารที่เหมาะสม" />
-        </div>
+      <div ref={text_story5_2Ref} className="flex flex-col justify-center">
+        <Title title="เลือกอาหารที่เหมาะสม" />
+      </div>
       <div>
-      <div
-        className="pt-0 justify-center [perspective:1000px]"
-        /*style={{
+        <div
+          className="pt-0 justify-center [perspective:1000px]"
+          /*style={{
           backgroundImage: `url(${cook_table})`,
           backgroundRepeat: "no-repeat",
           height: "140vh",
-        }}*/>
-         
-        <div className="left-[22.5%] right-[22.5%] absolute pt-6">
-        <div className="pt-56 flex flex-row gap-[5%] justify-center w-[100%] h-[100%]">
-            
-            <div className="hover:scale-110 duration-200 cursor-pointer">
-              <Card 
-                title="ประเภทที่ 1" 
-                content="นมวัวและผลิตภัณฑ์ จากนมวัว"
-                image={dogfood_1} />
+        }}*/
+        >
+          <div className="left-[22.5%] right-[22.5%] absolute pt-6">
+            <div className="pt-56 flex flex-row gap-[5%] justify-center w-[100%] h-[100%]">
+              <div className="hover:scale-110 duration-200 cursor-pointer">
+                <Card image={dogfood_1} image_back={dogfoodback_1} />
+              </div>
+              <div className="hover:scale-110 duration-200 cursor-pointer">
+                <Card image={dogfood_2} image_back={dogfoodback_2} />
+              </div>
+              <div className="hover:scale-110 duration-200 cursor-pointer">
+                <Card image={dogfood_3} image_back={dogfoodback_3} />
+              </div>
             </div>
-            <div className="hover:scale-110 duration-200 cursor-pointer">
-              <Card 
-                title="ประเภทที่ 2" 
-                content="อาหารเม็ดตามขนาด และ อายุของสุนัข"
-                image={dogfood_2} />
-            </div>
-            <div className="hover:scale-110 duration-200 cursor-pointer">
-              <Card
-                title="ประเภทที่ 3"
-                content="ผลไม้บางชนิด เช่น พลับ พีช พลัม พรุน เชอร์รี่"
-                image={dogfood_3}/>
-            </div>
-            
+          </div>
+          <div className=" flex justify-center">
+            <img className="w-[80%]" src={cook_table} alt="cook_table" />
+          </div>
         </div>
-        </div >
-        <div className=" flex justify-center">
-        <img className="w-[80%]"
-         src={cook_table}
-         alt="cook_table"/> 
-         </div>
       </div>
-      </div>
-      
+
       <div className="pt-12 ">
         <p className="text-5xl flex justify-center" ref={text_story5_3Ref}>
           เย้! อาหารเสร็จแล้ว มีตังค์มากินได้เลย
         </p>
         <div className="flex justify-center">
-          <img className=" w-2/5" src={dog_bowl} alt="table_Dog" ref={bowl_dogRef}/>
-          <img className=" w-2/5 absolute" src={frung_fring} alt="table_Dog" ref={frung_fringRef} />
+          <img
+            className=" w-2/5"
+            src={dog_bowl}
+            alt="table_Dog"
+            ref={bowl_dogRef}
+          />
+          <img
+            className=" w-2/5 absolute"
+            src={frung_fring}
+            alt="table_Dog"
+            ref={frung_fringRef}
+          />
         </div>
       </div>
       <div className="pl-[10%] pt-px">
@@ -290,7 +287,12 @@ function Story5() {
         />
       </div>
       <div className="pt-12 grid ml-40 mr-40 grid-cols-3">
-        <img className=" w-4/6" src={microwave} alt="table_Dog" ref={microRef} />
+        <img
+          className=" w-4/6"
+          src={microwave}
+          alt="table_Dog"
+          ref={microRef}
+        />
         <img className=" w-4/6" src={bowl} alt="table_Dog" ref={humanbowlRef} />
         <div ref={text_story5_4Ref} className="flex justify-end max-w-xl pt-24">
           <p className="text-3xl flex justify-center leading-relaxed">

@@ -1,11 +1,8 @@
-import image_frame from "../Images/story_5/dog-food-1.png";
+import image_frame from "../Images/story_5/food1.png";
+import image_backs from "../Images/story_5/infofood1.png";
 import { useState } from "react";
 
-function Card({
-  title = "หัวข้อ",
-  content = "รายระเอียด",
-  image = image_frame,
-}) {
+function Card({ image = image_frame, image_back = image_backs }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -27,21 +24,15 @@ function Card({
             <div className="flex rounded-2xl">
               <div className="flex-col">
                 <div className="flex justify-center">
-                  <img className="w-full object-cover px-[10%] pt-[10%]" src={image} />
+                  <img className="w-full object-cover " src={image} />
                 </div>
-                <div className="flex justify-center pt-4">
-                  <p className="text-black text-3xl text-center font-extrabold pt-2">
-                    {title}
-                  </p>
-                </div>
-                <p className="text-black text-2xl font-normal pt-[6%] px-[10%]">
-                  {content}
-                </p>
               </div>
             </div>
           </div>
-          <div className="rounded-2xl absolute inset-0 h-full w-full [transform:rotateY(180deg)] [backface-visibility:hidden] bg-emerald-50 shadow-xl">
-            {/** หลังการ์ด */}
+          <div className="rounded-2xl absolute inset-0 h-full w-full [transform:rotateY(180deg)] [backface-visibility:hidden]  shadow-xl">
+            <div className="flex justify-center">
+              <img className="w-full object-cover " src={image_back} />
+            </div>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-function Sunset({ time = "0.00" }) {
+function Sunset({ sunlight = sun }) {
   const sunRef = useRef();
   const cloundLeftTopRef = useRef();
   const cloundRightRef = useRef();
@@ -74,7 +74,7 @@ function Sunset({ time = "0.00" }) {
         <img
           className="absolute w-5/6 pt-10"
           ref={sunRef}
-          src={sun}
+          src={sunlight}
           alt="sun_morning"
         />
         <img

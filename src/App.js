@@ -19,35 +19,9 @@ import Story8 from "./components/story/story-8";
 import Story9 from "./components/story/story-9";
 import Story10 from "./components/story/story-10";
 import Story11 from "./components/story/story-11";
+import Story_12 from "./components/story/story12/story-12";
 
 const App = () => {
-  /*const [scrollPosition, setScrollPosition] = useState(0);
-  const [backgroundOpacity, setBackgroundOpacity] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.scrollY;
-      setScrollPosition(position);
-
-      // กำหนดตำแหน่งที่คุณต้องการเปลี่ยนสี
-      const scrollThreshold = 1900;
-
-      if (position > scrollThreshold) {
-        document.body.style.backgroundColor = "white"; // เปลี่ยนสีพื้นหลัง
-        setBackgroundOpacity(1); // เปลี่ยน opacity เป็น 1 เมื่อเลื่อนไปยังตำแหน่งที่กำหนด
-      } else {
-        document.body.style.backgroundColor = "#1B192D"; // คืนค่าสีพื้นหลังเป็นสีดีฟอลต์
-        setBackgroundOpacity(0); // เปลี่ยน opacity เป็น 0 เมื่อไม่ได้เลื่อนไปยังตำแหน่งที่กำหนด
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);*/
-
   return (
     <>
       <div className="font-sans">
@@ -95,6 +69,9 @@ const App = () => {
           </div>
           <div className="pt-[30%]">
             <Story11 />
+          </div>
+          <div>
+            <Story_12 />
           </div>
 
           <Navbar />
