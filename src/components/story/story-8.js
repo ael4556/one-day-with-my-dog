@@ -58,17 +58,17 @@ function Story8() {
 
     gsap.fromTo(
       snack_motion,
-      { opacity: 0, scale : 0.2, xPercent: +50},
+      { opacity: 0, scale : 0.2, yPercent: +10},
       {
         opacity: 1,
         scale : 1,
-        xPercent : 0,
+        yPercent : 0,
         duration: 1,
         scrollTrigger: {
           trigger: snack_motion,
           scrub: true,
-          start: "100px 100%",
-          end: "200px 80%",
+          start: "0px 100%",
+          end: "100px 80%",
           /*markers : true,*/
         },
       }
@@ -214,18 +214,22 @@ function Story8() {
             คุณเลยเดินไปหยิบขนมสุดโปรดของมัตังค์
             และลงไปนั่งในระดับเดียวกับมีตังค์ เตรียมพร้อมที่จะออกคำสั่ง
           </p>
-        <div className="pl-[40%]">
-          <img className="w-[60%]" src={snack} />
-        </div>
+          <div className="animate-bounce">
+            <div className="pl-[40%] pt-[10%] ">
+              <div className="hover:scale-110 duration-200 w-[60%]">
+              <img className="w-[100%] cursor-pointer " src={snack} ref={snack_motionRef}/>
+              </div>        
+            </div>
+          </div>
         </div>
         
         <div className=" flex flex-col">
           <div className=" grid grid-cols-2">
-            <div className="" >
-              <img className="w-[80%]" src={snack_dog}/>
+            <div className="pt-[50%]" >
+              <img className="w-[80%]" src={snack_dog} ref={snack_dogRef}/>
             </div>
             <div className="" >
-              <img className="w-[80%]" src={dog} />
+              <img className="w-[80%]" src={dog} ref={dog_snackRef}/>
             </div>
           </div>
         </div>
