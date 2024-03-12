@@ -22,7 +22,7 @@ function Story12() {
           trigger: slider.current,
           pin: true,
           scrub: 1,
-          snap: 1 / (panels.length - 1),
+          /*snap: 1 / (panels.length - 1),*/
           end: () => "+=" + slider.current.offsetWidth,
           start: "top top",
         },
@@ -35,13 +35,10 @@ function Story12() {
     <>
       <div ref={component}>
         <div ref={slider} className="containers">
-          <div className="flex justify-center items-center absolute z-10 left-[3%] pt-[3.5%]">
+          <div className="flex justify-center items-center absolute z-10 left-[1%] pt-[3.5%]">
             <img className="w-3/5 " src={image_dog_walk} />
           </div>
           <div className="panel">
-            <img src={image_city} />
-          </div>
-          <div className="panel ">
             <img src={image_city} />
           </div>
           <div className="panel ">

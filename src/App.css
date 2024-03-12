@@ -2,9 +2,9 @@ body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
   display: none;
-}
+}*/
 
 .flip-card {
   background-color: transparent;

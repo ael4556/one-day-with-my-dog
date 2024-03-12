@@ -2,9 +2,10 @@ import stairs from "../../Images/story_4/stairs.png";
 import dog_down from "../../Images/story_4/dog-down.png";
 import dog_poof_start from "../../Images/story_4/dog-poop.jpg";
 import dog_poof_finish from "../../Images/story_4/dog-poop-finish.jpg";
+
 import dog_info from "../../Images/story_4/info.png";
 import close from "../../Images/story_4/close.png";
-import poof from "../../Images/poop.gif";
+import poof from "../../Images//story_4/poop.gif";
 
 import Chat from "../chat";
 
@@ -80,7 +81,7 @@ function Story4() {
               {/* เพิ่มเนื้อหาของ popup ที่นี่ */}
               <div className="flex justify-end">
                 <div className="absolute pt-6 pr-6">
-                  <img onClick={() => setIsPopupOpen(false)} src={close} />
+                  <img onClick={() => setIsPopupOpen(false)} src={close} className=" cursor-pointer hover:bg-gray-200 rounded-full hover:scale-105"/>
                 </div>
                 <div>
                   <img src={dog_info} />
@@ -89,14 +90,24 @@ function Story4() {
             </div>
           </div>
         )}
-        <img className="w-2/5" src={dog_poof_start} alt="dog_poof2" />
-        <img
-          className="w-[6%] absolute left-[16%] pt-[33%] "
-          src={poof}
-          alt="poof"
-          onClick={() => setIsPopupOpen(true)}
-        />
-        <img className="w-2/5" src={dog_poof_finish} alt="dog_poof1" />
+        <div>
+          <div className=" flex flex-cols-2 gap-10">
+              <div className=" flex justify-around">
+                <img className="w-[90%]" src={dog_poof_start} alt="dog_poof1" />       
+              </div>
+              <div className="left-[16%] z-50 w-[6%] absolute pt-[30%]">
+                <img
+                className=" hover:scale-110 duration-200 cursor-pointer"
+                src={poof}
+                alt="poof"
+                onClick={() => setIsPopupOpen(true)}/>
+              </div>
+              <div className=" flex justify-around">
+                <img className="w-[90%]" src={dog_poof_finish} alt="dog_poof2" />
+              </div>   
+          </div>
+              
+        </div>
       </div>
     </div>
   );

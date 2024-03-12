@@ -240,7 +240,7 @@ function Story8() {
 
       </div>
 
-      <div className="flex pt-[10%] justify-end pr-[10%]">
+      <div className="flex pt-[40%] justify-end pr-[10%]">
         <Tips text="อย่าลืมชมเจ้าตูบทุกครั้ง เมื่อน้องทำได้ดี" isDog={true}/>
       </div>
     </div>
