@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Tips from "../tips";
 
 import image_towels from "../../Images/story_10/towels.png";
@@ -15,6 +15,12 @@ import image_right_hand from "../../Images/story_10/hand-right.png";
 import image_dog_bath from "../../Images/story_10/dog-bath.png";
 import image_dog_bath_gif from "../../Images/story_10/dog-bath.gif";
 import image_bubble from "../../Images/story_10/bubble.gif";
+import image_pop_1 from "../../Images/story_10/popup-1.png";
+import image_pop_2 from "../../Images/story_10/popup-2.png";
+import image_pop_3 from "../../Images/story_10/popup-3.png";
+import image_pop_4 from "../../Images/story_10/popup-4.png";
+
+import Popup from "../popup";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -25,89 +31,86 @@ const DogShalala = () => {
   const dog2Ref = useRef();
   const handleftRef = useRef();
   const handRightRef = useRef();
-  
+
   useEffect(() => {
-  const dog = dogRef.current;
-  const dog2 = dog2Ref.current;
-  const handleft = handleftRef.current;
-  const handRight = handRightRef.current;
+    const dog = dogRef.current;
+    const dog2 = dog2Ref.current;
+    const handleft = handleftRef.current;
+    const handRight = handRightRef.current;
 
-  gsap.fromTo(
-    dog,
-    { yPercent: 0,},
-    {
-      yPercent: +310,
-      duration : 10,
-      
-      scrollTrigger: {
-        trigger: dog,
-        scrub : true,
-        start : "1100px 100% ",
-        end : "5000px -140%",
+    gsap.fromTo(
+      dog,
+      { yPercent: 0 },
+      {
+        yPercent: +310,
+        duration: 10,
 
-        /*markers : true,*/
-      },
-    }
-  );
+        scrollTrigger: {
+          trigger: dog,
+          scrub: true,
+          start: "1100px 100% ",
+          end: "5000px -140%",
 
-  gsap.fromTo(
-    dog2,
-    { yPercent: 0,},
-    {
-      yPercent: +310,
-      duration : 10,
-      
-      scrollTrigger: {
-        trigger: dog2,
-        scrub : true,
-        start : "1100px 100% ",
-        end : "5000px -140%",
+          /*markers : true,*/
+        },
+      }
+    );
 
-        /*markers : true,*/
-      },
-    }
-  );
+    gsap.fromTo(
+      dog2,
+      { yPercent: 0 },
+      {
+        yPercent: +310,
+        duration: 10,
 
-  gsap.fromTo(
-    handleft,
-    { yPercent: 0, xPercent: 0,},
-    {
-      yPercent: +590,
-      xPercent :+50,
-      duration : 10,
-      
-      scrollTrigger: {
-        trigger: handleft,
-        scrub : true,
-        start : "800px 100%",
-        end : "4000px -120%",
+        scrollTrigger: {
+          trigger: dog2,
+          scrub: true,
+          start: "1100px 100% ",
+          end: "5000px -140%",
 
-        /*markers : true,*/
-      },
-    }
-  );
+          /*markers : true,*/
+        },
+      }
+    );
 
-  gsap.fromTo(
-    handRight,
-    { yPercent: 0, xPercent: 0,},
-    {
-      yPercent: +590,
-      xPercent :-50,
-      duration : 10,
-      
-      scrollTrigger: {
-        trigger: handRight,
-        scrub : true,
-        start : "800px 100% ",
-        end : "4000px -120%",
+    gsap.fromTo(
+      handleft,
+      { yPercent: 0, xPercent: 0 },
+      {
+        yPercent: +590,
+        xPercent: +50,
+        duration: 10,
 
-        /*markers : true,*/
-      },
-    }
-  );
-  
+        scrollTrigger: {
+          trigger: handleft,
+          scrub: true,
+          start: "800px 100%",
+          end: "4000px -120%",
 
+          /*markers : true,*/
+        },
+      }
+    );
 
+    gsap.fromTo(
+      handRight,
+      { yPercent: 0, xPercent: 0 },
+      {
+        yPercent: +590,
+        xPercent: -50,
+        duration: 10,
+
+        scrollTrigger: {
+          trigger: handRight,
+          scrub: true,
+          start: "800px 100% ",
+          end: "4000px -120%",
+
+          /*markers : true,*/
+        },
+      }
+    );
   }, []);
 
   return (
@@ -123,14 +126,14 @@ const DogShalala = () => {
         <div className=" absolute w-[100%]" ref={dog2Ref}>
           <img src={image_dog_bath_gif} />
         </div>
-        
+
         <div className=" pt-[20%]">
-        <div className="absolute start-[10%]" ref={handleftRef}>
-          <img className="w-[100%]" src={image_left_hand} />
-        </div>
-        <div className="absolute end-[9%]" ref={handRightRef}>
-          <img className="w-[100%]" src={image_right_hand} />
-        </div>
+          <div className="absolute start-[10%]" ref={handleftRef}>
+            <img className="w-[100%]" src={image_left_hand} />
+          </div>
+          <div className="absolute end-[9%]" ref={handRightRef}>
+            <img className="w-[100%]" src={image_right_hand} />
+          </div>
         </div>
 
         <div className="w-[100%] absolute start-[10%] end-[10%] blur-sm opacity-95">
@@ -139,28 +142,32 @@ const DogShalala = () => {
         <div className="w-[100%] absolute start-[10%] end-[10%] pt-[200%] blur-sm opacity-95">
           <img src={image_bubble} />
         </div>
-        
       </div>
     </div>
   );
 };
 
 function Story10() {
-    const tubeRef = useRef();
-    const shampooRef = useRef();
-    const towelsRef = useRef();
-    const dryerRef = useRef();
-    const dog_dryRef = useRef();
-    const effectRef = useRef();
-    const sofaRef = useRef();
+  const [isPopup1Open, setIsPopup1Open] = useState(false);
+  const [isPopup2Open, setIsPopup2Open] = useState(false);
+  const [isPopup3Open, setIsPopup3Open] = useState(false);
+  const [isPopup4Open, setIsPopup4Open] = useState(false);
 
-    const text_tubeRef = useRef();
-    const text_shampooRef = useRef();
-    const text_towelsRef = useRef();
-    const text_dryerRef = useRef();
-    const text_story10_1Ref = useRef();
-    const text_story10_2Ref = useRef();
-    const title_story10_1Ref = useRef();
+  const tubeRef = useRef();
+  const shampooRef = useRef();
+  const towelsRef = useRef();
+  const dryerRef = useRef();
+  const dog_dryRef = useRef();
+  const effectRef = useRef();
+  const sofaRef = useRef();
+
+  const text_tubeRef = useRef();
+  const text_shampooRef = useRef();
+  const text_towelsRef = useRef();
+  const text_dryerRef = useRef();
+  const text_story10_1Ref = useRef();
+  const text_story10_2Ref = useRef();
+  const title_story10_1Ref = useRef();
 
   useEffect(() => {
     const tube = tubeRef.current;
@@ -181,78 +188,78 @@ function Story10() {
 
     gsap.fromTo(
       tube,
-      { scale: 0.5},
+      { scale: 0.5 },
       {
         scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: tube,
-          scrub : true,
-          start :"1 80%",
-          end : "1 30%",
+          scrub: true,
+          start: "1 80%",
+          end: "1 30%",
 
-         /*markers: true,*/
+          /*markers: true,*/
         },
       }
     );
 
     gsap.fromTo(
       shampoo,
-      { scale: 0.5},
+      { scale: 0.5 },
       {
         scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: shampoo,
-          scrub : true,
-          start :"1 80%",
-          end : "1 30%",
+          scrub: true,
+          start: "1 80%",
+          end: "1 30%",
 
-         /*markers: true,*/
+          /*markers: true,*/
         },
       }
     );
 
     gsap.fromTo(
       towels,
-      { scale: 0.5},
+      { scale: 0.5 },
       {
         scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: towels,
-          scrub : true,
-          start :"1 80%",
-          end : "1 30%",
+          scrub: true,
+          start: "1 80%",
+          end: "1 30%",
 
-         /*markers: true,*/
+          /*markers: true,*/
         },
       }
     );
 
     gsap.fromTo(
       dryer,
-      { scale: 0.5},
+      { scale: 0.5 },
       {
         scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: dryer,
-          scrub : true,
-          start :"1 80%",
-          end : "1 30%",
+          scrub: true,
+          start: "1 80%",
+          end: "1 30%",
 
-         /*markers: true,*/
+          /*markers: true,*/
         },
       }
     );
 
     gsap.fromTo(
       text_tube,
-      { opacity: 0, scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: text_tube,
@@ -266,10 +273,10 @@ function Story10() {
 
     gsap.fromTo(
       text_shampoo,
-      { opacity: 0, scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: text_shampoo,
@@ -283,10 +290,10 @@ function Story10() {
 
     gsap.fromTo(
       text_towels,
-      { opacity: 0, scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: text_towels,
@@ -300,10 +307,10 @@ function Story10() {
 
     gsap.fromTo(
       text_dryer,
-      { opacity: 0, scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: text_dryer,
@@ -317,17 +324,17 @@ function Story10() {
 
     gsap.fromTo(
       text_story10_1,
-      { opacity: 0, scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 1,
         delay: 0,
         scrollTrigger: {
           trigger: text_story10_1,
-          scrub : true,
-          start : "1px 80%",
-          end : "1px 50%" ,
+          scrub: true,
+          start: "1px 80%",
+          end: "1px 50%",
 
           /*markers : true,*/
         },
@@ -336,17 +343,17 @@ function Story10() {
 
     gsap.fromTo(
       text_story10_2,
-      { opacity: 0, scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 1,
         delay: 0,
         scrollTrigger: {
           trigger: text_story10_2,
-          scrub : true,
-          start : "1px 80%",
-          end : "1px 50%" ,
+          scrub: true,
+          start: "1px 80%",
+          end: "1px 50%",
 
           /*markers : true,*/
         },
@@ -361,9 +368,9 @@ function Story10() {
         duration: 1,
         scrollTrigger: {
           trigger: title_story10_1,
-          scrub : true,
-          start : "1px 80%",
-          end : "1px 50%",
+          scrub: true,
+          start: "1px 80%",
+          end: "1px 50%",
 
           /*markers : true,*/
         },
@@ -378,9 +385,9 @@ function Story10() {
         duration: 1,
         scrollTrigger: {
           trigger: dog_dry,
-          scrub : true,
-          start : "50px 100%",
-          end : "50px 60%",
+          scrub: true,
+          start: "50px 100%",
+          end: "50px 60%",
 
           /*markers : true,*/
         },
@@ -395,9 +402,9 @@ function Story10() {
         duration: 1,
         scrollTrigger: {
           trigger: effect,
-          scrub : true,
-          start : "1px 80%",
-          end : "1px 50%",
+          scrub: true,
+          start: "1px 80%",
+          end: "1px 50%",
 
           /*markers : true,*/
         },
@@ -412,20 +419,38 @@ function Story10() {
         duration: 3,
         scrollTrigger: {
           trigger: sofa,
-          scrub : true,
-          start : "-200px 80%",
-          end : "-200px 20%",
+          scrub: true,
+          start: "-200px 80%",
+          end: "-200px 20%",
 
           /*markers : true,*/
         },
       }
     );
-
-
   }, []);
 
   return (
     <div>
+      <Popup
+        isPopupOpen={isPopup1Open}
+        setIsPopupOpen={setIsPopup1Open}
+        images={image_pop_1}
+      />
+      <Popup
+        isPopupOpen={isPopup2Open}
+        setIsPopupOpen={setIsPopup2Open}
+        images={image_pop_2}
+      />
+      <Popup
+        isPopupOpen={isPopup3Open}
+        setIsPopupOpen={setIsPopup3Open}
+        images={image_pop_3}
+      />
+      <Popup
+        isPopupOpen={isPopup4Open}
+        setIsPopupOpen={setIsPopup4Open}
+        images={image_pop_4}
+      />
       <div className="flex pt-[10%] justify-end pr-[10%]">
         <div className="flex">
           <Tips
@@ -436,61 +461,98 @@ function Story10() {
         </div>
       </div>
       <div className="grid grid-cols-2 pt-40 ">
-        <div className="flex flex-col" >
+        <div className="flex flex-col">
           <div className="flex justify-center" ref={tubeRef}>
-            <img className="w-[70%] pl-[30%]" src={image_tube} alt="image_tube" />
+            <img
+              onClick={() => setIsPopup1Open(true)}
+              className="w-[70%] pl-[30%]"
+              src={image_tube}
+              alt="image_tube"
+            />
           </div>
-          <div className="flex justify-center text-3xl pt-12 pl-[30%]" ref={text_tubeRef}>
+          <div
+            className="flex justify-center text-3xl pt-12 pl-[30%]"
+            ref={text_tubeRef}
+          >
             <p>ใช้สายยางฉีดน้ำให้ทั่วตัว</p>
           </div>
         </div>
         <div className="flex flex-col">
           <div className="flex justify-center" ref={shampooRef}>
-            <img className="w-[70%] pr-[30%]" src={image_shampoo} alt="image_shampoo" />
+            <img
+              onClick={() => setIsPopup2Open(true)}
+              className="w-[70%] pr-[30%]"
+              src={image_shampoo}
+              alt="image_shampoo"
+            />
           </div>
-          <div className="flex justify-center text-3xl pt-12 pr-[30%]" ref={text_shampooRef}>
+          <div
+            className="flex justify-center text-3xl pt-12 pr-[30%]"
+            ref={text_shampooRef}
+          >
             <p>เอาแชมพูผสมน้ำนิดหน่อยถูให้ทั่วตัว</p>
           </div>
         </div>
       </div>
-      
+
       <div className="">
         <DogShalala />
       </div>
-      
+
       <div className="pt-[190%]">
-            <div className="text-3xl pt-24 leading-relaxed pl-[60%] pr-[10%]">
-              <p ref={text_story10_1Ref}>
-              เสร็จแล้วก็ล้างด้วยน้ำเปล่าให้สะอาด 
-              เจ้ามีตังค์ก็รู้หน้าที่ของตัวเองด้วยการช่วยสะบัดขน
-              แต่น้ำดันกระเด็นโดนเราซะนี่
-              </p>
+        <div className="text-3xl pt-24 leading-relaxed pl-[60%] pr-[10%]">
+          <p ref={text_story10_1Ref}>
+            เสร็จแล้วก็ล้างด้วยน้ำเปล่าให้สะอาด
+            เจ้ามีตังค์ก็รู้หน้าที่ของตัวเองด้วยการช่วยสะบัดขน
+            แต่น้ำดันกระเด็นโดนเราซะนี่
+          </p>
+        </div>
+        <div className="grid grid-cols-2 pt-[25%]">
+          <div className="flex flex-col ">
+            <div className="flex justify-center" ref={towelsRef}>
+              <img
+                onClick={() => setIsPopup3Open(true)}
+                className="w-[70%] pl-[30%]"
+                src={image_towels}
+                alt="image_towels"
+              />
             </div>
-          <div className="grid grid-cols-2 pt-[25%]">
-            <div className="flex flex-col ">
-              <div className="flex justify-center" ref={towelsRef}>
-                <img className="w-[70%] pl-[30%]" src={image_towels} alt="image_towels" />
-              </div>
-              <div className="flex justify-center text-3xl pt-12 pl-[30%]" ref={text_towelsRef}>
-                <p>ใช้ผ้าขนหนูเช็ดขนที่เปียกให้พอหมาด</p>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <div className="flex justify-center" ref={dryerRef}>
-                <img className="w-[70%] pr-[30%]" src={image_dry} alt="image_dry" />
-              </div>
-              <div className="flex justify-center text-3xl pt-12 pr-[30%]" ref={text_dryerRef}>
-                <p>ใช้ไดร์เป่าลมปกติ เป่าให้ขนแห้งสนิท</p>
-              </div>
+            <div
+              className="flex justify-center text-3xl pt-12 pl-[30%]"
+              ref={text_towelsRef}
+            >
+              <p>ใช้ผ้าขนหนูเช็ดขนที่เปียกให้พอหมาด</p>
             </div>
           </div>
+          <div className="flex flex-col">
+            <div className="flex justify-center" ref={dryerRef}>
+              <img
+                onClick={() => setIsPopup4Open(true)}
+                className="w-[70%] pr-[30%]"
+                src={image_dry}
+                alt="image_dry"
+              />
+            </div>
+            <div
+              className="flex justify-center text-3xl pt-12 pr-[30%]"
+              ref={text_dryerRef}
+            >
+              <p>ใช้ไดร์เป่าลมปกติ เป่าให้ขนแห้งสนิท</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="flex justify-center pt-40">
-        <div className="flex text-3xl" ref={text_story10_2Ref}>หัวใจสำคัญของการเป่าขน คือ...</div>
+        <div className="flex text-3xl" ref={text_story10_2Ref}>
+          หัวใจสำคัญของการเป่าขน คือ...
+        </div>
       </div>
       <div className="flex justify-center pt-12">
-        <div className="flex text-7xl font-semibold font-mali text-[#D60000]" ref={title_story10_1Ref}>
+        <div
+          className="flex text-7xl font-semibold font-mali text-[#D60000]"
+          ref={title_story10_1Ref}
+        >
           “ ขน ต้อง แห้ง สนิท! ”
         </div>
       </div>
@@ -504,13 +566,13 @@ function Story10() {
           />
         </div>
         <div className="absolute left-[5%] z-20">
-          <img src={image_dog_dry} alt="image_dog_dry" ref={dog_dryRef}/>
+          <img src={image_dog_dry} alt="image_dog_dry" ref={dog_dryRef} />
         </div>
         <div className="absolute left-[5%] z-0">
-          <img src={image_sofa} alt="image_dog_dry" ref={sofaRef}/>
+          <img src={image_sofa} alt="image_dog_dry" ref={sofaRef} />
         </div>
         <div className="absolute left-[5%] z-10">
-          <img src={image_effect} alt="image_dog_dry" ref={effectRef}/>
+          <img src={image_effect} alt="image_dog_dry" ref={effectRef} />
         </div>
       </div>
     </div>

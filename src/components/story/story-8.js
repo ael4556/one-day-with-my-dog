@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import dog from "../../Images/story_8/dog-snack.png";
-import snack_dog from "../../Images/story_8/snack-dog.png"
+import snack_dog from "../../Images/story_8/snack-dog.png";
 import snack from "../../Images/story_8/snack.png";
 import CardFlip from "../cardflip";
 import Title from "../title";
@@ -11,13 +11,15 @@ import cardfront_2 from "../../Images/story_8/command-cards-2.png";
 import cardfront_3 from "../../Images/story_8/command-cards-3.png";
 import cardfront_4 from "../../Images/story_8/command-cards-4.png";
 import cardback_1 from "../../Images/story_8/command-cards-1-back.png";
+import info from "../../Images/story_8/info.png";
+
+import Popup from "../popup";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story8() {
-
   const text_story8_1Ref = useRef();
   const text_story8_2Ref = useRef();
   const snack_motionRef = useRef();
@@ -27,6 +29,8 @@ function Story8() {
   const card_scale2Ref = useRef();
   const card_scale3Ref = useRef();
   const card_scale4Ref = useRef();
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   useEffect(() => {
     const text_story8_1 = text_story8_1Ref.current;
@@ -41,10 +45,10 @@ function Story8() {
 
     gsap.fromTo(
       text_story8_1,
-      { opacity: 0, scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: text_story8_1,
@@ -58,11 +62,11 @@ function Story8() {
 
     gsap.fromTo(
       snack_motion,
-      { opacity: 0, scale : 0.2, yPercent: +10},
+      { opacity: 0, scale: 0.2, yPercent: +10 },
       {
         opacity: 1,
-        scale : 1,
-        yPercent : 0,
+        scale: 1,
+        yPercent: 0,
         duration: 1,
         scrollTrigger: {
           trigger: snack_motion,
@@ -76,11 +80,11 @@ function Story8() {
 
     gsap.fromTo(
       dog_snack,
-      { opacity: 0, scale : 0.2, xPercent: -50},
+      { opacity: 0, scale: 0.2, xPercent: -50 },
       {
         opacity: 1,
-        scale : 1,
-        xPercent : 0,
+        scale: 1,
+        xPercent: 0,
         duration: 1,
         scrollTrigger: {
           trigger: dog_snack,
@@ -94,11 +98,11 @@ function Story8() {
 
     gsap.fromTo(
       snack_dog,
-      { opacity: 0, scale : 0.2, xPercent: 50},
+      { opacity: 0, scale: 0.2, xPercent: 50 },
       {
         opacity: 1,
-        scale : 1,
-        xPercent : 0,
+        scale: 1,
+        xPercent: 0,
         duration: 1,
         scrollTrigger: {
           trigger: snack_dog,
@@ -110,7 +114,6 @@ function Story8() {
       }
     );
 
-    
     gsap.fromTo(
       text_story8_2,
       { scale: 0 },
@@ -119,9 +122,9 @@ function Story8() {
         duration: 1,
         scrollTrigger: {
           trigger: text_story8_2,
-          scrub : true,
-          start : "1px 80%",
-          end : "1px 50%",
+          scrub: true,
+          start: "1px 80%",
+          end: "1px 50%",
 
           /*markers : true,*/
         },
@@ -136,9 +139,9 @@ function Story8() {
         duration: 1,
         scrollTrigger: {
           trigger: card_scale1,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
+          toggleActions: "restart",
+          start: "-400px 80%",
+          end: "-300px 50%",
 
           /*markers : true,*/
         },
@@ -154,9 +157,9 @@ function Story8() {
         delay: 0.2,
         scrollTrigger: {
           trigger: card_scale2,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
+          toggleActions: "restart",
+          start: "-400px 80%",
+          end: "-300px 50%",
 
           /*markers : true,*/
         },
@@ -172,9 +175,9 @@ function Story8() {
         delay: 0.4,
         scrollTrigger: {
           trigger: card_scale3,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
+          toggleActions: "restart",
+          start: "-400px 80%",
+          end: "-300px 50%",
 
           /*markers : true,*/
         },
@@ -190,67 +193,77 @@ function Story8() {
         delay: 0.6,
         scrollTrigger: {
           trigger: card_scale4,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
+          toggleActions: "restart",
+          start: "-400px 80%",
+          end: "-300px 50%",
 
           /*markers : true,*/
         },
       }
     );
-
-
-    
   }, []);
- 
+
   return (
     <div className="flex flex-col">
-      
-        
-        <div className=" grid grid-cols-2"> 
+      <div className=" grid grid-cols-2">
         <div className=" flex flex-col">
           <p className="text-3xl leading-relaxed pl-[20%] pr-[10%]">
             เวลาแบบนี้ควรฝึกเจ้าตูบน้อยซักหน่อย...
             คุณเลยเดินไปหยิบขนมสุดโปรดของมัตังค์
             และลงไปนั่งในระดับเดียวกับมีตังค์ เตรียมพร้อมที่จะออกคำสั่ง
           </p>
+          <Popup
+            isPopupOpen={isPopupOpen}
+            setIsPopupOpen={setIsPopupOpen}
+            images={info}
+          />
           <div className="animate-bounce">
             <div className="pl-[40%] pt-[10%] ">
               <div className="hover:scale-110 duration-200 w-[60%]">
-              <img className="w-[100%] cursor-pointer " src={snack} ref={snack_motionRef}/>
-              </div>        
-            </div>
-          </div>
-        </div>
-        
-        <div className=" flex flex-col">
-          <div className=" grid grid-cols-2">
-            <div className="pt-[50%]" >
-              <img className="w-[80%]" src={snack_dog} ref={snack_dogRef}/>
-            </div>
-            <div className="" >
-              <img className="w-[80%]" src={dog} ref={dog_snackRef}/>
+                <img
+                  onClick={() => setIsPopupOpen(true)}
+                  className="w-[100%] cursor-pointer "
+                  src={snack}
+                  ref={snack_motionRef}
+                />
+              </div>
             </div>
           </div>
         </div>
 
+        <div className=" flex flex-col">
+          <div className=" grid grid-cols-2">
+            <div className="pt-[50%]">
+              <img className="w-[80%]" src={snack_dog} ref={snack_dogRef} />
+            </div>
+            <div className="">
+              <img className="w-[80%]" src={dog} ref={dog_snackRef} />
+            </div>
+          </div>
         </div>
-        
+      </div>
+
       <div className="flex justify-center" ref={text_story8_2Ref}>
         <Title title="เลือกคำสั่งที่ต้องการฝึก" />
       </div>
-      
+
       <div className="grid grid-cols-4 justify-items-center pt-[7%] px-32">
-
-        <div ref={ card_scale1Ref}><CardFlip image_front={cardfront_1} image_back={cardback_1}/></div>        
-        <div ref={ card_scale2Ref}><CardFlip image_front={cardfront_2} image_back={cardback_1}/></div>
-        <div ref={ card_scale3Ref}><CardFlip image_front={cardfront_3} image_back={cardback_1}/></div>
-        <div ref={ card_scale4Ref}><CardFlip image_front={cardfront_4} image_back={cardback_1}/></div>
-
+        <div ref={card_scale1Ref}>
+          <CardFlip image_front={cardfront_1} image_back={cardback_1} />
+        </div>
+        <div ref={card_scale2Ref}>
+          <CardFlip image_front={cardfront_2} image_back={cardback_1} />
+        </div>
+        <div ref={card_scale3Ref}>
+          <CardFlip image_front={cardfront_3} image_back={cardback_1} />
+        </div>
+        <div ref={card_scale4Ref}>
+          <CardFlip image_front={cardfront_4} image_back={cardback_1} />
+        </div>
       </div>
 
       <div className="flex pt-[40%] justify-end pr-[10%]">
-        <Tips text="อย่าลืมชมเจ้าตูบทุกครั้ง เมื่อน้องทำได้ดี" isDog={true}/>
+        <Tips text="อย่าลืมชมเจ้าตูบทุกครั้ง เมื่อน้องทำได้ดี" isDog={true} />
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import close from "../../Images/story_4/close.png";
 import poof from "../../Images//story_4/poop.gif";
 
 import Chat from "../chat";
+import Popup from "../popup";
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -18,16 +19,6 @@ function Story4() {
   const dogdownRef = useRef();
 
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  useEffect(() => {
-    if (isPopupOpen) {
-      document.body.classList.add("lock-scroll");
-    } else {
-      document.body.classList.remove("lock-scroll");
-    }
-    return () => {
-      document.body.classList.remove("lock-scroll");
-    };
-  }, [isPopupOpen]);
 
   useEffect(() => {
     const dogdown = dogdownRef.current;
@@ -75,38 +66,24 @@ function Story4() {
         />
       </div>
       <div className="flex justify-center pt-64 gap-10">
-        {isPopupOpen && (
-          <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-40">
-            <div className=" p-8 rounded-lg">
-              {/* เพิ่มเนื้อหาของ popup ที่นี่ */}
-              <div className="flex justify-end">
-                <div className="absolute pt-6 pr-6">
-                  <img onClick={() => setIsPopupOpen(false)} src={close} className=" cursor-pointer hover:bg-gray-200 rounded-full hover:scale-105"/>
-                </div>
-                <div>
-                  <img src={dog_info} />
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        <Popup isPopupOpen={isPopupOpen} setIsPopupOpen={setIsPopupOpen} />
         <div>
           <div className=" flex flex-cols-2 gap-10">
-              <div className=" flex justify-around">
-                <img className="w-[90%]" src={dog_poof_start} alt="dog_poof1" />       
-              </div>
-              <div className="left-[16%] z-50 w-[6%] absolute pt-[30%]">
-                <img
+            <div className=" flex justify-around">
+              <img className="w-[90%]" src={dog_poof_start} alt="dog_poof1" />
+            </div>
+            <div className="left-[16%] z-50 w-[6%] absolute pt-[30%]">
+              <img
                 className=" hover:scale-110 duration-200 cursor-pointer"
                 src={poof}
                 alt="poof"
-                onClick={() => setIsPopupOpen(true)}/>
-              </div>
-              <div className=" flex justify-around">
-                <img className="w-[90%]" src={dog_poof_finish} alt="dog_poof2" />
-              </div>   
+                onClick={() => setIsPopupOpen(true)}
+              />
+            </div>
+            <div className=" flex justify-around">
+              <img className="w-[90%]" src={dog_poof_finish} alt="dog_poof2" />
+            </div>
           </div>
-              
         </div>
       </div>
     </div>
