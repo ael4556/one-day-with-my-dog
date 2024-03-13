@@ -66,7 +66,7 @@ function Story11() {
             <div className="flex justify-center">
                 <img className="w-[90%] pr-[30%]" src={Leash} alt="Leash" />
             </div>
-            <div className="flex justify-center text-3xl pt-40 pr-[20%] pl-[15%]">
+            <div className="flex justify-center leading-relaxed text-3xl pt-40 pr-[20%] pl-[15%]">
                 <p>พูดจบคุณก็หยิบสายจูงจากที่แขวนบนกำแพง
                     แล้วใส่ให้มีตังค์ ท่าทางมีตังค์ดูไม่ขัดขืนอะไร 
                     ซ้ำแล้วยังแสดงท่าทางดีใจที่จะได้ออกไปข้างนอกบ้าน 

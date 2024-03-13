@@ -11,6 +11,9 @@ import cardfront_2 from "../../Images/story_8/command-cards-2.png";
 import cardfront_3 from "../../Images/story_8/command-cards-3.png";
 import cardfront_4 from "../../Images/story_8/command-cards-4.png";
 import cardback_1 from "../../Images/story_8/command-cards-1-back.png";
+import cardback_2 from "../../Images/story_8/command-cards-2-back.png";
+import cardback_3 from "../../Images/story_8/command-cards-3-back.png";
+import cardback_4 from "../../Images/story_8/command-cards-4-back.png";
 import info from "../../Images/story_8/info.png";
 
 import Popup from "../popup";
@@ -207,7 +210,7 @@ function Story8() {
     <div className="flex flex-col">
       <div className=" grid grid-cols-2">
         <div className=" flex flex-col">
-          <p className="text-3xl leading-relaxed pl-[20%] pr-[10%]">
+          <p className="text-3xl leading-relaxed pl-[20%] pr-[10%]" ref={text_story8_1Ref}>
             เวลาแบบนี้ควรฝึกเจ้าตูบน้อยซักหน่อย...
             คุณเลยเดินไปหยิบขนมสุดโปรดของมัตังค์
             และลงไปนั่งในระดับเดียวกับมีตังค์ เตรียมพร้อมที่จะออกคำสั่ง
@@ -218,8 +221,8 @@ function Story8() {
             images={info}
           />
           <div className="animate-bounce">
-            <div className="pl-[40%] pt-[10%] ">
-              <div className="hover:scale-110 duration-200 w-[60%]">
+            <div className="pl-[40%] pt-[20%] ">
+              <div className="hover:scale-110 duration-200 w-[55%]">
                 <img
                   onClick={() => setIsPopupOpen(true)}
                   className="w-[100%] cursor-pointer "
@@ -252,13 +255,13 @@ function Story8() {
           <CardFlip image_front={cardfront_1} image_back={cardback_1} />
         </div>
         <div ref={card_scale2Ref}>
-          <CardFlip image_front={cardfront_2} image_back={cardback_1} />
+          <CardFlip image_front={cardfront_2} image_back={cardback_2} />
         </div>
         <div ref={card_scale3Ref}>
-          <CardFlip image_front={cardfront_3} image_back={cardback_1} />
+          <CardFlip image_front={cardfront_3} image_back={cardback_3} />
         </div>
         <div ref={card_scale4Ref}>
-          <CardFlip image_front={cardfront_4} image_back={cardback_1} />
+          <CardFlip image_front={cardfront_4} image_back={cardback_4} />
         </div>
       </div>
 

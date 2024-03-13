@@ -463,33 +463,34 @@ function Story10() {
       <div className="grid grid-cols-2 pt-40 ">
         <div className="flex flex-col">
           <div className="flex justify-center" ref={tubeRef}>
-            <img
-              onClick={() => setIsPopup1Open(true)}
-              className="w-[70%] pl-[30%]"
-              src={image_tube}
-              alt="image_tube"
-            />
+            <div className="animate-scaling2 pl-[30%]">            
+              <div className="hover:scale-110 duration-300">
+                <img
+                onClick={() => setIsPopup1Open(true)}
+                className="w-[100%] cursor-pointer"
+                src={image_tube}
+                alt="image_tube"/>
+              </div>
+            </div>
           </div>
-          <div
-            className="flex justify-center text-3xl pt-12 pl-[30%]"
-            ref={text_tubeRef}
-          >
+          <div className="flex justify-center text-3xl pt-12 pl-[30%]" ref={text_tubeRef}>
             <p>ใช้สายยางฉีดน้ำให้ทั่วตัว</p>
           </div>
         </div>
+        
         <div className="flex flex-col">
           <div className="flex justify-center" ref={shampooRef}>
-            <img
-              onClick={() => setIsPopup2Open(true)}
-              className="w-[70%] pr-[30%]"
-              src={image_shampoo}
-              alt="image_shampoo"
-            />
+            <div className="animate-scaling2 pr-[30%]">
+              <div className="hover:scale-110 duration-300">
+                <img
+                onClick={() => setIsPopup2Open(true)}
+                className="w-[100%] cursor-pointer"
+                src={image_shampoo}
+                alt="image_shampoo"/>
+              </div>
+            </div>
           </div>
-          <div
-            className="flex justify-center text-3xl pt-12 pr-[30%]"
-            ref={text_shampooRef}
-          >
+          <div className="flex justify-center text-3xl pt-12 pr-[30%]" ref={text_shampooRef}>
             <p>เอาแชมพูผสมน้ำนิดหน่อยถูให้ทั่วตัว</p>
           </div>
         </div>
@@ -510,33 +511,34 @@ function Story10() {
         <div className="grid grid-cols-2 pt-[25%]">
           <div className="flex flex-col ">
             <div className="flex justify-center" ref={towelsRef}>
-              <img
-                onClick={() => setIsPopup3Open(true)}
-                className="w-[70%] pl-[30%]"
-                src={image_towels}
-                alt="image_towels"
-              />
+              <div className="animate-scaling2 pl-[30%]">
+                <div className="hover:scale-110 duration-300">
+                  <img
+                  onClick={() => setIsPopup3Open(true)}
+                  className="w-[100%] cursor-pointer"
+                  src={image_towels}
+                  alt="image_towels"/>
+                </div>              
+              </div>
             </div>
-            <div
-              className="flex justify-center text-3xl pt-12 pl-[30%]"
-              ref={text_towelsRef}
-            >
+            <div className="flex justify-center text-3xl pt-12 pl-[30%]" ref={text_towelsRef}>
               <p>ใช้ผ้าขนหนูเช็ดขนที่เปียกให้พอหมาด</p>
             </div>
           </div>
+
           <div className="flex flex-col">
             <div className="flex justify-center" ref={dryerRef}>
-              <img
-                onClick={() => setIsPopup4Open(true)}
-                className="w-[70%] pr-[30%]"
-                src={image_dry}
-                alt="image_dry"
-              />
+              <div className="animate-scaling2 pr-[30%]">
+                <div className="hover:scale-110 duration-300">
+                  <img
+                    onClick={() => setIsPopup4Open(true)}
+                    className="w-[100%] cursor-pointer"
+                    src={image_dry}
+                    alt="image_dry"/>
+                </div>
+              </div>
             </div>
-            <div
-              className="flex justify-center text-3xl pt-12 pr-[30%]"
-              ref={text_dryerRef}
-            >
+            <div className="flex justify-center text-3xl pt-12 pr-[30%]" ref={text_dryerRef}>
               <p>ใช้ไดร์เป่าลมปกติ เป่าให้ขนแห้งสนิท</p>
             </div>
           </div>

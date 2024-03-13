@@ -140,10 +140,10 @@ function Story9() {
         scrollTrigger: {
           trigger: text_story9_3,
           scrub: true,
-          start: "200px 80%",
-          end: "200px 40%",
+          start: "-100px 80%",
+          end: "-100px 50%",
 
-          /*markers : true,*/
+          /*markers : true*/
         },
       }
     );
@@ -158,8 +158,8 @@ function Story9() {
         scrollTrigger: {
           trigger: text_story9_4,
           scrub: true,
-          start: "200px 80%",
-          end: "200px 40%",
+          start: "-100px 80%",
+          end: "-100px 50%",
 
           /*markers : true,*/
         },
@@ -231,22 +231,32 @@ function Story9() {
       </div>
       <div className="flex justify-center gap-40 pt-40">
         <div className="flex flex-col">
+          <div className="hover:scale-110 duration-200 cursor-pointer" >
+          <div className="animate-scaling">
           <img
             onClick={() => setIsPopup1Open(true)}
             className="w-[80%]"
             src={ball}
+            ref={balldog_infoRef}
           />
-          <div className="flex justify-center text-4xl pt-12 pr-4">
-            <p>ไข่หมา</p>
+          </div>
+          </div>
+          <div className="flex text-4xl pt-12 pl-[15%]" ref={text_story9_3Ref}>
+            <p>ลูกบอล</p>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
+          <div className="hover:scale-110 duration-200 cursor-pointer" >
+          <div className="animate-scaling">
           <img
             onClick={() => setIsPopup2Open(true)}
             className="w-[80%]"
             src={frisbee_dog}
+            ref={frisbeedog_infoRef}
           />
-          <div className="flex justify-center text-4xl pt-12">
+          </div>
+          </div>
+          <div className="flex text-4xl pt-12 pl-[15%]" ref={text_story9_4Ref}>
             <p>จานร่อน</p>
           </div>
         </div>
