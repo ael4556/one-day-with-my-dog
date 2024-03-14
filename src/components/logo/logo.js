@@ -26,8 +26,7 @@ useEffect(() => {
       scrollTrigger: {
         trigger: typo,
         toggleActions : 'restart',
-        start : "-100px 0%",
-        end : "-100px 0%",
+        
 
         /*markers : true,*/
       },
@@ -45,8 +44,7 @@ useEffect(() => {
       scrollTrigger: {
         trigger: dog,
         toggleActions : 'restart',
-        start : "-400px 0%",
-        end : "-400px 0%",
+        
 
         /*markers : true,*/
       },
