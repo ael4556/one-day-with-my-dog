@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 
-import icon_face from "../Images/SVG/icon-face.svg";
 import icon_tips from "../Images/SVG/icon-tips.svg";
 
 import gsap from "gsap";

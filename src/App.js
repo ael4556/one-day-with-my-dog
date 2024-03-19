@@ -20,6 +20,7 @@ import Story9 from "./components/story/story-9";
 import Story10 from "./components/story/story-10";
 import Story11 from "./components/story/story-11";
 import Story_12 from "./components/story/story12/story-12";
+import Story13 from "./components/story/story-13";
 
 const App = () => {
   return (
@@ -74,7 +75,7 @@ const App = () => {
             <Story_12 />
           </div>
           </div>
-          <Story9 />
+          <Story13 />
           <div>
 
           <Navbar />
