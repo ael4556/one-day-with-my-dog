@@ -6,11 +6,13 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-function Tips({ 
+function Tips({
   text = "ไม่มีข้อความ",
   text2 = "",
   text3 = "",
-  width = 100 }) {
+  width = 100,
+  isLeft = false,
+}) {
   const messages = useRef();
   const icons = useRef();
 
@@ -63,6 +65,16 @@ function Tips({
   return (
     <div className={`flex justify-end gap-10 `}>
       <div className="flex justify-end gap-4">
+        {isLeft && (
+          <div>
+            <img
+              ref={icons}
+              src={icon_tips}
+              alt="Current User Icon"
+              className=" w-32 h-32 border-8 border-[#FFC645] bg-[#FFF5DE] p-3 rounded-full"
+            />
+          </div>
+        )}
         <div
           ref={messages}
           className={`text-4xl leading-relaxed bg-[#FFF5DE] max-w-[${width}%] rounded-[70px] px-9 py-8 shadow-lg  border-8 border-[#FFC645] `}
@@ -71,14 +83,16 @@ function Tips({
           <div>{text2}</div>
           <div>{text3}</div>
         </div>
-        <div>
-          <img
-            ref={icons}
-            src={icon_tips}
-            alt="Current User Icon"
-            className=" w-32 h-32 border-8 border-[#FFC645] bg-[#FFF5DE] p-3 rounded-full"
-          />
-        </div>
+        {!isLeft && (
+          <div>
+            <img
+              ref={icons}
+              src={icon_tips}
+              alt="Current User Icon"
+              className=" w-32 h-32 border-8 border-[#FFC645] bg-[#FFF5DE] p-3 rounded-full"
+            />
+          </div>
+        )}
       </div>
     </div>
   );

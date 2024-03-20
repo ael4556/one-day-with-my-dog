@@ -210,7 +210,10 @@ function Story8() {
     <div className="flex flex-col">
       <div className=" grid grid-cols-2">
         <div className=" flex flex-col">
-          <p className="text-3xl leading-relaxed pl-[20%] pr-[10%]" ref={text_story8_1Ref}>
+          <p
+            className="text-3xl leading-relaxed pl-[20%] pr-[10%]"
+            ref={text_story8_1Ref}
+          >
             เวลาแบบนี้ควรฝึกเจ้าตูบน้อยซักหน่อย...
             คุณเลยเดินไปหยิบขนมสุดโปรดของมัตังค์
             และลงไปนั่งในระดับเดียวกับมีตังค์ เตรียมพร้อมที่จะออกคำสั่ง
@@ -266,7 +269,7 @@ function Story8() {
       </div>
 
       <div className="flex pt-[40%] justify-end pr-[10%]">
-        <Tips text="อย่าลืมชมเจ้าตูบทุกครั้ง เมื่อน้องทำได้ดี" isDog={true} />
+        <Tips text="อย่าลืมชมเจ้าตูบทุกครั้ง เมื่อน้องทำได้ดี" />
       </div>
     </div>
   );
