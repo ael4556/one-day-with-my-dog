@@ -13,7 +13,18 @@ function Story14() {
     }, []);
     return (
         <div className=" pt-[15%] flex flex-col">
-            <img className="" src={Emergency}/>
+            <div className="flex flex-col">
+                <div className=" flex justify-center">
+                    <img className="w-[80%]" src={Emergency}/>
+                </div>
+                <div className=" font-sans text-3xl">
+                    <p className="">มีเหตุการณ์ไม่คาดคิด มีตังค์ดันทำท่าเหมือนจะอึ</p>
+                    <p className="pt-[1%]">คุณรีบหันไปด้วยความตกใจ พร้อมกับทำตาโต</p>
+                </div>  
+            </div>
+            
+            
+
         </div>
     );
   }

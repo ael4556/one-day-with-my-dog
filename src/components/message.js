@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 import icon_dog from "../Images/SVG/icon-dog.svg";
 import icon_male from "../Images/SVG/icon-face.svg";
-import icon_female from "../Images/SVG/icon-face.svg";
+import icon_female from "../Images/SVG/icon-face-female.svg";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
