@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 
-import icon_face from "../Images/SVG/icon-face.svg";
 import icon_dog from "../Images/SVG/icon-dog.svg";
+import icon_male from "../Images/SVG/icon-face.svg";
+import icon_female from "../Images/SVG/icon-face.svg";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,9 +12,9 @@ function Chat({
   text = "ไม่มีข้อความ",
   text2 = "",
   text3 = "",
-  isMe = true,
+  isMe = false,
   showIcon = true,
-  isDog = false,
+  icon = "male",
 }) {
   const messages = useRef();
   const icons = useRef();
@@ -66,11 +67,17 @@ function Chat({
 
   return (
     <div className={`flex gap-10 ${isMe ? "justify-end" : "justify-start"}`}>
-      {!isMe && showIcon && (
+      {isMe && showIcon && (
         <div>
           <img
             ref={icons}
-            src={isDog ? icon_dog : icon_face}
+            src={
+              icon === "male"
+                ? icon_male
+                : icon === "female"
+                ? icon_female
+                : icon_dog
+            }
             alt="Current User Icon"
             className=" w-32 h-32 border-8 border-gray-300 bg-gray-200 p-3 rounded-full"
           />
@@ -84,11 +91,17 @@ function Chat({
         <div>{text2}</div>
         <div>{text3}</div>
       </div>
-      {isMe && showIcon && (
+      {!isMe && showIcon && (
         <div>
           <img
             ref={icons}
-            src={isDog ? icon_dog : icon_face}
+            src={
+              icon === "male"
+                ? icon_male
+                : icon === "female"
+                ? icon_female
+                : icon_dog
+            }
             alt="Current User Icon"
             className=" w-32 h-32 border-8 border-gray-300 bg-gray-200 p-3 rounded-full"
           />
