@@ -21,6 +21,7 @@ import Story10 from "./components/story/story-10";
 import Story11 from "./components/story/story-11";
 import Story_12 from "./components/story/story12/story-12";
 import Story13 from "./components/story/story-13";
+import Story14 from "./components/story/story-14";
 
 const App = () => {
   return (
@@ -75,8 +76,11 @@ const App = () => {
             <Story_12 />
           </div>
           </div>
-          <Story13 />
+            <Story13 />
           <div>
+          <div>
+            <Story14/>
+          </div>
 
           <Navbar />
         </div>
