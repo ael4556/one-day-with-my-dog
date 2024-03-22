@@ -6,7 +6,7 @@ import Hand from "../../Images/story_14/hand-with-bag.gif";
 import VFX from "../../Images/story_14/vfx.gif";
 import BGTextBot from "../../Images/story_14/text-bg-1.png";
 import BGTextTop from "../../Images/story_14/text-bg-2.png";
-import HowTo from "../../Images/story_14/how-to-pickup.png";
+import HowTo from "../../Images/story_14/Pickupshit.gif";
 
 import Chat from "../message";
 
@@ -91,6 +91,11 @@ function Story14() {
                 </div>
             </div>
             <div className="pt-[10%]">
+                <div className=" flex justify-center">
+                    <div className=" absolute pt-[7%]">
+                        <p className=" font-sans font-medium text-6xl text-[#4091AE]">จะกี่ก้อนก็ไม่หวั่น แม้วันมามาก</p>
+                    </div>
+                </div>
                 <div className="flex justify-center">
                     <div className=" absolute pt-[15%]">
                         <img className="" src={HowTo}/>
