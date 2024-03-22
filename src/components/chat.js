@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 
 import icon_face from "../Images/SVG/icon-face.svg";
+import icon_face_female from "../Images/SVG/icon-face.svg";
 import icon_dog from "../Images/SVG/icon-dog.svg";
 
 import gsap from "gsap";
@@ -30,7 +31,7 @@ function Chat({
         duration: 0.3,
         scrollTrigger: {
           trigger: icons_animation,
-          toggleActions: "restart",
+          toggleActions : 'restart'
         },
       }
     );
@@ -43,7 +44,7 @@ function Chat({
         delay: 0.2,
         scrollTrigger: {
           trigger: icons_animation,
-          toggleActions: "restart",
+          toggleActions : 'restart'
         },
       }
     );
@@ -58,7 +59,7 @@ function Chat({
         delay: 0.3,
         scrollTrigger: {
           trigger: messages_animation,
-          toggleActions: "restart",
+          toggleActions : 'restart'
         },
       }
     );
