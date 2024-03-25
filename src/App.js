@@ -27,7 +27,7 @@ import Cooking from "./components/cooking";
 const App = () => {
   return (
     <>
-      <Cooking />
+      
       <div className="font-sans">
         {/* Start Web contents*/}
         <div
@@ -83,6 +83,7 @@ const App = () => {
           <div>
             <Story14 />
           </div>
+          <Cooking />
 
           <Navbar />
         </div>
