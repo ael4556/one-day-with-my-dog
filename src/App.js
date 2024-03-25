@@ -23,9 +23,11 @@ import Story_12 from "./components/story/story12/story-12";
 import Story13 from "./components/story/story-13";
 import Story14 from "./components/story/story-14";
 
+import Cooking from "./components/cooking";
 const App = () => {
   return (
     <>
+      <Cooking />
       <div className="font-sans">
         {/* Start Web contents*/}
         <div
@@ -75,11 +77,11 @@ const App = () => {
           <div className=" pt-[10%]">
             <Story_12 />
           </div>
-          </div>
-            <Story13 />
+        </div>
+        <Story13 />
+        <div>
           <div>
-          <div>
-            <Story14/>
+            <Story14 />
           </div>
 
           <Navbar />
