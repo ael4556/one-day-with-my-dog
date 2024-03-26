@@ -1,5 +1,5 @@
 import image_city from "../../../Images/story_12/bg-village.png";
-import image_dog_walk from "../../../Images/story_12/walking-dog.png";
+import image_dog_walk from "../../../Images/story_12/dogwalk.gif";
 import "./style.css";
 
 import { useEffect, useRef, useState, useLayoutEffect } from "react";
@@ -35,8 +35,8 @@ function Story12() {
     <>
       <div ref={component}>
         <div ref={slider} className="containers">
-          <div className="flex justify-center items-center absolute z-10 left-[1%] pt-[3.5%]">
-            <img className="w-3/5 " src={image_dog_walk} />
+          <div className="flex justify-start absolute z-10 left-[0%] pt-[3.4%]">
+            <img className="w-[50%] " src={image_dog_walk} />
           </div>
           <div className="panel">
             <img src={image_city} />
