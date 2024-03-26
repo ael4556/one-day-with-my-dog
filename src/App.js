@@ -25,11 +25,9 @@ import Story14 from "./components/story/story-14";
 import Cooking from "./components/cooking";
 import Story15 from "./components/story/story-15";
 
-
 const App = () => {
   return (
     <>
-      
       <div className="font-sans">
         {/* Start Web contents*/}
         <div
@@ -69,7 +67,7 @@ const App = () => {
           <div className="pt-60">
             <Story8 />
           </div>
-            <Story9 />
+          <Story9 />
           <div>
             <Story10 />
           </div>
@@ -79,19 +77,18 @@ const App = () => {
           <div className=" pt-[10%]">
             <Story_12 />
           </div>
-          </div>
-            <Story13 />
-          <div>
+        </div>
+        <Story13 />
+        <div>
           <div>
             <Story14 />
           </div>
           <div className="flex flex-col pt-[10%]">
             <Story15 />
           </div>
-          <div className="flex pt-[50%]">
+          <div className="pt-[50%]">
             <Cooking />
           </div>
-          
 
           <Navbar />
         </div>
