@@ -1,6 +1,6 @@
 import Sniffing from "../../Images/story_13/sniffing.png";
 import SniffingVFX from "../../Images/story_13/sniffing-vfx.gif";
-import Frightened from "../../Images/story_13/frightened.png";
+import Frightened from "../../Images/story_13/frightened.gif";
 import Meetang from "../../Images/story_13/meetang.png";
 import Numkhaboun from "../../Images/story_13/namkhaboun.png";
 import Guests from "../../Images/story_13/guests.png";
@@ -17,14 +17,179 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story13() {
-  
-  useEffect(() => {
+    const text_story13_1Ref = useRef ();
+    const text_story13_2Ref = useRef ();
+    const sniffingdogRef = useRef ();
+    const text_story13_3Ref = useRef ();
+    const warningRef = useRef ();
+    const text_story13_4Ref = useRef ();
+    const text_story13_5Ref = useRef ();
+    const text_story13_6Ref = useRef ();
 
+  useEffect(() => {
+    const text_story13_1 = text_story13_1Ref.current;
+    const text_story13_2 = text_story13_2Ref.current;
+    const sniffingdog = sniffingdogRef.current;
+    const text_story13_3 = text_story13_3Ref.current;
+    const warning = warningRef.current;
+    const text_story13_4 = text_story13_4Ref.current;
+    const text_story13_5 = text_story13_5Ref.current;
+    const text_story13_6 = text_story13_6Ref.current;
+
+    gsap.fromTo(
+        text_story13_1,
+        { opacity: 0, scale: 0.9 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          delay: 0,
+          scrollTrigger: {
+            trigger: text_story13_1,
+            scrub: true,
+            start: "0px 80%",
+            end: "100px 50%",
+  
+            /*markers : true,*/
+          },
+        }
+      );
+
+      gsap.fromTo(
+        text_story13_2,
+        { opacity: 0, scale: 0.9 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          delay: 0,
+          scrollTrigger: {
+            trigger: text_story13_2,
+            scrub: true,
+            start: "0px 80%",
+            end: "100px 50%",
+  
+            /*markers : true,*/
+          },
+        }
+      );
+
+      gsap.fromTo(
+        sniffingdog,
+        { xPercent : 20 },
+        {
+            xPercent: 0,
+            duration: 1,
+            scrollTrigger: {
+            trigger: sniffingdog,
+            scrub: true,
+            start: "50px 80%",
+            end: "150px 30%",
+  
+            /*markers : true,*/
+          },
+        }
+      );
+
+      gsap.fromTo(
+        text_story13_3,
+        { opacity: 0, scale: 0.9 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          delay: 0,
+          scrollTrigger: {
+            trigger: text_story13_3,
+            scrub: true,
+            start: "0px 80%",
+            end: "100px 50%",
+  
+            /*markers : true,*/
+          },
+        }
+      );
+
+      gsap.fromTo(
+        warning,
+        { opacity: 0, scale: 0 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          delay: 0,
+          scrollTrigger: {
+            trigger: warning,
+            scrub: true,
+            start: "0px 80%",
+            end: "50px 70%",
+  
+            /*markers : true,*/
+          },
+        }
+      );
+
+      gsap.fromTo(
+        text_story13_4,
+        { opacity: 0, scale: 0.9 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          delay: 0,
+          scrollTrigger: {
+            trigger: text_story13_4,
+            scrub: true,
+            start: "0px 80%",
+            end: "100px 50%",
+  
+            /*markers : true,*/
+          },
+        }
+      );
+
+      gsap.fromTo(
+        text_story13_5,
+        { opacity: 0, scale: 0.9 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          delay: 0,
+          scrollTrigger: {
+            trigger: text_story13_5,
+            scrub: true,
+            start: "0px 80%",
+            end: "100px 50%",
+  
+            /*markers : true,*/
+          },
+        }
+      );
+
+      gsap.fromTo(
+        text_story13_6,
+        { opacity: 0, scale: 0.9 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          delay: 0,
+          scrollTrigger: {
+            trigger: text_story13_6,
+            scrub: true,
+            start: "0px 80%",
+            end: "100px 50%",
+  
+            /*markers : true,*/
+          },
+        }
+      );
     
   }, []);
   return (
     <div className=" pt-[15%] flex flex-col">
-        <div className="justify-end px-[10%] font-sans text-3xl grid grid-cols-2 leading-relaxed">
+        <div className="justify-end px-[10%] font-sans text-3xl grid grid-cols-2 leading-relaxed" ref={text_story13_1Ref}>
         <div></div>
         <p> ในขณะเดินเล่น มีตังค์พยายามจะเดินนำ
             คุณต้องกระตุกสายจูงเบา ๆ สัก 3 ครั้ง พร้อมออกคำสั่ง
@@ -42,28 +207,28 @@ function Story13() {
         </div>
 
         <div className="grid grid-cols-2 pt-[5%]">
-                <div className=" pl-[55%] pt-[15%]">
+                <div className=" pl-[55%] pt-[15%]" ref={text_story13_2Ref}>
                     <p className="font-sans text-3xl text-right leading-relaxed">
                         พอเดินไปได้สักพัก มีตังค์ก็แวะสงสัย
                         ในทุก ๆ ที่ ที่เดินผ่านและคอยดม
                         อยู่ตลอดเวลา 
                     </p>
                 </div>
-            <div className=" flex justify-end pr-[0%] ">
+            <div className=" flex justify-end pr-[0%] " ref={sniffingdogRef}>
             <img className=" w-[90%]" src={Sniffing}/>
-            <img className=" w-[45%] absolute" src={SniffingVFX}/>
+            <img className=" w-[90%] absolute opacity-[90%]" src={SniffingVFX}/>
             </div>
         </div>
 
         <div className="grid grid-cols-2">
-            <div className=" pt-[30%] z-50 pl-[20%]">
+            <div className=" pt-[30%] z-50 pl-[20%]" ref={text_story13_3Ref}>
                 <p className="font-sans text-3xl leading-relaxed">
                 แต่แล้วก็ดันไปเจอเจ้าตูบอีกตัวที่อยู่ในหมู่บ้านเข้า มีตังค์เลยเห่า! 
                 แสดงอาการหวงอาณาเขตของสุนัข 
                 แบบนี้ต้องออกคำสั่งสักหน่อยมันจะรบกวนคนอื่นเขา
                 </p>
             </div>
-            <img className="absolute left-[25%] z-0" src={Frightened}/>
+            <img className="absolute left-[25%] z-0" src={Frightened} ref={warningRef}/>
         </div>
 
         <div className=" flex flex-col-2 gap-[5%] justify-center pt-[10%]">
@@ -101,7 +266,7 @@ function Story13() {
 
         <div className=" flex flex-col-2 gap-[5%] justify-center pt-[10%] ">
             <div className="flex-col justify-start z-20">
-                <div className="font-sans text-3xl ">
+                <div className="font-sans text-3xl " ref={text_story13_4Ref}>
                     <p className="">
                         หลังจากนั้นก็คุณก็พยายามกระตุกสายจูง
                     </p>
@@ -109,7 +274,7 @@ function Story13() {
                         เพื่อให้มีตังค์เดินตามมา 
                     </p>
                 </div>
-                <div className="font-sans text-3xl pt-[15%]">
+                <div className="font-sans text-3xl pt-[15%]" ref={text_story13_5Ref}>
                     <p className="">
                         มีตังค์ก็ทำตามอย่างว่าง่ายและเข้าใจ
                         </p>
@@ -120,7 +285,7 @@ function Story13() {
                         แต่แล้วก็ดันเจอคนในหมู่บ้านซะได้
                     </p>
                 </div>
-                <div className="font-sans text-3xl pt-[30%]">
+                <div className="font-sans text-3xl pt-[30%]" ref={text_story13_6Ref}>
                     <p className="">
                         ดีหน่อยที่มีตังค์ค่อนข้างจะคุ้นเคย
                     </p>
