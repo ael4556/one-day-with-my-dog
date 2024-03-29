@@ -4,7 +4,7 @@ import Meetang from "../../Images/story_13/meetang.png";
 import Numkhaboun from "../../Images/story_13/namkhaboun.png";
 import Guests from "../../Images/story_13/guests.png";
 import BG_Guests from "../../Images/story_13/bg_guests.png";
-import Sticker from "../../Images/story_13/sticker.png"
+import Sticker from "../../Images/story_13/sticker.gif"
 
 import Tips from "../tips";
 import Chat from "../chat";
@@ -48,8 +48,8 @@ function Story13() {
                         อยู่ตลอดเวลา 
                     </p>
                 </div>
-            <div className=" flex justify-end pr-[20%] ">
-            <img className=" w-[100%]" src={Sniffing}/>
+            <div className=" flex justify-end pr-[0%] ">
+            <img className=" w-[90%]" src={Sniffing}/>
             </div>
         </div>
 
