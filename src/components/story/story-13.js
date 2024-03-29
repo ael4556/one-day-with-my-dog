@@ -1,4 +1,5 @@
 import Sniffing from "../../Images/story_13/sniffing.png";
+import SniffingVFX from "../../Images/story_13/sniffing-vfx.gif";
 import Frightened from "../../Images/story_13/frightened.png";
 import Meetang from "../../Images/story_13/meetang.png";
 import Numkhaboun from "../../Images/story_13/namkhaboun.png";
@@ -50,6 +51,7 @@ function Story13() {
                 </div>
             <div className=" flex justify-end pr-[0%] ">
             <img className=" w-[90%]" src={Sniffing}/>
+            <img className=" w-[45%] absolute" src={SniffingVFX}/>
             </div>
         </div>
 
