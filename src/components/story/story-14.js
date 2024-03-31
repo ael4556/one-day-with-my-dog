@@ -10,7 +10,7 @@ import HowTo from "../../Images/story_14/Pickupshit.gif";
 
 import Chat from "../message";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef,} from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -41,8 +41,6 @@ function Story14() {
         {
           opacity: 1,
           scale: 1,
-          duration: 1,
-          delay: 0,
           scrollTrigger: {
             trigger: text_story14_1,
             scrub: true,
@@ -60,8 +58,6 @@ function Story14() {
         {
           opacity: 1,
           scale: 1,
-          duration: 1,
-          delay: 0,
           scrollTrigger: {
             trigger: text_story14_2,
             scrub: true,
@@ -78,7 +74,6 @@ function Story14() {
         { scale: 0 },
         {
           scale: 1,
-          duration: 1,
           scrollTrigger: {
             trigger: title_Emergency,
             scrub: true,
@@ -96,8 +91,6 @@ function Story14() {
         {
           opacity: 1,
           scale: 1,
-          duration: 1,
-          delay: 0,
           scrollTrigger: {
             trigger: text_story14_3,
             scrub: true,
@@ -115,8 +108,6 @@ function Story14() {
         {
           opacity: 1,
           scale: 1,
-          duration: 1,
-          delay: 0,
           scrollTrigger: {
             trigger: text_story14_4,
             scrub: true,
@@ -134,8 +125,6 @@ function Story14() {
         {
           opacity: 1,
           scale: 1,
-          duration: 1,
-          delay: 0,
           scrollTrigger: {
             trigger: text_story14_5,
             scrub: true,

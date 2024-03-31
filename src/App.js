@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/navbar";
 import "./App.css";
 
 import cover from "./Images/logo/bg-cover-copy.png";
+import bg_cooking from "./Images/bg-cooking.png"
 
 import Logo from "./components/logo/logo";
 import ClockTop from "./components/clock";
@@ -75,25 +76,32 @@ const App = () => {
           <div className="pt-[30%]">
             <Story11 />
           </div>
-          <div className=" pt-[10%]">
-            <Story_12 />
+          <div className=" flex flex-col pt-[10%]">
+            <div className="">
+              <Story_12 />
+            </div>
           </div>
-          </div>
+        </div>
+
+          <div className=" pt-[5%]">
             <Story13 />
-          <div>
-          <div>
+          </div>
+            <div>
             <Story14 />
           </div>
           <div className="flex flex-col pt-[10%]">
             <Story15 />
           </div>
-          <div className="pt-[50%]">
-            <Cooking />
+          <div className="flex flex-col">
+            <div className="pt-[15%] z-50">
+              <Cooking />
+            </div>
+            <div className="pt-[10%] z-50">
+              <Story17 />
+            </div>
+            <img className=" opacity-60 z-10 absolute w-[100%] pt-[10%]" src={bg_cooking}/>
           </div>
-          <div className="pt-[10%]">
-            <Story17 />
-          </div>
-
+        <div className=" z-50">
           <Navbar />
         </div>
       </div>

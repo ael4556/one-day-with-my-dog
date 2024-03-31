@@ -8,6 +8,8 @@ import image_liver from "../Images/cooking/liver.png";
 import image_pumpkin from "../Images/cooking/pumpkin.png";
 import image_wing from "../Images/cooking/wing.png";
 
+import dinner from "../Images/cooking/dinner.png";
+
 import image_bow_full_0 from "../Images/cooking/bow-empty.png";
 import image_bow_full_1 from "../Images/cooking/bow-full.png";
 import image_bow_full_2 from "../Images/cooking/bow-empty.png";
@@ -67,7 +69,10 @@ const Cooking = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="w-full p-4">
+        <div className=" flex justify-center">
+          <img src={dinner}/>
+        </div>
+        <div className="w-full p-4 pt-[15%]">
           <div className="grid grid-cols-7 gap-4 items-center">
             {ingredients.map((ingredient) => (
               <div
