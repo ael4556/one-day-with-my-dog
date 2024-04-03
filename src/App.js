@@ -26,6 +26,7 @@ import Story14 from "./components/story/story-14";
 import Story15 from "./components/story/story-15";
 import Cooking from "./components/cooking";
 import Story17 from "./components/story/story-17";
+import Story18 from "./components/story/story-18";
 
 const App = () => {
   return (
@@ -100,6 +101,9 @@ const App = () => {
               <Story17 />
             </div>
             <img className=" opacity-60 z-10 absolute w-[100%] pt-[10%]" src={bg_cooking}/>
+          </div>
+          <div>
+            <Story18/>
           </div>
         <div className=" z-50">
           <Navbar />
