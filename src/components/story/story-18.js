@@ -4,9 +4,11 @@ import ball from "../../Images/story_18/ball.png";
 import blow from "../../Images/story_18/blow.png";
 import frisbee from "../../Images/story_18/frisbee.png";
 import dishwash from "../../Images/story_18/dishwashing.png";
+import memory from "../../Images/story_18/memorable.png";
+import dot from "../../Images/story_18/dotdotdot.png";
 
 import Tips from "../tips";
-import Chat from "../message";
+import Chat from "../chat";
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -56,7 +58,62 @@ function Story18() {
               <img className=" " src={blow}/>
             </div>
         </div>
+        <div className=" flex justify-start pt-[5%] pl-[10%]">
+          <Tips
+          text="การล้างภาชนะและของเล่นสุนัข สามารถล้างได้โดยใช้น้ำอุ่น"
+          text2="ควบคู่กับน้ำยาล้างจานปกติได้เลย เน้นความสะอาด ไม่มีคราบไขมัน"
+          text3="และที่สำคัญ ต้องตากให้แห้ง"
+          isLeft={true}
+          />
+        </div>
+        <div className=" flex flex-col pt-[10%] text-3xl font-sans">
+          <p className="flex justify-center ">
+            เมื่อทำความสะอาด์เสร็จแล้วก็ถึงเวลาของคุณบ้าง จากการดูแลเจ้ามีตังค์มาทัังวัน
+          </p>
+          <p className="flex justify-center pt-[0.5%]">
+            ทำให้คุณรู้สึกเหนียวตัวและกำลังเดินขึ้นห้องไป เพื่อจะอาบน้ำ แต่ไม่ลืมที่จะบอกเจ้าหมาน้อย
+          </p>
+        </div>
+        <div className=" flex justify-end pr-[10%] pt-[10%]">
+          <Chat 
+            text="“ตังค์เดี๋ยวมานะไปอาบน้ำก่อนคอยนะอย่าซน”"
+          />
+        </div>
+        <div className=" flex justify-start pt-[5%] pl-[10%]">
+          <Chat 
+            text="โฮ่ง โฮ่ง !" 
+            isDog={true} 
+            isMe={false} 
+          />
+        </div>
+        <div className=" flex flex-col pt-[10%] text-3xl font-sans">
+          <p className="flex justify-center ">
+          อาบน้ำเสร็จแล้วก็เดินลงบรรไดมาหาเจ้ามีตังค์ พร้อมเปิดทีวี
+          </p>
+          <p className="flex justify-center pt-[0.5%]">
+          พอเจ้าหมาแสนรู้เห็นเข้า ก็รีบกระโจนขึ้นมาบนโซฟาตัวใหญ่อย่างเคยชิน
+          </p>
+          <p className="flex justify-center pt-[0.5%]">
+          สายตาจ้องมองทีวีไม่กระพริบ หางส่ายไปมา แถมลิ้นห้อย ดูดีอกดีใจชอบกล
+          </p>
+        </div>
 
+        <div className=" flex flex-col pt-[10%] text-3xl font-sans">
+          <p className="flex justify-center ">
+          และหนึ่งวันของคุณ ก็จบลง 
+          </p>
+          <p className="flex justify-center pt-[0.5%]">
+          ด้วยการดูทีวีแสนสนุกไปพร้อมกับเจ้าตูบแสนรู้ใจ ดูเป็นวันธรรมดา ที่ . . .
+          </p>
+        </div>
+
+        <div className=" flex justify-center pt-[10%]">
+          <img className="" src={dot}/>
+        </div>
+        <div className=" flex justify-center pt-[5%]">
+          <img className="" src={memory}/>
+        </div>
+        
       </div>
 
     );

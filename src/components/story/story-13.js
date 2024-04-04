@@ -8,7 +8,7 @@ import BG_Guests from "../../Images/story_13/bg_guests.png";
 import Sticker from "../../Images/story_13/sticker.gif"
 
 import Tips from "../tips";
-import Chat from "../chat";
+import Chat from "../message";
 
 
 import { useEffect, useRef, useState } from "react";
@@ -234,8 +234,8 @@ function Story13() {
         <div className=" flex flex-col-2 gap-[5%] justify-center pt-[10%]">
             <div className=" absolute left-[10%] z-10">
                 <Chat
-                text="“มีตังค์ หยุด!”"
-                isMe={false}
+                text="“มีตังค์ หยุด !”"
+                isMe={true}
                 showIcon={true}
                 />
             </div> 
@@ -244,8 +244,8 @@ function Story13() {
             </div>
             <div className=" absolute right-[10%] z-10 pt-[55%]">
                 <Chat
-                text="“หยุดนะ พอเลย!”"
-                isMe={true}
+                text="“หยุดนะ พอเลย !”"
+                isMe={false}
                 showIcon={true}
                 />
             </div>
@@ -310,35 +310,39 @@ function Story13() {
         </div>
 
         <div>
-            <div className="pr-[10%] z-10 pt-[10%]">
+            <div className="flex justify-end pr-[10%] z-10 pt-[10%]">
                 <Chat
                 text="“ไง~~มีตังค์ มาเดินเล่นเหรอ”"
-                isMe={true}
+                isMe={false}
                 showIcon={true}
+                icon="female"
                 />
             </div>
-            <div className="pl-[10%] z-10 pt-[10%]">
+            <div className="flex justify-start pl-[10%] z-10 pt-[10%]">
                 <Chat
                 text="“วันหยุดพาออกมาเดินเปิดหูเปิดตาหน่อย"
                 text2="เดี๋ยวจะเฉาเอา ฮ่าฮ่าฮ่า”"
-                isMe={false}
+                isMe={true}
                 showIcon={true}
+                icon="male"
                 />
             </div>
-            <div className="pr-[10%] z-10 pt-[10%]">
+            <div className="flex justify-end pr-[10%] z-10 pt-[10%]">
                 <Chat
                 text="“ดีแล้ว มีตังค์นิสัยดีนะเนี่ยกระดิกหางใหญ่เลย"
                 text2="สงสัยจำกันได้ งั้นพี่ไปก่อนนะ”"
-                isMe={true}
+                isMe={false}
                 showIcon={true}
+                icon="female"
                 />
             </div>
-            <div className="pl-[10%] z-10 pt-[10%]">
+            <div className="flex justify-start pl-[10%] z-10 pt-[10%]">
                 <Chat
                 text="“เฟรนลี่ใหญ่เลยนะมีตังค์ แบบนี้ถ้าโจรเข้าบ้าน"
                 text2="จะเป็นยังไงเนี้ย”"
-                isMe={false}
+                isMe={true}
                 showIcon={true}
+                icon="male"
                 />
             </div>
             <div className="flex justify-end pr-[10%]">
