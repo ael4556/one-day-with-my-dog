@@ -77,7 +77,7 @@ const Cooking = () => {
             {ingredients.map((ingredient) => (
               <div
                 key={ingredient.id}
-                className={`p-4 rounded cursor-move ${
+                className={`p-4 rounded cursor-grab ${
                   ingredient.id === 1
                     ? "bg-blue-200"
                     : ingredient.id === 2

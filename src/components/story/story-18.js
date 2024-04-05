@@ -48,14 +48,14 @@ function Story18() {
           <div className="absolute pt-[18%] pl-[30%]">
               <img className="" src={dishwash}/>
             </div>
-            <div className="absolute pt-[27%] pl-[50%]">
-              <img className=" " src={ball}/>
+            <div className="absolute pt-[32%] pl-[50%]">
+              <img className="w-[80%]" src={ball}/>
             </div>
-            <div className="absolute pt-[27%] pl-[65%]">
-              <img className=" " src={frisbee}/>
+            <div className="absolute pt-[32%] pl-[65%]">
+              <img className="w-[80%]" src={frisbee}/>
             </div>
-            <div className="absolute pt-[27%] pl-[80%]">
-              <img className=" " src={blow}/>
+            <div className="absolute pt-[32%] pl-[80%]">
+              <img className="w-[80%]" src={blow}/>
             </div>
         </div>
         <div className=" flex justify-start pt-[5%] pl-[10%]">
