@@ -94,18 +94,18 @@ const App = () => {
             <Story15 />
           </div>
           <div className="flex flex-col">
-            <div className="pt-[15%] z-50">
+            <div className="pt-[15%] z-0">
               <Cooking />
             </div>
-            <div className="pt-[10%] z-50">
+            <div className="pt-[10%] z-0">
               <Story17 />
             </div>
-            <img className=" opacity-60 z-10 absolute w-[100%] pt-[10%]" src={bg_cooking}/>
+            <img className=" opacity-60 z-[-100] absolute w-[100%] pt-[10%]" src={bg_cooking}/>
           </div>
-          <div>
+          <div className="z-0">
             <Story18/>
           </div>
-        <div className=" z-50">
+        <div className=" z-[500]">
           <Navbar />
         </div>
       </div>
