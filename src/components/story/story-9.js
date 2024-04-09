@@ -2,8 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import Chat from "../chat";
 
 import garden_dog from "../../Images/story_9/garden-dog.png";
-import ball from "../../Images/story_9/ball.png";
-import frisbee_dog from "../../Images/story_9/frisbee-dog.png";
+import ball from "../../Images/story_9/ball.gif";
+import ball2 from "../../Images/story_9/ball.png";
+import frisbee_dog from "../../Images/story_9/frisbee-dog.gif";
 import text_stroke_3 from "../../Images/SVG/text-stroke-3.png";
 import dog from "../../Images/story_9/dog.png";
 
@@ -18,11 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Story9() {
   const text_story9_1Ref = useRef();
   const text_story9_2Ref = useRef();
-  const text_story9_3Ref = useRef();
-  const text_story9_4Ref = useRef();
 
-  const balldog_infoRef = useRef();
-  const frisbeedog_infoRef = useRef();
   const text_stroke3Ref = useRef();
   const dog_jumpRef = useRef();
   const bouncing_ballRef = useRef();
@@ -33,11 +30,7 @@ function Story9() {
   useEffect(() => {
     const text_story9_1 = text_story9_1Ref.current;
     const text_story9_2 = text_story9_2Ref.current;
-    const text_story9_3 = text_story9_3Ref.current;
-    const text_story9_4 = text_story9_4Ref.current;
 
-    const balldog_info = balldog_infoRef.current;
-    const frisbeedog_info = frisbeedog_infoRef.current;
     const text_stroke3 = text_stroke3Ref.current;
     const dog_jump = dog_jumpRef.current;
     const bouncing_ball = bouncing_ballRef.current;
@@ -97,76 +90,6 @@ function Story9() {
     );
 
     gsap.fromTo(
-      balldog_info,
-      { scale: 0.5 },
-      {
-        duration: 0.5,
-        scale: 1,
-        scrollTrigger: {
-          trigger: balldog_info,
-          scrub: true,
-          start: "-100px 80%",
-          end: "-100px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      frisbeedog_info,
-      { scale: 0.5 },
-      {
-        duration: 0.5,
-        scale: 1,
-        scrollTrigger: {
-          trigger: frisbeedog_info,
-          scrub: true,
-          start: "-100px 80%",
-          end: "-100px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      text_story9_3,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        duration: 2,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_story9_3,
-          scrub: true,
-          start: "-100px 80%",
-          end: "-100px 50%",
-
-          /*markers : true*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      text_story9_4,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        duration: 2,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_story9_4,
-          scrub: true,
-          start: "-100px 80%",
-          end: "-100px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
       dog_jump,
       { yPercent: 0, xPercent: 10, scale: 0.8 },
       {
@@ -178,8 +101,8 @@ function Story9() {
         scrollTrigger: {
           trigger: dog_jump,
           scrub: true,
-          start: "200px 90%",
-          end: "100px 50%",
+          start: "-200px 80%",
+          end: "-100px 40%",
 
           /*markers : true,*/
         },
@@ -232,31 +155,27 @@ function Story9() {
       <div className="flex justify-center gap-40 pt-40">
         <div className="flex flex-col">
           <div className="hover:scale-110 duration-200 cursor-pointer" >
-          <div className="animate-scaling">
           <img
             onClick={() => setIsPopup1Open(true)}
             className="w-[80%]"
             src={ball}
-            ref={balldog_infoRef}
+            alt={ball}
           />
           </div>
-          </div>
-          <div className="flex text-4xl pt-12 pl-[15%]" ref={text_story9_3Ref}>
+          <div className="flex text-4xl pt-12 pl-[15%]" >
             <p>ลูกบอล</p>
           </div>
         </div>
         <div className="flex flex-col ">
           <div className="hover:scale-110 duration-200 cursor-pointer" >
-          <div className="animate-scaling">
           <img
             onClick={() => setIsPopup2Open(true)}
             className="w-[80%]"
             src={frisbee_dog}
-            ref={frisbeedog_infoRef}
+            alt={frisbee_dog}
           />
           </div>
-          </div>
-          <div className="flex text-4xl pt-12 pl-[15%]" ref={text_story9_4Ref}>
+          <div className="flex text-4xl pt-12 pl-[15%]">
             <p>จานร่อน</p>
           </div>
         </div>
@@ -278,8 +197,8 @@ function Story9() {
         <div className=" absolute z-10 pt-[55%] left-[35%]">
           <img
             className=" w-[80%]"
-            src={ball}
-            alt={ball}
+            src={ball2}
+            alt={ball2}
             ref={bouncing_ballRef}
           />
         </div>

@@ -16,7 +16,7 @@ const Popup = ({ isPopupOpen, setIsPopupOpen, images = image }) => {
   return (
     <>
       {isPopupOpen && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-40">
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="p-8 rounded-lg    ">
             <div className="flex justify-end">
               <div className="absolute pt-6 pr-6">

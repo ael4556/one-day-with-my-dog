@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import Tips from "../tips";
 
-import image_towels from "../../Images/story_10/towels.png";
-import image_dry from "../../Images/story_10/hair-dryer.png";
-import image_shampoo from "../../Images/story_10/dog-shampoo.png";
-import image_tube from "../../Images/story_10/tube.png";
+import image_towels from "../../Images/story_10/towels.gif";
+import image_dry from "../../Images/story_10/hair-dryer.gif";
+import image_shampoo from "../../Images/story_10/dog-shampoo.gif";
+import image_tube from "../../Images/story_10/tube.gif";
 
 import image_dog_dry from "../../Images/story_10/dry-fur-dog.png";
 import image_sofa from "../../Images/story_10/bg-dry-fur-dog.png";
@@ -496,7 +496,7 @@ function Story10() {
         </div>
       </div>
 
-      <div className="">
+      <div className="pt-[20%]">
         <DogShalala />
       </div>
 

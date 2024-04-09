@@ -5,6 +5,7 @@ import Bgkitchen from "../../Images/story_15/bg-kitchen.png";
 import TextStorke from "../../Images/story_15/text-stroke-1.png";
 import Braf from "../../Images/story_15/BARF.png";
 import Tie from "../../Images/story_15/tie.png";
+import SunSett from "../../Images/sun-set.png";
 
 import Sunset from "../sunset";
 import ClockTop from "../clock";
@@ -26,7 +27,7 @@ function Story15() {
       <div className="pt-[10%] flex flex-col">
         
           <ClockTop time="18.00" />
-          <Sunset/>
+          <Sunset sunlight={SunSett}/>
         
         <div className=" flex flex-col pt-[35%]">
           <div className=" font-sans flex justify-center text-3xl pt-[10%] px-[29%] leading-relaxed text-center">

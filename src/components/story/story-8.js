@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-import dog from "../../Images/story_8/dog-snack.png";
-import snack_dog from "../../Images/story_8/snack-dog.png";
-import snack from "../../Images/story_8/snack.png";
+import snack_dog from "../../Images/story_8/dog-with-snack.png";
+import snack from "../../Images/story_8/snack.gif";
 import CardFlip from "../cardflip";
 import Title from "../title";
 import Tips from "../tips";
@@ -26,7 +25,6 @@ function Story8() {
   const text_story8_1Ref = useRef();
   const text_story8_2Ref = useRef();
   const snack_motionRef = useRef();
-  const dog_snackRef = useRef();
   const snack_dogRef = useRef();
   const card_scale1Ref = useRef();
   const card_scale2Ref = useRef();
@@ -39,7 +37,6 @@ function Story8() {
     const text_story8_1 = text_story8_1Ref.current;
     const text_story8_2 = text_story8_2Ref.current;
     const snack_motion = snack_motionRef.current;
-    const dog_snack = dog_snackRef.current;
     const snack_dog = snack_dogRef.current;
     const card_scale1 = card_scale1Ref.current;
     const card_scale2 = card_scale2Ref.current;
@@ -73,27 +70,9 @@ function Story8() {
         duration: 1,
         scrollTrigger: {
           trigger: snack_motion,
-          scrub: true,
-          start: "0px 100%",
-          end: "100px 80%",
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      dog_snack,
-      { opacity: 0, scale: 0.2, xPercent: -50 },
-      {
-        opacity: 1,
-        scale: 1,
-        xPercent: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: dog_snack,
-          scrub: true,
-          start: "100px 100%",
-          end: "200px 80%",
+          toggleActions : 'restart',
+          start : "-400px 80%",
+          end : "-300px 50%",
           /*markers : true,*/
         },
       }
@@ -109,9 +88,9 @@ function Story8() {
         duration: 1,
         scrollTrigger: {
           trigger: snack_dog,
-          scrub: true,
-          start: "100px 100%",
-          end: "200px 80%",
+          toggleActions : 'restart',
+          start : "-400px 80%",
+          end : "-300px 50%",
           /*markers : true,*/
         },
       }
@@ -223,7 +202,7 @@ function Story8() {
             setIsPopupOpen={setIsPopupOpen}
             images={info}
           />
-          <div className="animate-bounce">
+          
             <div className="pl-[40%] pt-[20%] ">
               <div className="hover:scale-110 duration-200 w-[55%]">
                 <img
@@ -234,39 +213,37 @@ function Story8() {
                 />
               </div>
             </div>
-          </div>
+          
         </div>
 
         <div className=" flex flex-col">
-          <div className=" grid grid-cols-2">
-            <div className="pt-[50%]">
+            <div className="pt-[20%]">
               <img className="w-[80%]" src={snack_dog} ref={snack_dogRef} />
             </div>
-            <div className="">
-              <img className="w-[80%]" src={dog} ref={dog_snackRef} />
-            </div>
+        </div>
+      </div>
+
+      <div className="pt-[10%]">
+        <div className="flex justify-center" ref={text_story8_2Ref}>
+          <Title title="เลือกคำสั่งที่ต้องการฝึก" />
+        </div>
+
+        <div className="grid grid-cols-4 justify-items-center pt-[7%] px-32">
+          <div ref={card_scale1Ref}>
+            <CardFlip image_front={cardfront_1} image_back={cardback_1} />
+          </div>
+          <div ref={card_scale2Ref}>
+            <CardFlip image_front={cardfront_2} image_back={cardback_2} />
+          </div>
+          <div ref={card_scale3Ref}>
+            <CardFlip image_front={cardfront_3} image_back={cardback_3} />
+          </div>
+          <div ref={card_scale4Ref}>
+            <CardFlip image_front={cardfront_4} image_back={cardback_4} />
           </div>
         </div>
       </div>
-
-      <div className="flex justify-center" ref={text_story8_2Ref}>
-        <Title title="เลือกคำสั่งที่ต้องการฝึก" />
-      </div>
-
-      <div className="grid grid-cols-4 justify-items-center pt-[7%] px-32">
-        <div ref={card_scale1Ref}>
-          <CardFlip image_front={cardfront_1} image_back={cardback_1} />
-        </div>
-        <div ref={card_scale2Ref}>
-          <CardFlip image_front={cardfront_2} image_back={cardback_2} />
-        </div>
-        <div ref={card_scale3Ref}>
-          <CardFlip image_front={cardfront_3} image_back={cardback_3} />
-        </div>
-        <div ref={card_scale4Ref}>
-          <CardFlip image_front={cardfront_4} image_back={cardback_4} />
-        </div>
-      </div>
+      
 
       <div className="flex pt-[40%] justify-end pr-[10%]">
         <Tips text="อย่าลืมชมเจ้าตูบทุกครั้ง เมื่อน้องทำได้ดี" />

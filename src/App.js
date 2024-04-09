@@ -27,6 +27,9 @@ import Story15 from "./components/story/story-15";
 import Cooking from "./components/cooking";
 import Story17 from "./components/story/story-17";
 import Story18 from "./components/story/story-18";
+import Story10_0 from "./components/story/story-10-0";
+import Story10_1 from "./components/story/story-10-1";
+import Story10_2 from "./components/story/story-10-2";
 
 const App = () => {
   return (
@@ -71,8 +74,14 @@ const App = () => {
             <Story8 />
           </div>
           <Story9 />
+          <div className="">
+            <Story10_0 />
+          </div>
           <div>
-            <Story10 />
+            <Story10_1 />
+          </div>
+          <div>
+            <Story10_2 />
           </div>
           <div className="pt-[30%]">
             <Story11 />
