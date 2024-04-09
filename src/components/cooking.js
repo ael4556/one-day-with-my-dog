@@ -10,14 +10,14 @@ import image_wing from "../Images/cooking/wing.png";
 
 import dinner from "../Images/cooking/dinner.png";
 
-import image_bow_full_0 from "../Images/cooking/bow-empty.png";
-import image_bow_full_1 from "../Images/cooking/bow-full.png";
-import image_bow_full_2 from "../Images/cooking/bow-empty.png";
-import image_bow_full_3 from "../Images/cooking/bow-full.png";
-import image_bow_full_4 from "../Images/cooking/bow-empty.png";
-import image_bow_full_5 from "../Images/cooking/bow-full.png";
-import image_bow_full_6 from "../Images/cooking/bow-empty.png";
-import image_bow_full_7 from "../Images/cooking/bow-full.png";
+import image_bow_full_0 from "../Images/cooking/empty.png";
+import image_bow_full_1 from "../Images/cooking/full01.png";
+import image_bow_full_2 from "../Images/cooking/full02.png";
+import image_bow_full_3 from "../Images/cooking/full03.png";
+import image_bow_full_4 from "../Images/cooking/full04.png";
+import image_bow_full_5 from "../Images/cooking/full05.png";
+import image_bow_full_6 from "../Images/cooking/full06.png";
+import image_bow_full_7 from "../Images/cooking/full07.gif";
 
 const Cooking = () => {
   const [ingredients, setIngredients] = useState([
@@ -107,7 +107,7 @@ const Cooking = () => {
           </div>
         </div>
         <div className="flex justify-center ">
-          <div className="flex justify-center">
+          <div className="flex justify-center pt-[10%]">
             <img
               src={potImages[potImageIndex]}
               alt="หม้อ"
