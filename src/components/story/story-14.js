@@ -7,6 +7,7 @@ import Vfx from "../../Images/story_14/vfx.gif";
 import BGTextBot from "../../Images/story_14/text-bg-1.png";
 import BGTextTop from "../../Images/story_14/text-bg-2.png";
 import HowTo from "../../Images/story_14/Pickupshit.gif";
+import Bg_Park from "../../Images/story_14/bg-park.png";
 
 import Chat from "../message";
 
@@ -191,29 +192,32 @@ function Story14() {
                     </div>
                     <div></div>
                 </div>
-                <div className=" grid grid-cols-2 gap-[5%] justify-center pt-[10%]">
-                    <div className= "flex justify-start">
-                        <div className="z-0">
-                            <img className="absolute left-[5%] w-[25%]" src={Bin}/>
-                        </div>
-                        <div className="pt-[20%] z-10">
-                            <img className="absolute left-[17%] w-[35%]" src={Dog}/>
-                        </div>
-                        <div className="flex pt-[75%] pl-[45%] z-20">
-                            <img className="absolute w-[5%]" src={Poop}/>  
-                        </div>
-                    </div>
-                    <div className=" flex justify-end">
-                        <div className="pr-[20%] pt-[25%]">
-                            <Chat 
-                            text="“มีตังค์ทำไมทำแบบนี้" 
-                            text2="เราจะอึข้างนอกไม่ได้" 
-                            text3="ถ้าไม่ใช่ในบ้านเรา”" 
-                            isMe={false} 
-                            showIcon={true} 
-                            icon="male"/>
-                        </div>
-                    </div>
+                <div>
+                  <img className=" absolute" src={Bg_Park}/>
+                  <div className=" grid grid-cols-2 gap-[5%] justify-center pt-[10%]">
+                      <div className= "flex justify-start">
+                          <div className="z-0 pt-[15%]">
+                              <img className="absolute left-[5%] w-[25%]" src={Bin}/>
+                          </div>
+                          <div className="pt-[23%] z-10">
+                              <img className="absolute left-[17%] w-[35%]" src={Dog}/>
+                          </div>
+                          <div className="flex pt-[80%] pl-[45%] z-20">
+                              <img className="absolute w-[5%]" src={Poop}/>  
+                          </div>
+                      </div>
+                      <div className=" flex justify-end">
+                          <div className="pr-[20%] pt-[25%]">
+                              <Chat 
+                              text="“มีตังค์ทำไมทำแบบนี้" 
+                              text2="เราจะอึข้างนอกไม่ได้" 
+                              text3="ถ้าไม่ใช่ในบ้านเรา”" 
+                              isMe={false} 
+                              showIcon={true} 
+                              icon="male"/>
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </div>
             <div className="pt-[10%]">

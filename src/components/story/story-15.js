@@ -93,7 +93,7 @@ function Story15() {
                   <img className=" w-[30%] z-30" src={Braf}/>
                 </div>
               </div> 
-            <img className="left-[55%] pt-[35%] absolute w-[40%] z-20" src={Tie}/>   
+            <img className="left-[55%] pt-[42%] absolute w-[40%] z-20" src={Tie}/>   
             <img className=" z-0" src={Bgkitchen}/>
           </div>
 

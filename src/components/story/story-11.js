@@ -8,6 +8,7 @@ import Sunset from "../../components/sunset";
 import Chat from "../chat";
 import ClockTop from "../clock";
 import Title from "../title";
+import Tips from "../tips";
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -118,7 +119,7 @@ function Story11() {
         <div className="grid grid-cols-2 pt-[15%] ">
             <div className="flex flex-col" >
             <div className="flex justify-center">
-                <img className="w-[60%] pl-[20%]" src={Door} alt="Door" ref={doorRef} />
+                <img className="w-[70%] pl-[20%]" src={Door} alt="Door" ref={doorRef} />
             </div>
             </div>
 
@@ -134,6 +135,13 @@ function Story11() {
             </div>
             </div>
         </div>
+            <div className=" flex justify-end pr-[10%]">
+                <Tips 
+                text="ควรใส่สายจูงให้น้องสุนัขทุกครั้ง"
+                text2="เมื่่อพาออกนอกบ้าน"
+                isLeft={false}
+                />
+            </div>
             <div className="pt-[5%]" ref={title_story11_1Ref}>
             <Title title="ไปเดินเล่นกัน!"/>
             </div>
