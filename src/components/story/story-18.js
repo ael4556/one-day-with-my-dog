@@ -58,7 +58,7 @@ function Story18() {
               <img className="w-[80%]" src={blow}/>
             </div>
         </div>
-        <div className=" flex justify-start pt-[5%] pl-[10%]">
+        <div className=" flex justify-start pt-[10%] pl-[10%]">
           <Tips
           text="การล้างภาชนะและของเล่นสุนัข สามารถล้างได้โดยใช้น้ำอุ่น"
           text2="ควบคู่กับน้ำยาล้างจานปกติได้เลย เน้นความสะอาด ไม่มีคราบไขมัน"
