@@ -1,6 +1,6 @@
 import Tips from "../tips";
 
-import dog from "../../Images/story_17/dog-eat.png";
+import dog from "../../Images/story_17/dog-eat.gifn";
 import bg_dog from "../../Images/story_17/done.png";
 import feed from "../../Images/story_17/slow-feed.png";
 
