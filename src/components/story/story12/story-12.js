@@ -1,4 +1,6 @@
-import image_city from "../../../Images/story_12/bg-village.png";
+import image_city1 from "../../../Images/story_12/bg-village1-01.png";
+import image_city2 from "../../../Images/story_12/bg-village1-02.png";
+import image_city3 from "../../../Images/story_12/bg-village1-03.png";
 import image_dog_walk from "../../../Images/story_12/dogwalk.gif";
 import "./style.css";
 
@@ -39,13 +41,13 @@ function Story12() {
             <img className="w-[50%] " src={image_dog_walk} />
           </div>
           <div className="panel">
-            <img src={image_city} />
+            <img src={image_city1} />
           </div>
           <div className="panel ">
-            <img src={image_city} />
+            <img src={image_city2} />
           </div>
           <div className="panel ">
-            <img src={image_city} />
+            <img src={image_city3} />
           </div>
         </div>
       </div>

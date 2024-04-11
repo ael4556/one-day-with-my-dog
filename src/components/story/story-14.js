@@ -197,7 +197,7 @@ function Story14() {
                             <img className="absolute left-[5%] w-[25%]" src={Bin}/>
                         </div>
                         <div className="pt-[20%] z-10">
-                            <img className="absolute left-[15%] w-[30%]" src={Dog}/>
+                            <img className="absolute left-[17%] w-[35%]" src={Dog}/>
                         </div>
                         <div className="flex pt-[75%] pl-[45%] z-20">
                             <img className="absolute w-[5%]" src={Poop}/>  
