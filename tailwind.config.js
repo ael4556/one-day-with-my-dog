@@ -25,6 +25,7 @@ module.exports = {
       fontFamily: {
         sans: ["IBM Plex Sans Thai Looped", "sans-serif"],
         mali: ["Mali", "bold"],
+        Prompt: ["Prompt", "regular"],
       },
     },
   },

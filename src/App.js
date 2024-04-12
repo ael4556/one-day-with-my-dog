@@ -47,6 +47,7 @@ const App = () => {
             backgroundSize: "contain",
           }}
         >
+          <div id="Home"></div>
           <Logo />
           <div className="flex justify-center pt-[12%]">
             <img className=" absolute w-[10%]" src={Scroll}/>

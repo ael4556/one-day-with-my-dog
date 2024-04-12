@@ -4,9 +4,6 @@ import End from "../../Images/story_19/end.png";
 import Logo from "../../Images/story_19/logo-end.png";
 import Sofa from "../../Images/story_19/sofa-human-dog.png";
 
-import Tips from "../tips";
-import Chat from "../chat";
-
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -34,11 +31,7 @@ function Story19() {
             <div className=" flex justify-center pt-[30%]">
                 <img className=" absolute " src={End}/>
             </div>
-            
         </div>
-        
-
-        
       </div>
 
     );
