@@ -38,10 +38,9 @@ function Story20() {
             </div>
         </div>
 
-        <div className=" flex justify-center pt-[15%]">
+        <div className=" flex justify-center pt-[15%]" id="Creater">
             <img src={Our}/>
         </div>
-
         <div className=" grid grid-cols-3 pt-[2%]">
             <div className=" flex flex-col">
             <div className="flex justify-center">

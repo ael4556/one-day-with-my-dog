@@ -126,10 +126,11 @@ const App = () => {
         <div className="z-0 pt-[10%]">
           <Story19 />
         </div>
+        
         <div className="z-0 pt-[10%]">
           <Story20 />
         </div>
-        <div id="Creater"></div>
+        
         <div className=" z-[500]">
           <Navbar />
         </div>
