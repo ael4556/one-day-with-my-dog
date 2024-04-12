@@ -5,6 +5,7 @@ import "./App.css";
 
 import cover from "./Images/logo/bg-cover-copy.png";
 import bg_cooking from "./Images/bg-cooking.png";
+import Scroll from "./Images/logo/scroll.gif";
 
 import Logo from "./components/logo/logo";
 import ClockTop from "./components/clock";
@@ -47,6 +48,9 @@ const App = () => {
           }}
         >
           <Logo />
+          <div className="flex justify-center pt-[12%]">
+            <img className=" absolute w-[10%]" src={Scroll}/>
+          </div>
           <div className="flex flex-col pt-[30vh] xl:pt-[50vh] 2xl:pt-[75vh]">
             <Story1 />
           </div>
