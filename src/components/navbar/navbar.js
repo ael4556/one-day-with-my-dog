@@ -28,43 +28,43 @@ const Navbar = () => {
         {/* Mene list */}
         {menuOpen && (
           <div className="fixed top-4 right-24 bg-white p-4 shadow-md rounded-2xl">
-            <ul className="text-xl font-mali font-medium text-black">
+            <ul className="text-xl font-mali font-medium text-black ">
               <li>
                 <button
-                  className=" border-[3px] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
-                  onClick={() => scrollAction("Content0")}
+                  className=" w-full border-[3px] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
+                  onClick={() => scrollAction("Story_2")}
                 >
                   เวลา 7:00 น.
                 </button>
               </li>
               <li className="pt-[2%]">
                 <button
-                  className="  border-[3px] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
-                  onClick={() => scrollAction("Content")}
+                  className=" w-full  border-[3px] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
+                  onClick={() => scrollAction("Story_7")}
                 >
                   เวลา 13:30 น.
                 </button>
               </li>
               <li className="pt-[2%]">
                 <button
-                  className=" border-[3px] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
-                  onClick={() => scrollAction("Content")}
+                  className=" w-full border-[3px] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
+                  onClick={() => scrollAction("Story_11")}
                 >
                   เวลา 16:30 น.
                 </button>
               </li>
               <li className="pt-[2%]">
                 <button
-                  className=" border-[3px] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
-                  onClick={() => scrollAction("Content")}
+                  className=" w-full border-[3px] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
+                  onClick={() => scrollAction("Story_15")}
                 >
                   เวลา 18:00 น.
                 </button>
               </li>
               <li className="pt-[2%]">
                 <button
-                  className=" border-[3px] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
-                  onClick={() => scrollAction("Content")}
+                  className=" w-full border-[3px] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-2 px-6"
+                  onClick={() => scrollAction("Creater")}
                 >
                   ผู้จัดทำ
                 </button>

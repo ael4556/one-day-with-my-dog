@@ -4,7 +4,7 @@ import Navbar from "./components/navbar/navbar";
 import "./App.css";
 
 import cover from "./Images/logo/bg-cover-copy.png";
-import bg_cooking from "./Images/bg-cooking.png"
+import bg_cooking from "./Images/bg-cooking.png";
 
 import Logo from "./components/logo/logo";
 import ClockTop from "./components/clock";
@@ -53,7 +53,7 @@ const App = () => {
           <div className=" pt-40">
             <ClockTop time="7.00" />
           </div>
-          <div className=" flex justify-center">
+          <div id="Story_2" className=" flex justify-center">
             <Story2 />
           </div>
           <div className="flex flex-col pt-40 justify-center justify-items-center">
@@ -94,34 +94,37 @@ const App = () => {
           </div>
         </div>
 
-          <div className=" pt-[5%]">
-            <Story13 />
+        <div className=" pt-[5%]">
+          <Story13 />
+        </div>
+        <div>
+          <Story14 />
+        </div>
+        <div className="flex flex-col pt-[10%]">
+          <Story15 />
+        </div>
+        <div className="flex flex-col">
+          <div className="pt-[15%] z-0">
+            <Cooking />
           </div>
-            <div>
-            <Story14 />
+          <div className="pt-[10%] z-0">
+            <Story17 />
           </div>
-          <div className="flex flex-col pt-[10%]">
-            <Story15 />
-          </div>
-          <div className="flex flex-col">
-            <div className="pt-[15%] z-0">
-              <Cooking />
-            </div>
-            <div className="pt-[10%] z-0">
-              <Story17 />
-            </div>
-            <img className=" opacity-60 z-[-100] absolute w-[100%] pt-[10%]" src={bg_cooking}/>
-          </div>
-          <div className="z-0">
-            <Story18/>
-          </div>
-          <div className="z-0 pt-[10%]">
-            <Story19/>
-          </div>
-          <div className="z-0 pt-[10%]">
-            <Story20/>
-          </div>
-
+          <img
+            className=" opacity-60 z-[-100] absolute w-[100%] pt-[10%]"
+            src={bg_cooking}
+          />
+        </div>
+        <div className="z-0">
+          <Story18 />
+        </div>
+        <div className="z-0 pt-[10%]">
+          <Story19 />
+        </div>
+        <div className="z-0 pt-[10%]">
+          <Story20 />
+        </div>
+        <div id="Creater"></div>
         <div className=" z-[500]">
           <Navbar />
         </div>

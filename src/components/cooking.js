@@ -70,29 +70,29 @@ const Cooking = () => {
     <>
       <div className="flex flex-col">
         <div className=" flex justify-center">
-          <img src={dinner}/>
+          <img src={dinner} />
         </div>
         <div className="w-full p-4 pt-[15%]">
           <div className="grid grid-cols-7 gap-4 items-center">
             {ingredients.map((ingredient) => (
               <div
                 key={ingredient.id}
-                className={`p-4 rounded cursor-grab ${
+                className={`p-4 absolute   z-10 rounded cursor-grab ${
                   ingredient.id === 1
-                    ? "bg-blue-200"
+                    ? " right-[5%]"
                     : ingredient.id === 2
-                    ? "bg-red-200"
+                    ? "left-[18%]"
                     : ingredient.id === 3
-                    ? "bg-yellow-200"
+                    ? "right-[18%]"
                     : ingredient.id === 4
-                    ? "bg-green-200"
+                    ? "right-[31%]"
                     : ingredient.id === 5
-                    ? "bg-purple-200"
+                    ? "right-[44%]"
                     : ingredient.id === 6
-                    ? "bg-indigo-200"
+                    ? "right-[57%]"
                     : ingredient.id === 7
-                    ? "bg-pink-200"
-                    : "bg-slate-200"
+                    ? "left-[5%]"
+                    : "left-0"
                 }`}
                 draggable
                 onDragStart={(e) => handleDragStart(e, ingredient)}
@@ -107,7 +107,7 @@ const Cooking = () => {
           </div>
         </div>
         <div className="flex justify-center ">
-          <div className="flex justify-center pt-[10%]">
+          <div className="flex justify-center pt-[10%] ">
             <img
               src={potImages[potImageIndex]}
               alt="หม้อ"

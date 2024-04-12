@@ -30,13 +30,13 @@ function Story7() {
   const text_story7_2Ref = useRef();
   const text_story7_3Ref = useRef();
   const text_story7_4Ref = useRef();
-  const Dog_yawnRef = useRef ();
-  const Flip_1Ref = useRef ();
-  const Flip_2Ref = useRef ();
-  const Flip_3Ref = useRef ();
-  const Flip_4Ref = useRef ();
-  const Flip_5Ref = useRef ();
-  const Flip_6Ref = useRef ();
+  const Dog_yawnRef = useRef();
+  const Flip_1Ref = useRef();
+  const Flip_2Ref = useRef();
+  const Flip_3Ref = useRef();
+  const Flip_4Ref = useRef();
+  const Flip_5Ref = useRef();
+  const Flip_6Ref = useRef();
 
   useEffect(() => {
     const text_story7_1 = text_story7_1Ref.current;
@@ -53,10 +53,10 @@ function Story7() {
 
     gsap.fromTo(
       text_story7_1,
-      { opacity: 0, scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: text_story7_1,
@@ -70,10 +70,10 @@ function Story7() {
 
     gsap.fromTo(
       text_story7_2,
-      { opacity: 0, scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: text_story7_2,
@@ -93,9 +93,9 @@ function Story7() {
         duration: 1,
         scrollTrigger: {
           trigger: text_story7_4,
-          scrub : true,
-          start : "1px 80%",
-          end : "1px 50%",
+          scrub: true,
+          start: "1px 80%",
+          end: "1px 50%",
 
           /*markers : true,*/
         },
@@ -104,10 +104,10 @@ function Story7() {
 
     gsap.fromTo(
       Dog_yawn,
-      { opacity: 0, scale : 0.9 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
-        scale : 1,
+        scale: 1,
         duration: 1,
         scrollTrigger: {
           trigger: Dog_yawn,
@@ -127,15 +127,15 @@ function Story7() {
         duration: 1,
         scrollTrigger: {
           trigger: text_story7_3,
-          scrub : true,
-          start : "1px 80%",
-          end : "1px 50%",
+          scrub: true,
+          start: "1px 80%",
+          end: "1px 50%",
 
           /*markers : true,*/
         },
       }
     );
-    
+
     gsap.fromTo(
       Flip_1,
       { scale: 0 },
@@ -145,9 +145,9 @@ function Story7() {
         delay: 0.2,
         scrollTrigger: {
           trigger: Flip_1,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
+          toggleActions: "restart",
+          start: "-400px 80%",
+          end: "-300px 50%",
           /*markers : true,*/
         },
       }
@@ -162,9 +162,9 @@ function Story7() {
         delay: 0.25,
         scrollTrigger: {
           trigger: Flip_2,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
+          toggleActions: "restart",
+          start: "-400px 80%",
+          end: "-300px 50%",
           /*markers : true,*/
         },
       }
@@ -179,9 +179,9 @@ function Story7() {
         delay: 0.3,
         scrollTrigger: {
           trigger: Flip_3,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
+          toggleActions: "restart",
+          start: "-400px 80%",
+          end: "-300px 50%",
           /*markers : true,*/
         },
       }
@@ -196,9 +196,9 @@ function Story7() {
         delay: 0.35,
         scrollTrigger: {
           trigger: Flip_4,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
+          toggleActions: "restart",
+          start: "-400px 80%",
+          end: "-300px 50%",
           /*markers : true,*/
         },
       }
@@ -213,9 +213,9 @@ function Story7() {
         delay: 0.4,
         scrollTrigger: {
           trigger: Flip_5,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
+          toggleActions: "restart",
+          start: "-400px 80%",
+          end: "-300px 50%",
           /*markers : true,*/
         },
       }
@@ -230,26 +230,28 @@ function Story7() {
         delay: 0.45,
         scrollTrigger: {
           trigger: Flip_6,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
+          toggleActions: "restart",
+          start: "-400px 80%",
+          end: "-300px 50%",
           /*markers : true,*/
         },
       }
     );
-
-
-
-
   }, []);
 
   return (
     <>
-      <div className="pt-[30%]">
+      <div className="pt-[30%] ">
+        <div id="Story_7"></div>
         <ClockTop time="13.30" />
-        <Sunset sunlight={SunAfternoon}/>
+        <Sunset sunlight={SunAfternoon} />
         <div className="pt-[90vh] flex justify-around">
-          <img className="w-[40%]" src={yawn_dog} alt="yawn_dog" ref={Dog_yawnRef}/>
+          <img
+            className="w-[40%]"
+            src={yawn_dog}
+            alt="yawn_dog"
+            ref={Dog_yawnRef}
+          />
           <div className="max-w-xl flex flex-col text-3xl">
             <p className=" leading-relaxed" ref={text_story7_1Ref}>
               ผ่านไปหลายชั่วโมงเจ้ามีตังค์ก็ตื่นนอนพร้อมบิดขี้เกียจ
@@ -265,12 +267,24 @@ function Story7() {
           <Title title="หางบอกอารมณ์" />
         </div>
         <div className="grid grid-cols-3 pt-20 justify-items-center gap-8 gap-y-8 px-32">
-          <div ref={Flip_1Ref}><ImageFlip image_front={tail_1} image_back={Want}/></div>
-          <div ref={Flip_2Ref}><ImageFlip image_front={tail_2} image_back={Be_careful}/></div>
-          <div ref={Flip_3Ref}><ImageFlip image_front={tail_3} image_back={Sad}/></div>
-          <div ref={Flip_4Ref}><ImageFlip image_front={tail_4} image_back={Glad}/></div>
-          <div ref={Flip_5Ref}><ImageFlip image_front={tail_5} image_back={Scared}/></div>
-          <div ref={Flip_6Ref}><ImageFlip image_front={tail_6} image_back={Threatening}/></div>
+          <div ref={Flip_1Ref}>
+            <ImageFlip image_front={tail_1} image_back={Want} />
+          </div>
+          <div ref={Flip_2Ref}>
+            <ImageFlip image_front={tail_2} image_back={Be_careful} />
+          </div>
+          <div ref={Flip_3Ref}>
+            <ImageFlip image_front={tail_3} image_back={Sad} />
+          </div>
+          <div ref={Flip_4Ref}>
+            <ImageFlip image_front={tail_4} image_back={Glad} />
+          </div>
+          <div ref={Flip_5Ref}>
+            <ImageFlip image_front={tail_5} image_back={Scared} />
+          </div>
+          <div ref={Flip_6Ref}>
+            <ImageFlip image_front={tail_6} image_back={Threatening} />
+          </div>
         </div>
 
         <div className="flex pt-[25%] justify-end pr-[10%]">
