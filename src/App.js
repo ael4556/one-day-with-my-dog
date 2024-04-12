@@ -18,18 +18,19 @@ import Story6 from "./components/story/story-6";
 import Story7 from "./components/story/story-7";
 import Story8 from "./components/story/story-8";
 import Story9 from "./components/story/story-9";
-import Story10 from "./components/story/story-10";
+import Story10_0 from "./components/story/story-10-0";
+import Story10_1 from "./components/story/story-10-1";
+import Story10_2 from "./components/story/story-10-2";
 import Story11 from "./components/story/story-11";
-import Story_12 from "./components/story/story12/story-12";
+import Story12 from "./components/story/story12/story-12";
 import Story13 from "./components/story/story-13";
 import Story14 from "./components/story/story-14";
 import Story15 from "./components/story/story-15";
 import Cooking from "./components/cooking";
 import Story17 from "./components/story/story-17";
 import Story18 from "./components/story/story-18";
-import Story10_0 from "./components/story/story-10-0";
-import Story10_1 from "./components/story/story-10-1";
-import Story10_2 from "./components/story/story-10-2";
+import Story19 from "./components/story/story-19";
+import Story20 from "./components/story/story-20";
 
 const App = () => {
   return (
@@ -88,7 +89,7 @@ const App = () => {
           </div>
           <div className=" flex flex-col pt-[10%]">
             <div className="">
-              <Story_12 />
+              <Story12 />
             </div>
           </div>
         </div>
@@ -114,6 +115,13 @@ const App = () => {
           <div className="z-0">
             <Story18/>
           </div>
+          <div className="z-0 pt-[10%]">
+            <Story19/>
+          </div>
+          <div className="z-0 pt-[10%]">
+            <Story20/>
+          </div>
+
         <div className=" z-[500]">
           <Navbar />
         </div>
