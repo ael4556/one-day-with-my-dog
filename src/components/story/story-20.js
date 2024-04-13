@@ -46,26 +46,26 @@ function Story20() {
         <div className=" grid grid-cols-3 pt-[2%]">
             <div className=" flex flex-col">
             <div className="flex justify-center">
-                    <img src={P_Cap}/>
+                    <img className=" w-[45%]" src={P_Cap}/>
                 </div>
                 <div className="flex justify-center">
-                    <img src={C_Cap}/>
+                    <img className=" w-[40%]" src={C_Cap}/>
                 </div>
             </div>
             <div className=" flex flex-col">
                 <div className="flex justify-center">
-                    <img src={P_Saru}/>
+                    <img className=" w-[45%]" src={P_Saru}/>
                 </div>
                 <div className="flex justify-center">
-                    <img src={C_Saru}/>
+                    <img className=" w-[40%]" src={C_Saru}/>
                 </div>
             </div>
             <div className=" flex flex-col justify-center">
             <div className="flex justify-center">
-                    <img src={P_Ael}/>
+                    <img className=" w-[45%]" src={P_Ael}/>
                 </div>
                 <div className="flex justify-center">
-                    <img src={C_Ael}/>
+                    <img className=" w-[40%]" src={C_Ael}/>
                 </div>
             </div>
         </div>
