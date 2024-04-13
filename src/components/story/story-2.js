@@ -28,8 +28,8 @@ function Story2() {
         scrollTrigger: {
           trigger: text_story2_1,
           scrub : true,
-          start : "700px 90%",
-          end : "500px 50%",
+          start : "800px 90%",
+          end : "600px 50%",
 
           /* markers : true, */    
         },
@@ -45,7 +45,7 @@ function Story2() {
       {/* Last Text */}
       <div
         style={{
-          paddingTop: "80vh",
+          paddingTop: "100vh",
         }}
         className="flex flex-col justify-center text-3xl"
         ref={text_story2_1Ref}

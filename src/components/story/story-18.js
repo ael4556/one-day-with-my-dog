@@ -16,8 +16,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story18() {
+  const text_story18_1Ref = useRef ();
     
     useEffect(() => {
+      const text_story18_1 = text_story18_1Ref.current;
       
 
     }, []);

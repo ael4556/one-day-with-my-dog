@@ -11,9 +11,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Story17() {
     const bg_finishedRef = useRef ();
+    const text_story17_1Ref = useRef ();
+    const text_story17_2Ref = useRef ();
+    const slowFeedRef = useRef ();
 
   useEffect(() => {
     const bg_finished = bg_finishedRef.current;
+    const text_story17_1 = text_story17_1Ref.current;
+    const text_story17_2 = text_story17_2Ref.current;
+    const slowFeed = slowFeedRef.current;
 
     gsap.fromTo(
       bg_finished,
@@ -31,15 +37,65 @@ function Story17() {
         },
       }
     );
+    gsap.fromTo(
+      text_story17_1,
+      { opacity: 0, scale: 0.9 },
+      {
+        opacity: 1,
+        scale: 1,
+        scrollTrigger: {
+          trigger: text_story17_1,
+          scrub: true,
+          start: "-100px 90%",
+          end: "100px 50%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_story17_2,
+      { opacity: 0, scale: 0.9 },
+      {
+        opacity: 1,
+        scale: 1,
+        scrollTrigger: {
+          trigger: text_story17_2,
+          scrub: true,
+          start: "-100px 90%",
+          end: "100px 50%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      slowFeed,
+      { scale: 0.5 },
+      {
+        scale: 1,
+        scrollTrigger: {
+          trigger: slowFeed,
+          scrub: true,
+          start: "-100px 90%",
+          end: "100px 50%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
   }, []);
 
   return (
     <div className=" flex flex-col">
       <div className=" flex flex-col justify-center">
-        <div className=" font-sans text-center text-5xl font-semibold">
+        <div className=" font-sans text-center text-5xl font-semibold" ref={text_story17_1Ref}>
           <p className=" text-[#6E8CC5]">บาร์ฟ คือ</p>
         </div>
-        <div className=" font-sans text-center text-3xl font-normal pt-[2.5%]">
+        <div className=" font-sans text-center text-3xl font-normal pt-[2.5%]" ref={text_story17_2Ref}>
           <p className=" text-black">
             อาหารที่มีส่วนประกอบมาจากเนื้อ อวัยวะภายใน และกระดูกสัตว์
             รวมถึงไข่และผลิตภัณฑ์นม
@@ -65,7 +121,7 @@ function Story17() {
         </div>
       </div>
       <div className="flex pt-[20%] justify-end">
-        <div className="pr-[10%]">
+        <div className="pr-[10%]" ref={slowFeedRef}>
           <img src={feed} />
         </div>
         <div className=" pr-[10%]">

@@ -56,9 +56,11 @@ const App = () => {
             <Story1 />
           </div>
           <div className=" pt-40">
-            <ClockTop time="7.00" />
+          <div id="Story_2"></div>
+          <ClockTop time="7.00" /> 
           </div>
-          <div id="Story_2" className=" flex justify-center">
+          
+          <div className=" flex justify-center">
             <Story2 />
           </div>
           <div className="flex flex-col pt-40 justify-center justify-items-center">

@@ -115,7 +115,7 @@ function Story14() {
             start: "-100px 80%",
             end: "100px 50%",
 
-            markers : true,
+            /*markers : true,*/
           },
         }
       );
