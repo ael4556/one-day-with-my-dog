@@ -226,7 +226,7 @@ function Story5() {
       <div ref={text_story5_1Ref} className=" flex flex-col pt-56">
         <p className="text-5xl flex justify-center">เรามาเลือกอาหารมื้อพิเศษ</p>
         <p className="text-5xl font-bold flex justify-center pt-10">
-          ที่เหมาะกับมีตังค์เถอะ
+          ที่เหมาะกับมีตังค์กันเถอะ!
         </p>
       </div>
       <div ref={text_story5_2Ref} className="flex flex-col justify-center">
@@ -296,7 +296,8 @@ function Story5() {
         <img className=" w-4/6" src={bowl} alt="table_Dog" ref={humanbowlRef} />
         <div ref={text_story5_4Ref} className="flex justify-end max-w-xl pt-24">
           <p className="text-3xl flex justify-center leading-relaxed">
-            หลังจากนั้นคุณก็เดินไปหยิบข้าวกล่อง ในตู้เย็นพร้อมเทใส่จาน
+            หลังจากนั้น คุณก็เดินไปหยิบข้าวกล่อง 
+            ในตู้เย็นพร้อมเทใส่จาน
             เอาเข้าเวฟแล้วเอามานั่งกินข้างเจ้ามีตังค์
           </p>
         </div>

@@ -45,7 +45,7 @@ function Story2() {
       {/* Last Text */}
       <div
         style={{
-          paddingTop: "100vh",
+          paddingTop: "80vh",
         }}
         className="flex flex-col justify-center text-3xl"
         ref={text_story2_1Ref}

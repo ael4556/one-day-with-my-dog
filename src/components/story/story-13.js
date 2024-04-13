@@ -269,7 +269,7 @@ function Story13() {
             <div className="flex-col justify-start z-20">
                 <div className="font-sans text-3xl " ref={text_story13_4Ref}>
                     <p className="">
-                        หลังจากนั้นก็คุณก็พยายามกระตุกสายจูง
+                        หลังจากนั้นคุณก็พยายามกระตุกสายจูง
                     </p>
                     <p className="pt-[1.5%]">
                         เพื่อให้มีตังค์เดินตามมา 

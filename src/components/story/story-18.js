@@ -211,17 +211,17 @@ function Story18() {
               <img className="w-[90%]" src={sink}/>
             </div>
             <div className="flex justify-end pl-[10%] pt-[10%]">
-              <div className=" flex flex-col font-sans text-3xl" ref={text_story18_1Ref}>
+              <div className=" flex flex-col font-sans text-3xl z-40" ref={text_story18_1Ref}>
                 <p className="">
                 เวลาผ่านไปไม่นาน จากจานที่เต็มไปด้วยอาหาร
                 </p>
-                <p className="pt-[1.25%]">
-                  ก็ว่างลง คุณนำจานข้าวมีตังค์ไปล้าง และไม่ลืม
+                <p className="pt-[1.6%]">
+                  ก็ว่างเปล่า คุณนำจานข้าวมีตังค์ไปล้าง และไม่ลืม
                 </p>
-                <p className="pt-[1.25%]">
+                <p className="pt-[1.6%]">
                   ที่จะแวะหยิบบอลกับจานร่อนที่มีตังค์ได้เล่นไป
                 </p>
-                <p className="pt-[1.25%]">
+                <p className="pt-[1.6%]">
                   วันนี้เพื่อความสะอาด
                 </p>
               </div>
@@ -252,7 +252,7 @@ function Story18() {
           <p className="flex justify-center ">
             เมื่อทำความสะอาด์เสร็จแล้วก็ถึงเวลาของคุณบ้าง จากการดูแลเจ้ามีตังค์มาทัังวัน
           </p>
-          <p className="flex justify-center pt-[0.5%]">
+          <p className="flex justify-center pt-[0.7%]">
             ทำให้คุณรู้สึกเหนียวตัวและกำลังเดินขึ้นห้องไป เพื่อจะอาบน้ำ แต่ไม่ลืมที่จะบอกเจ้าหมาน้อย
           </p>
         </div>
@@ -271,12 +271,12 @@ function Story18() {
         </div>
         <div className=" flex flex-col pt-[10%] text-3xl font-sans" ref={text_story18_3Ref}>
           <p className="flex justify-center ">
-          อาบน้ำเสร็จแล้วก็เดินลงบรรไดมาหาเจ้ามีตังค์ พร้อมเปิดทีวี
+          อาบน้ำเสร็จแล้วก็เดินลงบันไดมาหาเจ้ามีตังค์ พร้อมเปิดทีวี
           </p>
-          <p className="flex justify-center pt-[0.5%]">
+          <p className="flex justify-center pt-[0.7%]">
           พอเจ้าหมาแสนรู้เห็นเข้า ก็รีบกระโจนขึ้นมาบนโซฟาตัวใหญ่อย่างเคยชิน
           </p>
-          <p className="flex justify-center pt-[0.5%]">
+          <p className="flex justify-center pt-[0.7%]">
           สายตาจ้องมองทีวีไม่กระพริบ หางส่ายไปมา แถมลิ้นห้อย ดูดีอกดีใจชอบกล
           </p>
         </div>
@@ -285,7 +285,7 @@ function Story18() {
           <p className="flex justify-center ">
           และหนึ่งวันของคุณ ก็จบลง 
           </p>
-          <p className="flex justify-center pt-[0.5%]">
+          <p className="flex justify-center pt-[0.7%]">
           ด้วยการดูทีวีแสนสนุกไปพร้อมกับเจ้าตูบแสนรู้ใจ ดูเป็นวันธรรมดา ที่ . . .
           </p>
         </div>

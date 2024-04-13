@@ -132,7 +132,7 @@ function Story9() {
   }, []);
 
   return (
-    <div className="pt-[10%]">
+    <div className="">
       <Popup
         isPopupOpen={isPopup1Open}
         setIsPopupOpen={setIsPopup1Open}
@@ -143,7 +143,7 @@ function Story9() {
         setIsPopupOpen={setIsPopup2Open}
         images={image_pop_2}
       />
-      <div className=" flex flex-col justify-center px-[24.5%] pt-28 ">
+      <div className=" flex flex-col justify-center px-[24.7%] pt-28 ">
         <p
           className="text-3xl leading-loose text-center"
           ref={text_story9_1Ref}
@@ -183,7 +183,7 @@ function Story9() {
       <div className=" flex justify-center pt-28">
         <div className="flex justify-center">
           <img
-            className="w-[32%] absolute pt-[29.7%] right-[10%] z-20"
+            className="w-[35%] absolute pt-[29.7%] right-[10%] z-20"
             ref={text_stroke3Ref}
             src={text_stroke_3}
             alt={text_stroke_3}

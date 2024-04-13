@@ -145,11 +145,11 @@ function Story15() {
       <Sunset sunlight={SunSett} />
       <div className=" flex flex-col pt-[35%]">
         <div 
-            className=" font-sans flex justify-center text-3xl pt-[10%] px-[29%] leading-relaxed text-center" 
+            className=" font-sans flex justify-center text-3xl pt-[10%] px-[28%] leading-relaxed text-center" 
             ref={text_story15_1Ref}>
           <p>
-            หลังจากเกิดเกตุการณ์ไม่คาดฝันแล้ว คิดว่ามีตังค์น่าจะพอใจ
-            กับการออกมาเดินสำรวจวันนี้แล้วเลยจะพามีตังค์กลับบ้านเลย
+          หลังจากเหตุการณ์ไม่คาดฝันเกิดขึ้น และคิดว่ามีตังค์น่าจะพอใจ
+          กับการออกมาเดินสำรวจวันนี้แล้ว คุณจึงชวนมีตังค์กลับบ้าน
           </p>
         </div>
       </div>
@@ -203,10 +203,10 @@ function Story15() {
       <div className=" pt-[10%]">
         <div className=" justify-start absolute pt-[10%]">
           <div className=" pl-[10%]">
-            <img className=" w-[35%] z-40" src={TextStorke} ref={text_story15_3Ref}/>
+            <img className=" w-[37%] z-40" src={TextStorke} ref={text_story15_3Ref}/>
           </div>
-          <div className=" pl-[10%] pt-[10%]">
-            <img className=" w-[30%] z-30" src={Braf} ref={text_story15_4Ref}/>
+          <div className=" pl-[10%] pt-[7%]">
+            <img className=" w-[32%] z-30" src={Braf} ref={text_story15_4Ref}/>
           </div>
         </div>
         <div className="pt-[42%] absolute left-[55%] w-[40%]">
@@ -216,6 +216,9 @@ function Story15() {
       </div>
         <div className=" flex justify-center pt-[15%]">
           <img src={dinner} />
+        </div>
+        <div className=" flex justify-center pt-[3%] font-sans text-3xl">
+          <p>ช่วยปรุงอาหารให้เจ้ามีตังค์ โดยลากวัตถุดิบลงชาม เพื่อเสิร์ฟอาหารมื้อพิเศษ</p>
         </div>
     </div>
   );
