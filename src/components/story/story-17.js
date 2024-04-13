@@ -10,7 +10,29 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story17() {
-  useEffect(() => {}, []);
+    const bg_finishedRef = useRef ();
+
+  useEffect(() => {
+    const bg_finished = bg_finishedRef.current;
+
+    gsap.fromTo(
+      bg_finished,
+      { xPercent : -20 },
+      {
+          xPercent: 0,
+          duration: 1,
+          scrollTrigger: {
+          trigger: bg_finished,
+          scrub: true,
+          start: "0px 100%",
+          end: "100px 50%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+  }, []);
+
   return (
     <div className=" flex flex-col">
       <div className=" flex flex-col justify-center">
@@ -39,7 +61,7 @@ function Story17() {
           </div>
         </div>
         <div className="flex justify-center">
-          <img className=" z-0 px-[5%]" src={bg_dog} />
+          <img className=" z-0 px-[5%]" src={bg_dog} ref={bg_finishedRef}/>
         </div>
       </div>
       <div className="flex pt-[20%] justify-end">

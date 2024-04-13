@@ -28,10 +28,12 @@ function Chat({
       { scale: 0 },
       {
         scale: 1.25,
-        duration: 0.3,
+        duration: 0.5,
         scrollTrigger: {
           trigger: icons_animation,
           toggleActions: "restart",
+          start : "-200px 90%",
+          end : "50px 50%",
         },
       }
     );
@@ -41,7 +43,7 @@ function Chat({
       {
         scale: 1,
         duration: 0.5,
-        delay: 0.2,
+        delay: 0.3,
         scrollTrigger: {
           trigger: icons_animation,
           toggleActions: "restart",
@@ -51,15 +53,18 @@ function Chat({
 
     gsap.fromTo(
       messages_animation,
-      { opacity: 0, yPercent: +10 },
+      { scale:0.8 , yPercent: +10 },
       {
-        opacity: 1,
+        scale : 1,
         yPercent: 0,
         duration: 0.3,
-        delay: 0.3,
+        
         scrollTrigger: {
           trigger: messages_animation,
           toggleActions: "restart",
+          start : "-200px 90%",
+          end : "50px 50%",
+          
         },
       }
     );

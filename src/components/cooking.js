@@ -69,10 +69,7 @@ const Cooking = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className=" flex justify-center">
-          <img src={dinner} />
-        </div>
-        <div className="w-full p-4 pt-[15%]">
+        <div className="w-full p-4">
           <div className="grid grid-cols-7 gap-4 items-center">
             {ingredients.map((ingredient) => (
               <div

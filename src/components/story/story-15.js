@@ -7,6 +7,8 @@ import Braf from "../../Images/story_15/BARF.png";
 import Tie from "../../Images/story_15/tie.png";
 import SunSett from "../../Images/sun-set.png";
 
+import dinner from "../../Images/cooking/dinner.png";
+
 import Sunset from "../sunset";
 import ClockTop from "../clock";
 import Chat from "../message";
@@ -20,10 +22,18 @@ gsap.registerPlugin(ScrollTrigger);
 function Story15() {
     const text_story15_1Ref = useRef ();
     const text_story15_2Ref = useRef ();
+    const wipes_animateRef = useRef ();
+    const text_story15_3Ref = useRef ();
+    const text_story15_4Ref = useRef ();
+    const tie_animateRef = useRef ();
 
   useEffect(() => {
     const text_story15_1 = text_story15_1Ref.current;
     const text_story15_2 = text_story15_2Ref.current;
+    const wipes_animate = wipes_animateRef.current;
+    const text_story15_3 = text_story15_3Ref.current;
+    const text_story15_4 = text_story15_4Ref.current;
+    const tie_animate = tie_animateRef.current;
 
     gsap.fromTo(
       text_story15_1,
@@ -34,7 +44,7 @@ function Story15() {
         scrollTrigger: {
           trigger: text_story15_1,
           scrub: true,
-          start: "0px 80%",
+          start: "-100px 90%",
           end: "100px 50%",
 
           /*markers : true,*/
@@ -51,7 +61,74 @@ function Story15() {
         scrollTrigger: {
           trigger: text_story15_2,
           scrub: true,
-          start: "0px 80%",
+          start: "-100px 90%",
+          end: "100px 50%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      wipes_animate,
+      { scale: 0.5 },
+      {
+        scale: 1,
+        scrollTrigger: {
+          trigger: wipes_animate,
+          scrub: true,
+          start: "-100px 90%",
+          end: "100px 50%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_story15_3,
+      { opacity: 0, scale: 0.9 },
+      {
+        opacity: 1,
+        scale: 1,
+        scrollTrigger: {
+          trigger: text_story15_3,
+          scrub: true,
+          start: "-100px 90%",
+          end: "100px 50%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      text_story15_4,
+      { opacity: 0, scale: 0.9 },
+      {
+        opacity: 1,
+        scale: 1,
+        scrollTrigger: {
+          trigger: text_story15_4,
+          scrub: true,
+          start: "-100px 90%",
+          end: "100px 50%",
+
+          /*markers : true,*/
+        },
+      }
+    );
+
+    gsap.fromTo(
+      tie_animate,
+      { xPercent : +20 },
+      {
+          xPercent: 0,
+          duration: 1,
+          scrollTrigger: {
+          trigger: tie_animate,
+          scrub: true,
+          start: "0px 100%",
           end: "100px 50%",
 
           /*markers : true,*/
@@ -111,7 +188,7 @@ function Story15() {
         </div>
       </div>
       <div className="pt-[5%] flex flex-col">
-        <div className=" pl-[15%]">
+        <div className=" pl-[15%]" ref={wipes_animateRef}>
           <img className=" absolute z-30" src={Wipes} />
           <img className=" absolute z-0" src={BgWipes} />
         </div>
@@ -126,17 +203,20 @@ function Story15() {
       <div className=" pt-[10%]">
         <div className=" justify-start absolute pt-[10%]">
           <div className=" pl-[10%]">
-            <img className=" w-[35%] z-40" src={TextStorke} />
+            <img className=" w-[35%] z-40" src={TextStorke} ref={text_story15_3Ref}/>
           </div>
           <div className=" pl-[10%] pt-[10%]">
-            <img className=" w-[30%] z-30" src={Braf} />
+            <img className=" w-[30%] z-30" src={Braf} ref={text_story15_4Ref}/>
           </div>
         </div>
         <div className="pt-[42%] absolute left-[55%] w-[40%]">
-        <img className=" z-10" src={Tie} />
+        <img className=" z-10" src={Tie} ref={tie_animateRef}/>
         </div>
         <img className=" z-0" src={Bgkitchen} />
       </div>
+        <div className=" flex justify-center pt-[15%]">
+          <img src={dinner} />
+        </div>
     </div>
   );
 }

@@ -28,10 +28,13 @@ function Chat({
       { scale: 0 },
       {
         scale: 1.25,
-        duration: 0.3,
+        duration: 0.5,
         scrollTrigger: {
           trigger: icons_animation,
-          toggleActions : 'restart'
+          toggleActions : 'restart',
+          start : "-200px 90%",
+          end : "50px 50%",
+          
         },
       }
     );
@@ -59,7 +62,10 @@ function Chat({
         delay: 0.3,
         scrollTrigger: {
           trigger: messages_animation,
-          toggleActions : 'restart'
+          toggleActions : 'restart',
+          start : "-200px 90%",
+          end : "50px 50%",
+          
         },
       }
     );

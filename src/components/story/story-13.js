@@ -47,8 +47,9 @@ function Story13() {
           scrollTrigger: {
             trigger: text_story13_1,
             scrub: true,
-            start: "0px 80%",
+            start: "-100px 90%",
             end: "100px 50%",
+
   
             /*markers : true,*/
           },
@@ -66,7 +67,7 @@ function Story13() {
           scrollTrigger: {
             trigger: text_story13_2,
             scrub: true,
-            start: "0px 80%",
+            start: "-100px 90%",
             end: "100px 50%",
   
             /*markers : true,*/
@@ -102,7 +103,7 @@ function Story13() {
           scrollTrigger: {
             trigger: text_story13_3,
             scrub: true,
-            start: "0px 80%",
+            start: "-100px 90%",
             end: "100px 50%",
   
             /*markers : true,*/
@@ -121,8 +122,8 @@ function Story13() {
           scrollTrigger: {
             trigger: warning,
             scrub: true,
-            start: "0px 80%",
-            end: "50px 70%",
+            start: "-50px 100%",
+            end: "100px 50%",
   
             /*markers : true,*/
           },
@@ -140,7 +141,7 @@ function Story13() {
           scrollTrigger: {
             trigger: text_story13_4,
             scrub: true,
-            start: "0px 80%",
+            start: "-100px 90%",
             end: "100px 50%",
   
             /*markers : true,*/
@@ -159,7 +160,7 @@ function Story13() {
           scrollTrigger: {
             trigger: text_story13_5,
             scrub: true,
-            start: "0px 80%",
+            start: "-100px 90%",
             end: "100px 50%",
   
             /*markers : true,*/
@@ -178,7 +179,7 @@ function Story13() {
           scrollTrigger: {
             trigger: text_story13_6,
             scrub: true,
-            start: "0px 80%",
+            start: "-100px 90%",
             end: "100px 50%",
   
             /*markers : true,*/

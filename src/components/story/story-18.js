@@ -8,7 +8,7 @@ import memory from "../../Images/story_18/memorable.png";
 import dot from "../../Images/story_18/dotdotdot.png";
 
 import Tips from "../tips";
-import Chat from "../chat";
+import Chat from "../message";
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -82,8 +82,9 @@ function Story18() {
         <div className=" flex justify-start pt-[5%] pl-[10%]">
           <Chat 
             text="โฮ่ง โฮ่ง !" 
-            isDog={true} 
-            isMe={false} 
+            showIcon={true} 
+            icon="dog"
+            isMe={true}
           />
         </div>
         <div className=" flex flex-col pt-[10%] text-3xl font-sans">
