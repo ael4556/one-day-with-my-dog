@@ -32,10 +32,15 @@ import Story17 from "./components/story/story-17";
 import Story18 from "./components/story/story-18";
 import Story19 from "./components/story/story-19";
 import Story20 from "./components/story/story-20";
+import Welcome from "./components/welcome";
 
 const App = () => {
   return (
     <>
+    <div className="">
+      {/* Other content */}
+      <Welcome />
+    </div>
       <div className="font-sans">
         {/* Start Web contents*/}
         <div
@@ -48,11 +53,13 @@ const App = () => {
           }}
         >
           <div id="Home"></div>
+          <div>
           <Logo />
-          <div className="flex justify-center pt-[12%]">
-            <img className=" absolute w-[10%]" src={Scroll}/>
+          <div className="flex justify-center">
+            <img className=" absolute w-[7%] top-[82%]" src={Scroll}/>
           </div>
-          <div className="flex flex-col pt-[30vh] xl:pt-[50vh] 2xl:pt-[75vh]">
+          </div>
+          <div className="flex flex-col pt-[0%] xl:pt-[50vh] 2xl:pt-[75vh]">
             <Story1 />
           </div>
           <div className=" pt-40">
