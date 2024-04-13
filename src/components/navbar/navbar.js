@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import BurgerIcon from "../../Images/SVG/menu-burger.png";
 import MusicButton from "./music-button";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navbarRef = useRef(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -15,9 +16,23 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
-      <div className="flex items-center justify-end z-[5000]">
+      <div ref={navbarRef} className="flex items-center justify-end z-[5000]">
         <button
           className="fixed top-4 right-2 focus:outline-none hover:-translate-y-1 hover:scale-110 duration-300 rounded-full transition ease-in-out delay-50 hover:shadow-md py-2 px-2"
           onClick={toggleMenu}
@@ -27,7 +42,7 @@ const Navbar = () => {
 
         {/* Mene list */}
         {menuOpen && (
-          <div className="fixed top-4 right-24 bg-white p-4 shadow-md rounded-2xl z-[5000]">
+          <div className="fixed top-4 right-24 bg-white p-4 shadow-md rounded-2xl z-[5000] ">
             <ul className="text-xl font-Prompt font-normal text-black ">
               <li>
                 <button
