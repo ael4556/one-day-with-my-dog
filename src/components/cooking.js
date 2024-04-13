@@ -21,13 +21,13 @@ import image_bow_full_7 from "../Images/cooking/full07.gif";
 
 const Cooking = () => {
   const [ingredients, setIngredients] = useState([
-    { id: 1, name: "เนื้อสัตว์", image: image_beef },
-    { id: 2, name: "ผัก", image: image_carrot },
-    { id: 3, name: "เครื่องเทศ", image: image_egg },
-    { id: 4, name: "w", image: image_honey },
-    { id: 5, name: "a", image: image_liver },
-    { id: 6, name: "s", image: image_pumpkin },
-    { id: 7, name: "d", image: image_wing },
+    { id: 1, name: "เนื้อวัว", image: image_beef },
+    { id: 2, name: "แคร์รอท", image: image_carrot },
+    { id: 3, name: "ไข่ไก่", image: image_egg },
+    { id: 4, name: "น้ำผึ้ง", image: image_honey },
+    { id: 5, name: "ตับ", image: image_liver },
+    { id: 6, name: "ฟักทอง", image: image_pumpkin },
+    { id: 7, name: "ไก่", image: image_wing },
   ]);
 
   const potImages = [
@@ -78,20 +78,20 @@ const Cooking = () => {
               <div
                 key={ingredient.id}
                 className={`p-4 absolute z-10 rounded cursor-grab ${
-                  ingredient.id === 1
-                    ? " right-[5%]"
+                      ingredient.id === 1
+                    ? " right-[2%]"
                     : ingredient.id === 2
-                    ? "left-[18%]"
+                    ? "left-[15%]"
                     : ingredient.id === 3
-                    ? "right-[18%]"
+                    ? "right-[16%]"
                     : ingredient.id === 4
-                    ? "right-[31%]"
+                    ? "right-[28%]"
                     : ingredient.id === 5
-                    ? "right-[44%]"
+                    ? "right-[42%]"
                     : ingredient.id === 6
                     ? "right-[57%]"
                     : ingredient.id === 7
-                    ? "left-[5%]"
+                    ? "left-[2%]"
                     : "left-0"
                 }`}
                 draggable
@@ -110,7 +110,7 @@ const Cooking = () => {
           <div className="flex justify-center pt-[5%] ">
             <img
               src={potImages[potImageIndex]}
-              alt="หม้อ"
+              alt="bowl"
               className="w-full"
               onDragOver={handleDragOver}
               onDrop={handleDrop}

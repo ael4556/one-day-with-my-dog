@@ -279,7 +279,7 @@ function Story5() {
           />
         </div>
       </div>
-      <div className="pl-[10%] pt-px">
+      <div className="pl-[10%] pt-[5%]">
         <Chat
           text="“ค่อย ๆ กินก็ได้มีตังค์ ไม่มีใครแย่งหรอก” "
           isMe={false}

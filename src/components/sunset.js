@@ -30,6 +30,8 @@ function Sunset({ sunlight = sun }) {
         scrollTrigger: {
           trigger: sun,
           toggleActions: "restart",
+          start : "-250px 90%",
+          end : "50px 50%",
         },
       }
     );
@@ -40,6 +42,8 @@ function Sunset({ sunlight = sun }) {
       scrollTrigger: {
         trigger: cloundLeft,
         toggleActions: "restart none none reset",
+        start :"100px 100%",
+        end : "500px 0%",
       },
     });
 
@@ -49,6 +53,8 @@ function Sunset({ sunlight = sun }) {
       scrollTrigger: {
         trigger: cloundRight,
         toggleActions: "restart none none reset",
+        start :"100px 100%",
+        end : "500px 0%",
       },
     });
 
@@ -58,6 +64,8 @@ function Sunset({ sunlight = sun }) {
       scrollTrigger: {
         trigger: cloundLeftBottom,
         toggleActions: "restart none none reset",
+        start :"100px 100%",
+        end : "500px 0%",
       },
     });
   }, []);

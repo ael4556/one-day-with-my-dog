@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex items-center justify-end">
+      <div className="flex items-center justify-end z-[5000]">
         <button
           className="fixed top-4 right-2 focus:outline-none hover:-translate-y-1 hover:scale-110 duration-300 rounded-full transition ease-in-out delay-50 hover:shadow-md py-2 px-2"
           onClick={toggleMenu}
@@ -27,7 +27,7 @@ const Navbar = () => {
 
         {/* Mene list */}
         {menuOpen && (
-          <div className="fixed top-4 right-24 bg-white p-4 shadow-md rounded-2xl">
+          <div className="fixed top-4 right-24 bg-white p-4 shadow-md rounded-2xl z-[5000]">
             <ul className="text-xl font-Prompt font-normal text-black ">
               <li>
                 <button
