@@ -7,6 +7,8 @@ import P_Saru from "../../Images/story_20/saru-profile.png";
 import C_Ael from "../../Images/story_20/ael-contact.png";
 import C_Cap from "../../Images/story_20/captain-contact.png";
 import C_Saru from "../../Images/story_20/saru-contact.png";
+import P_Toom from "../../Images/story_20/toom-profile.png";
+import C_Toom from "../../Images/story_20/toom-contact.png";
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -67,6 +69,23 @@ function Story20() {
                 <div className="flex justify-center">
                     <img className=" w-[40%]" src={C_Ael}/>
                 </div>
+            </div>
+        </div>
+
+        <div className=" grid grid-cols-3 pt-[10%]">
+            <div className=" flex flex-col">
+            
+            </div>
+            <div className=" flex flex-col">
+                <div className="flex justify-center">
+                    <img className=" w-[45%]" src={P_Toom}/>
+                </div>
+                <div className="flex justify-center">
+                    <img className=" w-[40%]" src={C_Toom}/>
+                </div>
+            </div>
+            <div className=" flex flex-col justify-center">
+
             </div>
         </div>
 
