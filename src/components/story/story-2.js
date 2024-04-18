@@ -3,7 +3,6 @@ import { useEffect, useRef } from "react";
 import SunMorning from "../../Images/sun-morning.png";
 
 import Sunset from "../../components/sunset";
-import ClockTop from "../clock";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
