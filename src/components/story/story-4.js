@@ -3,8 +3,6 @@ import dog_down from "../../Images/story_4/dog-down.png";
 import dog_poof_start from "../../Images/story_4/dog-poop.jpg";
 import dog_poof_finish from "../../Images/story_4/dog-poop-finish.jpg";
 
-import dog_info from "../../Images/story_4/info.png";
-import close from "../../Images/story_4/close.png";
 import poof from "../../Images//story_4/poop.gif";
 
 import Chat from "../chat";
@@ -69,7 +67,7 @@ function Story4() {
         <Popup isPopupOpen={isPopupOpen} setIsPopupOpen={setIsPopupOpen} />
         <div>
           <div className=" flex flex-cols-2 gap-10">
-            <div className=" flex justify-around">
+            <div className=" flex justify-start pl-[3%]">
               <img className="w-[90%]" src={dog_poof_start} alt="dog_poof1" />
             </div>
             <div className="left-[16%] z-50 w-[6%] absolute pt-[30%]">
@@ -80,7 +78,7 @@ function Story4() {
                 onClick={() => setIsPopupOpen(true)}
               />
             </div>
-            <div className=" flex justify-around">
+            <div className=" flex justify-end pr-[3%]">
               <img className="w-[90%]" src={dog_poof_finish} alt="dog_poof2" />
             </div>
           </div>

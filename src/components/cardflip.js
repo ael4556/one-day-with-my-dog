@@ -12,7 +12,7 @@ function CardFlip({ image_front = image_frame, image_back = image_frame }) {
     <div className="flex flex-col justify-center ">
       <div
         onClick={handleFlip}
-        className="group w-[400px] [perspective:1000px] hover:scale-110 duration-500 cursor-pointer"
+        className="group w-[45vh] [perspective:1000px] hover:scale-110 duration-500 cursor-pointer"
       >
         <div
           className={`relative  w-full transition-all duration-700 rounded-2xl [transform-style:preserve-3d] 
