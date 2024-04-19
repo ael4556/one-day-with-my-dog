@@ -12,6 +12,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://cit.kmutt.ac.th/cmmproject/cmm23/one-day-with-my-dog/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
