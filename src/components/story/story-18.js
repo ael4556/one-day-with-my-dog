@@ -208,10 +208,10 @@ function Story18() {
         <div className=" flex flex-col pt-[10%]">
           <div className=" flex flex-col-2 gap-[5%] justify-center">
             <div className=" flex justify-start">
-              <img className="w-[90%]" src={sink}/>
+              <img className="w-[35vw]" src={sink}/>
             </div>
             <div className="flex justify-end pl-[10%] pt-[10%]">
-              <div className=" flex flex-col font-sans text-3xl z-40" ref={text_story18_1Ref}>
+              <div className=" flex flex-col font-sans text-[1.7vw] z-40" ref={text_story18_1Ref}>
                 <p className="">
                 เวลาผ่านไปไม่นาน จากจานที่เต็มไปด้วยอาหาร
                 </p>
@@ -228,16 +228,16 @@ function Story18() {
             </div>  
           </div>
           <div className="absolute pt-[18%] pl-[30%]" ref={item1Ref}>
-              <img className="" src={dishwash}/>
+              <img className="w-[20vw]" src={dishwash}/>
             </div>
             <div className="absolute pt-[32%] pl-[50%]" ref={item2Ref}>
-              <img className="w-[80%]" src={ball}/>
+              <img className="w-[10vw]" src={ball}/>
             </div>
             <div className="absolute pt-[32%] pl-[65%]" ref={item3Ref}>
-              <img className="w-[80%]" src={frisbee}/>
+              <img className="w-[10vw]" src={frisbee}/>
             </div>
             <div className="absolute pt-[32%] pl-[80%]" ref={item4Ref}>
-              <img className="w-[80%]" src={blow}/>
+              <img className="w-[10vw]" src={blow}/>
             </div>
         </div>
         <div className=" flex justify-start pt-[10%] pl-[10%]">
@@ -248,9 +248,9 @@ function Story18() {
           isLeft={true}
           />
         </div>
-        <div className=" flex flex-col pt-[10%] text-3xl font-sans" ref={text_story18_2Ref}>
+        <div className=" flex flex-col pt-[10%] text-[1.7vw] font-sans" ref={text_story18_2Ref}>
           <p className="flex justify-center ">
-            เมื่อทำความสะอาด์เสร็จแล้วก็ถึงเวลาของคุณบ้าง จากการดูแลเจ้ามีตังค์มาทัังวัน
+            เมื่อทำความสะอาดเสร็จแล้วก็ถึงเวลาของคุณบ้าง จากการดูแลเจ้ามีตังค์มาทัังวัน
           </p>
           <p className="flex justify-center pt-[0.7%]">
             ทำให้คุณรู้สึกเหนียวตัวและกำลังเดินขึ้นห้องไป เพื่อจะอาบน้ำ แต่ไม่ลืมที่จะบอกเจ้าหมาน้อย
@@ -269,7 +269,7 @@ function Story18() {
             isMe={true}
           />
         </div>
-        <div className=" flex flex-col pt-[10%] text-3xl font-sans" ref={text_story18_3Ref}>
+        <div className=" flex flex-col pt-[10%] text-[1.7vw] font-sans" ref={text_story18_3Ref}>
           <p className="flex justify-center ">
           อาบน้ำเสร็จแล้วก็เดินลงบันไดมาหาเจ้ามีตังค์ พร้อมเปิดทีวี
           </p>
@@ -281,7 +281,7 @@ function Story18() {
           </p>
         </div>
 
-        <div className=" flex flex-col pt-[10%] text-3xl font-sans" ref={text_story18_4Ref}>
+        <div className=" flex flex-col pt-[10%] text-[1.7vw] font-sans" ref={text_story18_4Ref}>
           <p className="flex justify-center ">
           และหนึ่งวันของคุณ ก็จบลง 
           </p>
@@ -291,10 +291,10 @@ function Story18() {
         </div>
 
         <div className=" flex justify-center pt-[10%]" ref={text_story18_5Ref}>
-          <img className="" src={dot}/>
+          <img className="w-[1vw]" src={dot}/>
         </div>
         <div className=" flex justify-center pt-[5%]" ref={text_story18_6Ref}>
-          <img className="" src={memory}/>
+          <img className="w-[25vw]" src={memory}/>
         </div>
         
       </div>

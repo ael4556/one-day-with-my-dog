@@ -72,20 +72,20 @@ function Chat({
   }, []);
 
   return (
-    <div className={`flex gap-10 ${isMe ? "justify-end" : "justify-start"}`}>
+    <div className={`flex gap-[2vw] ${isMe ? "justify-end" : "justify-start"}`}>
       {!isMe && showIcon && (
         <div>
           <img
             ref={icons}
             src={isDog ? icon_dog : icon_face}
             alt="Current User Icon"
-            className=" w-32 h-32 border-8 border-gray-300 bg-gray-200 p-3 rounded-full"
+            className=" w-[6.27vw] h-[6.27vw] border-[0.4vw] border-gray-300 bg-gray-200 p-[0.627vw] rounded-full"
           />
         </div>
       )}
       <div
         ref={messages}
-        className="text-4xl leading-tight bg-gray-200 rounded-[70px] px-9 py-8 shadow-lg  border-8 border-gray-300"
+        className="text-[1.8vw] leading-tight bg-gray-200 rounded-[70px] px-[1.9vw] py-[1.7vw] shadow-lg  border-[0.4vw] border-gray-300"
       >
         <div>{text}</div>
         <div>{text2}</div>
@@ -97,7 +97,7 @@ function Chat({
             ref={icons}
             src={isDog ? icon_dog : icon_face}
             alt="Current User Icon"
-            className=" w-32 h-32 border-8 border-gray-300 bg-gray-200 p-3 rounded-full"
+            className=" w-[6.27vw] h-[6.27vw] border-[0.4vw] border-gray-300 bg-gray-200 p-3 rounded-full"
           />
         </div>
       )}

@@ -241,18 +241,18 @@ function Story7() {
 
   return (
     <>
-      <div className="pt-[30%] ">
+      <div className="pt-[20%] ">
         <div id="Story_7"></div>
         <ClockTop time="13.30" />
         <Sunset sunlight={SunAfternoon} />
-        <div className="pt-[90vh] flex justify-around">
+        <div className="pt-[60%] flex justify-around">
           <img
-            className="w-[40%]"
+            className="w-[40vw]"
             src={yawn_dog}
             alt="yawn_dog"
             ref={Dog_yawnRef}
           />
-          <div className="max-w-xl flex flex-col text-3xl">
+          <div className="max-w-xl flex flex-col text-[1.8vw]">
             <p className=" leading-relaxed" ref={text_story7_1Ref}>
               ผ่านไปหลายชั่วโมงเจ้ามีตังค์ก็ตื่นนอนพร้อมบิดขี้เกียจ
               ทั้งแอ่นหน้าแอ่นหลัง จากนั้นก็เดินมาหาพร้อม ทำตาปริบ ๆ

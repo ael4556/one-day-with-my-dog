@@ -190,7 +190,7 @@ function Story8() {
       <div className=" grid grid-cols-2">
         <div className=" flex flex-col">
           <p
-            className="text-3xl leading-relaxed pl-[20%] pr-[10%]"
+            className="text-[1.8vw] leading-relaxed pl-[20%] pr-[12%]"
             ref={text_story8_1Ref}
           >
             เวลาแบบนี้ควรฝึกเจ้าตูบน้อยซักหน่อย...
@@ -207,7 +207,7 @@ function Story8() {
               <div className="hover:scale-110 duration-200 w-[55%]">
                 <img
                   onClick={() => setIsPopupOpen(true)}
-                  className="w-[100%] cursor-pointer "
+                  className="w-[20vw] cursor-pointer "
                   src={snack}
                   ref={snack_motionRef}
                 />
@@ -218,7 +218,7 @@ function Story8() {
 
         <div className=" flex flex-col">
             <div className="pt-[20%]">
-              <img className="w-[80%]" src={snack_dog} ref={snack_dogRef} />
+              <img className="w-[60vw]" src={snack_dog} ref={snack_dogRef} />
             </div>
         </div>
       </div>
@@ -228,7 +228,7 @@ function Story8() {
           <Title title="เลือกคำสั่งที่ต้องการฝึก" />
         </div>
 
-        <div className="grid grid-cols-4 justify-items-center pt-[7%] px-32">
+        <div className="grid grid-cols-4 justify-items-center pt-[7vh] px-[5vw]">
           <div ref={card_scale1Ref}>
             <CardFlip image_front={cardfront_1} image_back={cardback_1} />
           </div>

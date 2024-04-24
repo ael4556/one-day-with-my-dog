@@ -98,25 +98,25 @@ const Story10_1 = () => {
   }, []);
 
   return (
-    <div className="flex justify-center pt-[10%]">
+    <div className="flex justify-center">
       <div className="flex">
         <div className="w-[100%] absolute start-[10%] end-[10%] pt-[100%] blur-sm opacity-95">
           <img src={image_bubble} />
         </div>
 
-        <div className="w-[100%]" ref={dogRef}>
+        <div className="w-[65vw]" ref={dogRef}>
           <img src={image_dog_bath} />
         </div>
-        <div className=" absolute w-[100%]" ref={dog2Ref}>
+        <div className=" absolute w-[65vw]" ref={dog2Ref}>
           <img src={image_dog_bath_gif} />
         </div>
 
         <div className=" pt-[20%]">
           <div className="absolute start-[10%]" ref={handleftRef}>
-            <img className="w-[100%]" src={image_left_hand} />
+            <img className="w-[25vw]" src={image_left_hand} />
           </div>
-          <div className="absolute end-[9%]" ref={handRightRef}>
-            <img className="w-[100%]" src={image_right_hand} />
+          <div className="absolute end-[10%]" ref={handRightRef}>
+            <img className="w-[25vw]" src={image_right_hand} />
           </div>
         </div>
 

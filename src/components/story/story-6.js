@@ -97,51 +97,37 @@ function Story6() {
       }
     );
 
-    gsap.fromTo(
-      livingRoom,
-      { yPercent: 0 },
-      {
-        yPercent : 20,
-        duration: 1,
-        scrollTrigger: {
-          trigger: livingRoom,
-          toggleActions : 'restart',
-          start : "1000px 80%",
-          end : "800px 0%",
-          scrub : true,
-
-          /*markers : true,*/
-        },
-      }
-    );
-
   }, []);
 
   return (
     <>
       <div className="flex justify-center">
         <img
-          className=" w-[100%] pt-[34vh]"
-          ref={livingRoomRef}
+          className=" w-[100%] pt-[25%]"
           src={living_room}
           alt="sleep_night"
         />
-        <img className="absolute w-[40%] pt-[5%]" src={dog_sleep} alt="dog_in_frame" ref={dogsleepRef}/>
+        <img 
+          className="absolute w-[40vw] pt-[5%]" 
+          src={dog_sleep}  
+          ref={dogsleepRef}
+          alt="dog_in_frame"
+        />
         <div className="pt-[30%]">
           <img
-            className="w-[30%] absolute left-[10%]"
+            className="w-[30vw] absolute left-[10%]"
             ref={VacuumRef}
             src={vacuum}
             alt="dog_in_frame"
           />
           <img
-            className="w-[15%] absolute left-[30%]"
+            className="w-[15vw] absolute left-[30%]"
             ref={SpongeRef}
             src={sponge}
             alt="dog_in_frame"
           />
           <img
-            className="w-[25%] absolute right-[10%]"
+            className="w-[25vw] absolute right-[10%]"
             ref={MopRef}
             src={mop}
             alt="dog_in_frame"

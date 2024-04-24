@@ -46,7 +46,7 @@ function Story19() {
                 <img className=" absolute w-[85%] " src={Sofa}/>
             </div>
             <div className=" flex justify-center pt-[30%]" ref={text_story19_1Ref}>
-                <img className=" absolute " src={End}/>
+                <img className=" absolute w-[30vw]" src={End}/>
             </div>
         </div>
       </div>

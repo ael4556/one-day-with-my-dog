@@ -92,19 +92,19 @@ function Story17() {
   return (
     <div className=" flex flex-col">
       <div className=" flex flex-col justify-center">
-        <div className=" font-sans text-center text-6xl font-semibold" ref={text_story17_1Ref}>
+        <div className=" font-sans text-center text-[3vw] font-semibold" ref={text_story17_1Ref}>
           <p className=" text-[#6E8CC5]">บาร์ฟ คือ</p>
         </div>
-        <div className=" font-sans text-center text-4xl font-normal pt-[2.5%]" ref={text_story17_2Ref}>
+        <div className=" font-sans text-center text-[1.88vw] font-normal pt-[2.5%]" ref={text_story17_2Ref}>
           <p className=" text-black">
             อาหารที่มีส่วนประกอบมาจากเนื้อ อวัยวะภายใน และกระดูกสัตว์
             รวมถึงไข่และผลิตภัณฑ์นม
           </p>
-          <p className=" text-black pt-[1%]">
+          <p className=" text-black pt-[0.1%]">
             พืชผักผลไม้ ที่ไม่ผ่านความร้อน โดยจุดประสงค์คือ
             การเลียนแบบการกินอาหารตามธรรมชาติ
           </p>
-          <p className=" text-black pt-[1%]">
+          <p className=" text-black pt-[0.1%]">
             ของสัตว์ และทำให้สัตว์มีสุขภาพร่างกายที่แข็งแรง ไม่เสี่ยงต่อโรคอ้วน
             และมีอายุที่ยืนยาว
           </p>
@@ -112,19 +112,19 @@ function Story17() {
       </div>
       <div className=" pt-[10%]">
         <div className="flex justify-center">
-          <div className=" absolute z-50 pt-[2.5%]">
-            <img className=" w-[90%]" src={dog} />
+          <div className=" absolute z-40 pt-[2.5%]">
+            <img className=" w-[85vh]" src={dog} />
           </div>
         </div>
         <div className="flex justify-center">
-          <img className=" z-0 px-[5%]" src={bg_dog} ref={bg_finishedRef}/>
+          <img className=" z-0 w-[90vw]" src={bg_dog} ref={bg_finishedRef}/>
         </div>
       </div>
       <div className="flex pt-[20%] justify-end">
-        <div className="pr-[10%]" ref={slowFeedRef}>
-          <img src={feed} />
+        <div className="pr-[10%] z-10" ref={slowFeedRef}>
+          <img className="w-[20vw]" src={feed} />
         </div>
-        <div className=" pr-[10%]">
+        <div className=" pr-[10%] z-50">
           <Tips
             text="แนะนำให้ใช้ชามแบบ Slow Feeder เพื่อลด"
             text2="ความเสี่ยงจากการสำลัก และการท้องอืด"

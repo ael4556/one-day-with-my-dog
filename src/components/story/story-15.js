@@ -145,7 +145,7 @@ function Story15() {
       <Sunset sunlight={SunSett} />
       <div className=" flex flex-col pt-[35%]">
         <div 
-            className=" font-sans flex justify-center text-3xl pt-[10%] px-[28%] leading-relaxed text-center" 
+            className=" font-sans flex justify-center text-[1.8vw] pt-[10%] px-[25%] leading-relaxed text-center" 
             ref={text_story15_1Ref}>
           <p>
           หลังจากเหตุการณ์ไม่คาดฝันเกิดขึ้น และคิดว่ามีตังค์น่าจะพอใจ
@@ -176,21 +176,21 @@ function Story15() {
       </div>
       <div className="flex flex-col-2 gap-[5%] justify-center pt-[10%]">
         <div className="flex-col justify-start z-20 pt-[20%]">
-          <div className=" font-sans text-3xl text-left" ref={text_story15_2Ref}>
-            <p className="pt-[1.5%]">เมื่อถึงบ้าน คุณก็เดินไปหยิบทิชชูเปียก</p>
-            <p className="pt-[1.5%]">เพื่อเอามาเช็ดเท้าทั้งสี่ ลำตัว และใบหน้า ให้มีตังค์</p>
-            <p className="pt-[1.5%]">เพราะทุกครั้งที่ออกไปข้างนอก</p>
-            <p className="pt-[1.5%]">มักมีเศษดินติดมา ทำให้ภายในบ้านสกปรก</p>
+          <div className=" font-sans text-[1.8vw] text-left" ref={text_story15_2Ref}>
+            <p className="pt-[0.1%]">เมื่อถึงบ้าน คุณก็เดินไปหยิบทิชชูเปียก</p>
+            <p className="pt-[0.1%]">เพื่อเอามาเช็ดเท้าทั้งสี่ ลำตัว และใบหน้า ให้มีตังค์</p>
+            <p className="pt-[0.1%]">เพราะทุกครั้งที่ออกไปข้างนอก</p>
+            <p className="pt-[0.1%]">มักมีเศษดินติดมา ทำให้ภายในบ้านสกปรก</p>
           </div>
         </div>
         <div className="flex-col justify-end z-0">
-          <img className="" src={Dog} />
+          <img className="w-[30vw]" src={Dog} />
         </div>
       </div>
       <div className="pt-[5%] flex flex-col">
-        <div className=" pl-[15%]" ref={wipes_animateRef}>
-          <img className=" absolute z-30" src={Wipes} />
-          <img className=" absolute z-0" src={BgWipes} />
+        <div className=" pl-[15%] " ref={wipes_animateRef}>
+          <img className=" absolute z-30 w-[15vw]" src={Wipes} />
+          <img className=" absolute z-0 w-[15vw]" src={BgWipes} />
         </div>
         <div className=" flex justify-end pt-[5%] pr-[10%]">
           <Tips
@@ -206,18 +206,18 @@ function Story15() {
             <img className=" w-[37%] z-40" src={TextStorke} ref={text_story15_3Ref}/>
           </div>
           <div className=" pl-[10%] pt-[7%]">
-            <img className=" w-[32%] z-30" src={Braf} ref={text_story15_4Ref}/>
+            <img className=" w-[30vw] z-30" src={Braf} ref={text_story15_4Ref}/>
           </div>
         </div>
         <div className="pt-[42%] absolute left-[55%] w-[40%]">
-        <img className=" z-10" src={Tie} ref={tie_animateRef}/>
+        <img className=" z-10 w-[40vw]" src={Tie} ref={tie_animateRef}/>
         </div>
         <img className=" z-0" src={Bgkitchen} />
       </div>
         <div className=" flex justify-center pt-[15%]">
-          <img src={dinner} />
+          <img className=" w-[60vw]" src={dinner} />
         </div>
-        <div className=" flex justify-center pt-[3%] font-sans text-3xl">
+        <div className=" flex justify-center pt-[3%] font-sans text-[1.88vw]">
           <p>ช่วยปรุงอาหารให้เจ้ามีตังค์ โดยลากวัตถุดิบลงชาม เพื่อเสิร์ฟอาหารมื้อพิเศษ</p>
         </div>
     </div>

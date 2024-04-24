@@ -41,7 +41,7 @@ function Story20() {
         </div>
 
         <div className=" flex justify-center pt-[15%]">
-            <img src={Our}/>
+            <img className=" w-[15vw]" src={Our}/>
             <div id="Creater"></div>
         </div>
         

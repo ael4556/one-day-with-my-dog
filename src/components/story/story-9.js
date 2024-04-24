@@ -143,9 +143,9 @@ function Story9() {
         setIsPopupOpen={setIsPopup2Open}
         images={image_pop_2}
       />
-      <div className=" flex flex-col justify-center px-[24.7%] pt-28 ">
+      <div className=" flex flex-col justify-center px-[20%] pt-28 ">
         <p
-          className="text-3xl leading-loose text-center"
+          className="text-[1.8vw] leading-relaxed text-center"
           ref={text_story9_1Ref}
         >
           หลังจากนั้น คุณก็เดินออกไปที่สวนพร้อมเรียกมีตังค์ให้ออกมาพร้อมกัน
@@ -157,12 +157,12 @@ function Story9() {
           <div className="hover:scale-110 duration-200 cursor-pointer" >
           <img
             onClick={() => setIsPopup1Open(true)}
-            className="w-[80%]"
+            className="w-[12vw]"
             src={ball}
             alt={ball}
           />
           </div>
-          <div className="flex text-4xl pt-12 pl-[15%]" >
+          <div className="flex text-[2vw] pt-12 pl-[20%]" >
             <p>ลูกบอล</p>
           </div>
         </div>
@@ -170,12 +170,12 @@ function Story9() {
           <div className="hover:scale-110 duration-200 cursor-pointer" >
           <img
             onClick={() => setIsPopup2Open(true)}
-            className="w-[80%]"
+            className="w-[12vw]"
             src={frisbee_dog}
             alt={frisbee_dog}
           />
           </div>
-          <div className="flex text-4xl pt-12 pl-[15%]">
+          <div className="flex text-[2vw] pt-12 pl-[20%]">
             <p>จานร่อน</p>
           </div>
         </div>
@@ -183,20 +183,20 @@ function Story9() {
       <div className=" flex justify-center pt-28">
         <div className="flex justify-center">
           <img
-            className="w-[35%] absolute pt-[29.7%] right-[10%] z-20"
+            className="w-[35vw] absolute pt-[29.7%] right-[10%] z-20"
             ref={text_stroke3Ref}
             src={text_stroke_3}
             alt={text_stroke_3}
           />
           <img className=" pt-[15%]" src={garden_dog} alt={garden_dog} />
           <div className=" absolute z-10 pt-[35%] pl-[30%]">
-            <img className=" w-[80%]" src={dog} alt={dog} ref={dog_jumpRef} />
+            <img className=" w-[40vw]" src={dog} alt={dog} ref={dog_jumpRef} />
           </div>
         </div>
 
         <div className=" absolute z-10 pt-[55%] left-[35%]">
           <img
-            className=" w-[80%]"
+            className=" w-[10vw]"
             src={ball2}
             alt={ball2}
             ref={bouncing_ballRef}
@@ -211,9 +211,9 @@ function Story9() {
           showIcon={true}
         />
       </div>
-      <div className=" flex flex-col justify-center px-[20%] pt-32 ">
+      <div className=" flex flex-col justify-center px-[16%] pt-32 ">
         <p
-          className="text-3xl leading-loose text-center"
+          className="text-[1.8vw] leading-loose text-center"
           ref={text_story9_2Ref}
         >
           หลังจากที่คุณให้มีตังค์นอนเล่นหน้าบ้าน เพื่อระหว่างนั้นก็เอาของต่าง ๆ

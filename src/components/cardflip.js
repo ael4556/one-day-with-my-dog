@@ -12,7 +12,7 @@ function CardFlip({ image_front = image_frame, image_back = image_frame }) {
     <div className="flex flex-col justify-center ">
       <div
         onClick={handleFlip}
-        className="group w-[40vh] [perspective:1000px] hover:scale-110 duration-500 cursor-pointer"
+        className="group w-[20vw] [perspective:1000px] hover:scale-110 duration-500 cursor-pointer"
       >
         <div
           className={`relative  w-full transition-all duration-700 rounded-2xl [transform-style:preserve-3d] 
@@ -25,7 +25,7 @@ function CardFlip({ image_front = image_frame, image_back = image_frame }) {
               src={image_front}
             />
           </div>
-          <div className=" absolute inset-0  w-full [transform:rotateY(180deg)] [backface-visibility:hidden]">
+          <div className=" absolute inset-0 w-full [transform:rotateY(180deg)] [backface-visibility:hidden]">
             <img className=" w-full object-cover" src={image_back} />
           </div>
         </div>

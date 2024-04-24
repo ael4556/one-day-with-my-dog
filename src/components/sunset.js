@@ -74,25 +74,25 @@ function Sunset({ sunlight = sun }) {
     <>
       <div className="flex justify-center">
         <img
-          className="absolute  left-[20%] pt-10"
+          className="absolute left-[20%] pt-10 w-[100vw]"
           ref={cloundLeftTopRef}
           src={cloundLeftTop}
           alt="sun_morning"
         />
         <img
-          className="absolute w-5/6 pt-10"
+          className="absolute w-[95vw] pt-10"
           ref={sunRef}
           src={sunlight}
           alt="sun_morning"
         />
         <img
-          className="absolute right-[20%] pt-10"
+          className="absolute right-[20%] pt-10 w-[100vw]"
           ref={cloundRightRef}
           src={cloundRight}
           alt="sun_morning"
         />
         <img
-          className="absolute left-[20%] pt-10"
+          className="absolute left-[20%] pt-10 w-[100vw]"
           ref={cloundLeftBottomRef}
           src={cloundLeftBottom}
           alt="sun_morning"

@@ -176,11 +176,11 @@ function Story14() {
         <div className=" pt-[5%] flex flex-col">
             <div className="flex flex-col">
                 <div className="flex justify-center" ref={title_EmergencyRef}>
-                    <img className="w-[60%] absolute z-0" src={Emergency}/>
+                    <img className="w-[60vw] absolute z-0" src={Emergency}/>
                 </div>
                 <div className=" grid grid-cols-3 pt-[30%]">
                     <div></div>
-                    <div className=" font-sans text-3xl z-10">
+                    <div className=" font-sans text-[1.8vw] z-10">
                         <p className="flex justify-center leading-relaxed text-center" ref={text_story14_1Ref}>
                             มีเหตุการณ์ไม่คาดคิด มีตังค์ดันทำท่าเหมือนจะอึ 
                             คุณรีบหันไปด้วยความตกใจ พร้อมกับทำตาโต
@@ -197,13 +197,13 @@ function Story14() {
                   <div className=" grid grid-cols-2 gap-[5%] justify-center pt-[10%]">
                       <div className= "flex justify-start">
                           <div className="z-0 pt-[15%]">
-                              <img className="absolute left-[5%] w-[25%]" src={Bin}/>
+                              <img className="absolute left-[5%] w-[25vw]" src={Bin}/>
                           </div>
                           <div className="pt-[23%] z-10">
-                              <img className="absolute left-[17%] w-[35%]" src={Dog}/>
+                              <img className="absolute left-[17%] w-[35vw]" src={Dog}/>
                           </div>
                           <div className="flex pt-[80%] pl-[45%] z-20">
-                              <img className="absolute w-[5%]" src={Poop}/>  
+                              <img className="absolute w-[5vw]" src={Poop}/>
                           </div>
                       </div>
                       <div className=" flex justify-end">
@@ -222,23 +222,23 @@ function Story14() {
             </div>
             <div className="pt-[10%]">
                 <div className=" absolute left-[10%] pt-[27%]" ref={text_story14_5Ref}>
-                    <p className="font-sans text-8xl text-[#4091AE] font-semibold z-0">ถุงขยะเก็บอึอึ๊น้องหมา!</p>
+                    <p className="font-sans text-[5vw] text-[#4091AE] font-semibold z-0">ถุงขยะเก็บอึอึ๊น้องหมา!</p>
                 </div>
                 <div className=" grid grid-cols-2 z-20">
                     <div className="pl-[20%]">
-                        <div className=" font-sans text-3xl pt-[20%]" ref={text_story14_3Ref}>
+                        <div className=" font-sans text-[1.8vw] pt-[20%]" ref={text_story14_3Ref}>
                             <p>บ่นไปก็เท่านั้น..ก็ต้องเก็บให้</p>
                             <p className="pt-[1.5%]">เจ้าตัวสร้างเรื่องอยู่ดี</p>
                         </div>
-                        <div className=" font-sans text-6xl pt-[20%]" ref={text_story14_4Ref}>
+                        <div className=" font-sans text-[3.14vw] pt-[20%]" ref={text_story14_4Ref}>
                             <p>ดีนะที่ม่อน... เอ้ย!! เรามี</p>
                         </div>                   
                     </div>
                     <div>
                         <div className="flex justify-end pr-[5%]" >
-                            <img className="w-[70%] z-10" src={Hand} />
-                            <div className="absolute w-[37%] pr-[7%]">
-                            <img className="z-0" src={Vfx}/>
+                            <img className="w-[35vw] z-10" src={Hand} />
+                            <div className="absolute w-[35vw] pr-[7%]">
+                            <img className="z-0 " src={Vfx}/>
                             </div>
                         </div>
                     </div>        
@@ -247,19 +247,19 @@ function Story14() {
             <div className="pt-[10%]">
                 <div className=" flex justify-center">
                     <div className=" absolute pt-[7%]" >
-                        <p className=" font-sans font-medium text-6xl text-[#4091AE]">จะกี่ก้อนก็ไม่หวั่น แม้วันมามาก</p>
+                        <p className=" font-sans font-medium text-[3.14vw] text-[#4091AE]">จะกี่ก้อนก็ไม่หวั่น แม้วันมามาก</p>
                     </div>
                 </div>
                 <div className="flex justify-center">
                     <div className=" absolute pt-[15%] z-50">
-                        <img className="" src={HowTo}/>
+                        <img className="w-[80vw]" src={HowTo}/>
                     </div>
                 </div>
                 <div className="flex justify-start" ref={bg_howtoRef}>
-                    <img className=" z-0" src={BGTextTop}/>
+                    <img className="w-[60vw] z-0" src={BGTextTop}/>
                 </div>
                 <div className="flex justify-end pt-[5%]" ref={bg_howto2Ref}>
-                    <img className=" z-0" src={BGTextBot}/>
+                    <img className="w-[45vw] z-0" src={BGTextBot}/>
                 </div>
             </div>
             

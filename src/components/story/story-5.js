@@ -272,7 +272,7 @@ function Story5() {
             ref={bowl_dogRef}
           />
           <img
-            className=" w-2/5 absolute"
+            className=" w-[20vw] absolute"
             src={frung_fring}
             alt="table_Dog"
             ref={frung_fringRef}
@@ -286,16 +286,16 @@ function Story5() {
           showIcon={true}
         />
       </div>
-      <div className="pt-12 grid ml-40 mr-40 grid-cols-3">
+      <div className="pt-12 grid ml-[10%] mr-[10%] grid-cols-3 gap-[2vw]">
         <img
-          className=" w-4/6"
+          className=" w-[20vw]"
           src={microwave}
           alt="table_Dog"
           ref={microRef}
         />
         <img className=" w-4/6" src={bowl} alt="table_Dog" ref={humanbowlRef} />
-        <div ref={text_story5_4Ref} className="flex justify-end max-w-xl pt-24">
-          <p className="text-3xl flex justify-center leading-relaxed">
+        <div ref={text_story5_4Ref} className="flex justify-end pt-24">
+          <p className="text-[1.8vw] leading-relaxed">
             หลังจากนั้น คุณก็เดินไปหยิบข้าวกล่อง 
             ในตู้เย็นพร้อมเทใส่จาน
             เอาเข้าเวฟแล้วเอามานั่งกินข้างเจ้ามีตังค์

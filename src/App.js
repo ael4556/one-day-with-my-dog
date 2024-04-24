@@ -118,7 +118,7 @@ const App = () => {
           <Story15 />
         </div>
         <div className="flex flex-col">
-          <div className="pt-[15%] z-0">
+          <div className="pt-[12%] z-0">
             <Cooking />
           </div>
           <div className="pt-[10%] z-0">

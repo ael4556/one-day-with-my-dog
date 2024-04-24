@@ -68,21 +68,21 @@ function Tips({
   }, []);
 
   return (
-    <div className={`flex justify-end gap-10 `}>
-      <div className="flex justify-end gap-4">
+    <div className={`flex justify-end `}>
+      <div className="flex justify-end gap-[2vw]">
         {isLeft && (
           <div>
             <img
               ref={icons}
               src={icon_tips}
               alt="Current User Icon"
-              className=" w-32 h-32 border-8 border-[#FFC645] bg-[#FFF5DE] p-3 rounded-full"
+              className=" w-[6.27vw] h-[6.27vw] border-[0.4vw] border-[#FFC645] bg-[#FFF5DE] p-[0.627vw] rounded-full"
             />
           </div>
         )}
         <div
           ref={messages}
-          className={`text-4xl leading-relaxed bg-[#FFF5DE] max-w-[${width}%] rounded-[70px] px-9 py-8 shadow-lg  border-8 border-[#FFC645] `}
+          className={`text-[1.8vw] leading-relaxed bg-[#FFF5DE] max-w-[${width}%] rounded-[70px] px-[1.9vw] py-[1.7vw] shadow-lg border-[0.4vw] border-[#FFC645] `}
         >
           <div>{text}</div>
           <div>{text2}</div>
@@ -94,7 +94,7 @@ function Tips({
               ref={icons}
               src={icon_tips}
               alt="Current User Icon"
-              className=" w-32 h-32 border-8 border-[#FFC645] bg-[#FFF5DE] p-3 rounded-full"
+              className=" w-[6.27vw] h-[6.27vw] border-[0.4vw] border-[#FFC645] bg-[#FFF5DE] p-[0.627vw] rounded-full"
             />
           </div>
         )}

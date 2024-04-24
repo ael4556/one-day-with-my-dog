@@ -43,38 +43,38 @@ function Story10_0() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 pt-40 ">
+        <div className="grid grid-cols-2 pt-[17.3vh]">
           <div className="flex flex-col">
             <div className="flex justify-center">
-                <div className="hover:scale-110 duration-300  pl-[30%]">
+                <div className="hover:scale-110 duration-300 pl-[30%]">
                   <img
                   onClick={() => setIsPopup1Open(true)}
-                  className="w-[100%] cursor-pointer"
+                  className="w-[20vw] cursor-pointer"
                   src={image_tube}
                   alt={image_tube}/>
                 </div>
             </div>
-            <div className="flex justify-center text-3xl pt-12 pl-[30%]">
+            <div className="flex justify-center text-[1.8vw] pt-12 pl-[30%]">
               <p>ใช้สายยางฉีดน้ำให้ทั่วตัว</p>
             </div>
           </div>
           
           <div className="flex flex-col">
             <div className="flex justify-center">
-                <div className="hover:scale-110 duration-300  pr-[30%]">
+                <div className="hover:scale-110 duration-300 pr-[30%]">
                   <img
                   onClick={() => setIsPopup2Open(true)}
-                  className="w-[100%] cursor-pointer"
+                  className="w-[20vw] cursor-pointer"
                   src={image_shampoo}
                   alt={image_shampoo}/>
                 </div>
             </div>
-            <div className="flex justify-center text-3xl pt-12 pr-[30%]">
+            <div className="flex justify-center text-[1.8vw] pt-12 pr-[30%]">
               <p>เอาแชมพูผสมน้ำนิดหน่อยถูให้ทั่วตัว</p>
             </div>
           </div>
         </div>
-        <img className="w-[70%]" src={nullobj}/>
+        <img className=" w-[30vw]" src={nullobj}/>
       </div>
     );
   }

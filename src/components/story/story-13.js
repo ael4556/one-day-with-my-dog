@@ -189,8 +189,8 @@ function Story13() {
     
   }, []);
   return (
-    <div className=" pt-[15%] flex flex-col">
-        <div className="justify-end px-[10%] font-sans text-3xl grid grid-cols-2 leading-relaxed" ref={text_story13_1Ref}>
+    <div className=" pt-[15vh] flex flex-col">
+        <div className="justify-end px-[10%] font-sans text-[1.8vw] grid grid-cols-2 leading-relaxed" ref={text_story13_1Ref}>
         <div></div>
         <p> ในขณะเดินเล่น มีตังค์พยายามจะเดินนำ
             คุณต้องกระตุกสายจูงเบา ๆ สัก 3 ครั้ง พร้อมออกคำสั่ง
@@ -208,28 +208,28 @@ function Story13() {
         </div>
 
         <div className="grid grid-cols-2 pt-[5%]">
-                <div className=" pl-[55%] pt-[15%]" ref={text_story13_2Ref}>
-                    <p className="font-sans text-3xl text-right leading-relaxed">
+                <div className=" pl-[30%] pr-[20%] pt-[15%]" ref={text_story13_2Ref}>
+                    <p className="font-sans text-[1.8vw] text-right leading-relaxed">
                         พอเดินไปได้สักพัก มีตังค์ก็แวะสงสัย
                         ในทุก ๆ ที่ ที่เดินผ่านและคอยดม
                         อยู่ตลอดเวลา 
                     </p>
                 </div>
             <div className=" flex justify-end pr-[0%] " ref={sniffingdogRef}>
-            <img className=" w-[90%]" src={Sniffing}/>
-            <img className=" w-[90%] absolute opacity-[90%]" src={SniffingVFX}/>
+            <img className=" w-[45vw]" src={Sniffing}/>
+            <img className=" w-[45vw] absolute opacity-[90%]" src={SniffingVFX}/>
             </div>
         </div>
 
         <div className="grid grid-cols-2">
             <div className=" pt-[30%] z-50 pl-[20%]" ref={text_story13_3Ref}>
-                <p className="font-sans text-3xl leading-relaxed">
+                <p className="font-sans text-[1.8vw] leading-relaxed">
                 แต่แล้วก็ดันไปเจอเจ้าตูบอีกตัวที่อยู่ในหมู่บ้านเข้า มีตังค์เลยเห่า! 
                 แสดงอาการหวงอาณาเขตของสุนัข 
                 แบบนี้ต้องออกคำสั่งสักหน่อยมันจะรบกวนคนอื่นเขา
                 </p>
             </div>
-            <img className="absolute left-[25%] z-0" src={Frightened} ref={warningRef}/>
+            <img className="absolute left-[25%] z-0 w-[15vw]" src={Frightened} ref={warningRef}/>
         </div>
 
         <div className=" flex flex-col-2 gap-[5%] justify-center pt-[10%]">
@@ -241,7 +241,7 @@ function Story13() {
                 />
             </div> 
             <div className=" flex justify-end">
-                <img className=" w-[80%]" src={Numkhaboun}/>
+                <img className=" w-[30vw]" src={Numkhaboun}/>
             </div>
             <div className=" absolute right-[10%] z-10 pt-[55%]">
                 <Chat
@@ -251,7 +251,7 @@ function Story13() {
                 />
             </div>
             <div className=" flex justify-start">
-                <img className=" w-[80%]" src={Meetang}/>
+                <img className=" w-[30vw]" src={Meetang}/>
             </div>           
         </div>
 
@@ -267,46 +267,46 @@ function Story13() {
 
         <div className=" flex flex-col-2 gap-[5%] justify-center pt-[10%] ">
             <div className="flex-col justify-start z-20">
-                <div className="font-sans text-3xl " ref={text_story13_4Ref}>
+                <div className="font-sans text-[1.8vw]" ref={text_story13_4Ref}>
                     <p className="">
                         หลังจากนั้นคุณก็พยายามกระตุกสายจูง
                     </p>
-                    <p className="pt-[1.5%]">
+                    <p className="pt-[0.1%]">
                         เพื่อให้มีตังค์เดินตามมา 
                     </p>
                 </div>
-                <div className="font-sans text-3xl pt-[15%]" ref={text_story13_5Ref}>
+                <div className="font-sans text-[1.8vw] pt-[15%]" ref={text_story13_5Ref}>
                     <p className="">
                         มีตังค์ก็ทำตามอย่างว่าง่ายและเข้าใจ
                         </p>
-                    <p className="font-sans text-3xl pt-[1.5%]">
+                    <p className="pt-[0.1%]">
                         ที่เจ้านายของเขาจะสื่อเป็นอย่างดี
                     </p>
-                    <p className="font-sans text-3xl pt-[1.5%]">
+                    <p className="pt-[0.1%]">
                         แต่แล้วก็ดันเจอคนในหมู่บ้านซะได้
                     </p>
                 </div>
-                <div className="font-sans text-3xl pt-[30%]" ref={text_story13_6Ref}>
+                <div className="font-sans font-medium text-[1.8vw] pt-[20%]" ref={text_story13_6Ref}>
                     <p className="">
                         ดีหน่อยที่มีตังค์ค่อนข้างจะคุ้นเคย
                     </p>
-                    <p className="font-sans text-3xl pt-[1.5%]">
+                    <p className="font-sans pt-[0.1%]">
                         เพราะพบเจอกันบ่อยแล้ว
                     </p>
-                    <p className="font-sans text-3xl pt-[1.5%]">
+                    <p className="font-sans pt-[0.1%]">
                         พี่เขาก็ได้มีการทักทายเจ้ามีตังค์
                     </p>
-                    <p className="font-sans text-3xl pt-[1.5%]">
+                    <p className="font-sans pt-[0.1%]">
                         ด้วยเสียงที่นุ่มนวล
                     </p>
                 </div>   
             </div>
 
             <div className="flex justify-start z-10">
-                <img className="" src={Guests}/>
+                <img className="w-[30vw]" src={Guests}/>
             </div>
-            <div className="absolute pt-[30%] z-0">
-                <img className="" src={BG_Guests}/>
+            <div className="absolute pt-[32%] z-0">
+                <img className="w-[100%]" src={BG_Guests}/>
             </div>
         </div>
 
@@ -347,7 +347,7 @@ function Story13() {
                 />
             </div>
             <div className="flex justify-end pr-[10%]">
-                <img className="" src={Sticker}/>
+                <img className="w-[20vw]" src={Sticker}/>
             </div>            
         </div>
         

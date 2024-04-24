@@ -69,7 +69,7 @@ const Cooking = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="w-full p-4">
+        <div className="w-[full] p-[0.83vh]">
           <div className="grid grid-cols-7 gap-4 items-center">
             {ingredients.map((ingredient) => (
               <div
@@ -97,7 +97,7 @@ const Cooking = () => {
                 <img
                   src={ingredient.image}
                   alt={ingredient.name}
-                  className="w-full"
+                  className="w-[13vw]"
                 />
               </div>
             ))}
@@ -108,7 +108,7 @@ const Cooking = () => {
             <img
               src={potImages[potImageIndex]}
               alt="bowl"
-              className="w-full"
+              className="w-[40vw]"
               onDragOver={handleDragOver}
               onDrop={handleDrop}
             />

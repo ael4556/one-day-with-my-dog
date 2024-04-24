@@ -104,11 +104,11 @@ function Story11() {
       <div id="Story_11"></div>
       <ClockTop time="16.30" />
       <Sunset sunlight={SunEvening} />
-      <div className=" pt-[35%]">
+      <div className=" pt-[35vh]">
         <div className="flex pt-[25%] justify-start pl-[10%]">
           <Chat text="“ไปเดินเล่นกันมีตังค์”" isMe={false} />
         </div>
-        <div className="flex pt-40 justify-end pr-[10%]">
+        <div className="flex pt-[10vh] justify-end pr-[10%]">
           <Chat text="โฮ่ง โฮ่ง !" isDog={true} isMe={true} />
         </div>
       </div>
@@ -117,7 +117,7 @@ function Story11() {
         <div className="flex flex-col">
           <div className="flex justify-center">
             <img
-              className="w-[70%] pl-[20%]"
+              className="w-[30vw] pl-[20%]"
               src={Door}
               alt="Door"
               ref={doorRef}
@@ -128,32 +128,26 @@ function Story11() {
         <div className="flex flex-col">
           <div className="flex justify-center">
             <img
-              className="w-[90%] pr-[30%]"
+              className="w-[40vw] pr-[30%]"
               src={Leash}
               alt="Leash"
               ref={dogLeashRef}
             />
           </div>
           <div
-            className="flex flex-col justify-center text-3xl pt-40 pr-[18%] pl-[15%]"
-            ref={text_story11_1Ref}
-          >
-            <div className="pt-[1.6%]">
-              <p>พูดจบคุณก็หยิบสายจูงจากที่แขวนบนกำแพง</p>
+            className="flex flex-col justify-center text-[1.8vw] pt-[10vh] pr-[18%] pl-[15%]"
+            ref={text_story11_1Ref}>
+            <div className="pt-[0.1%] leading-relaxed">
+              <p>พูดจบคุณก็หยิบสายจูงจากที่แขวนบนกำแพง 
+                แล้วใส่ให้มีตังค์ ท่าทางมีตังค์ก็ดูไม่ขัดขืนอะไร 
+                ซ้ำแล้วยังแสดงท่าทางดีใจที่จะได้ออกไปข้างนอก 
+                สังเกตได้จากหางที่ส่ายไปมาของเจ้าตัว
+              </p>
             </div>
-            <div className="pt-[1.6%]">
-              <p>แล้วใส่ให้มีตังค์ ท่าทางมีตังค์ก็ดูไม่ขัดขืนอะไร</p>
-            </div>
-            <div className="pt-[1.6%]">
-              <p>ซ้ำแล้วยังแสดงท่าทางดีใจที่จะได้ออกไปข้างนอก</p>
-            </div>
-            <div className="pt-[1.6%]">
-              <p>สังเกตได้จากหางที่ส่ายไปมาของเจ้าตัว</p>
-            </div>
-
           </div>
         </div>
       </div>
+
       <div className=" flex justify-end pr-[10%]">
         <Tips
           text="ควรใส่สายจูงให้น้องสุนัขทุกครั้ง"
@@ -165,9 +159,12 @@ function Story11() {
         <Title title="ไปเดินเล่นกัน!" />
       </div>
       <div className=" flex justify-center pt-[10%]">
-        <img src={Dogleash} alt="Dogleash" />
+        <img 
+          className="w-[45vw]" 
+          src={Dogleash}
+          alt="Dogleash" />
         <img
-          className=" absolute pt-[12%] right-[67%]"
+          className=" absolute pt-[12%] right-[67%] w-[15vw]"
           src={textD}
           alt="textD"
         />
