@@ -56,13 +56,13 @@ const App = () => {
           <div>
           <Logo />
           <div className="flex justify-center">
-            <img className=" absolute w-[7%] top-[82%]" src={Scroll}/>
+            <img className=" absolute w-[7vw] top-[40vw]" src={Scroll}/>
           </div>
           </div>
-          <div className="flex flex-col pt-[0%] xl:pt-[50vh] 2xl:pt-[75vh]">
+          <div className="flex flex-col pt-[0]">
             <Story1 />
           </div>
-          <div className=" pt-40">
+          <div className=" pt-[8.368vw]">
           <div id="Story_2"></div>
           <ClockTop time="7.00" /> 
           </div>
@@ -70,7 +70,7 @@ const App = () => {
           <div className=" flex justify-center">
             <Story2 />
           </div>
-          <div className="flex flex-col pt-40 justify-center justify-items-center">
+          <div className="flex flex-col pt-[8.368vw] justify-center justify-items-center">
             <Story3 />
           </div>
           <div className="flex flex-col">
@@ -85,7 +85,7 @@ const App = () => {
           <div>
             <Story7 />
           </div>
-          <div className="pt-60">
+          <div className="pt-[12.5vw]">
             <Story8 />
           </div>
           <Story9 />
@@ -98,23 +98,23 @@ const App = () => {
           <div>
             <Story10_2 />
           </div>
-          <div className="pt-[30%]">
+          <div className="pt-[30vw]">
             <Story11 />
           </div>
-          <div className=" flex flex-col pt-[10%]">
+          <div className=" flex flex-col pt-[10vw]">
             <div className="">
               <Story12 />
             </div>
           </div>
         </div>
 
-        <div className=" pt-[5%]">
+        <div className=" pt-[5vw]">
           <Story13 />
         </div>
         <div>
           <Story14 />
         </div>
-        <div className="flex flex-col pt-[10%]">
+        <div className="flex flex-col pt-[10vw]">
           <Story15 />
         </div>
         <div className="flex flex-col">

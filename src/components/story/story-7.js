@@ -266,7 +266,7 @@ function Story7() {
         <div className="flex flex-col justify-center" ref={text_story7_4Ref}>
           <Title title="หางบอกอารมณ์" />
         </div>
-        <div className="grid grid-cols-3 pt-20 justify-items-center gap-8 gap-y-8 px-32">
+        <div className="grid grid-cols-3 pt-[4.18vw] justify-items-center gap-[1.67vw] gap-y-[1.67vw] px-[6.7vw]">
           <div ref={Flip_1Ref}>
             <ImageFlip image_front={tail_1} image_back={Want} />
           </div>
@@ -287,10 +287,10 @@ function Story7() {
           </div>
         </div>
 
-        <div className="flex pt-[25%] justify-end pr-[10%]">
+        <div className="flex pt-[20vw] justify-end pr-[10vw]">
           <Chat text="“ตื่นแล้วหรอ มีตังค์ เล่นของเล่นกันไหม?”" isMe={true} />
         </div>
-        <div className="flex pt-40 justify-start pl-[10%]">
+        <div className="flex pt-[8.36vw] justify-start pl-[10vw]">
           <Chat text="โฮ่ง โฮ่ง !" isDog={true} isMe={false} />
         </div>
       </div>

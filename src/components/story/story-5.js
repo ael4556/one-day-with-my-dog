@@ -205,27 +205,27 @@ function Story5() {
 
   return (
     <>
-      <div className="flex pt-40 justify-end pr-[10%]">
+      <div className="flex pt-[5%] justify-end pr-[10%]">
         <Chat
           text="“ไป มีตังค์กินข้าวกันหิวแล้วละสิ”"
           isMe={true}
           showIcon={true}
         />
       </div>
-      <div className="flex pt-40 justify-start pl-[10%]">
+      <div className="flex pt-[5%] justify-start pl-[10%]">
         <Chat text="“โฮ่ง !”" isMe={false} showIcon={true} isDog={true} />
       </div>
-      <div className="pt-40 flex justify-center">
+      <div className="pt-[5%] flex justify-center">
         <img
-          className=" w-full "
+          className=" w-[100vw] "
           src={table_Dog}
           alt="table_Dog"
           ref={dogtableRef}
         />
       </div>
-      <div ref={text_story5_1Ref} className=" flex flex-col pt-56">
-        <p className="text-5xl flex justify-center">เรามาเลือกอาหารมื้อพิเศษ</p>
-        <p className="text-5xl font-bold flex justify-center pt-10">
+      <div ref={text_story5_1Ref} className=" flex flex-col pt-[10vh]">
+        <p className="text-[2.5vw] flex justify-center">เรามาเลือกอาหารมื้อพิเศษ</p>
+        <p className="text-[2.5vw] font-bold flex justify-center pt-[2vh]">
           ที่เหมาะกับมีตังค์กันเถอะ!
         </p>
       </div>
@@ -235,14 +235,9 @@ function Story5() {
       <div>
         <div
           className="pt-0 justify-center [perspective:1000px]"
-          /*style={{
-          backgroundImage: `url(${cook_table})`,
-          backgroundRepeat: "no-repeat",
-          height: "140vh",
-        }}*/
         >
-          <div className="left-[22.5%] right-[22.5%] absolute pt-6">
-            <div className="pt-56 flex flex-row gap-[5%] justify-center w-[100%] h-[100%]">
+          <div className="left-[22.5%] right-[22.5%] absolute">
+            <div className="pt-[12vw] flex flex-row gap-[5vh] justify-center">
               <div className="hover:scale-105 duration-200 cursor-pointer">
                 <Card image={dogfood_1} image_back={dogfoodback_1} />
               </div>
@@ -255,45 +250,45 @@ function Story5() {
             </div>
           </div>
           <div className=" flex justify-center">
-            <img className="w-[80%]" src={cook_table} alt="cook_table" />
+            <img className="w-[80vw]" src={cook_table} alt="cook_table" />
           </div>
         </div>
       </div>
 
       <div className="pt-12 ">
-        <p className="text-5xl flex justify-center" ref={text_story5_3Ref}>
+        <p className="text-[2.5vw] flex justify-center" ref={text_story5_3Ref}>
           เย้! อาหารเสร็จแล้ว มีตังค์มากินได้เลย
         </p>
         <div className="flex justify-center">
           <img
-            className=" w-2/5"
+            className=" w-[40vw]"
             src={dog_bowl}
             alt="table_Dog"
             ref={bowl_dogRef}
           />
           <img
-            className=" w-[20vw] absolute"
+            className=" w-[40vw] absolute"
             src={frung_fring}
             alt="table_Dog"
             ref={frung_fringRef}
           />
         </div>
       </div>
-      <div className="pl-[10%] pt-[5%]">
+      <div className="pl-[8.3vw] pt-[5%]">
         <Chat
           text="“ค่อย ๆ กินก็ได้มีตังค์ ไม่มีใครแย่งหรอก” "
           isMe={false}
           showIcon={true}
         />
       </div>
-      <div className="pt-12 grid ml-[10%] mr-[10%] grid-cols-3 gap-[2vw]">
+      <div className="pt-[2.5vw] grid ml-[10%] mr-[10%] grid-cols-3 gap-[2vw]">
         <img
           className=" w-[20vw]"
           src={microwave}
           alt="table_Dog"
           ref={microRef}
         />
-        <img className=" w-4/6" src={bowl} alt="table_Dog" ref={humanbowlRef} />
+        <img className=" w-[20vw]" src={bowl} alt="table_Dog" ref={humanbowlRef} />
         <div ref={text_story5_4Ref} className="flex justify-end pt-24">
           <p className="text-[1.8vw] leading-relaxed">
             หลังจากนั้น คุณก็เดินไปหยิบข้าวกล่อง 
@@ -302,14 +297,14 @@ function Story5() {
           </p>
         </div>
       </div>
-      <div className="flex pt-40 justify-end pr-[10%]">
+      <div className="flex pt-[5vw] justify-end pr-[10%]">
         <Chat
           text="“อิ่มแล้วก็นอนพักเถอะ ฉันขอไปทำงานบ้านแปปนึงนะ”"
           isMe={true}
           showIcon={true}
         />
       </div>
-      <div className="flex pt-40 justify-start pl-[10%]">
+      <div className="flex pt-[5%] justify-start pl-[10%]">
         <Chat text="“โฮ่ง !”" isMe={false} showIcon={true} isDog={true} />
       </div>
     </>

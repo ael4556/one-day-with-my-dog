@@ -13,7 +13,7 @@ function Card({ image = image_frame, image_back = image_backs }) {
     <div className="flex flex-col justify-center ">
       <div
         onClick={handleFlip}
-        className="group h-[500px] w-[320px] [perspective:1000px]"
+        className="group w-[20vw] [perspective:1000px]"
       >
         <div
           className={` relative h-full w-full transition-all  duration-700 rounded-full shadow-xl [transform-style:preserve-3d] 

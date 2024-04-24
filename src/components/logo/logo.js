@@ -53,9 +53,9 @@ useEffect(() => {
 
 }, []);
   return (
-    <div className="h-screen flex items-end">
-      <img src={logo} ref={typoRef} alt="Logo" className=" w-[70%] absolute left-[4%]" />
-      <img src={doglogo} ref={dogRef} alt="DogLogo" className=" w-[58%] pb-[10%] absolute end-[0%]"/>
+    <div className="h-screen flex items-end pb-[90vw]">
+      <img src={logo} ref={typoRef} alt="Logo" className=" w-[70vw] absolute left-[4%] top-[4vw]" />
+      <img src={doglogo} ref={dogRef} alt="DogLogo" className=" w-[58vw] absolute end-[0%] top-[8vw]"/>
     </div>
   );
 };

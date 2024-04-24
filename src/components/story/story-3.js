@@ -37,16 +37,16 @@ function Story3() {
   return (
     <>
       <div className="flex justify-start ">
-      <img className=" w-[100%]" src={sleep_dog_morning} alt="sleep_night" />
+      <img className=" w-[100vw]" src={sleep_dog_morning} alt="sleep_night" />
         <img 
-          className=" absolute left-[60%] " 
+          className="w-[30vw] absolute left-[60vw] " 
           src={dog_in_frame} 
           alt="dog_in_frame"
           ref={dog_inframeRef}
           />
         </div>
 
-          <div className="absolute left-[35%] pt-[25%]">
+          <div className="absolute left-[35vw] pt-[25vw]">
               <Chat
                 text="“ไง~ มีตังค์ เมื่อคืนขอโทษน๊าา เหนื่อยไปหน่อย”"
                 showIcon={true}

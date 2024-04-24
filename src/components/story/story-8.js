@@ -190,7 +190,7 @@ function Story8() {
       <div className=" grid grid-cols-2">
         <div className=" flex flex-col">
           <p
-            className="text-[1.8vw] leading-relaxed pl-[20%] pr-[12%]"
+            className="text-[1.8vw] leading-relaxed pl-[10vw] pr-[6vw]"
             ref={text_story8_1Ref}
           >
             เวลาแบบนี้ควรฝึกเจ้าตูบน้อยซักหน่อย...
@@ -203,8 +203,8 @@ function Story8() {
             images={info}
           />
           
-            <div className="pl-[40%] pt-[20%] ">
-              <div className="hover:scale-110 duration-200 w-[55%]">
+            <div className="pl-[20vw] pt-[10vw] ">
+              <div className="hover:scale-110 duration-200 ">
                 <img
                   onClick={() => setIsPopupOpen(true)}
                   className="w-[20vw] cursor-pointer "
@@ -217,13 +217,13 @@ function Story8() {
         </div>
 
         <div className=" flex flex-col">
-            <div className="pt-[20%]">
+            <div className="pt-[20vw]">
               <img className="w-[60vw]" src={snack_dog} ref={snack_dogRef} />
             </div>
         </div>
       </div>
 
-      <div className="pt-[10%]">
+      <div className="pt-[10vw]">
         <div className="flex justify-center" ref={text_story8_2Ref}>
           <Title title="เลือกคำสั่งที่ต้องการฝึก" />
         </div>
@@ -245,7 +245,7 @@ function Story8() {
       </div>
       
 
-      <div className="flex pt-[40%] justify-end pr-[10%]">
+      <div className="flex pt-[40vw] justify-end pr-[10vw]">
         <Tips text="อย่าลืมชมเจ้าตูบทุกครั้ง เมื่อน้องทำได้ดี" />
       </div>
     </div>

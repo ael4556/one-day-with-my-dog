@@ -56,21 +56,21 @@ function Story4() {
           <Chat text="“ป่ะ ไปหน้าบ้านกัน”" showIcon={true} isMe={false} />
         </div>
       </div>
-      <div className="flex pt-40 justify-center">
+      <div className="flex pt-[10%] justify-center">
         <Chat
           text="“มีตังค์ อึอึ๊ เร็ว เดี๋ยววันนี้ เรามีอะไรต้องทำเยอะนะ”"
           isMe={false}
           showIcon={true}
         />
       </div>
-      <div className="flex justify-center pt-64 gap-10">
+      <div className="flex justify-center pt-[10vw] gap-10">
         <Popup isPopupOpen={isPopupOpen} setIsPopupOpen={setIsPopupOpen} />
         <div>
-          <div className=" flex flex-cols-2 gap-10">
+          <div className=" flex flex-cols-2 gap-[5vw]">
             <div className=" flex justify-start pl-[3%]">
-              <img className="w-[90%]" src={dog_poof_start} alt="dog_poof1" />
+              <img className="w-[40vw]" src={dog_poof_start} alt="dog_poof1" />
             </div>
-            <div className="left-[16%] z-50 w-[6%] absolute pt-[30%]">
+            <div className="left-[16vw] z-10 w-[6vw] absolute pt-[30vw]">
               <img
                 className=" hover:scale-110 duration-200 cursor-pointer"
                 src={poof}
@@ -79,7 +79,7 @@ function Story4() {
               />
             </div>
             <div className=" flex justify-end pr-[3%]">
-              <img className="w-[90%]" src={dog_poof_finish} alt="dog_poof2" />
+              <img className="w-[40vw]" src={dog_poof_finish} alt="dog_poof2" />
             </div>
           </div>
         </div>

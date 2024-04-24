@@ -143,7 +143,7 @@ function Story9() {
         setIsPopupOpen={setIsPopup2Open}
         images={image_pop_2}
       />
-      <div className=" flex flex-col justify-center px-[20%] pt-28 ">
+      <div className=" flex flex-col justify-center px-[20vw] pt-[5.85vw] ">
         <p
           className="text-[1.8vw] leading-relaxed text-center"
           ref={text_story9_1Ref}
@@ -152,7 +152,7 @@ function Story9() {
           แต่ก็ไม่ลืมที่จะหยิบของเล่นสุดโปรดของมีตังค์ที่เก็บไว้ในลิ้นชักใต้ทีวีไปด้วย
         </p>
       </div>
-      <div className="flex justify-center gap-40 pt-40">
+      <div className="flex justify-center gap-[8.3vw] pt-[8.3vw]">
         <div className="flex flex-col">
           <div className="hover:scale-110 duration-200 cursor-pointer" >
           <img
@@ -162,7 +162,7 @@ function Story9() {
             alt={ball}
           />
           </div>
-          <div className="flex text-[2vw] pt-12 pl-[20%]" >
+          <div className="flex text-[2vw] pt-[2.5vw] pl-[2.5vw]" >
             <p>ลูกบอล</p>
           </div>
         </div>
@@ -175,26 +175,26 @@ function Story9() {
             alt={frisbee_dog}
           />
           </div>
-          <div className="flex text-[2vw] pt-12 pl-[20%]">
+          <div className="flex text-[2vw] pt-[2.5vw] pl-[2.5vw]">
             <p>จานร่อน</p>
           </div>
         </div>
       </div>
-      <div className=" flex justify-center pt-28">
+      <div className=" flex justify-center pt-[5.85vw]">
         <div className="flex justify-center">
           <img
-            className="w-[35vw] absolute pt-[29.7%] right-[10%] z-20"
+            className="w-[35vw] absolute pt-[29.7vw] right-[10vw] z-20"
             ref={text_stroke3Ref}
             src={text_stroke_3}
             alt={text_stroke_3}
           />
-          <img className=" pt-[15%]" src={garden_dog} alt={garden_dog} />
-          <div className=" absolute z-10 pt-[35%] pl-[30%]">
+          <img className=" pt-[10vw]" src={garden_dog} alt={garden_dog} />
+          <div className=" absolute z-10 pt-[35vw] pl-[30vw]">
             <img className=" w-[40vw]" src={dog} alt={dog} ref={dog_jumpRef} />
           </div>
         </div>
 
-        <div className=" absolute z-10 pt-[55%] left-[35%]">
+        <div className=" absolute z-10 pt-[55vw] left-[35vw]">
           <img
             className=" w-[10vw]"
             src={ball2}
@@ -204,14 +204,14 @@ function Story9() {
         </div>
       </div>
 
-      <div className="pl-[10%]">
+      <div className="pl-[10vw]">
         <Chat
           text="“แดดเริ่มร้อนเเล้วนะ มานั่งพักก่อน”"
           isMe={false}
           showIcon={true}
         />
       </div>
-      <div className=" flex flex-col justify-center px-[16%] pt-32 ">
+      <div className=" flex flex-col justify-center px-[16vw] pt-[6.7vw] ">
         <p
           className="text-[1.8vw] leading-loose text-center"
           ref={text_story9_2Ref}

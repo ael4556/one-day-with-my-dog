@@ -102,37 +102,37 @@ function Story1() {
       style={{
         backgroundColor: "#1B192D",
         backgroundRepeat: "no-repeat",
-        height: "90vh",
+        height: "80vh",
         backgroundSize: "contain",
       }}>
         <div className="flex flex-row justify-around">
-          <img src={door_a1} alt="Door_A1" className=" w-[30%]" ref={door_1Ref}/>
+          <img src={door_a1} alt="Door_A1" className=" w-[30vw]" ref={door_1Ref}/>
           <div
             ref={text_story1_1Ref}
-            className="flex flex-col justify-start text-white pt-56 "
+            className="flex flex-col justify-start text-white pt-[11.7vw] "
           >
-            <h1 className="text-5xl">คุณที่แสนเหนื่อยล้า...</h1>
-            <p className="text-3xl pt-12">
+            <h1 className="text-[2.5vw]">คุณที่แสนเหนื่อยล้า...</h1>
+            <p className="text-[1.8vw] pt-[2.5vw]">
               กับร่างกายที่อ่อนแรงกลับบ้านมา ด้วยใจที่ห่อเหี่ยว
             </p>
-            <p className="text-3xl pt-3">
+            <p className="text-[1.8vw] pt-[0.62vw]">
               จากการโหมงานหนัก เปิดประตูเข้าห้องนอนที่มืดสนิท
             </p>
-            <p className="text-3xl pt-3">แล้วตรงดิ่งไปที่เตียง</p>
+            <p className="text-[1.8vw] pt-3">แล้วตรงดิ่งไปที่เตียง</p>
           </div>
         </div>
       </div>
       <div className="flex">
-        <img className=" w-[100%] pt-10" src={sleep_night} alt="sleep_night" />
+        <img className=" w-[100vw] pt-[0vw]" src={sleep_night} alt="sleep_night" />
         <img
           ref={text_story1_2Ref}
-          className=" w-[35%] absolute pt-[10%] left-[10%]"
+          className=" w-[35vw] absolute pt-[10vw] left-[10vw]"
           src={text_png_story1}
           alt="text_png_story1"
         />
         <img
           ref={doglookRef}
-          className=" w-[30%] absolute pt-[29.6%] right-[5%]"
+          className=" w-[30vw] absolute pt-[27vw] right-[5vw]"
           src={dog_look}
           alt="text_png_story1"
         />
