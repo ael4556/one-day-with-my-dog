@@ -189,7 +189,7 @@ function Story13() {
     
   }, []);
   return (
-    <div className=" pt-[15vh] flex flex-col">
+    <div className="flex flex-col">
         <div className="justify-end px-[10%] font-sans text-[1.8vw] grid grid-cols-2 leading-relaxed" ref={text_story13_1Ref}>
         <div></div>
         <p> ในขณะเดินเล่น มีตังค์พยายามจะเดินนำ
