@@ -104,20 +104,20 @@ function Story11() {
       <div id="Story_11"></div>
       <ClockTop time="16.30" />
       <Sunset sunlight={SunEvening} />
-      <div className=" pt-[35vh]">
-        <div className="flex pt-[25%] justify-start pl-[10%]">
+      <div className=" pt-[35vw]">
+        <div className="flex pt-[25vw] justify-start pl-[10vw]">
           <Chat text="“ไปเดินเล่นกันมีตังค์”" isMe={false} />
         </div>
-        <div className="flex pt-[10vh] justify-end pr-[10%]">
+        <div className="flex pt-[10vw] justify-end pr-[10vw]">
           <Chat text="โฮ่ง โฮ่ง !" isDog={true} isMe={true} />
         </div>
       </div>
 
-      <div className="grid grid-cols-2 pt-[15%] ">
+      <div className="grid grid-cols-2 pt-[15vw] ">
         <div className="flex flex-col">
           <div className="flex justify-center">
             <img
-              className="w-[30vw] pl-[20%]"
+              className="w-[30vw] pl-[10vw]"
               src={Door}
               alt="Door"
               ref={doorRef}
@@ -128,16 +128,16 @@ function Story11() {
         <div className="flex flex-col">
           <div className="flex justify-center">
             <img
-              className="w-[40vw] pr-[30%]"
+              className="w-[40vw] pr-[20vw]"
               src={Leash}
               alt="Leash"
               ref={dogLeashRef}
             />
           </div>
           <div
-            className="flex flex-col justify-center text-[1.8vw] pt-[10vh] pr-[18%] pl-[15%]"
+            className="flex flex-col justify-center text-[1.8vw] pt-[5vw] px-[10vw]"
             ref={text_story11_1Ref}>
-            <div className="pt-[0.1%] leading-relaxed">
+            <div className="leading-relaxed">
               <p>พูดจบคุณก็หยิบสายจูงจากที่แขวนบนกำแพง 
                 แล้วใส่ให้มีตังค์ ท่าทางมีตังค์ก็ดูไม่ขัดขืนอะไร 
                 ซ้ำแล้วยังแสดงท่าทางดีใจที่จะได้ออกไปข้างนอก 
@@ -148,7 +148,7 @@ function Story11() {
         </div>
       </div>
 
-      <div className=" flex justify-end pr-[10%]">
+      <div className=" flex justify-end pr-[10vw] pt-[5vw]">
         <Tips
           text="ควรใส่สายจูงให้น้องสุนัขทุกครั้ง"
           text2="เมื่่อพาออกนอกบ้าน"
@@ -158,13 +158,13 @@ function Story11() {
       <div className="pt-[5%]" ref={title_story11_1Ref}>
         <Title title="ไปเดินเล่นกัน!" />
       </div>
-      <div className=" flex justify-center pt-[10%]">
+      <div className=" flex justify-center pt-[10vw]">
         <img 
           className="w-[45vw]" 
           src={Dogleash}
           alt="Dogleash" />
         <img
-          className=" absolute pt-[12%] right-[67%] w-[15vw]"
+          className=" absolute pt-[12vw] right-[67vw] w-[15vw]"
           src={textD}
           alt="textD"
         />

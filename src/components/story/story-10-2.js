@@ -235,17 +235,17 @@ function Story10_2() {
         />
   
         <div className="pt-[200%]">
-          <div className="text-[1.8vw] pt-[10vh] leading-relaxed pl-[60%] pr-[10%]">
+          <div className="text-[1.8vw] pt-[10vh] leading-relaxed pl-[60vw] pr-[10vw]">
             <p ref={text_story10_1Ref}>
               เสร็จแล้วก็ล้างฟองสบู่ด้วยน้ำเปล่าให้สะอาด
               เจ้ามีตังค์ก็รู้หน้าที่ของตัวเองด้วยการช่วยสะบัดขน
               แต่น้ำดันกระเด็นโดนเราซะนี่
             </p>
           </div>
-          <div className="grid grid-cols-2 pt-[25%]">
+          <div className="grid grid-cols-2 pt-[25vw]">
             <div className="flex flex-col ">
               <div className="flex justify-center">
-                  <div className="hover:scale-110 duration-300 pl-[30%]">
+                  <div className="hover:scale-110 duration-300 pl-[10vw]">
                     <img
                     onClick={() => setIsPopup3Open(true)}
                     className="w-[20vw] cursor-pointer"
@@ -253,14 +253,14 @@ function Story10_2() {
                     alt="image_towels"/>
                   </div>              
               </div>
-              <div className="flex justify-center text-[1.8vw] pt-12 pl-[30%]">
+              <div className="flex justify-center text-[1.8vw] pt-[2.5vw] pl-[10vw]">
                 <p>ใช้ผ้าขนหนูเช็ดขนที่เปียกให้พอหมาด</p>
               </div>
             </div>
   
             <div className="flex flex-col">
               <div className="flex justify-center">
-                  <div className="hover:scale-110 duration-300 pr-[30%]">
+                  <div className="hover:scale-110 duration-300 pr-[10vw]">
                     <img
                       onClick={() => setIsPopup4Open(true)}
                       className="w-[20vw] cursor-pointer"
@@ -268,19 +268,19 @@ function Story10_2() {
                       alt="image_dry"/>
                   </div>
               </div>
-              <div className="flex justify-center text-[1.8vw] pt-12 pr-[30%]">
+              <div className="flex justify-center text-[1.8vw] pt-[2.5vw] pr-[10vw]">
                 <p>ใช้ไดร์เป่าลมปกติ เป่าให้ขนแห้งสนิท</p>
               </div>
             </div>
           </div>
         </div>
   
-        <div className="flex justify-center pt-[10%]">
+        <div className="flex justify-center pt-[10vw]">
           <div className="flex font-medium text-[1.8vw]" ref={text_story10_2Ref}>
             หัวใจสำคัญของการเป่าขน คือ...
           </div>
         </div>
-        <div className="flex justify-center pt-[5%]">
+        <div className="flex justify-center pt-[5vw]">
           <div
             className="flex text-[3.765vw] font-semibold font-mali text-[#D60000]"
             ref={title_story10_1Ref}
@@ -288,7 +288,7 @@ function Story10_2() {
             “ ขน ต้อง แห้ง สนิท! ”
           </div>
         </div>
-        <div className="flex pt-[10%] justify-end pr-[10%]">
+        <div className="flex pt-[10vw] justify-end pr-[10vw]">
           <div className="pt-[17vh] z-50">
             <Tips
               text="ขนต้องแห้งสนิท เพราะอาจ"
@@ -297,13 +297,13 @@ function Story10_2() {
               width={50}
             />
           </div>
-          <div className="absolute left-[5%] z-20">
+          <div className="absolute left-[5vw] z-20">
             <img className="w-[55vw]" src={image_dog_dry} alt="image_dog_dry" ref={dog_dryRef} />
           </div>
-          <div className="absolute left-[5%] z-0">
+          <div className="absolute left-[5vw] z-0">
             <img className="w-[55vw]" src={image_sofa} alt="image_dog_dry" ref={sofaRef} />
           </div>
-          <div className="absolute left-[5%] z-10">
+          <div className="absolute left-[5vw] z-10">
             <img className="w-[55vw]" src={image_effect} alt="image_dog_dry" ref={effectRef} />
           </div>
         </div>

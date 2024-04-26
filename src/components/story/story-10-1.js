@@ -32,8 +32,8 @@ const Story10_1 = () => {
         scrollTrigger: {
           trigger: dog,
           scrub: true,
-          start: "1100px 100% ",
-          end: "5000px -140%",
+          start: "1100vw 100% ",
+          end: "5000vw -140%",
 
           /*markers : true,*/
         },
@@ -50,8 +50,8 @@ const Story10_1 = () => {
         scrollTrigger: {
           trigger: dog2,
           scrub: true,
-          start: "1100px 100% ",
-          end: "5000px -140%",
+          start: "1100vw 100% ",
+          end: "5000vw -140%",
 
           /*markers : true,*/
         },
@@ -69,8 +69,8 @@ const Story10_1 = () => {
         scrollTrigger: {
           trigger: handleft,
           scrub: true,
-          start: "800px 100%",
-          end: "4000px -120%",
+          start: "800vw 100%",
+          end: "4000vw -120%",
 
           /*markers : true,*/
         },
@@ -88,8 +88,8 @@ const Story10_1 = () => {
         scrollTrigger: {
           trigger: handRight,
           scrub: true,
-          start: "800px 100% ",
-          end: "4000px -120%",
+          start: "800vw 100% ",
+          end: "4000vw -120%",
 
           /*markers : true,*/
         },
@@ -100,18 +100,18 @@ const Story10_1 = () => {
   return (
     <div className="flex justify-center">
       <div className="flex">
-        <div className="w-[100%] absolute start-[10%] end-[10%] pt-[100%] blur-sm opacity-95">
+        <div className="w-[100vw] absolute start-[10vw] end-[10vw] pt-[100vw] blur-sm opacity-95">
           <img src={image_bubble} />
         </div>
 
-        <div className="w-[65vw]" ref={dogRef}>
-          <img src={image_dog_bath} />
+        <div className="flex justify-center" ref={dogRef}>
+          <img className="w-[65vw]" src={image_dog_bath} />
         </div>
-        <div className=" absolute w-[65vw]" ref={dog2Ref}>
-          <img src={image_dog_bath_gif} />
+        <div className="flex justify-center" ref={dog2Ref}>
+          <img className="absolute w-[65vw]" src={image_dog_bath_gif} />
         </div>
 
-        <div className=" pt-[20%]">
+        <div className=" pt-[20vw]">
           <div className="absolute start-[10%]" ref={handleftRef}>
             <img className="w-[25vw]" src={image_left_hand} />
           </div>
@@ -120,10 +120,10 @@ const Story10_1 = () => {
           </div>
         </div>
 
-        <div className="w-[100%] absolute start-[10%] end-[10%] blur-sm opacity-95">
+        <div className="w-[100vw] absolute start-[10vw] end-[10vw] blur-sm opacity-95">
           <img src={image_bubble} />
         </div>
-        <div className="w-[100%] absolute start-[10%] end-[10%] pt-[200%] blur-sm opacity-95">
+        <div className="w-[100vw] absolute start-[10vw] end-[10vw] pt-[200vw] blur-sm opacity-95">
           <img src={image_bubble} />
         </div>
       </div>

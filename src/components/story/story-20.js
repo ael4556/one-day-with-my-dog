@@ -27,18 +27,7 @@ function Story20() {
 
     }, []);
     return (
-      <div className=" flex flex-col pb-[5%]">
-        <div className=" flex flex-col">
-            <div className="flex flex-col pt-[15%]">
-                <div className="flex justify-center animate-bounce">
-                    <img className="w-[5%] hover:scale-110 transition ease-in-out delay-50 duration-300 cursor-pointer" src={ArrowUp} onClick={() => scrollAction("Home")}/>
-                </div>
-                    
-            </div>
-            <div className=" flex justify-center pt-[1%]">
-                <img className="w-[10%]" src={Back}/>
-            </div>
-        </div>
+      <div className=" flex flex-col pb-[5vw] tp-[5vw]">
 
         <div className=" flex justify-center pt-[15%]">
             <img className=" w-[15vw]" src={Our}/>
@@ -86,6 +75,18 @@ function Story20() {
             </div>
             <div className=" flex flex-col justify-center">
 
+            </div>
+        </div>
+        
+        <div className=" flex flex-col">
+            <div className="flex flex-col pt-[8vw]">
+                <div className="flex justify-center animate-bounce">
+                    <img className="w-[5%] hover:scale-110 transition ease-in-out delay-50 duration-300 cursor-pointer" src={ArrowUp} onClick={() => scrollAction("Home")}/>
+                </div>
+                    
+            </div>
+            <div className=" flex justify-center pt-[1%]">
+                <img className="w-[10%]" src={Back}/>
             </div>
         </div>
 

@@ -118,25 +118,25 @@ const App = () => {
           <Story15 />
         </div>
         <div className="flex flex-col">
-          <div className="pt-[12%] z-0">
+          <div className="pt-[12vw] z-0">
             <Cooking />
           </div>
-          <div className="pt-[10%] z-0">
+          <div className="pt-[10vw] z-0">
             <Story17 />
           </div>
           <img
-            className=" opacity-60 z-[-100] absolute w-[100%] pt-[10%]"
+            className=" opacity-60 z-[-100] absolute w-[100vw] pt-[10vw]"
             src={bg_cooking}
           />
         </div>
         <div className="z-0">
           <Story18 />
         </div>
-        <div className="z-0 pt-[10%]">
+        <div className="z-0 pt-[10vw]">
           <Story19 />
         </div>
         
-        <div className="z-0 pt-[10%]">
+        <div className="z-0 pt-[10vw]">
           <Story20 />
         </div>
         

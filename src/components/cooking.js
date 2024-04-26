@@ -74,7 +74,7 @@ const Cooking = () => {
             {ingredients.map((ingredient) => (
               <div
                 key={ingredient.id}
-                className={`p-4 absolute z-10 rounded hover:scale-110 duration-300 cursor-grab ${
+                className={`p-[0.8333vw] absolute z-10 rounded hover:scale-110 duration-300 cursor-grab ${
                       ingredient.id === 1
                     ? " right-[2%]"
                     : ingredient.id === 2

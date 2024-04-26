@@ -30,8 +30,8 @@ function Sunset({ sunlight = sun }) {
         scrollTrigger: {
           trigger: sun,
           toggleActions: "restart",
-          start : "-250px 90%",
-          end : "50px 50%",
+          start : "-250vw 90%",
+          end : "50vw 50%",
         },
       }
     );
@@ -42,8 +42,8 @@ function Sunset({ sunlight = sun }) {
       scrollTrigger: {
         trigger: cloundLeft,
         toggleActions: "restart none none reset",
-        start :"100px 100%",
-        end : "500px 0%",
+        start :"100vw 100%",
+        end : "500vw 0%",
       },
     });
 
@@ -53,8 +53,8 @@ function Sunset({ sunlight = sun }) {
       scrollTrigger: {
         trigger: cloundRight,
         toggleActions: "restart none none reset",
-        start :"100px 100%",
-        end : "500px 0%",
+        start :"100vw 100%",
+        end : "500vw 0%",
       },
     });
 
@@ -64,8 +64,8 @@ function Sunset({ sunlight = sun }) {
       scrollTrigger: {
         trigger: cloundLeftBottom,
         toggleActions: "restart none none reset",
-        start :"100px 100%",
-        end : "500px 0%",
+        start :"100vw 100%",
+        end : "500vw 0%",
       },
     });
   }, []);
@@ -74,7 +74,7 @@ function Sunset({ sunlight = sun }) {
     <>
       <div className="flex justify-center">
         <img
-          className="absolute left-[20%] pt-10 w-[100vw]"
+          className="absolute left-[20vw] pt-10 w-[100vw]"
           ref={cloundLeftTopRef}
           src={cloundLeftTop}
           alt="sun_morning"
@@ -86,13 +86,13 @@ function Sunset({ sunlight = sun }) {
           alt="sun_morning"
         />
         <img
-          className="absolute right-[20%] pt-10 w-[100vw]"
+          className="absolute right-[18vw] pt-10 w-[100vw]"
           ref={cloundRightRef}
           src={cloundRight}
           alt="sun_morning"
         />
         <img
-          className="absolute left-[20%] pt-10 w-[100vw]"
+          className="absolute left-[20vw] pt-10 w-[100vw]"
           ref={cloundLeftBottomRef}
           src={cloundLeftBottom}
           alt="sun_morning"

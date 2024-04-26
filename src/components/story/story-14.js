@@ -193,7 +193,7 @@ function Story14() {
                     <div></div>
                 </div>
                 <div>
-                  <img className=" absolute" src={Bg_Park}/>
+                  <img className=" absolute w-[100vw]" src={Bg_Park}/>
                   <div className=" grid grid-cols-2 gap-[5%] justify-center pt-[10%]">
                       <div className= "flex justify-start">
                           <div className="z-0 pt-[15%]">

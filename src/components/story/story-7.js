@@ -241,24 +241,24 @@ function Story7() {
 
   return (
     <>
-      <div className="pt-[20%] ">
+      <div className="pt-[20vw] ">
         <div id="Story_7"></div>
         <ClockTop time="13.30" />
         <Sunset sunlight={SunAfternoon} />
-        <div className="pt-[60%] flex justify-around">
+        <div className="pt-[60vw] flex justify-around">
           <img
-            className="w-[40vw]"
+            className="w-[40vw] h-[35vw]"
             src={yawn_dog}
             alt="yawn_dog"
             ref={Dog_yawnRef}
           />
-          <div className="max-w-xl flex flex-col text-[1.8vw]">
+          <div className="max-w-[30vw] flex flex-col text-[1.8vw]">
             <p className=" leading-relaxed" ref={text_story7_1Ref}>
               ผ่านไปหลายชั่วโมงเจ้ามีตังค์ก็ตื่นนอนพร้อมบิดขี้เกียจ
               ทั้งแอ่นหน้าแอ่นหลัง จากนั้นก็เดินมาหาพร้อม ทำตาปริบ ๆ
               และกระดิกหาง ด้วยความดีใจเพราะตื่นมา แล้วเจอเจ้านาย
             </p>
-            <p className=" pt-20 leading-relaxed" ref={text_story7_2Ref}>
+            <p className=" pt-[4.166vw] leading-relaxed" ref={text_story7_2Ref}>
               โดยคุณสามารถรับรู้ความรู้สึกต่าง ๆ ของเจ้ามีตังค์ได้จาก “หาง”
             </p>
           </div>

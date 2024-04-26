@@ -20,15 +20,15 @@ const MusicButton = () => {
   };
 
   const IconPause = () => {
-    return <img src={SoundOff} alt="Pause Icon" className="w-12 h-12" />;
+    return <img src={SoundOff} alt="Pause Icon" className="w-[2.5vw] h-[2.5vw]" />;
   };
 
   const IconPlay = () => {
-    return <img src={SoundOn} alt="Play Icon" className="w-12 h-12" />;
+    return <img src={SoundOn} alt="Play Icon" className="w-[2.5vw] h-[2.5vw]" />;
   };
 
   return (
-    <div className="fixed right-2 rounded-full p-2 top-20  hover:-translate-y-1 hover:scale-110 duration-300 transition ease-in-out delay-50 hover:shadow-md flex justify-center">
+    <div className="fixed right-[0.416vw] rounded-full p-[0.4166vw] top-[4.1666vw]  hover:-translate-y-1 hover:scale-110 duration-300 transition ease-in-out delay-50 hover:shadow-md flex justify-center">
       <button className="" id="audioBtn" onClick={togglePlay}>
         {play ? <IconPause /> : <IconPlay />}
       </button>

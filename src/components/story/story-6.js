@@ -14,15 +14,13 @@ function Story6() {
   const VacuumRef = useRef ();
   const SpongeRef = useRef ();
   const MopRef = useRef ();
-  const livingRoomRef = useRef ();
 
   useEffect(() => {
     const dogsleep = dogsleepRef.current;
     const Vacuum = VacuumRef.current;
     const Sponge = SpongeRef.current;
     const Mop = MopRef.current;
-    const livingRoom = livingRoomRef.current;
-
+   
     gsap.fromTo(
       dogsleep,
       { opacity: 0, scale : 0.9 },
@@ -103,34 +101,29 @@ function Story6() {
     <>
       <div className="flex justify-center">
         <img
-          className=" w-[100%] pt-[25%]"
+          className=" w-[100vw] pt-[25vw]"
           src={living_room}
-          alt="sleep_night"
         />
         <img 
-          className="absolute w-[40vw] pt-[5%]" 
+          className="absolute w-[40vw] pt-[5vw]" 
           src={dog_sleep}  
           ref={dogsleepRef}
-          alt="dog_in_frame"
         />
-        <div className="pt-[30%]">
+        <div className="pt-[30vw]">
           <img
             className="w-[30vw] absolute left-[10%]"
             ref={VacuumRef}
             src={vacuum}
-            alt="dog_in_frame"
           />
           <img
-            className="w-[15vw] absolute left-[30%]"
+            className="w-[15vw] absolute left-[30vw]"
             ref={SpongeRef}
             src={sponge}
-            alt="dog_in_frame"
           />
           <img
-            className="w-[25vw] absolute right-[10%]"
+            className="w-[25vw] absolute right-[10vw]"
             ref={MopRef}
             src={mop}
-            alt="dog_in_frame"
           />
         </div>
       </div>

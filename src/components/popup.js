@@ -17,18 +17,18 @@ const Popup = ({ isPopupOpen, setIsPopupOpen, images = image }) => {
     <>
       {isPopupOpen && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="p-8 rounded-lg    ">
+          <div className="p-[1.666vw] rounded-lg">
             <div className="flex justify-end">
-              <div className="absolute pt-6 pr-6">
+              <div className="absolute pt-[1.25vw] pr-[1.25vw]">
                 <img
                   onClick={() => setIsPopupOpen(false)}
                   src={close}
-                  className="cursor-pointer hover:bg-gray-200 rounded-full hover:scale-105"
+                  className="w-[2.5vw] cursor-pointer hover:bg-gray-200 rounded-full hover:scale-105"
                   alt="close"
                 />
               </div>
               <div>
-                <img src={images} alt="popup_image" />
+                <img className="w-[50vw]" src={images} alt="popup_image" />
               </div>
             </div>
           </div>

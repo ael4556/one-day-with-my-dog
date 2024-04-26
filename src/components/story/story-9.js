@@ -45,8 +45,8 @@ function Story9() {
         scrollTrigger: {
           trigger: text_story9_1,
           scrub: true,
-          start: "0px 80%",
-          end: "0px 40%",
+          start: "0pvw 80%",
+          end: "0pvw 40%",
 
           /*markers : true,*/
         },
@@ -63,8 +63,8 @@ function Story9() {
         scrollTrigger: {
           trigger: text_stroke3,
           scrub: true,
-          start: "600px 80%",
-          end: "600px 40%",
+          start: "600vw 80%",
+          end: "600vw 40%",
 
           /*markers : true*/
         },
@@ -81,8 +81,8 @@ function Story9() {
         scrollTrigger: {
           trigger: text_story9_2,
           scrub: true,
-          start: "0px 80%",
-          end: "0px 40%",
+          start: "0vw 80%",
+          end: "0vw 40%",
 
           /*markers : true,*/
         },
@@ -101,8 +101,8 @@ function Story9() {
         scrollTrigger: {
           trigger: dog_jump,
           scrub: true,
-          start: "-200px 80%",
-          end: "-100px 40%",
+          start: "-200vw 80%",
+          end: "-100vw 40%",
 
           /*markers : true,*/
         },
@@ -122,8 +122,8 @@ function Story9() {
         scrollTrigger: {
           trigger: bouncing_ball,
           scrub: true,
-          start: "-100px 90%",
-          end: "0px 40%",
+          start: "-100vw 90%",
+          end: "0vw 40%",
 
           /*markers : true,*/
         },
@@ -143,7 +143,7 @@ function Story9() {
         setIsPopupOpen={setIsPopup2Open}
         images={image_pop_2}
       />
-      <div className=" flex flex-col justify-center px-[20vw] pt-[5.85vw] ">
+      <div className=" flex flex-col justify-center px-[20vw] pt-[5.85vw]">
         <p
           className="text-[1.8vw] leading-relaxed text-center"
           ref={text_story9_1Ref}
@@ -154,7 +154,7 @@ function Story9() {
       </div>
       <div className="flex justify-center gap-[8.3vw] pt-[8.3vw]">
         <div className="flex flex-col">
-          <div className="hover:scale-110 duration-200 cursor-pointer" >
+          <div className="hover:scale-110 duration-200 cursor-pointer">
           <img
             onClick={() => setIsPopup1Open(true)}
             className="w-[12vw]"
@@ -162,12 +162,12 @@ function Story9() {
             alt={ball}
           />
           </div>
-          <div className="flex text-[2vw] pt-[2.5vw] pl-[2.5vw]" >
+          <div className="flex text-[2vw] pt-[2.5vw] pl-[2.5vw]">
             <p>ลูกบอล</p>
           </div>
         </div>
         <div className="flex flex-col ">
-          <div className="hover:scale-110 duration-200 cursor-pointer" >
+          <div className="hover:scale-110 duration-200 cursor-pointer">
           <img
             onClick={() => setIsPopup2Open(true)}
             className="w-[12vw]"
@@ -188,7 +188,7 @@ function Story9() {
             src={text_stroke_3}
             alt={text_stroke_3}
           />
-          <img className=" pt-[10vw]" src={garden_dog} alt={garden_dog} />
+          <img className=" pt-[10vw] w-[100vw]" src={garden_dog} alt={garden_dog} />
           <div className=" absolute z-10 pt-[35vw] pl-[30vw]">
             <img className=" w-[40vw]" src={dog} alt={dog} ref={dog_jumpRef} />
           </div>
@@ -204,7 +204,7 @@ function Story9() {
         </div>
       </div>
 
-      <div className="pl-[10vw]">
+      <div className="pl-[10vw] z-30">
         <Chat
           text="“แดดเริ่มร้อนเเล้วนะ มานั่งพักก่อน”"
           isMe={false}

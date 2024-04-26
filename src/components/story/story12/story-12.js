@@ -37,17 +37,17 @@ function Story12() {
     <>
       <div ref={component}>
         <div ref={slider} className="containers">
-          <div className="flex justify-start absolute z-10 left-[-0.1%] pt-[3.4%]">
+          <div className="flex justify-start absolute z-10 left-[-1vw] pt-[20vw]">
             <img className="w-[70vw] " src={image_dog_walk} />
           </div>
-          <div className="panel">
-            <img src={image_city1} />
+          <div className="panel ">
+            <img className="w-[100vw]" src={image_city1} />
           </div>
           <div className="panel ">
-            <img src={image_city2} />
+            <img className="w-[100vw]" src={image_city2} />
           </div>
           <div className="panel ">
-            <img src={image_city3} />
+            <img className="w-[100vw]" src={image_city3} />
           </div>
         </div>
       </div>

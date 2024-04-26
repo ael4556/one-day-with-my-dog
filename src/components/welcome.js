@@ -34,7 +34,7 @@ function Welcome() {
                     />
                 </div>
         <h2 className="text-[1.8vw] font-Prompt font-semibold mb-[0.83vw] tracking-wide">ยินดีต้อนรับ !</h2>
-        <p className="text-gray-700 font-Prompt text-[1.67vw] leading-relaxed">เข้าสู่โหมดเต็มหน้าจอ เพื่อรับประสบการณ์ที่ดีที่สุดในการใช้งานเว็บไซต์ โดยกด F11 (สำหรับ Window) และ fn+f (สำหรับ MacOS)</p>
+        <p className="text-gray-700 font-Prompt text-[1.5vw] leading-relaxed">เข้าสู่โหมดเต็มหน้าจอ เพื่อรับประสบการณ์ที่ดีที่สุดในการใช้งานเว็บไซต์ โดยกด F11 (สำหรับ Window) และ fn+f (สำหรับ MacOS)</p>
       </div>
     </div>
   );

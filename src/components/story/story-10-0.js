@@ -34,7 +34,7 @@ function Story10_0() {
           setIsPopupOpen={setIsPopup2Open}
           images={image_pop_2}
         />
-        <div className="flex pt-[10%] justify-end pr-[10%]">
+        <div className="flex pt-[10vw] justify-end pr-[10vw]">
           <div className="flex">
             <Tips
               text="อย่าลืมแปรงขนก่อนอาบน้ำทุกครั้ง จะช่วยขจัดสิ่งสกปรก"
@@ -46,7 +46,7 @@ function Story10_0() {
         <div className="grid grid-cols-2 pt-[17.3vh]">
           <div className="flex flex-col">
             <div className="flex justify-center">
-                <div className="hover:scale-110 duration-300 pl-[30%]">
+                <div className="hover:scale-110 duration-300 pl-[20vw]">
                   <img
                   onClick={() => setIsPopup1Open(true)}
                   className="w-[20vw] cursor-pointer"
@@ -54,14 +54,14 @@ function Story10_0() {
                   alt={image_tube}/>
                 </div>
             </div>
-            <div className="flex justify-center text-[1.8vw] pt-12 pl-[30%]">
+            <div className="flex justify-center text-[1.8vw] pt-[2.5vw] pl-[20vw]">
               <p>ใช้สายยางฉีดน้ำให้ทั่วตัว</p>
             </div>
           </div>
           
           <div className="flex flex-col">
             <div className="flex justify-center">
-                <div className="hover:scale-110 duration-300 pr-[30%]">
+                <div className="hover:scale-110 duration-300 pr-[20vw]">
                   <img
                   onClick={() => setIsPopup2Open(true)}
                   className="w-[20vw] cursor-pointer"
@@ -69,7 +69,7 @@ function Story10_0() {
                   alt={image_shampoo}/>
                 </div>
             </div>
-            <div className="flex justify-center text-[1.8vw] pt-12 pr-[30%]">
+            <div className="flex justify-center text-[1.8vw] pt-[2.5vw] pr-[20vw]">
               <p>เอาแชมพูผสมน้ำนิดหน่อยถูให้ทั่วตัว</p>
             </div>
           </div>
