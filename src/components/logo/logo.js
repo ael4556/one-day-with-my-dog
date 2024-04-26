@@ -27,7 +27,6 @@ useEffect(() => {
       scrollTrigger: {
         trigger: typo,
         toggleActions : 'restart',
-        
 
         /*markers : true,*/
       },
@@ -55,8 +54,8 @@ useEffect(() => {
 }, []);
   return (
     <div className="h-[100vw] flex items-end">
-      <img src={logo} ref={typoRef} alt="Logo" className=" w-[70vw] absolute left-[4%] top-[4vw]" />
-      <img src={doglogo} ref={dogRef} alt="DogLogo" className=" w-[58vw] absolute end-[0%] top-[8vw]"/>
+      <img src={logo} ref={typoRef} alt="Logo" className=" w-[70vw] absolute left-[4vw] top-[4vw]" />
+      <img src={doglogo} ref={dogRef} alt="DogLogo" className=" w-[58vw] absolute end-[0vw] top-[8vw]"/>
       <img src={cover} className="w-[100vw] absolute -z-50 top-0"/>
     </div>
   );
