@@ -34,7 +34,7 @@ function Story10_0() {
           setIsPopupOpen={setIsPopup2Open}
           images={image_pop_2}
         />
-        <div className="flex pt-[10vw] justify-end pr-[10vw]">
+        <div className="flex pt-[5vw] justify-end pr-[10vw]">
           <div className="flex">
             <Tips
               text="อย่าลืมแปรงขนก่อนอาบน้ำทุกครั้ง จะช่วยขจัดสิ่งสกปรก"
@@ -43,7 +43,7 @@ function Story10_0() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 pt-[17.3vh]">
+        <div className="grid grid-cols-2 pt-[10vw]">
           <div className="flex flex-col">
             <div className="flex justify-center">
                 <div className="hover:scale-110 duration-300 pl-[20vw]">

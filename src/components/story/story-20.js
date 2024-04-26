@@ -27,36 +27,36 @@ function Story20() {
 
     }, []);
     return (
-      <div className=" flex flex-col pb-[5vw] tp-[5vw]">
+      <div className=" flex flex-col pb-[9vw] tp-[5vw]">
 
-        <div className=" flex justify-center pt-[15%]">
+        <div className=" flex justify-center pt-[15vw]">
             <img className=" w-[15vw]" src={Our}/>
             <div id="Creater"></div>
         </div>
         
-        <div className=" grid grid-cols-3 pt-[2%]">
+        <div className=" grid grid-cols-3 pt-[2vw]">
             <div className=" flex flex-col">
             <div className="flex justify-center">
-                    <img className=" w-[45%]" src={P_Cap}/>
+                    <img className=" w-[15vw]" src={P_Cap}/>
                 </div>
                 <div className="flex justify-center">
-                    <img className=" w-[40%]" src={C_Cap}/>
+                    <img className=" w-[14vw]" src={C_Cap}/>
                 </div>
             </div>
             <div className=" flex flex-col">
                 <div className="flex justify-center">
-                    <img className=" w-[45%]" src={P_Saru}/>
+                    <img className=" w-[15vw]" src={P_Saru}/>
                 </div>
                 <div className="flex justify-center">
-                    <img className=" w-[40%]" src={C_Saru}/>
+                    <img className=" w-[14vw]" src={C_Saru}/>
                 </div>
             </div>
             <div className=" flex flex-col justify-center">
             <div className="flex justify-center">
-                    <img className=" w-[45%]" src={P_Ael}/>
+                    <img className=" w-[15vw]" src={P_Ael}/>
                 </div>
                 <div className="flex justify-center">
-                    <img className=" w-[40%]" src={C_Ael}/>
+                    <img className=" w-[14vw]" src={C_Ael}/>
                 </div>
             </div>
         </div>
@@ -67,10 +67,10 @@ function Story20() {
             </div>
             <div className=" flex flex-col">
                 <div className="flex justify-center">
-                    <img className=" w-[45%]" src={P_Toom}/>
+                    <img className=" w-[15vw]" src={P_Toom}/>
                 </div>
                 <div className="flex justify-center">
-                    <img className=" w-[40%]" src={C_Toom}/>
+                    <img className=" w-[14vw]" src={C_Toom}/>
                 </div>
             </div>
             <div className=" flex flex-col justify-center">
@@ -81,12 +81,12 @@ function Story20() {
         <div className=" flex flex-col">
             <div className="flex flex-col pt-[8vw]">
                 <div className="flex justify-center animate-bounce">
-                    <img className="w-[5%] hover:scale-110 transition ease-in-out delay-50 duration-300 cursor-pointer" src={ArrowUp} onClick={() => scrollAction("Home")}/>
+                    <img className="w-[3vw] hover:scale-110 transition ease-in-out delay-50 duration-300 cursor-pointer" src={ArrowUp} onClick={() => scrollAction("Home")}/>
                 </div>
                     
             </div>
-            <div className=" flex justify-center pt-[1%]">
-                <img className="w-[10%]" src={Back}/>
+            <div className=" flex justify-center pt-[1vw]">
+                <img className="w-[7vw]" src={Back}/>
             </div>
         </div>
 

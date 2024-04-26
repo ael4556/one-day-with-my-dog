@@ -228,7 +228,7 @@ function Story8() {
           <Title title="เลือกคำสั่งที่ต้องการฝึก" />
         </div>
 
-        <div className="grid grid-cols-4 justify-items-center pt-[7vh] px-[5vw]">
+        <div className="grid grid-cols-4 justify-items-center pt-[5vw] px-[5vw]">
           <div ref={card_scale1Ref}>
             <CardFlip image_front={cardfront_1} image_back={cardback_1} />
           </div>

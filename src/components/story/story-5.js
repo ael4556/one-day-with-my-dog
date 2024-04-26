@@ -88,10 +88,9 @@ function Story5() {
         scrollTrigger: {
           trigger: dogtable,
           scrub: true,
-          start: "1px 40%",
-          end: "1px 10%",
+          start: "10vw 120%",
+          end: "200vw 60%",
 
-          /*markers : true,*/
         },
       }
     );
@@ -107,10 +106,9 @@ function Story5() {
         scrollTrigger: {
           trigger: text_story5_3,
           scrub: true,
-          start: "1 70%",
-          end: "1 40%",
+          start: "top 100%",
+          end: "bottom 80%",
 
-          /*markers: true,*/
         },
       }
     );
@@ -124,8 +122,8 @@ function Story5() {
         scrollTrigger: {
           trigger: bowl_dog,
           scrub: true,
-          start: "1 60%",
-          end: "1 20%",
+          start: "1 100%",
+          end: "1 70%",
 
           /*markers: true,*/
         },
@@ -142,8 +140,8 @@ function Story5() {
         scrollTrigger: {
           trigger: frung_fring,
           scrub: true,
-          start: "1 80%",
-          end: "1 40%",
+          start: "1 110%",
+          end: "1 80%",
 
           /* markers: true,*/
         },
@@ -205,17 +203,17 @@ function Story5() {
 
   return (
     <>
-      <div className="flex pt-[5%] justify-end pr-[10%]">
+      <div className="flex pt-[5vw] justify-end pr-[10vw]">
         <Chat
           text="“ไป มีตังค์กินข้าวกันหิวแล้วละสิ”"
           isMe={true}
           showIcon={true}
         />
       </div>
-      <div className="flex pt-[5%] justify-start pl-[10%]">
+      <div className="flex pt-[5vw] justify-start pl-[10vw]">
         <Chat text="“โฮ่ง !”" isMe={false} showIcon={true} isDog={true} />
       </div>
-      <div className="pt-[5%] flex justify-center">
+      <div className="pt-[5vw] flex justify-center">
         <img
           className=" w-[100vw] "
           src={table_Dog}
@@ -223,7 +221,7 @@ function Story5() {
           ref={dogtableRef}
         />
       </div>
-      <div ref={text_story5_1Ref} className=" flex flex-col pt-[10vh]">
+      <div ref={text_story5_1Ref} className=" flex flex-col pt-[10vw]">
         <p className="text-[2.5vw] flex justify-center">เรามาเลือกอาหารมื้อพิเศษ</p>
         <p className="text-[2.5vw] font-bold flex justify-center pt-[2vh]">
           ที่เหมาะกับมีตังค์กันเถอะ!

@@ -33,6 +33,7 @@ import Story18 from "./components/story/story-18";
 import Story19 from "./components/story/story-19";
 import Story20 from "./components/story/story-20";
 import Welcome from "./components/welcome";
+import Copyright from "./components/story/copyright";
 
 const App = () => {
   return (
@@ -138,6 +139,9 @@ const App = () => {
         
         <div className="z-0 pt-[10vw]">
           <Story20 />
+        </div>
+        <div>
+          <Copyright />
         </div>
         
         <div className=" z-[500]">
