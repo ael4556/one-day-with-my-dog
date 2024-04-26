@@ -35,8 +35,6 @@ import Story20 from "./components/story/story-20";
 import Welcome from "./components/welcome";
 import Copyright from "./components/story/copyright";
 
-import image_bubble from "./Images/story_10/bubble.gif";
-
 const App = () => {
   return (
     <>
@@ -46,15 +44,7 @@ const App = () => {
     </div>
       <div className="font-sans">
         {/* Start Web contents*/}
-        <div
-          className="h-full w-full flex flex-col"
-          style={{
-            backgroundImage: `url(${cover})`,
-            backgroundRepeat: "no-repeat",
-            height: "100%",
-            backgroundSize: "contain",
-          }}
-        >
+        <div>
           <div id="Home"></div>
           <div>
           <Logo />
@@ -62,7 +52,7 @@ const App = () => {
             <img className=" absolute w-[7vw] top-[40vw]" src={Scroll}/>
           </div>
           </div>
-          <div className="flex flex-col pt-[0]">
+          <div className="flex flex-col ">
             <Story1 />
           </div>
           <div className=" pt-[8.368vw]">

@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 import logo from "../../Images/logo/logo.png"
 import doglogo from "../../Images/logo/Dog_Homepage.png"
+import cover from "../../Images/logo/bg-cover-copy.png";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -53,9 +54,10 @@ useEffect(() => {
 
 }, []);
   return (
-    <div className="h-screen flex items-end pb-[90vw]">
+    <div className="h-[100vw] flex items-end">
       <img src={logo} ref={typoRef} alt="Logo" className=" w-[70vw] absolute left-[4%] top-[4vw]" />
       <img src={doglogo} ref={dogRef} alt="DogLogo" className=" w-[58vw] absolute end-[0%] top-[8vw]"/>
+      <img src={cover} className="w-[100vw] absolute -z-50 top-0"/>
     </div>
   );
 };
