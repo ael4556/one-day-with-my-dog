@@ -35,6 +35,8 @@ import Story20 from "./components/story/story-20";
 import Welcome from "./components/welcome";
 import Copyright from "./components/story/copyright";
 
+import image_bubble from "./Images/story_10/bubble.gif";
+
 const App = () => {
   return (
     <>
@@ -94,6 +96,7 @@ const App = () => {
             <Story10_0 />
           </div>
           <div>
+
             <Story10_1 />
           </div>
           <div>

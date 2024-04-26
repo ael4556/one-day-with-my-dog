@@ -234,7 +234,7 @@ function Story10_2() {
           images={image_pop_4}
         />
   
-        <div className="pt-[200%]">
+        <div className="pt-[0vw]">
           <div className="text-[1.8vw] pt-[10vh] leading-relaxed pl-[60vw] pr-[10vw]">
             <p ref={text_story10_1Ref}>
               เสร็จแล้วก็ล้างฟองสบู่ด้วยน้ำเปล่าให้สะอาด
@@ -242,7 +242,7 @@ function Story10_2() {
               แต่น้ำดันกระเด็นโดนเราซะนี่
             </p>
           </div>
-          <div className="grid grid-cols-2 pt-[25vw]">
+          <div className="grid grid-cols-2 pt-[10vw]">
             <div className="flex flex-col ">
               <div className="flex justify-center">
                   <div className="hover:scale-110 duration-300 pl-[10vw]">
