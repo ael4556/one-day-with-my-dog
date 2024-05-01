@@ -24,7 +24,7 @@ function Welcome() {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-      <div className="bg-white p-[1.673vw] rounded-[20px] shadow-lg max-w-[40vw]">
+      <div className="bg-white p-[1.673vw] rounded-[1.05vw] shadow-lg max-w-[40vw] absolute z-[5000] top-[10vw] left-[30vw]">
                 <div className=" flex justify-end">
                     <img
                     onClick={handleClose}
