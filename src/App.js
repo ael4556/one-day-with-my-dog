@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/navbar/navbar";
 import "./App.css";
 
-import cover from "./Images/logo/bg-cover-copy.png";
 import bg_cooking from "./Images/bg-cooking.png";
 import Scroll from "./Images/logo/scroll.gif";
 
