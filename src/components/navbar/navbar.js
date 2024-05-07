@@ -48,7 +48,7 @@ const Navbar = () => {
                 <button
                   className=" w-full border-[0.15625vw] border-gray-300 hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-zinc-500 duration-300 rounded-full py-[0.4166vw] px-[1.25vw]"
                 >
-                  <a href="https://www.google.com/">
+                  <a href="https://home-oneday-with-mydog.netlify.app">
                     หน้าหลัก
                   </a>
                 </button>
