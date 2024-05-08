@@ -23,8 +23,6 @@ function Story14() {
     const text_story14_3Ref = useRef ();
     const text_story14_4Ref = useRef ();
     const text_story14_5Ref = useRef ();
-    const bg_howtoRef = useRef ();
-    const bg_howto2Ref = useRef ();
 
     useEffect(() => {
     const text_story14_1 = text_story14_1Ref.current;
@@ -33,8 +31,6 @@ function Story14() {
     const text_story14_3 = text_story14_3Ref.current;
     const text_story14_4 = text_story14_4Ref.current;
     const text_story14_5 = text_story14_5Ref.current;
-    const bg_howto = bg_howtoRef.current;
-    const bg_howto2 = bg_howto2Ref.current;
 
     gsap.fromTo(
         text_story14_1,
@@ -137,40 +133,6 @@ function Story14() {
         }
       );
 
-      gsap.fromTo(
-        bg_howto,
-        { xPercent : -20 },
-        {
-            xPercent: 0,
-            duration: 1,
-            scrollTrigger: {
-            trigger: bg_howto,
-            scrub: true,
-            start: "0px 100%",
-            end: "100px 50%",
-
-            /*markers : true,*/
-          },
-        }
-      );
-
-      gsap.fromTo(
-        bg_howto2,
-        { xPercent : 15, },
-        {
-            xPercent: 0,
-            duration: 1,
-            scrollTrigger: {
-            trigger: bg_howto2,
-            scrub: true,
-            start: "0px 100%",
-            end: "100px 50%",
-
-            /*markers : true,*/
-          },
-        }
-      );
-
     }, []);
     return (
         <div className=" pt-[5%] flex flex-col">
@@ -255,10 +217,10 @@ function Story14() {
                         <img className="w-[80vw]" src={HowTo}/>
                     </div>
                 </div>
-                <div className="flex justify-start" ref={bg_howtoRef}>
+                <div className="flex justify-start" >
                     <img className="w-[60vw] z-0" src={BGTextTop}/>
                 </div>
-                <div className="flex justify-end pt-[5%]" ref={bg_howto2Ref}>
+                <div className="flex justify-end pt-[5%]" >
                     <img className="w-[45vw] z-0" src={BGTextBot}/>
                 </div>
             </div>

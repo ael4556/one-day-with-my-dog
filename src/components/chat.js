@@ -85,7 +85,7 @@ function Chat({
       )}
       <div
         ref={messages}
-        className="text-[1.8vw] leading-tight bg-gray-200 rounded-[70px] px-[1.9vw] py-[1.7vw] shadow-lg  border-[0.4vw] border-gray-300"
+        className="text-[1.8vw] leading-tight bg-gray-200 rounded-[3.6458vw] px-[1.9vw] py-[1.7vw] shadow-lg  border-[0.4vw] border-gray-300"
       >
         <div>{text}</div>
         <div>{text2}</div>

@@ -19,7 +19,6 @@ gsap.registerPlugin(ScrollTrigger);
 function Story13() {
     const text_story13_1Ref = useRef ();
     const text_story13_2Ref = useRef ();
-    const sniffingdogRef = useRef ();
     const text_story13_3Ref = useRef ();
     const warningRef = useRef ();
     const text_story13_4Ref = useRef ();
@@ -29,7 +28,6 @@ function Story13() {
   useEffect(() => {
     const text_story13_1 = text_story13_1Ref.current;
     const text_story13_2 = text_story13_2Ref.current;
-    const sniffingdog = sniffingdogRef.current;
     const text_story13_3 = text_story13_3Ref.current;
     const warning = warningRef.current;
     const text_story13_4 = text_story13_4Ref.current;
@@ -68,23 +66,6 @@ function Story13() {
             scrub: true,
             start: "-100px 90%",
             end: "100px 50%",
-  
-            /*markers : true,*/
-          },
-        }
-      );
-
-      gsap.fromTo(
-        sniffingdog,
-        { xPercent : 20 },
-        {
-            xPercent: 0,
-            duration: 1,
-            scrollTrigger: {
-            trigger: sniffingdog,
-            scrub: true,
-            start: "50px 80%",
-            end: "150px 30%",
   
             /*markers : true,*/
           },
@@ -188,7 +169,7 @@ function Story13() {
     
   }, []);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col pt-[5vw]">
         <div className="justify-end px-[10vw] font-sans text-[1.8vw] grid grid-cols-2 leading-relaxed pt-[10vw]" ref={text_story13_1Ref}>
         <div></div>
         <p> ในขณะเดินเล่น มีตังค์พยายามจะเดินนำ
@@ -214,7 +195,7 @@ function Story13() {
                         อยู่ตลอดเวลา 
                     </p>
                 </div>
-            <div className=" flex justify-end pr-[0vw] " ref={sniffingdogRef}>
+            <div className=" flex justify-end pr-[0vw] ">
             <img className=" w-[45vw]" src={Sniffing}/>
             <img className=" w-[45vw] absolute opacity-[90%]" src={SniffingVFX}/>
             </div>

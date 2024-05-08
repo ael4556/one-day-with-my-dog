@@ -210,7 +210,7 @@ function Story15() {
           </div>
         </div>
         <div className="pt-[42%] absolute left-[55%] w-[40%]">
-        <img className=" z-10 w-[40vw]" src={Tie} ref={tie_animateRef}/>
+        <img className=" z-10 w-[40vw]" src={Tie} />
         </div>
         <img className=" z-0" src={Bgkitchen} />
       </div>

@@ -37,12 +37,12 @@ const Navbar = () => {
           className="fixed top-[0.833vw] right-[0.416vw] focus:outline-none hover:-translate-y-1 hover:scale-110 duration-300 rounded-full transition ease-in-out delay-50 hover:shadow-md py-[0.4166vw] px-[0.4166vw]"
           onClick={toggleMenu}
         >
-          <img src={BurgerIcon} alt="Menu Icon" className="w-[2.5vw] h-[2.5vw]" />
+          <img src={BurgerIcon} alt="Menu Icon" className="w-[4.5vw] h-[4.5vw]" />
         </button>
 
         {/* Mene list */}
         {menuOpen && (
-          <div className="fixed top-[0.833vw] right-[5vw] bg-white p-[0.833vw] shadow-md rounded-2xl z-[5000] ">
+          <div className="fixed top-[0.833vw] right-[6vw] bg-white p-[0.833vw] shadow-md rounded-2xl z-[5000] ">
             <ul className="text-[1.4583vw] font-Prompt font-normal text-black ">
             <li>
                 <button

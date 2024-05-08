@@ -94,11 +94,7 @@ const App = () => {
           <div className="pt-[30vw]">
             <Story11 />
           </div>
-          <div className=" flex flex-col pt-[10vw]">
-            <div className="">
-              <Story12 />
-            </div>
-          </div>
+          
         </div>
 
         <div className=" pt-[5vw]">

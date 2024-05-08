@@ -25,7 +25,6 @@ function Story8() {
   const text_story8_1Ref = useRef();
   const text_story8_2Ref = useRef();
   const snack_motionRef = useRef();
-  const snack_dogRef = useRef();
   const card_scale1Ref = useRef();
   const card_scale2Ref = useRef();
   const card_scale3Ref = useRef();
@@ -37,7 +36,6 @@ function Story8() {
     const text_story8_1 = text_story8_1Ref.current;
     const text_story8_2 = text_story8_2Ref.current;
     const snack_motion = snack_motionRef.current;
-    const snack_dog = snack_dogRef.current;
     const card_scale1 = card_scale1Ref.current;
     const card_scale2 = card_scale2Ref.current;
     const card_scale3 = card_scale3Ref.current;
@@ -70,24 +68,6 @@ function Story8() {
         duration: 1,
         scrollTrigger: {
           trigger: snack_motion,
-          toggleActions : 'restart',
-          start : "-400px 80%",
-          end : "-300px 50%",
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      snack_dog,
-      { opacity: 0, scale: 0.2, xPercent: 50 },
-      {
-        opacity: 1,
-        scale: 1,
-        xPercent: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: snack_dog,
           toggleActions : 'restart',
           start : "-400px 80%",
           end : "-300px 50%",
@@ -218,7 +198,7 @@ function Story8() {
 
         <div className=" flex flex-col">
             <div className="pt-[20vw]">
-              <img className="w-[60vw]" src={snack_dog} ref={snack_dogRef} />
+              <img className="w-[60vw]" src={snack_dog}/>
             </div>
         </div>
       </div>

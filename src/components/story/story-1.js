@@ -11,54 +11,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story1() {
-  const text_story1_1Ref = useRef();
-  const text_story1_2Ref = useRef();
+
   const door_1Ref = useRef();
-  const doglookRef = useRef();
 
   useEffect(() => {
-    const text_story1_1 = text_story1_1Ref.current;
-    const text_story1_2 = text_story1_2Ref.current;
+
     const door_1 = door_1Ref.current;
-    const doglook = doglookRef.current;
 
-    gsap.fromTo(
-      text_story1_1,
-      { opacity: 0, scale : 0.9},
-      {
-        opacity: 1,
-        scale : 1 ,
-        duration: 1,
-        delay: 0,
-        scrollTrigger: {
-          trigger: text_story1_1,
-          scrub : true,
-          start : "300px 70%",
-          end : "300px 30%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      text_story1_2,
-      { opacity: 0, scale : 0.9 },
-      {
-        opacity: 1,
-        scale : 1,
-        duration: 1,
-        delay: 0,
-        scrollTrigger: {
-          trigger: text_story1_2,
-          scrub : true,
-          start : "1px 40%",
-          end : "1px 10%" ,
-
-          /*markers : true,*/
-        },
-      }
-    );
 
     gsap.fromTo(
       door_1,
@@ -78,37 +37,14 @@ function Story1() {
       }
     );
 
-    gsap.fromTo(
-      doglook,
-      { opacity: 0 },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: doglook,
-          scrub : true,
-          start : "600px 50%",
-          end : "600px 0%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
   }, []);
 
   return (
     <div>
-      <div className="bg-center"
-      style={{
-        backgroundColor: "#1B192D",
-        backgroundRepeat: "no-repeat",
-        height: "80vh",
-        backgroundSize: "contain",
-      }}>
-        <div className="flex flex-row justify-around">
+      <div className=" z-[-500]">
+        <div className="flex flex-row justify-around ">
           <img src={door_a1} alt="Door_A1" className=" w-[30vw]" ref={door_1Ref}/>
           <div
-            ref={text_story1_1Ref}
             className="flex flex-col justify-start text-white pt-[11.7vw] "
           >
             <h1 className="text-[2.5vw]">คุณที่แสนเหนื่อยล้า...</h1>
@@ -122,16 +58,14 @@ function Story1() {
           </div>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex justify-center">
         <img className=" w-[100vw] pt-[0vw]" src={sleep_night} alt="sleep_night" />
         <img
-          ref={text_story1_2Ref}
           className=" w-[35vw] absolute pt-[10vw] left-[10vw]"
           src={text_png_story1}
           alt="text_png_story1"
         />
         <img
-          ref={doglookRef}
           className=" w-[30vw] absolute pt-[27vw] right-[5vw]"
           src={dog_look}
           alt="text_png_story1"

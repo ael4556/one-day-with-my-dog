@@ -30,51 +30,33 @@ function Sunset({ sunlight = sun }) {
         scrollTrigger: {
           trigger: sun,
           toggleActions: "restart",
-          start : "-250vw 90%",
-          end : "50vw 50%",
+          start : "-100vh 100%",
+          //markers : true
         },
       }
     );
 
-    gsap.to(cloundLeft, {
-      x: -300,
-      duration: 2,
-      scrollTrigger: {
-        trigger: cloundLeft,
-        toggleActions: "restart none none reset",
-        start :"100vw 100%",
-        end : "500vw 0%",
-      },
-    });
+    gsap.fromTo(cloundLeft, 
+      { scale: 0 },
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: cloundLeft,
+          toggleActions: "restart",
+          start : "0vh 100%",
+          //markers : true
+        },
+      }
+    );
 
-    gsap.to(cloundRight, {
-      x: 330,
-      duration: 2,
-      scrollTrigger: {
-        trigger: cloundRight,
-        toggleActions: "restart none none reset",
-        start :"100vw 100%",
-        end : "500vw 0%",
-      },
-    });
-
-    gsap.to(cloundLeftBottom, {
-      x: -300,
-      duration: 2,
-      scrollTrigger: {
-        trigger: cloundLeftBottom,
-        toggleActions: "restart none none reset",
-        start :"100vw 100%",
-        end : "500vw 0%",
-      },
-    });
   }, []);
 
   return (
     <>
       <div className="flex justify-center">
         <img
-          className="absolute left-[20vw] pt-10 w-[100vw]"
+          className="absolute left-[25vw] pt-10 w-[20vw]"
           ref={cloundLeftTopRef}
           src={cloundLeftTop}
           alt="sun_morning"
@@ -86,13 +68,13 @@ function Sunset({ sunlight = sun }) {
           alt="sun_morning"
         />
         <img
-          className="absolute right-[18vw] pt-10 w-[100vw]"
+          className="absolute right-[14vw] pt-[22vw] w-[30vw]"
           ref={cloundRightRef}
           src={cloundRight}
           alt="sun_morning"
         />
         <img
-          className="absolute left-[20vw] pt-10 w-[100vw]"
+          className="absolute left-[15vw] pt-[22vw] w-[30vw]"
           ref={cloundLeftBottomRef}
           src={cloundLeftBottom}
           alt="sun_morning"

@@ -3,6 +3,8 @@ import Leash from "../../Images/story_11/leash.png";
 import Dogleash from "../../Images/story_11/leash-the-dog.png";
 import textD from "../../Images/story_11/text-leash-the-dog.png";
 import SunEvening from "../../Images/sun-evening.png";
+import DogWalk from "../../Images/story_11/dog-walk.gif"
+import DogWalkBg from "../../Images/story_11/dog-walk-bg.gif"
 
 import Sunset from "../../components/sunset";
 import Chat from "../chat";
@@ -169,6 +171,13 @@ function Story11() {
           alt="textD"
         />
       </div>
+      <div className=" flex justify-center pt-[10vw]">
+        <div className="">
+          <img className="left-0 absolute" src={DogWalk}/>
+          <img className="w-[100vw]" src={DogWalkBg}/>
+        </div>
+      </div>
+
     </div>
   );
 }
