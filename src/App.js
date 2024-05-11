@@ -30,18 +30,12 @@ import Story17 from "./components/story/story-17";
 import Story18 from "./components/story/story-18";
 import Story19 from "./components/story/story-19";
 import Story20 from "./components/story/story-20";
-import Welcome from "./components/welcome";
 import Copyright from "./components/story/copyright";
 
 const App = () => {
   return (
     <>
-    <div className="">
-      {/* Other content */}
-      <Welcome />
-    </div>
       <div className="font-sans">
-        {/* Start Web contents*/}
         <div>
           <div id="Home"></div>
           <div>
