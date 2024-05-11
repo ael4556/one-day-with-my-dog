@@ -20,58 +20,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story15() {
-    const text_story15_1Ref = useRef ();
-    const text_story15_2Ref = useRef ();
     const wipes_animateRef = useRef ();
-    const text_story15_3Ref = useRef ();
-    const text_story15_4Ref = useRef ();
     const tie_animateRef = useRef ();
 
   useEffect(() => {
-    const text_story15_1 = text_story15_1Ref.current;
-    const text_story15_2 = text_story15_2Ref.current;
     const wipes_animate = wipes_animateRef.current;
-    const text_story15_3 = text_story15_3Ref.current;
-    const text_story15_4 = text_story15_4Ref.current;
     const tie_animate = tie_animateRef.current;
 
     gsap.fromTo(
-      text_story15_1,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_story15_1,
-          scrub: true,
-          start: "-100px 90%",
-          end: "100px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      text_story15_2,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_story15_2,
-          scrub: true,
-          start: "-100px 90%",
-          end: "100px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
       wipes_animate,
-      { scale: 0.5 },
+      { scale: 0.8 },
       {
         scale: 1,
         scrollTrigger: {
@@ -86,50 +44,16 @@ function Story15() {
     );
 
     gsap.fromTo(
-      text_story15_3,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_story15_3,
-          scrub: true,
-          start: "-100px 90%",
-          end: "100px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      text_story15_4,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_story15_4,
-          scrub: true,
-          start: "-100px 90%",
-          end: "100px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
       tie_animate,
-      { xPercent : +20 },
+      { scale : 0.5, },
       {
-          xPercent: 0,
+          scale: 1,
           duration: 1,
           scrollTrigger: {
           trigger: tie_animate,
           scrub: true,
           start: "0px 100%",
-          end: "100px 50%",
+          end: "50px 70%",
 
           /*markers : true,*/
         },
@@ -144,9 +68,7 @@ function Story15() {
       <ClockTop time="18.00" />
       <Sunset sunlight={SunSett} />
       <div className=" flex flex-col pt-[35%]">
-        <div 
-            className=" font-sans flex justify-center text-[1.8vw] pt-[10%] px-[25%] leading-relaxed text-center" 
-            ref={text_story15_1Ref}>
+        <div className=" font-sans flex justify-center text-[1.8vw] pt-[10%] px-[25%] leading-relaxed text-center">
           <p>
           หลังจากเหตุการณ์ไม่คาดฝันเกิดขึ้น และคิดว่ามีตังค์น่าจะพอใจ
           กับการออกมาเดินสำรวจวันนี้แล้ว คุณจึงชวนมีตังค์กลับบ้าน
@@ -176,7 +98,7 @@ function Story15() {
       </div>
       <div className="flex flex-col-2 gap-[5%] justify-center pt-[10%]">
         <div className="flex-col justify-start z-20 pt-[20%]">
-          <div className=" font-sans text-[1.8vw] text-left" ref={text_story15_2Ref}>
+          <div className=" font-sans text-[1.8vw] text-left">
             <p className="pt-[0.1%]">เมื่อถึงบ้าน คุณก็เดินไปหยิบทิชชูเปียก</p>
             <p className="pt-[0.1%]">เพื่อเอามาเช็ดเท้าทั้งสี่ ลำตัว และใบหน้า ให้มีตังค์</p>
             <p className="pt-[0.1%]">เพราะทุกครั้งที่ออกไปข้างนอก</p>
@@ -203,22 +125,22 @@ function Story15() {
       <div className=" pt-[10%]">
         <div className=" justify-start absolute pt-[10%]">
           <div className=" pl-[10%]">
-            <img className=" w-[37%] z-40" src={TextStorke} ref={text_story15_3Ref}/>
+            <img className=" w-[37%] z-40" src={TextStorke}/>
           </div>
           <div className=" pl-[10%] pt-[7%]">
-            <img className=" w-[30vw] z-30" src={Braf} ref={text_story15_4Ref}/>
+            <img className=" w-[30vw] z-30" src={Braf}/>
           </div>
         </div>
         <div className="pt-[42%] absolute left-[55%] w-[40%]">
-        <img className=" z-10 w-[40vw]" src={Tie} />
+        <img className=" z-10 w-[40vw]" src={Tie} ref={tie_animateRef}/>
         </div>
         <img className=" z-0" src={Bgkitchen} />
       </div>
         <div className=" flex justify-center pt-[15%]">
           <img className=" w-[60vw]" src={dinner} />
         </div>
-        <div className=" flex justify-center pt-[3%] font-sans text-[1.88vw]">
-          <p>ช่วยปรุงอาหารให้เจ้ามีตังค์ โดยลากวัตถุดิบลงชาม เพื่อเสิร์ฟอาหารมื้อพิเศษ</p>
+        <div className=" flex justify-center pt-[3%] font-sans text-[2vw] gap-[1vw] font-semibold">
+          <p>ช่วยปรุงอาหารให้เจ้ามีตังค์</p><p className=" text-[#D74214] font-bold underline decoration-double ">โดยลากวัตถุดิบลงชาม</p><p>เพื่อเสิร์ฟอาหารมื้อพิเศษ</p>
         </div>
     </div>
   );

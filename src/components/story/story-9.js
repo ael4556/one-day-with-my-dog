@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import Chat from "../chat";
+import Chat from "../message";
 
 import garden_dog from "../../Images/story_9/garden-dog.png";
 import ball from "../../Images/story_9/ball.gif";
@@ -17,10 +17,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story9() {
-  const text_story9_1Ref = useRef();
-  const text_story9_2Ref = useRef();
 
-  const text_stroke3Ref = useRef();
   const dog_jumpRef = useRef();
   const bouncing_ballRef = useRef();
 
@@ -28,66 +25,9 @@ function Story9() {
   const [isPopup2Open, setIsPopup2Open] = useState(false);
 
   useEffect(() => {
-    const text_story9_1 = text_story9_1Ref.current;
-    const text_story9_2 = text_story9_2Ref.current;
 
-    const text_stroke3 = text_stroke3Ref.current;
     const dog_jump = dog_jumpRef.current;
     const bouncing_ball = bouncing_ballRef.current;
-
-    gsap.fromTo(
-      text_story9_1,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        duration: 2,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_story9_1,
-          scrub: true,
-          start: "0pvw 80%",
-          end: "0pvw 40%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      text_stroke3,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        duration: 2,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_stroke3,
-          scrub: true,
-          start: "600vw 80%",
-          end: "600vw 40%",
-
-          /*markers : true*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      text_story9_2,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        duration: 2,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_story9_2,
-          scrub: true,
-          start: "0vw 80%",
-          end: "0vw 40%",
-
-          /*markers : true,*/
-        },
-      }
-    );
 
     gsap.fromTo(
       dog_jump,
@@ -146,7 +86,6 @@ function Story9() {
       <div className=" flex flex-col justify-center px-[20vw] pt-[5.85vw]">
         <p
           className="text-[1.8vw] leading-relaxed text-center"
-          ref={text_story9_1Ref}
         >
           หลังจากนั้น คุณก็เดินออกไปที่สวนพร้อมเรียกมีตังค์ให้ออกมาพร้อมกัน
           แต่ก็ไม่ลืมที่จะหยิบของเล่นสุดโปรดของมีตังค์ที่เก็บไว้ในลิ้นชักใต้ทีวีไปด้วย
@@ -184,7 +123,6 @@ function Story9() {
         <div className="flex justify-center">
           <img
             className="w-[35vw] absolute pt-[29.7vw] right-[10vw] z-20"
-            ref={text_stroke3Ref}
             src={text_stroke_3}
             alt={text_stroke_3}
           />
@@ -204,18 +142,15 @@ function Story9() {
         </div>
       </div>
 
-      <div className="pl-[10vw] z-30">
+      <div className=" flex justify-start pl-[10vw] z-30">
         <Chat
           text="“แดดเริ่มร้อนเเล้วนะ มานั่งพักก่อน”"
-          isMe={false}
+          isMe={true}
           showIcon={true}
         />
       </div>
       <div className=" flex flex-col justify-center px-[16vw] pt-[6.7vw] ">
-        <p
-          className="text-[1.8vw] leading-loose text-center"
-          ref={text_story9_2Ref}
-        >
+        <p className="text-[1.8vw] leading-loose text-center">
           หลังจากที่คุณให้มีตังค์นอนเล่นหน้าบ้าน เพื่อระหว่างนั้นก็เอาของต่าง ๆ
           มาเตรียมไว้ แชมพูอาบน้ำสุนัขเอย ผ้าเช็ดตัวเอย และต่อสายยาง
           พร้อมอาบน้ำให้เจ้าตัวแสบ !

@@ -5,7 +5,7 @@ import dog_poof_finish from "../../Images/story_4/dog-poop-finish.jpg";
 
 import poof from "../../Images//story_4/poop.gif";
 
-import Chat from "../chat";
+import Chat from "../message";
 import Popup from "../popup";
 
 import { useEffect, useRef, useState } from "react";
@@ -33,10 +33,10 @@ function Story4() {
         scrollTrigger: {
           trigger: dogdown,
           scrub: true,
-          start: "500px 70%",
-          end: "500px 10%",
+          start: "0px 70%",
+          end: "100px 10%",
 
-          /*markers : true,*/
+          //markers : true,
         },
       }
     );
@@ -53,7 +53,7 @@ function Story4() {
         />
 
         <div className="absolute left-[10%] pt-[10%]">
-          <Chat text="“ป่ะ ไปหน้าบ้านกัน”" showIcon={true} isMe={false} />
+          <Chat text="“ป่ะ ไปหน้าบ้านกัน”" showIcon={true} isMe={true} />
         </div>
       </div>
       <div className="flex pt-[10%] justify-center">

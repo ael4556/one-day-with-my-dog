@@ -7,7 +7,7 @@ import DogWalk from "../../Images/story_11/dog-walk.gif"
 import DogWalkBg from "../../Images/story_11/dog-walk-bg.gif"
 
 import Sunset from "../../components/sunset";
-import Chat from "../chat";
+import Chat from "../message";
 import ClockTop from "../clock";
 import Title from "../title";
 import Tips from "../tips";
@@ -20,13 +20,11 @@ gsap.registerPlugin(ScrollTrigger);
 function Story11() {
   const doorRef = useRef();
   const dogLeashRef = useRef();
-  const text_story11_1Ref = useRef();
   const title_story11_1Ref = useRef();
 
   useEffect(() => {
     const door = doorRef.current;
     const dogLeash = dogLeashRef.current;
-    const text_story11_1 = text_story11_1Ref.current;
     const title_story11_1 = title_story11_1Ref.current;
 
     gsap.fromTo(
@@ -66,25 +64,6 @@ function Story11() {
     );
 
     gsap.fromTo(
-      text_story11_1,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        delay: 0,
-        scrollTrigger: {
-          trigger: text_story11_1,
-          scrub: true,
-          start: "1px 80%",
-          end: "1px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
       title_story11_1,
       { scale: 0 },
       {
@@ -108,10 +87,10 @@ function Story11() {
       <Sunset sunlight={SunEvening} />
       <div className=" pt-[35vw]">
         <div className="flex pt-[25vw] justify-start pl-[10vw]">
-          <Chat text="“ไปเดินเล่นกันมีตังค์”" isMe={false} />
+          <Chat text="“ไปเดินเล่นกันมีตังค์”"showIcon={true} isMe={true} />
         </div>
         <div className="flex pt-[10vw] justify-end pr-[10vw]">
-          <Chat text="โฮ่ง โฮ่ง !" isDog={true} isMe={true} />
+          <Chat text="โฮ่ง โฮ่ง !"showIcon={true} isMe={false} icon="icon_dog"/>
         </div>
       </div>
 
@@ -136,9 +115,7 @@ function Story11() {
               ref={dogLeashRef}
             />
           </div>
-          <div
-            className="flex flex-col justify-center text-[1.8vw] pt-[5vw] px-[10vw]"
-            ref={text_story11_1Ref}>
+          <div className="flex flex-col justify-center text-[1.8vw] pt-[5vw] px-[10vw]">
             <div className="leading-relaxed">
               <p>พูดจบคุณก็หยิบสายจูงจากที่แขวนบนกำแพง 
                 แล้วใส่ให้มีตังค์ ท่าทางมีตังค์ก็ดูไม่ขัดขืนอะไร 

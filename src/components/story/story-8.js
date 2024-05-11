@@ -22,7 +22,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story8() {
-  const text_story8_1Ref = useRef();
   const text_story8_2Ref = useRef();
   const snack_motionRef = useRef();
   const card_scale1Ref = useRef();
@@ -33,30 +32,12 @@ function Story8() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   useEffect(() => {
-    const text_story8_1 = text_story8_1Ref.current;
     const text_story8_2 = text_story8_2Ref.current;
     const snack_motion = snack_motionRef.current;
     const card_scale1 = card_scale1Ref.current;
     const card_scale2 = card_scale2Ref.current;
     const card_scale3 = card_scale3Ref.current;
     const card_scale4 = card_scale4Ref.current;
-
-    gsap.fromTo(
-      text_story8_1,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: text_story8_1,
-          scrub: true,
-          start: "1px 70%",
-          end: "1px 40%",
-          /*markers : true,*/
-        },
-      }
-    );
 
     gsap.fromTo(
       snack_motion,
@@ -102,10 +83,10 @@ function Story8() {
         scrollTrigger: {
           trigger: card_scale1,
           toggleActions: "restart",
-          start: "-400px 80%",
-          end: "-300px 50%",
+          start: "-100px 100%",
+          end: "-300px 70%",
 
-          /*markers : true,*/
+          //markers : true,
         },
       }
     );
@@ -120,8 +101,8 @@ function Story8() {
         scrollTrigger: {
           trigger: card_scale2,
           toggleActions: "restart",
-          start: "-400px 80%",
-          end: "-300px 50%",
+          start: "-100px 100%",
+          end: "-300px 70%",
 
           /*markers : true,*/
         },
@@ -138,8 +119,8 @@ function Story8() {
         scrollTrigger: {
           trigger: card_scale3,
           toggleActions: "restart",
-          start: "-400px 80%",
-          end: "-300px 50%",
+          start: "-100px 100%",
+          end: "-300px 70%",
 
           /*markers : true,*/
         },
@@ -156,8 +137,8 @@ function Story8() {
         scrollTrigger: {
           trigger: card_scale4,
           toggleActions: "restart",
-          start: "-400px 80%",
-          end: "-300px 50%",
+          start: "-100px 100%",
+          end: "-300px 70%",
 
           /*markers : true,*/
         },
@@ -171,7 +152,6 @@ function Story8() {
         <div className=" flex flex-col">
           <p
             className="text-[1.8vw] leading-relaxed pl-[10vw] pr-[6vw]"
-            ref={text_story8_1Ref}
           >
             เวลาแบบนี้ควรฝึกเจ้าตูบน้อยซักหน่อย...
             คุณเลยเดินไปหยิบขนมสุดโปรดของมีตังค์

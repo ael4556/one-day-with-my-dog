@@ -17,79 +17,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story13() {
-    const text_story13_1Ref = useRef ();
-    const text_story13_2Ref = useRef ();
-    const text_story13_3Ref = useRef ();
     const warningRef = useRef ();
-    const text_story13_4Ref = useRef ();
-    const text_story13_5Ref = useRef ();
-    const text_story13_6Ref = useRef ();
 
   useEffect(() => {
-    const text_story13_1 = text_story13_1Ref.current;
-    const text_story13_2 = text_story13_2Ref.current;
-    const text_story13_3 = text_story13_3Ref.current;
     const warning = warningRef.current;
-    const text_story13_4 = text_story13_4Ref.current;
-    const text_story13_5 = text_story13_5Ref.current;
-    const text_story13_6 = text_story13_6Ref.current;
-
-    gsap.fromTo(
-        text_story13_1,
-        { opacity: 0, scale: 0.9 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          delay: 0,
-          scrollTrigger: {
-            trigger: text_story13_1,
-            scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
-
-            /*markers : true,*/
-          },
-        }
-      );
-
-      gsap.fromTo(
-        text_story13_2,
-        { opacity: 0, scale: 0.9 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          delay: 0,
-          scrollTrigger: {
-            trigger: text_story13_2,
-            scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
-  
-            /*markers : true,*/
-          },
-        }
-      );
-
-      gsap.fromTo(
-        text_story13_3,
-        { opacity: 0, scale: 0.9 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          delay: 0,
-          scrollTrigger: {
-            trigger: text_story13_3,
-            scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
-  
-            /*markers : true,*/
-          },
-        }
-      );
 
       gsap.fromTo(
         warning,
@@ -109,68 +40,11 @@ function Story13() {
           },
         }
       );
-
-      gsap.fromTo(
-        text_story13_4,
-        { opacity: 0, scale: 0.9 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          delay: 0,
-          scrollTrigger: {
-            trigger: text_story13_4,
-            scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
-  
-            /*markers : true,*/
-          },
-        }
-      );
-
-      gsap.fromTo(
-        text_story13_5,
-        { opacity: 0, scale: 0.9 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          delay: 0,
-          scrollTrigger: {
-            trigger: text_story13_5,
-            scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
-  
-            /*markers : true,*/
-          },
-        }
-      );
-
-      gsap.fromTo(
-        text_story13_6,
-        { opacity: 0, scale: 0.9 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          delay: 0,
-          scrollTrigger: {
-            trigger: text_story13_6,
-            scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
-  
-            /*markers : true,*/
-          },
-        }
-      );
     
   }, []);
   return (
     <div className="flex flex-col pt-[5vw]">
-        <div className="justify-end px-[10vw] font-sans text-[1.8vw] grid grid-cols-2 leading-relaxed pt-[10vw]" ref={text_story13_1Ref}>
+        <div className="justify-end px-[10vw] font-sans text-[1.8vw] grid grid-cols-2 leading-relaxed pt-[10vw]">
         <div></div>
         <p> ในขณะเดินเล่น มีตังค์พยายามจะเดินนำ
             คุณต้องกระตุกสายจูงเบา ๆ สัก 3 ครั้ง พร้อมออกคำสั่ง
@@ -188,7 +62,7 @@ function Story13() {
         </div>
 
         <div className="grid grid-cols-2 pt-[5%]">
-                <div className=" pl-[20vw] pr-[5vw] pt-[15vw]" ref={text_story13_2Ref}>
+                <div className=" pl-[20vw] pr-[5vw] pt-[15vw]">
                     <p className="font-sans text-[1.8vw] text-right leading-relaxed">
                         พอเดินไปได้สักพัก มีตังค์ก็แวะสงสัย
                         ในทุก ๆ ที่ ที่เดินผ่านและคอยดม
@@ -202,7 +76,7 @@ function Story13() {
         </div>
 
         <div className="grid grid-cols-2">
-            <div className=" pt-[30vw] z-50 pl-[20vw]" ref={text_story13_3Ref}>
+            <div className=" pt-[30vw] z-50 pl-[20vw]">
                 <p className="font-sans text-[1.8vw] leading-relaxed">
                 แต่แล้วก็ดันไปเจอเจ้าตูบอีกตัวที่อยู่ในหมู่บ้านเข้า มีตังค์เลยเห่า! 
                 แสดงอาการหวงอาณาเขตของสุนัข 
@@ -247,7 +121,7 @@ function Story13() {
 
         <div className=" flex flex-col-2 gap-[5vw] justify-center pt-[10vw] ">
             <div className="flex-col justify-start z-20">
-                <div className="font-sans text-[1.8vw]" ref={text_story13_4Ref}>
+                <div className="font-sans text-[1.8vw]">
                     <p className="">
                         หลังจากนั้นคุณก็พยายามกระตุกสายจูง
                     </p>
@@ -255,7 +129,7 @@ function Story13() {
                         เพื่อให้มีตังค์เดินตามมา 
                     </p>
                 </div>
-                <div className="font-sans text-[1.8vw] pt-[5vw]" ref={text_story13_5Ref}>
+                <div className="font-sans text-[1.8vw] pt-[5vw]">
                     <p className="">
                         มีตังค์ก็ทำตามอย่างว่าง่ายและเข้าใจ
                         </p>
@@ -266,7 +140,7 @@ function Story13() {
                         แต่แล้วก็ดันเจอคนในหมู่บ้านซะได้
                     </p>
                 </div>
-                <div className="font-sans font-medium text-[1.8vw] pt-[5vw]" ref={text_story13_6Ref}>
+                <div className="font-sans font-medium text-[1.8vw] pt-[5vw]">
                     <p className="">
                         ดีหน่อยที่มีตังค์ค่อนข้างจะคุ้นเคย
                     </p>

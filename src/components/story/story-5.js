@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-import Chat from "../chat";
+import Chat from "../message";
 import Card from "../card";
 import Title from "../title";
 
@@ -25,8 +25,6 @@ gsap.registerPlugin(ScrollTrigger);
 function Story5() {
   const text_story5_1Ref = useRef();
   const text_story5_2Ref = useRef();
-  const text_story5_3Ref = useRef();
-  const text_story5_4Ref = useRef();
   const dogtableRef = useRef();
   const bowl_dogRef = useRef();
   const frung_fringRef = useRef();
@@ -36,8 +34,6 @@ function Story5() {
   useEffect(() => {
     const text_story5_1 = text_story5_1Ref.current;
     const text_story5_2 = text_story5_2Ref.current;
-    const text_story5_3 = text_story5_3Ref.current;
-    const text_story5_4 = text_story5_4Ref.current;
     const dogtable = dogtableRef.current;
     const bowl_dog = bowl_dogRef.current;
     const frung_fring = frung_fringRef.current;
@@ -96,24 +92,6 @@ function Story5() {
     );
 
     gsap.fromTo(
-      text_story5_3,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 0.5,
-        delay: 0.5,
-        scrollTrigger: {
-          trigger: text_story5_3,
-          scrub: true,
-          start: "top 100%",
-          end: "bottom 80%",
-
-        },
-      }
-    );
-
-    gsap.fromTo(
       bowl_dog,
       { scale: 0.5 },
       {
@@ -149,24 +127,6 @@ function Story5() {
     );
 
     gsap.fromTo(
-      text_story5_4,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: text_story5_4,
-          scrub: true,
-          start: "1 60%",
-          end: "1 30%",
-
-          /*markers: true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
       micro,
       { scale: 0.5 },
       {
@@ -175,7 +135,7 @@ function Story5() {
         scrollTrigger: {
           trigger: micro,
           scrub: true,
-          start: "1 80%",
+          start: "1 90%",
           end: "1 30%",
 
           /*markers: true,*/
@@ -192,7 +152,7 @@ function Story5() {
         scrollTrigger: {
           trigger: humanbowl,
           scrub: true,
-          start: "1 70%",
+          start: "1 90%",
           end: "1 20%",
 
           /*markers: true,*/
@@ -206,12 +166,12 @@ function Story5() {
       <div className="flex pt-[5vw] justify-end pr-[10vw]">
         <Chat
           text="“ไป มีตังค์กินข้าวกันหิวแล้วละสิ”"
-          isMe={true}
+          isMe={false}
           showIcon={true}
         />
       </div>
       <div className="flex pt-[5vw] justify-start pl-[10vw]">
-        <Chat text="“โฮ่ง !”" isMe={false} showIcon={true} isDog={true} />
+        <Chat text="“โฮ่ง !”" showIcon={true} isMe={true} icon="icon_dog"/>
       </div>
       <div className="pt-[5vw] flex justify-center">
         <img
@@ -235,7 +195,7 @@ function Story5() {
           className="pt-0 justify-center [perspective:1000px]"
         >
           <div className="left-[22.5%] right-[22.5%] absolute">
-            <div className="pt-[12vw] flex flex-row gap-[5vh] justify-center">
+            <div className="pt-[20vw] flex flex-row gap-[3vh] justify-center">
               <div className="hover:scale-105 duration-200 cursor-pointer">
                 <Card image={dogfood_1} image_back={dogfoodback_1} />
               </div>
@@ -248,35 +208,32 @@ function Story5() {
             </div>
           </div>
           <div className=" flex justify-center">
-            <img className="w-[80vw]" src={cook_table} alt="cook_table" />
+            <img className="w-[100vw]" src={cook_table} alt="cook_table" />
           </div>
         </div>
       </div>
 
-      <div className="pt-12 ">
-        <p className="text-[2.5vw] flex justify-center" ref={text_story5_3Ref}>
+      <div className="pt-[2.5vw]">
+        <p className="text-[2.5vw] flex justify-center">
           เย้! อาหารเสร็จแล้ว มีตังค์มากินได้เลย
         </p>
         <div className="flex justify-center">
           <img
             className=" w-[40vw]"
             src={dog_bowl}
-            alt="table_Dog"
             ref={bowl_dogRef}
           />
           <img
             className=" w-[40vw] absolute"
             src={frung_fring}
-            alt="table_Dog"
             ref={frung_fringRef}
           />
         </div>
       </div>
-      <div className="pl-[8.3vw] pt-[5%]">
+      <div className="flex justify-start pt-[5%] pl-[10vw]">
         <Chat
           text="“ค่อย ๆ กินก็ได้มีตังค์ ไม่มีใครแย่งหรอก” "
-          isMe={false}
-          showIcon={true}
+          showIcon={true} isMe={true} icon="male"
         />
       </div>
       <div className="pt-[2.5vw] grid ml-[10%] mr-[10%] grid-cols-3 gap-[2vw]">
@@ -287,7 +244,7 @@ function Story5() {
           ref={microRef}
         />
         <img className=" w-[20vw]" src={bowl} alt="table_Dog" ref={humanbowlRef} />
-        <div ref={text_story5_4Ref} className="flex justify-end pt-24">
+        <div className="flex justify-end pt-24">
           <p className="text-[1.8vw] leading-relaxed">
             หลังจากนั้น คุณก็เดินไปหยิบข้าวกล่อง 
             ในตู้เย็นพร้อมเทใส่จาน
@@ -298,12 +255,12 @@ function Story5() {
       <div className="flex pt-[5vw] justify-end pr-[10%]">
         <Chat
           text="“อิ่มแล้วก็นอนพักเถอะ ฉันขอไปทำงานบ้านแปปนึงนะ”"
-          isMe={true}
+          isMe={false}
           showIcon={true}
         />
       </div>
       <div className="flex pt-[5%] justify-start pl-[10%]">
-        <Chat text="“โฮ่ง !”" isMe={false} showIcon={true} isDog={true} />
+        <Chat text="“โฮ่ง !”" isMe={true} showIcon={true} icon="icon_dog"/>
       </div>
     </>
   );

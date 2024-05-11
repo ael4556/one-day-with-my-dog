@@ -23,12 +23,12 @@ const Popup = ({ isPopupOpen, setIsPopupOpen, images = image }) => {
                 <img
                   onClick={() => setIsPopupOpen(false)}
                   src={close}
-                  className="w-[2.5vw] cursor-pointer hover:bg-gray-200 rounded-full hover:scale-105"
+                  className="w-[5vw] cursor-pointer hover:bg-gray-200 rounded-full hover:scale-105"
                   alt="close"
                 />
               </div>
               <div>
-                <img className="w-[50vw]" src={images} alt="popup_image" />
+                <img className="w-[85vw]" src={images} alt="popup_image" />
               </div>
             </div>
           </div>

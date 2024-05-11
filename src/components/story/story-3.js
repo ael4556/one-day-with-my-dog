@@ -1,7 +1,7 @@
 
 import sleep_dog_morning from "../../Images/story_3/sleep-with-dog-morning-test.png";
 import dog_in_frame from "../../Images/story_3/dog-in-frame-test.png";
-import Chat from "../chat";
+import Chat from "../message";
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -50,7 +50,8 @@ function Story3() {
               <Chat
                 text="“ไง~ มีตังค์ เมื่อคืนขอโทษน๊าา เหนื่อยไปหน่อย”"
                 showIcon={true}
-                isMe={true}
+                isMe={false}
+
               />
           </div>
     </>

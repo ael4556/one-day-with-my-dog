@@ -22,7 +22,6 @@ import Story10_0 from "./components/story/story-10-0";
 import Story10_1 from "./components/story/story-10-1";
 import Story10_2 from "./components/story/story-10-2";
 import Story11 from "./components/story/story-11";
-import Story12 from "./components/story/story12/story-12";
 import Story13 from "./components/story/story-13";
 import Story14 from "./components/story/story-14";
 import Story15 from "./components/story/story-15";

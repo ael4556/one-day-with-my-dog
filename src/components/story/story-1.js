@@ -12,30 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Story1() {
 
-  const door_1Ref = useRef();
-
   useEffect(() => {
-
-    const door_1 = door_1Ref.current;
-
-
-    gsap.fromTo(
-      door_1,
-      { opacity: 0 },
-      {
-        opacity: 1,
-        duration: 2,
-        delay: 0,
-        scrollTrigger: {
-          trigger: door_1,
-          scrub : true,
-          start : "top 600px",
-          end : "top 10px",
-          
-          /* markers : true, */
-        },
-      }
-    );
 
   }, []);
 
@@ -43,7 +20,7 @@ function Story1() {
     <div>
       <div className=" z-[-500]">
         <div className="flex flex-row justify-around ">
-          <img src={door_a1} alt="Door_A1" className=" w-[30vw]" ref={door_1Ref}/>
+          <img src={door_a1} alt="Door_A1" className=" w-[30vw]"/>
           <div
             className="flex flex-col justify-start text-white pt-[11.7vw] "
           >

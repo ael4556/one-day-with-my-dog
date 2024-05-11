@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import Sunset from "../sunset";
 import ClockTop from "../clock";
 import Title from "../title";
-import Chat from "../chat";
+import Chat from "../message";
 
 import SunAfternoon from "../../Images/sun-afternoon.png";
 import yawn_dog from "../../Images/story_7/yawn-dog.png";
@@ -26,8 +26,6 @@ import ImageFlip from "../imageflip";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story7() {
-  const text_story7_1Ref = useRef();
-  const text_story7_2Ref = useRef();
   const text_story7_3Ref = useRef();
   const text_story7_4Ref = useRef();
   const Dog_yawnRef = useRef();
@@ -39,8 +37,6 @@ function Story7() {
   const Flip_6Ref = useRef();
 
   useEffect(() => {
-    const text_story7_1 = text_story7_1Ref.current;
-    const text_story7_2 = text_story7_2Ref.current;
     const text_story7_3 = text_story7_3Ref.current;
     const text_story7_4 = text_story7_4Ref.current;
     const Dog_yawn = Dog_yawnRef.current;
@@ -50,40 +46,6 @@ function Story7() {
     const Flip_4 = Flip_4Ref.current;
     const Flip_5 = Flip_5Ref.current;
     const Flip_6 = Flip_6Ref.current;
-
-    gsap.fromTo(
-      text_story7_1,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: text_story7_1,
-          scrub: true,
-          start: "1px 60%",
-          end: "1px 30%",
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      text_story7_2,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: text_story7_2,
-          scrub: true,
-          start: "1px 60%",
-          end: "1px 30%",
-          /*markers : true,*/
-        },
-      }
-    );
 
     gsap.fromTo(
       text_story7_4,
@@ -112,8 +74,8 @@ function Story7() {
         scrollTrigger: {
           trigger: Dog_yawn,
           scrub: true,
-          start: "1px 60%",
-          end: "1px 30%",
+          start: "0px 100%",
+          end: "100px 70%",
           /*markers : true,*/
         },
       }
@@ -253,12 +215,12 @@ function Story7() {
             ref={Dog_yawnRef}
           />
           <div className="max-w-[30vw] flex flex-col text-[1.8vw]">
-            <p className=" leading-relaxed" ref={text_story7_1Ref}>
+            <p className=" leading-relaxed">
               ผ่านไปหลายชั่วโมงเจ้ามีตังค์ก็ตื่นนอนพร้อมบิดขี้เกียจ
               ทั้งแอ่นหน้าแอ่นหลัง จากนั้นก็เดินมาหาพร้อม ทำตาปริบ ๆ
               และกระดิกหาง ด้วยความดีใจเพราะตื่นมา แล้วเจอเจ้านาย
             </p>
-            <p className=" pt-[4.166vw] leading-relaxed" ref={text_story7_2Ref}>
+            <p className=" pt-[4.166vw] leading-relaxed">
               โดยคุณสามารถรับรู้ความรู้สึกต่าง ๆ ของเจ้ามีตังค์ได้จาก “หาง”
             </p>
           </div>
@@ -288,10 +250,10 @@ function Story7() {
         </div>
 
         <div className="flex pt-[20vw] justify-end pr-[10vw]">
-          <Chat text="“ตื่นแล้วหรอ มีตังค์ เล่นของเล่นกันไหม?”" isMe={true} />
+          <Chat text="“ตื่นแล้วหรอ มีตังค์ เล่นของเล่นกันไหม?”" isMe={false} icon="icon_dog" />
         </div>
         <div className="flex pt-[8.36vw] justify-start pl-[10vw]">
-          <Chat text="โฮ่ง โฮ่ง !" isDog={true} isMe={false} />
+          <Chat text="โฮ่ง โฮ่ง !"isMe={true} icon="icon_dog"/>
         </div>
       </div>
     </>

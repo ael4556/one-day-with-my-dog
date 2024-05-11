@@ -9,31 +9,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story2() {
-  
-  const text_story2_1Ref = useRef();
-
 
   useEffect(() => {
-    const text_story2_1 = text_story2_1Ref.current;
-
-    gsap.fromTo(
-      text_story2_1,
-      { opacity: 0, scale : 0.9},
-      {
-        opacity: 1,
-        scale : 1,
-        duration: 2,
-        delay: 0,
-        scrollTrigger: {
-          trigger: text_story2_1,
-          scrub : true,
-          start : "800px 90%",
-          end : "600px 50%",
-
-          /* markers : true, */    
-        },
-      }
-    );
 
   }, []);
 
@@ -44,7 +21,6 @@ function Story2() {
       {/* Last Text */}
       <div
         className="flex flex-col justify-center text-[1.8vw] pt-[45vw]"
-        ref={text_story2_1Ref}
       >
         <p>
           เช้าวันหยุดอันสดใสได้เริ่มต้นขึ้นด้วยการทักทายจากมีตังค์เจ้าตูบแสนน่ารัก

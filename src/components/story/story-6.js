@@ -31,8 +31,8 @@ function Story6() {
         scrollTrigger: {
           trigger: dogsleep,
           scrub: true,
-          start: "0px 60%",
-          end: "100px 30%",
+          start: "0px 90%",
+          end: "100px 60%",
           /*markers : true,*/
         },
       }

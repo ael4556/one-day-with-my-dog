@@ -26,11 +26,25 @@ function Sunset({ sunlight = sun }) {
       { scale: 0 },
       {
         scale: 1,
-        duration: 1,
+        duration: 1.2,
         scrollTrigger: {
           trigger: sun,
           toggleActions: "restart",
-          start : "-100vh 100%",
+          start : "0vh 100%",
+          //markers : true
+        },
+      }
+    );
+
+    gsap.fromTo(cloundLeftBottom, 
+      { scale: 0 },
+      {
+        scale: 1,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: cloundLeftBottom,
+          toggleActions: "restart",
+          start : "0vh 100%",
           //markers : true
         },
       }
@@ -43,6 +57,20 @@ function Sunset({ sunlight = sun }) {
         duration: 1,
         scrollTrigger: {
           trigger: cloundLeft,
+          toggleActions: "restart",
+          start : "0vh 100%",
+          //markers : true
+        },
+      }
+    );
+
+    gsap.fromTo(cloundRight, 
+      { scale: 0 },
+      {
+        scale: 1,
+        duration: 0.7,
+        scrollTrigger: {
+          trigger: cloundRight,
           toggleActions: "restart",
           start : "0vh 100%",
           //markers : true

@@ -29,7 +29,6 @@ function Story10_2() {
   
     const text_tubeRef = useRef();
     const text_shampooRef = useRef();
-    const text_story10_1Ref = useRef();
     const text_story10_2Ref = useRef();
     const title_story10_1Ref = useRef();
   
@@ -42,7 +41,6 @@ function Story10_2() {
   
       const text_tube = text_tubeRef.current;
       const text_shampoo = text_shampooRef.current;
-      const text_story10_1 = text_story10_1Ref.current;
       const text_story10_2 = text_story10_2Ref.current;
       const title_story10_1 = title_story10_1Ref.current;
   
@@ -109,25 +107,6 @@ function Story10_2() {
             scrub: true,
             start: "-150px 70%",
             end: "-140px 40%",
-            /*markers : true,*/
-          },
-        }
-      );
-  
-      gsap.fromTo(
-        text_story10_1,
-        { opacity: 0, scale: 0.9 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          delay: 0,
-          scrollTrigger: {
-            trigger: text_story10_1,
-            scrub: true,
-            start: "1px 80%",
-            end: "1px 50%",
-  
             /*markers : true,*/
           },
         }
@@ -236,7 +215,7 @@ function Story10_2() {
   
         <div className="pt-[0vw]">
           <div className="text-[1.8vw] pt-[10vh] leading-relaxed pl-[60vw] pr-[10vw]">
-            <p ref={text_story10_1Ref}>
+            <p>
               เสร็จแล้วก็ล้างฟองสบู่ด้วยน้ำเปล่าให้สะอาด
               เจ้ามีตังค์ก็รู้หน้าที่ของตัวเองด้วยการช่วยสะบัดขน
               แต่น้ำดันกระเด็นโดนเราซะนี่

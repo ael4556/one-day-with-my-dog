@@ -11,9 +11,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Story19() {
     const text_story19_1Ref = useRef ();
+    const logo_1Ref = useRef ();
 
     useEffect(() => {
     const text_story19_1 = text_story19_1Ref.current;
+    const logo_1 = logo_1Ref.current;
 
     gsap.fromTo(
         text_story19_1,
@@ -24,8 +26,23 @@ function Story19() {
           scrollTrigger: {
             trigger: text_story19_1,
             scrub: true,
-            start: "250px 100%",
-            end: "550px 50%",
+            start: "100px 100%",
+            end: "200px 70%",
+
+          },
+        }
+      );
+
+      gsap.fromTo(
+        logo_1,
+        {scale: 0.8 },
+        {
+          scale: 1,
+          scrollTrigger: {
+            trigger: logo_1,
+            scrub: true,
+            start: "100px 90%",
+            end: "200px 60%",
             
           },
         }
@@ -35,7 +52,7 @@ function Story19() {
     return (
       <div className=" flex flex-col justify-center">
         <div className="flex justify-center">
-            <img className=" w-[45%]" src={Logo}/>
+            <img className=" w-[45%]" src={Logo} ref={logo_1Ref}/>
         </div>
         
         <div className=" flex flex-col justify-center">

@@ -10,74 +10,18 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story17() {
-    const text_story17_1Ref = useRef ();
-    const text_story17_2Ref = useRef ();
-    const slowFeedRef = useRef ();
 
   useEffect(() => {
-    const text_story17_1 = text_story17_1Ref.current;
-    const text_story17_2 = text_story17_2Ref.current;
-    const slowFeed = slowFeedRef.current;
-
-    gsap.fromTo(
-      text_story17_1,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_story17_1,
-          scrub: true,
-          start: "-100px 90%",
-          end: "100px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      text_story17_2,
-      { opacity: 0, scale: 0.9 },
-      {
-        opacity: 1,
-        scale: 1,
-        scrollTrigger: {
-          trigger: text_story17_2,
-          scrub: true,
-          start: "-100px 90%",
-          end: "100px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
-
-    gsap.fromTo(
-      slowFeed,
-      { scale: 0.5 },
-      {
-        scale: 1,
-        scrollTrigger: {
-          trigger: slowFeed,
-          scrub: true,
-          start: "-100px 90%",
-          end: "100px 50%",
-
-          /*markers : true,*/
-        },
-      }
-    );
 
   }, []);
 
   return (
     <div className=" flex flex-col">
       <div className=" flex flex-col justify-center">
-        <div className=" font-sans text-center text-[3vw] font-semibold" ref={text_story17_1Ref}>
+        <div className=" font-sans text-center text-[3vw] font-semibold">
           <p className=" text-[#6E8CC5]">บาร์ฟ คือ</p>
         </div>
-        <div className=" font-sans text-center text-[1.88vw] font-normal pt-[2.5vw]" ref={text_story17_2Ref}>
+        <div className=" font-sans text-center text-[1.88vw] font-normal pt-[2.5vw]">
           <p className=" text-black">
             อาหารที่มีส่วนประกอบมาจากเนื้อ อวัยวะภายใน และกระดูกสัตว์
             รวมถึงไข่และผลิตภัณฑ์นม
@@ -103,7 +47,7 @@ function Story17() {
         </div>
       </div>
       <div className="flex pt-[20vw] justify-end">
-        <div className="pr-[10vw] z-10" ref={slowFeedRef}>
+        <div className="pr-[10vw] z-10">
           <img className="w-[20vw]" src={feed} />
         </div>
         <div className=" pr-[10vw] z-50">

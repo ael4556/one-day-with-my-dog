@@ -16,12 +16,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Story18() {
-  const text_story18_1Ref = useRef ();
   const item1Ref = useRef ();
   const item2Ref = useRef ();
   const item3Ref = useRef ();
   const item4Ref = useRef ();
-  const text_story18_2Ref = useRef ();
+
   const text_story18_3Ref = useRef ();
   const text_story18_4Ref = useRef ();
 
@@ -29,34 +28,17 @@ function Story18() {
   const text_story18_6Ref = useRef ();
     
     useEffect(() => {
-      const text_story18_1 = text_story18_1Ref.current;
       const item1 = item1Ref.current;
       const item2 = item2Ref.current;
       const item3 = item3Ref.current;
       const item4 = item4Ref.current;
-      const text_story18_2 = text_story18_2Ref.current;
+
       const text_story18_3 = text_story18_3Ref.current;
       const text_story18_4 = text_story18_4Ref.current;
 
       const text_story18_5 = text_story18_5Ref.current;
       const text_story18_6 = text_story18_6Ref.current;
       
-      gsap.fromTo(
-        text_story18_1,
-        { opacity: 0, scale: 0.9 },
-        {
-          opacity: 1,
-          scale: 1,
-          scrollTrigger: {
-            trigger: text_story18_1,
-            scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
-            /*markers : true,*/
-          },
-        }
-      );
-
       gsap.fromTo(
         item1,
         { scale: 0.7 },
@@ -123,22 +105,6 @@ function Story18() {
       );
 
       gsap.fromTo(
-        text_story18_2,
-        { opacity: 0, scale: 0.9 },
-        {
-          opacity: 1,
-          scale: 1,
-          scrollTrigger: {
-            trigger: text_story18_2,
-            scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
-            /*markers : true,*/
-          },
-        }
-      );
-
-      gsap.fromTo(
         text_story18_3,
         { opacity: 0, scale: 0.9 },
         {
@@ -147,8 +113,8 @@ function Story18() {
           scrollTrigger: {
             trigger: text_story18_3,
             scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
+            start: "0px 100%",
+            end: "100px 70%",
             /*markers : true,*/
           },
         }
@@ -163,8 +129,8 @@ function Story18() {
           scrollTrigger: {
             trigger: text_story18_4,
             scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
+            start: "0px 100%",
+            end: "100px 70%",
             /*markers : true,*/
           },
         }
@@ -179,8 +145,8 @@ function Story18() {
           scrollTrigger: {
             trigger: text_story18_5,
             scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
+            start: "0px 100%",
+            end: "100px 70%",
             /*markers : true,*/
           },
         }
@@ -195,8 +161,8 @@ function Story18() {
           scrollTrigger: {
             trigger: text_story18_6,
             scrub: true,
-            start: "-100px 90%",
-            end: "100px 50%",
+            start: "0px 100%",
+            end: "100px 70%",
             /*markers : true,*/
           },
         }
@@ -211,7 +177,7 @@ function Story18() {
               <img className="w-[35vw]" src={sink}/>
             </div>
             <div className="flex justify-end pl-[10%] pt-[10%]">
-              <div className=" flex flex-col font-sans text-[1.7vw] z-40" ref={text_story18_1Ref}>
+              <div className=" flex flex-col font-sans text-[1.7vw] z-40">
                 <p className="">
                 เวลาผ่านไปไม่นาน จากจานที่เต็มไปด้วยอาหาร
                 </p>
@@ -248,7 +214,7 @@ function Story18() {
           isLeft={true}
           />
         </div>
-        <div className=" flex flex-col pt-[10%] text-[1.7vw] font-sans" ref={text_story18_2Ref}>
+        <div className=" flex flex-col pt-[10%] text-[1.7vw] font-sans">
           <p className="flex justify-center ">
             เมื่อทำความสะอาดเสร็จแล้วก็ถึงเวลาของคุณบ้าง จากการดูแลเจ้ามีตังค์มาทัังวัน
           </p>
